@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="lib/css/bootstrap.css" rel="stylesheet">
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -28,34 +28,132 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
+          <img src="fms_icon.png" class="pull-left"/>
+
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">FindmySong</a>
+
+          <a class="brand" href="#">
+              <span class="icon-bar"></span>
+              FindmySong
+          </a>
 
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="span1">
-        <i class="icon-search"></i>
+
+
+    <div class="container" style="background-image:url('blue_artist.png');background-repeat: no-repeat">
+      <div class="row-fluid">
+        <div class="span1 pull-left" style="background-color: rgba(255,255,255,0.5);">
+            <i class="icon-search"></i>
+            <h3 class="text-center">LOG IN</h3>
+
+          <button class="btn btn-large btn-success pull-right">
+            Sign Up
+          </button>
+        </div>
+        </div>
+
+      <div class="row-fluid" style="">
+
+
+        <div class="span12">
+          <p class="lead" style="color:white">
+            FMS 
+            </br>HELPS 
+            </br>CREATORS 
+            </br>MAKE MUSIC 
+            </br>FROM 
+            </br><strong><span style="color:darkblue">ANYWHERE.</span></strong>
+          </p> 
+
+        </div>   
       </div>
-          <h3>LOG IN</h3>
+        </div>
+
+      <div class="row-fluid">
+        <div class="home_bottom_header" style="height:70px;background-color:#454545;position:relative;padding:60px">
+            <p style="text-align: center;color:white;font-size: 30px">
+                Play the video! <i class="icon-play-circle" style=""></i>
+            </p>
+
         </div>
       </div>
+    </div> <!-- /container -->
 
-      <h1>
-        FMS 
-        </br>HELPS 
-        </br>CREATORS 
-        </br>MAKE MUSIC 
-        </br>FROM 
-        </br><strong>ANYWHERE.</strong>
-      </h1>
+    <div class="container">
+        <h3> Featured Musicians <a href="">(See All)</a></h3>
+
+        <!-- /insert thumbnails -->
+        <img src="featured_artists.jpg" />
+
+
+    </div><!-- /container -->
+
+    </br>
+
+    <div class="container" style="background-color:#808080">
+        <h3 >  Featured Projects <a href="">(See All)</a></h3>
+
+        <!-- /insert thumbnails -->
+        <div class=row-fluid">
+            <ul class="thumbnails">
+                <li class="span3">
+                    <div class="thumbnail" style="background-color:#ffffff">
+                        <img alt="300x200" style="width:300px;height:200px;" src="featured_project.png" />
+                        <div class="caption" style="text-align:center;">
+                            <h4><strong>Debra Daves</strong></h4>
+                            </br>
+                            <h4>Three little birds</h4>
+                            <p>
+                                Last night's Gramophone </br>
+                                Classical Music Awards might </br>
+                                have honoured some wonderful musicians...
+                            </p>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- /container -->
+
+    <div class="container" style="background-image:url('friends_band.png');background-repeat:no-repeat">
+        <div class="row-fluid">
+                <p class="lead" style="color:white">
+                    </br></br></br></br></br></br>
+                    <strong>
+                    MUSIC</br>
+                    IS BETTER</br>
+                    WITH</br>
+                    FRIENDS.
+                    </strong>
+                </p>
+        </div>
+        <div class="row-fluid">
+            <div class="span3" style="background-color:#454545">
+                <p style="color:white;background-color:#454545;">
+                    </br>
+                    Help your friends keep updated on your
+                    new music by connecting with Facebook.
+                </p>
+                    </br>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <button class="btn btn-primary">
+                    Connect with Facebook
+                </button>
+            </div>
+
+
+
+        </div>
+
 
     </div> <!-- /container -->
 
