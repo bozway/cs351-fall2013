@@ -9,9 +9,10 @@
 }
 
 #firstscreen {
-	
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 31px;
 	color: WHITE;
 	height: 420px;
+	width: 320px;
 }
+
