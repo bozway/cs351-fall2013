@@ -1,11 +1,11 @@
 #friends_container {
 
     background-repeat: no-repeat;
-    background-image: url('../../friends_band.png');
+    background-image: url('../img/friends_band.png');
 }
 
 #intro_container {
-    background-image:url('../../blue_artist.png');
+    background-image:url('../img/blue_artist.png');
     background-repeat: no-repeat
 }
 
