@@ -147,14 +147,39 @@ body {
 		border:5px;
 	}
 	.featuredProjectsArea{
-		background:rgba(128,128,0,0.1);
+		background:rgba(128,128,128,0.4);
 		margin-left:-20px;
 		margin-right:-20px;
 		height:auto;
+		overflow:hidden;
+	}
+	.projectTable{
+		width:900px;
+		overflow:hidden;
+		background:rgba(0,0,0,0);
+		padding-top:30px;
+		font-size:20px;
+		font-family:Arial, Helvetica, sans-serif;
+		border:5px;
+	}
+	.indivProjectTable{
+		margin-left:15px;
+		background:white;
+		
+	}
+	.indivProjectTableFrame{
+		margin-left:10px;
+	}
+	.indivProjectTable p1{
+		font-size:20px;
+	}
+	.indivProjectTable p2{
+		font-size:16px;
+	}
+	.indivProjectTable p3{
+		font-size:14px;
 	}
 	
-	.container-fluid{
-  		margin-right: auto;
-  		margin-left: auto;
-  		max-width: 800px; /* or 950px */
+	.container{
+		max-width:950px;
 	}
