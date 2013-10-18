@@ -1,0 +1,152 @@
+div#headerRow
+{
+	height: 58px;
+	background-color: #232323;
+	color: white;
+	max-width: 320px;
+	font-size: 20px;
+}
+
+p#headerLogo
+{
+	float:left;
+}
+
+img#headerLogo
+{
+	float: left;
+}
+
+img#headerNav
+{
+	float: right;
+}
+
+div#loginRow
+{
+	height: 58px;
+	color: white;
+	text-align: center;
+	max-width: 324px;
+}
+
+img#loginButton
+{
+	position:relative; 
+	right:4px;
+}
+
+div#vidRow
+{
+	height: 292px;
+	max-width: 320px;
+}
+
+img#FMSVid
+{
+	position:relative; 
+	bottom:2px;
+}
+
+div#playRow
+{
+	height: 73px;
+	//background-color: #232323;
+	//color: white;
+	max-width: 324px;
+	//font-size: 24px;
+	//font-family: Arial, Times, Helvetica;
+	position: relative;
+	bottom: 2px;
+}
+
+img#playButton
+{
+	position:relative; 
+	right:4px;
+}
+
+
+div#featuredMusiciansBlock
+{
+	height: 429px;
+	background-color: #F0ECEB;
+	max-width: 320px;
+	font-size: 20px;
+	font-family: Arial, Times, Helvetica;
+	position: relative;
+	bottom: 2px;
+}
+
+p#featuredMusiciansTitle
+{
+	position:relative;
+	left:10px;
+}
+
+div#featuredMusiciansImages
+{
+	position:relative;
+	right:20px;"
+}
+
+img#topLeftMusician
+{
+	padding-right:15px; 
+	padding-bottom:15px;
+}
+
+img#topRightMusician
+{
+	padding-bottom:15px;
+}
+
+img#bottomLeftMusician
+{
+	padding-right:15px;
+}
+
+p#featuredMusiciansTitle
+{
+	position:relative; 
+	left: 10px;
+}
+
+a#seeAll
+{
+	font-size:14px;
+}
+
+div#featuredProjectsBlock
+{
+	height: 380px;
+	background-color: #CFCECC;
+	max-width: 320px;
+	font-size: 20px;
+	font-family: Arial, Times, Helvetica;
+	position: relative;
+	top:357px;
+	left:30px;
+}
+
+div#projectsWrapper
+{
+	position:relative;
+	left: 10px;
+	bottom: 300px;
+}
+
+img#featuredRight
+{
+	position:relative;
+	left:14px;
+}
+
+div#facebookBlock
+{
+	height: 486;
+	max-width: 320x;
+	position: relative;
+	top:357px;
+	left:30px;
+}
