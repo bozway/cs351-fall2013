@@ -1,0 +1,57 @@
+#topbar{
+
+	line-height: 55px;
+	height: 55px;
+	background-color:black;
+	text-align:center;
+
+}
+
+#findmysong{
+
+	color:white;
+	text-align:left;
+	font-size:25px;
+
+}
+
+#loginbody{
+
+	height:400px;
+	background: url("../pic/guitar.png");
+	background-size: 100% 110%;
+	background-repeat:no-repeat;
+}
+
+#login{
+
+	height:55px;
+	line-height:55px;
+	font-size:20px;
+	color:white;
+
+}
+
+
+#playthevideo{
+
+	color:white;
+	font-size:25px;
+	line-height:60px;
+	text-align:center;
+}
+
+
+#musiciancontainer{
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: whitesmoke;
+
+}
+
+
+.table tr td{
+	border-top: none;
+}
+
