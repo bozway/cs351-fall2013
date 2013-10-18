@@ -1,0 +1,160 @@
+body {
+     max-width:950px;
+    }
+	.jumbotron {
+	position: relative;
+	padding: 60px 20px;
+	margin-left: -20px;
+	margin-top:-20px;
+	margin-right:-20px;
+	width:auto;
+	text-align: left;
+	background:url(bb1.png);
+	background-repeat:no-repeat;
+	background-size:auto;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	clip: rect(5px,5px,5px,5px);
+	}
+	.jumbotron h1 {
+  		font-size: 80px;
+  		font-weight: bold;
+  		letter-spacing: 0px;
+  		line-height: 0;
+	}
+	.jumbotron p1 {
+	color:white;
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 1;
+	margin-bottom: 0px;
+	margin-left:0px;
+	padding-top:20px;
+	}
+	
+	.jumbotron p2 {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.25;
+	margin-bottom: 0px;
+	color: #660;
+	}
+
+	/* Link styles (used on .masthead-links as well) */
+	.jumbotron a {
+  		color: #fff;
+  		color: rgba(255,255,255,.5);
+  		-webkit-transition: all .2s ease-in-out;
+     	-moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+	}
+	.jumbotron a:hover {
+  		color: #fff;
+  		text-shadow: 0 0 10px rgba(255,255,255,.25);
+	}
+	.searchAndLog{
+		height:40px;
+		background: rgba(0, 0, 0, 0.4);
+  		filter:alpha(opacity=60);
+		margin-left: -20px;
+		margin-top:-60px;
+		margin-right:-20px;
+		padding-bottom:10px;
+		padding-top:10px;
+	}
+	.searchButtonb{
+		width:25px;
+		height:25px;
+		margin-left:15px;
+		margin-top:20px;
+	}
+	.searchButtonArea{
+		margin-top:-10px;
+		width:60px;
+		height:60px;
+		margin-bottom:-30px;
+		background:rgba(181,187,157,0.3);
+		opacity:1;
+	}
+	.signUpArea{
+		float:right;
+		font-family:Arial, Helvetica, sans-serif;
+		margin-right:10px;
+		margin-top:-16px;;
+		font-size:17px;
+		color:white;	
+	}
+	.signUpBotton{
+		float:right;
+		margin-right:10px;
+	}
+	.mainSentence{
+		margin-top:40px;
+		margin-bottom:60px;
+	}
+	.playMusicArea{
+		background:#333;
+		color:white;
+		margin-left:-20px;
+		margin-right:-20px;
+		height:70px;
+	}
+	.playVideo{
+		font-size:24px;
+		margin-left:20px;
+		padding-top:25px;
+	}
+	.playButtonArea{
+		background:#666;
+		width:70px;
+		height:70px;
+		float:right;
+		margin-top:-55px;
+		margin-right:0px;
+		
+	}
+	.circle {
+		text-align:center;
+    	width: 50px;
+    	height: 50px;
+		background:#09F;
+		margin-left:10px;
+		margin-top:10px;
+    	-webkit-border-radius: 25px;
+    	-moz-border-radius: 25px;
+    	border-radius: 25px; 
+	}
+	.playButton{
+		margin-top:16px;
+		margin-left:3px;
+		border:0;
+		background-color:rgba(0,0,0,0);
+	}
+	
+	.musicianArea{
+		background:rgba(128,128,0,0.1);
+		margin-left:-20px;
+		margin-right:-20px;
+		height:auto;
+	}
+	.musicianTable{
+		background:rgba(0,0,0,0);
+		padding-top:30px;
+		font-size:20px;
+		font-family:Arial, Helvetica, sans-serif;
+		border:5px;
+	}
+	.featuredProjectsArea{
+		background:rgba(128,128,0,0.1);
+		margin-left:-20px;
+		margin-right:-20px;
+		height:auto;
+	}
+	
+	.container-fluid{
+  		margin-right: auto;
+  		margin-left: auto;
+  		max-width: 800px; /* or 950px */
+	}
