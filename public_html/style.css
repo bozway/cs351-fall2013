@@ -26,18 +26,18 @@ body {
 	}
 	.jumbotron p1 {
 	color:white;
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: 300;
-	line-height: 1;
+	line-height: 0.8;
 	margin-bottom: 0px;
 	margin-left:0px;
 	padding-top:20px;
 	}
 	
 	.jumbotron p2 {
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: bold;
-	line-height: 1.25;
+	line-height: 0.8;
 	margin-bottom: 0px;
 	color: #660;
 	}
@@ -141,9 +141,10 @@ body {
 	}
 	.musicianTable{
 		background:rgba(0,0,0,0);
-		padding-top:30px;
+		padding-top:35px;
 		font-size:20px;
 		font-family:Arial, Helvetica, sans-serif;
+		padding-bottom:35px;
 		border:5px;
 	}
 	.featuredProjectsArea{
@@ -157,10 +158,10 @@ body {
 		width:900px;
 		overflow:hidden;
 		background:rgba(0,0,0,0);
-		padding-top:30px;
+		padding-top:10px;
 		font-size:20px;
 		font-family:Arial, Helvetica, sans-serif;
-		border:5px;
+		padding-bottom:25px;
 	}
 	.indivProjectTable{
 		margin-left:15px;
@@ -180,6 +181,49 @@ body {
 		font-size:14px;
 	}
 	
+	.indivProjectTexts{
+		margin-left:10px;
+		margin-right:10px;
+	}
+	
+	.footerArea{
+	background-color:rgba(0,0,0,0.8);
+	height:550px;
+	margin-left:-20px;
+	margin-right:-20px;
+	}
+	.mainSentence2{
+		background-image:url(footer2.png);
+		background-repeat:no-repeat;
+		height:400px;
+	}
+	
+	.mainSentence2Text{
+		margin-top:220px;
+		margin-left:20px;
+	}
+	.mainSentence2Text2{
+		margin-top:20px;
+		margin-left:20px;
+		margin-right:26px;
+	}
+	
+	.mainSentence2 p1{
+		color:white;
+		font-size: 30px;
+		line-height: 0.8;
+		margin-left:0px;
+		padding-top:20px;
+		font-weight:bold;
+	}
+	.mainSentence2 p2{
+		color:white;
+		font-size:16px;
+	}
+	.facebookButton{
+		padding:30px;
+		text-align:center;
+	}
 	.container{
 		max-width:950px;
 	}
