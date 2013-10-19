@@ -1,2 +1,3 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
-@media (max-width:480px){.test_class{background-color:red}}
+body{height:2000px}
+@media (max-width:480px){.container{margin:0px !important} .nav_test{position:fixed;top:0}}
