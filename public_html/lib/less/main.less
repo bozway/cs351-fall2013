@@ -9,14 +9,18 @@
 body {
     height: 2000px;
     font-family: 'Roboto';
+    position: fixed;
+    top: 72px;
+    //position: relative;
     }
 
 @media (max-width: 480px) { // none of the inside lines will apply unless these conditions apply
     .container {
         //background-color: @color;
+
     }
     .navbar-fixed-top {
-        visibility: hidden;
+        //visibility: hidden;
         background-color: #232323;
         position: fixed;
         top: 0;
@@ -24,7 +28,7 @@ body {
         }
         
         .row-fluid{
-            position: float;
+            position: relative;
             width: 100%;
             height: 10%;
         }
