@@ -1,6 +1,14 @@
 /* Landscape phones and down */
-@media (max-width: 480px) {
-    .test_class {
-        background-color:   red;
+@color: black;
+body {
+    height: 2000px;
     }
+
+@media (max-width: 480px) { // none of the inside lines will apply unless these conditions apply
+    .container {
+    }
+    .navbar-fixed-top {
+        position: fixed;
+        top: 0;
+        }
 }
