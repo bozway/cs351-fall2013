@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e908d764-781c-4f52-bad4-852791615bd9" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\FMS_Mobile_home.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\ad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\arrow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\bl_musician.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\br_musician.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\fb_button.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\fb_pic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\fp_left.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\fp_right.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\log_in.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\logo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\nav.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\sign_up.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\tl_musician.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\lib\img\tr_musician.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/cs351-fall2013.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MOVED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\homepage.html.html" afterPath="$PROJECT_DIR$/public_html/homepage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/lib/css/main.css" afterPath="$PROJECT_DIR$/public_html/lib/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/lib/less/main.less" afterPath="$PROJECT_DIR$/public_html/lib/less/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs351-fall2013.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="homepage.html.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public_html/homepage.html.html">
+      <file leaf-file-name="homepage.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="27" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.6690519" vertical-offset="340" max-vertical-offset="1122">
+            <state line="11" column="67" selection-start="404" selection-end="404" vertical-scroll-proportion="0.33452594" vertical-offset="0" max-vertical-offset="1122">
               <folding />
             </state>
           </provider>
@@ -106,7 +98,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -139,69 +130,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs351-fall2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs351-fall2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs351-fall2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs351-fall2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs351-fall2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs351-fall2013" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public_html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
       </pane>
     </panes>
   </component>
@@ -311,9 +243,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/homepage.html.html">
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="27" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.6690519" vertical-offset="340" max-vertical-offset="1122">
+        <state line="11" column="67" selection-start="404" selection-end="404" vertical-scroll-proportion="0.33452594" vertical-offset="0" max-vertical-offset="1122">
           <folding />
         </state>
       </provider>
