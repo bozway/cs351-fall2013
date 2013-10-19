@@ -1,2 +1,3 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
-@media (max-width:480px){.container{background-color:#0000ff;}}
+body{height:2000px;}
+@media (max-width:480px){.container{background-color:#0000ff;} .navbar-fixed-top{position:fixed;top:0px;}}
