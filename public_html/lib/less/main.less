@@ -15,10 +15,9 @@ body {
     }
 
 @media (max-width: 480px) { // none of the inside lines will apply unless these conditions apply
-    .container {
-        //background-color: @color;
+    #fms_brand {
+        padding-left:10%;   
         
-
     }
     .navbar-fixed-top {
         background-color: #232323;
@@ -43,7 +42,7 @@ body {
         }
         
         #loginBar {
-            background-color: rgba(255,255,255,0.5);
+            background-color: rgba(0,0,0,0.25);
             height:13.5%;
         }
         
@@ -56,12 +55,15 @@ body {
             position: relative;
             float: left;
             width:20%;
-            padding-top:5%;  
+            padding-top:5%; 
+            color:white;
+            font-weight:bold;
+            font-size:20px;
         }
         
         #signUpButton {
             position:relative; 
-            margin-top:2.5%;
+            margin:1.5%;
             float:right;
         }
         
@@ -69,17 +71,32 @@ body {
             position:absolute;
             bottom: 0;
             background-color:#454545;
-            height:15%;
+            height:14.5%;
             
         }
         
+        #vidText {
+            font-family: 'Roboto';
+            color:white;
+            font-size:40px;
+            position:absolute;
+            padding:10%;
+            padding-left:5%;
+        }
         
-        #playVidBar p{
+        #anywhere {
+            color: #125D60;
+            font-family: 'Roboto';
+            font-weight: 700;
+        }
+        
+        
+        #playVidBar span{
             color:white;
             font-size: 30px; 
             font-family: 'Roboto';
-            padding:10px;
-            
+            padding:3%;
+            position:absolute;
         }
         
         #playIcon {
