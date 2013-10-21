@@ -1,48 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Mockup</title>
-	<link rel="stylesheet" href="lib/css/bootstrap.css">
+	<title>Test</title>
+	<link href='lib/css/bootstrap.css' rel='stylesheet'>
+	<style>
+	.container
+	{
+		padding:10px;
+		max-width:40%;
+		max-height:40%;
+		background-color:#D3D3D3;
+	}
+
+	.header
+	{
+		font-size:125%;
+	}			
+
+	.artist{
+		padding-top:2mm;
+	}
+
+	.artistDescription{
+		background-color: white;
+		padding:4mm;
+	}
+</style>
 </head>
 
 <body>
-	<div class="container">
-
-	  <div class="login">
-	  	<div class="navbar navbar-inverse">
-	  		<div class="navbar-inner" >
-	  		<a class="brand" href="#">Brand</a>
-	  		<a class="brand">FindmySong</a>
-			<a class="btn btn-inverse pull-right"><i class="icon-align-justify"></i></a>
-	  		</div>
-	  	</div>
-
-	  	<div class="navbar">
-	  		<div class="navbar-inner">
-  			<form class="navbar-form">
-  			<a class="btn pull-left" href="#"><i class="icon-search"></i></a>
-			<input type="text" class="span2" value="LOG IN">
-			<button class="btn btn-success">Sign up</button>
-			</form>
-	 	</div>
-
-	 	<img src="images/FMS.png">
-	  
-	  <div class="musicians">
-	  	<h2>Featured Musicians</h2>
-	  </div>
-	  
-	  <div class="projects">
-	  	<h2>Fetured Projects</h2>
-	  </div>
-
-	  <div class="friends">
-	  	<h2>Music is better with friends.</h2>
-	  </div>
-	
+<div class="container">
+	<div class="header">
+		<p class="featured_projects">Featured Projects
+		<small>
+		<a href="#">(See All)</a>
+		</small>
+		</p>
 	</div>
-	<script src="jquery-1.10.2.js"></script>
-	<script src="lib/js/bootstrap.js"></script>
+	
+<ul class="thumbnails">
+ 				<li class="span3">
+ 					<div class= "thumbnail">	
+ 						<image src="artist.png" data-src="holder.js/300x200" alt="">
+ 						<div class="artistDescription">
+ 							<div id="description">
+								<font size="5">Debra Daves</font><br>
+								<font size="3.5">Three little birds</font>
+								<p>
+								<br>
+								<font size="2.5" color="gray">
+									Last night's Gramophone Classical Music Awards might have honoured some wonderful musicians...
+								</font>
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="span3">
+ 					<div class= "thumbnail">	
+ 						<image src="artist.png" data-src="holder.js/300x200" alt="">
+ 						<div class="artistDescription">
+							<font size="5">Debra Daves</font><br>
+							<font size="3.5">Three little birds</font>
+							<p>
+							<br>
+							<font size="2.5" color="gray">
+								Last night's Gramophone Classical Music Awards might have honoured some wonderful musicians...
+							</font>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="span3">
+ 					<div class= "thumbnail">	
+ 						<image src="artist.png" data-src="holder.js/300x200" alt="">
+ 						<div class="artistDescription">
+ 							<div id="description">
+								<font size="5">Debra Daves</font><br>
+								<font size="3.5">Three little birds</font>
+								<p>
+								<br>
+								<font size="2.5" color="gray">
+									Last night's Gramophone Classical Music Awards might have honoured some wonderful musicians...
+								</font>
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="span3">
+ 					<div class= "thumbnail">	
+ 						<image src="artist.png" data-src="holder.js/300x200" alt="">
+ 						<div class="artistDescription">
+ 							<div id="description">
+								<font size="5">Debra Daves</font><br>
+								<font size="3.5">Three little birds</font>
+								<p>
+								<br>
+								<font size="2.5" color="gray">
+									Last night's Gramophone Classical Music Awards might have honoured some wonderful musicians...
+								</font>
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>	
+
+</div>
+<script type="text/javascript" src='lib/js/bootstrap.js'></script>
+<script	type="text/javascript" src='lib/js/jquery.js'></script>
 </body>
+
 </html>
+>>>>>>> Stashed changes
