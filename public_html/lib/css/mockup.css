@@ -1,18 +1,11 @@
-
-#top {
-		background-color:rgb(35,35,35);
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-size: 20px;
-		color: WHITE;
-		height: 60px;
-		width: 320px;
+body {
+	background: rgb(239,236,234);
+    margin: 0px;
 }
 
-#firstscreen {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 31px;
-	color: WHITE;
-	height: 420px;
-	width: 100%;
+#textscreen {
+	font-weight:600;
+	font-family: Roboto Light, Helvetica, Arial, sans-serif;
+	font-size: 20px;
 }
 
