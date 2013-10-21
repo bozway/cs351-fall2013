@@ -20,8 +20,9 @@ body {
 	font-size: 14px;
 }
 
-#musicians {
-	
-}
-
+#musician {overflow:hidden;}
+	.image1{display:inline; position:absolute; left:10px; top:16%;}
+	.image2{display:inline; position:absolute; right:10px; top:16%;}
+	.image3{display:inline; position:absolute; left:10px; top:62.5%;}
+	.image4{display:inline; position:absolute; right:10px; top:62.5%;}
 }
