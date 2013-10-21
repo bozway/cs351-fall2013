@@ -1,11 +1,27 @@
+
 body {
 	background: rgb(239,236,234);
     margin: 0px;
 }
 
+
+@media (max-width: 480px) {
+
 #textscreen {
-	font-weight:600;
+	padding-right: -10px;
+	padding-left: -10px;
+	padding-top:8.3%;
 	font-family: Roboto Light, Helvetica, Arial, sans-serif;
 	font-size: 20px;
 }
 
+#seealltext {
+	color: rgb(101,181,237);
+	font-size: 14px;
+}
+
+#musicians {
+	
+}
+
+}
