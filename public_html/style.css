@@ -2,19 +2,21 @@
 	.footerArea{
 	background-color:rgba(0,0,0,0.8);
 	width:100%;
-	height:620px;
-	padding-right:10px;
+	max-height:640px;
+	min-height:620px;
+	padding-right:40px;
 	margin-top:0px;;
-	margin-left:-10px;
+	margin-left:-20px;
 	margin-right:0px;
-	padding-bottom:15px;
+	margin-bottom:0px;
+	padding-bottom:30px;
 	}
 	.mainSentence2{
 		position:absolute;
 		width:100%;
 		
 		padding-right:0px;
-		height:auto;
+		height:100%;
 	}
 	
 	.mainSentence2Text{
