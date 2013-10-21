@@ -9,10 +9,58 @@
 
     <!-- Le styles -->
     <link href="lib/css/bootstrap.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-	<link href="lib/css/bootstrap-responsive.css" rel="stylesheet">
+	  <link href="lib/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="lib/css/main.css" rel="stylesheet">
   </head>
   <body>
+
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '232894623452511',
+          status     : true, 
+          cookie     : true,
+          xfbml      : true,
+          oauth      : true,
+        });
+      };
+      (function(d){
+         var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "http://connect.facebook.net/en_US/all.js";
+         d.getElementsByTagName('head')[0].appendChild(js);
+       }(document));
+
+      function fb_login(){
+        FB.login(function(response) {
+
+          if (response.authResponse) {
+              console.log('Welcome!  Fetching your information.... ');
+              //console.log(response); // dump complete info
+              access_token = response.authResponse.accessToken; //get access token
+              user_id = response.authResponse.userID; //get FB UID
+
+              FB.api('/me', function(response) {
+                  user_email = response.email; //get user email
+            // you can store this data into your database             
+              });
+
+          } else {
+              //user hit cancel button
+              console.log('User cancelled login or did not fully authorize.');
+          }
+      }, {
+        scope: 'publish_stream,email'
+      });
+    }
+    (function() {
+        var e = document.createElement('script');
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+    }());
+    </script>
   
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -40,7 +88,7 @@
 	 </div>
      <div name="footerArea" class="footerArea">
      	<div class="mainSentence2">
-        	<img src="footer2.png"/ width="100%" height="auto">
+        	<img src="lib/img/footer2.png"/ width="100%" height="auto">
         	<div class="mainSentence2Text">
             	<p1>MUSIC<br>IS BETTER<br>WITH<br>FRIENDS.</p1>
             </div>
@@ -48,14 +96,15 @@
             	<p2>Help your friends keep updated on your new music by connecting with Facebook.</p2>
            	</div>
             <div class="facebookButton">
-                <button class="btn btn-large btn-primary" type="button">Connect with Facebook</button>
+                <button class="btn btn-large btn-primary" type="button" onclick="fb_login();">Connect with Facebook</button>
             </div>
         </div>
      </div>
 	 
 	 <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="lib/js/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	  <script src="lib/js/jquery.js"></script>
     <script src="lib/js/bootstrap.js"></script>
      
 <!-- Le javascript
