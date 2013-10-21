@@ -1,4 +1,15 @@
-	
+	body{
+	font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+	}
+	.logo{
+	position:relative;
+	left:15px;
+	}
+	.navbar-brand{
+	color:white;
+	font-style:strong;
+	font-size:20px;
+	}
 	.footerArea{
 	background-color:rgba(0,0,0,0.8);
 	width:100%;
