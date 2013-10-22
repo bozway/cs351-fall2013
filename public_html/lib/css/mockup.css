@@ -5,7 +5,7 @@ body {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
 
 #textscreen {
 	padding-right: -10px;
@@ -13,16 +13,18 @@ body {
 	padding-top:8.3%;
 	font-family: Roboto Light, Helvetica, Arial, sans-serif;
 	font-size: 20px;
+	height: 20%;
 }
 
 #seealltext {
 	color: rgb(101,181,237);
 	font-size: 14px;
+	height: 100%;
+	width: 100%;
 }
 
-#musician {overflow:hidden;}
-	.image1{display:inline; position:absolute; left:10px; top:16%;}
-	.image2{display:inline; position:absolute; right:10px; top:16%;}
-	.image3{display:inline; position:absolute; left:10px; top:62.5%;}
-	.image4{display:inline; position:absolute; right:10px; top:62.5%;}
+#musician 1{
+	margin: auto;
+	height: 38%;
+}
 }
