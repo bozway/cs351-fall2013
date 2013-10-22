@@ -4,13 +4,17 @@ body {
     margin: 0px;
 }
 
+.img-rounded {
+	height:32%;
+}
 
 @media (max-width: 640px) {
 
 #textscreen {
-	padding-right: -10px;
-	padding-left: -10px;
+	padding-right: -2.5%;
+	padding-left: -2.5%;
 	padding-top:8.3%;
+	padding-bottom:5%;
 	font-family: Roboto Light, Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	height: 20%;
@@ -19,12 +23,17 @@ body {
 #seealltext {
 	color: rgb(101,181,237);
 	font-size: 14px;
-	height: 100%;
-	width: 100%;
 }
 
-#musician 1{
+#musician1 {
 	margin: auto;
-	height: 38%;
+	padding-bottom:5%;
+	height: 32.5%;
 }
+
+#musician2 {
+	margin: auto;
+	height: 32.5%;
+}
+
 }
