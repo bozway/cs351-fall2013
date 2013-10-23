@@ -1,0 +1,95 @@
+body { 
+  line-height:1.6;
+  font-family: Arial;
+}
+
+h3 { 
+  font-weight: 300;
+  font-size:20px;
+  display:inline-block;
+  padding-right:10px;
+  padding-top:7px;
+  margin:0px;
+  line-height:110%;
+}
+
+#featured-projects { 
+  background:#D3D3D3;
+  padding:10px;
+  width:300px;
+  overflow:hidden;
+}
+
+.featured-projects-wrapper { 
+  background:rgba(241,236,235, 1);
+  width:300px;
+  overflow:auto;
+}
+
+
+.carousel { 
+  width:1300px;
+}
+
+#spinner { 
+  border-radius:100%;
+  width:200px;
+  height:200px;
+}
+
+.small { 
+  text-decoration:none;
+  color:#90C9EF;
+  font-size:14px;
+  font-weight:600;
+}
+
+.card { 
+  background:white;
+  width:210px;
+  float:left;
+  margin-right: 20px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.card img { 
+  width:100%;
+}
+
+.card p { 
+  margin-top:0px;
+  padding-top:15px;
+  padding-left:15px;
+  padding-right:15px;
+
+  color:gray;
+  font-size:14px;
+  line-height:130%;
+}
+
+.card h3 { 
+  padding-left:10px;
+}`
+	
+			#content
+			{
+				float:left;
+				display:inline;
+				
+				-webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 0.5s;
+				-webkit-transition-timing-function: ease-out;
+
+				width:3000px;
+				overflow:auto;
+				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+				-webkit-transform: translate3d(0px,0px,0px); 
+			}
+	
+	
+			#content .card
+			{
+				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+				-webkit-transform: translate3d(0px,0px,0px); 
+			}
