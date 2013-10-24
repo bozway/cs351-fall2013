@@ -1,14 +1,2 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
-.table td{text-align:center;padding:4%;}
-body{font-family:"Roboto Light",Arial,sans-serif;line-height:1.6;}
-#topbar{line-height:55px;height:55px;background-color:black;text-align:center;}
-.table img{width:95%;}
-#findmysong{color:white;text-align:left;font-size:25px;}
-#loginbody{height:400px;background:url("../pic/guitar.png");background-size:100% 110%;background-repeat:no-repeat;}
-#login{height:55px;line-height:55px;font-size:20px;color:white;}
-#playthevideo{color:white;font-size:25px;line-height:60px;text-align:center;}
-#musiciancontainer{padding-top:30px;padding-bottom:30px;background-color:whitesmoke;}
-.img-rounded{border-radius:10%;}
-.small{color:#90C9EF;font-size:14px;font-weight:600;padding-left:10px;}
-.container-fluid h3{font-weight:300;font-size:1.8em;padding-top:2%;padding-bottom:2%;height:12%;}
-.table tr td{border-top:none;}
+@media (max-width:480px){.table td{text-align:center;padding:3%;} body{font-family:"Roboto Light",Arial,sans-serif;line-height:1.6;} #topbar{line-height:55px;height:55px;background-color:black;text-align:center;} .table img{width:95%;} #findmysong{color:white;text-align:left;font-size:25px;} #loginbody{height:400px;background:url("../pic/guitar.png");background-size:100% 110%;background-repeat:no-repeat;} #login{height:55px;line-height:55px;font-size:20px;color:white;} #playthevideo{color:white;font-size:25px;line-height:60px;text-align:center;} #musiciancontainer{padding-top:30px;padding-bottom:30px;background-color:whitesmoke;} .img-rounded{border-radius:10%;} .small{color:#90C9EF;font-size:14px;font-weight:600;padding-left:10px;} .container-fluid h3{font-weight:300;font-size:1.8em;padding-top:2%;padding-bottom:2%;height:12%;} .table tr td{border-top:none;}}
