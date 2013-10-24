@@ -30,15 +30,17 @@ body {
 	font-size: 14px;
 }
 
-#musician1 {
+#musician1  {
 	margin: auto;
 	padding-bottom:5%;
 	height: 32%;
+	overflow:hidden;
 }
 
 #musician2 {
 	margin: auto;
 	height: 32%;
+	overflow:hidden;
 }
 
 }
