@@ -4,18 +4,23 @@ body {
     margin: 0px;
 }
 
+
+@media (max-width: 320px) {
 .img-rounded {
-	height:32%;
+	height:27%;
+}
 }
 
 @media (max-width: 640px) {
 
+.img-rounded {
+	height:32%;
+}
+
 #textscreen {
-	padding-right: -2.5%;
-	padding-left: -2.5%;
 	padding-top:8.3%;
 	padding-bottom:5%;
-	font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
 	font-size: 20px;
 	height: 20%;
 }
@@ -28,12 +33,12 @@ body {
 #musician1 {
 	margin: auto;
 	padding-bottom:5%;
-	height: 32.5%;
+	height: 32%;
 }
 
 #musician2 {
 	margin: auto;
-	height: 32.5%;
+	height: 32%;
 }
 
 }
