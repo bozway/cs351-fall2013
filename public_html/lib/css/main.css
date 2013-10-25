@@ -1,3 +1,3 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
-body{background:#efecea;margin:0px}
-@media (max-width:640px){#textscreen{padding-top:8.3%;padding-bottom:5%;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:20px;height:20%} #seealltext{color:#65b5ed;font-size:14px} .ft_musician{overflow:hidden;width:40%;border-radius:4%;display:inline-block;margin:0;padding:0}.ft_musician img{width:100%}}
+body{background:#efecea;margin:0px;padding-right:3%;padding-left:3%;}
+@media (max-width:640px){#textscreen{padding-top:8.3%;padding-bottom:5%;font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:20px;height:20%;} #seealltext{color:#65b5ed;font-size:14px;} .ft_musician{overflow:hidden;width:46.5%;border-radius:4%;display:inline-block;margin:0;padding:0;}.ft_musician img{width:100%;}}
