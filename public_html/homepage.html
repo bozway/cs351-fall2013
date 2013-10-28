@@ -6,22 +6,27 @@
 			<script>var pageTitle = "Home";</script>		<link rel="shortcut icon" href="http://www.findmysong.com/img/favicon.ico" />
 	<link href="http://www.findmysong.com/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 	<link href="http://www.findmysong.com/css/flat-ui.css" rel="stylesheet" media="screen" />
-	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css"><link href="http://www.findmysong.com/css/home.css" rel="stylesheet" media="screen" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
+	<link href="http://www.findmysong.com/css/home.css" rel="stylesheet" media="screen" />
 	<link href="http://www.findmysong.com/css/popups/fms_modals.css" rel="stylesheet" media="screen" />
 	<link href="http://www.findmysong.com/css/fms_icons.css" rel="stylesheet" media="screen" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
   <!-- CSCI 351 CODE -->
-  <link href="lib/css/mobile_home.css" media="only screen and (max-width:767px)" rel="stylesheet">
+  
+  
+  <link href="lib/css/bootstrap.css" media="only screen and (max-width:767px)" rel="stylesheet">
   <link href="lib/css/bootstrap-responsive.css" media="only screen and (max-width:767px)" rel="stylesheet">
+  <link href="lib/css/mobile_home.css" media="only screen and (max-width:767px)" rel="stylesheet">
   <!-- END CSCI 351 CODE -->
 </head>
 <body>
 
 	
 	<header>
-		<div class="colorbg grey header"></div>
-		<div class="container">		
+		
+		<div class="colorbg grey header hidden-phone"></div>
+		<div class="container hidden-phone">		
 			<div class="fms-home">
 				<a id="header-logo"	href="http://www.findmysong.com/" class="home-link">
 					<img src="http://www.findmysong.com/img/logo/fms_HeaderLogo_beta.png" alt=""/>				</a>
@@ -54,7 +59,7 @@
 			
 		</div>
 	</header><div id="home_page">
-	<div class="home_header">
+	<div class="home_header hidden-phone">
     	<div id="home_header_top">
         	<div class="home_bg_images_bg">
                 <div id="home-bg-images">
@@ -114,10 +119,10 @@
     </div>
     
     <div class="home_contact">
-    	<div class="home_contact_top">
+    	<div class="home_contact_top hidden-phone">
 			<div class="row">
             	<div class="span6">
-                	<p class="home_contact_top_title">Featured Musicians <a href="http://www.findmysong.com/users/search">(See All)</a></p>
+                	<p class="home_contact_top_title hidden-phone">Featured Musicians <a href="http://www.findmysong.com/users/search">(See All)</a></p>
                                         <div class="featured_musicians">
                     	<img src="http://www.findmysong.com/user_files/36/image/image_uploaded_from_url_1380843724.jpg"/>
                     	<a href="http://www.findmysong.com/users/profile/36"></a>
@@ -143,7 +148,7 @@
                     	<a href="http://www.findmysong.com/users/profile/33"></a>
                     </div>
 					                </div>
-                <div class="span6">
+                <div class="span6 hidden-phone">
                     <p class="home_contact_top_title">Featured Projects <a href="http://www.findmysong.com/projects/search">(See All)</a></p>
                         
                         <ul id="pop-projects-list">
@@ -192,15 +197,18 @@
                 </div>
             </div>
         </div>
+		<!--RAN working here-->
         <div class="home_contact_middle_bg">
             <div class="home_contact_middle">
             	<div id="home_contact_container">
+				  <img class="mobimg visible-phone" src="lib/img/footer2.png" width="100%" height="auto"/>
 	                <div class="home_contact_middle_left">
 	                    <p class="title">Music is better with friends.</p>
-	                    <p>Get social on FindMySong. Help your friends keep updated on your new music by connecting with Facebook, and follow along with your favorite artists as they work on new projects.</p>
-	                    <button data-gated="1" class="btn btn-small btn-block sign-in-fb">Connect with Facebook</button></p>
+	                    <p class="hidden-phone">Get social on FindMySong. Help your friends keep updated on your new music by connecting with Facebook, and follow along with your favorite artists as they work on new projects.</p>
+	                    <p class="visible-tablet">Help your friends keep updated on your new music by connecting with Facebook.</p>
+						<button data-gated="1" class="btn btn-small btn-block sign-in-fb">Connect with Facebook</button></p>
 	                </div>
-	                <div class="home_contact_middle_right">
+	                <div class="home_contact_middle_right hidden-phone">
 	                    <p><span>Bring</span><br />your music to life</p>
 	                    <p>Every project on FindMySong is an independent musical creation by someone like you. </p>
 	                    <p><a href="http://www.findmysong.com/login" data-gated="1" >Ready to get started?</a></p>
@@ -208,11 +216,12 @@
             	</div>
             </div>
         </div>
+	   <!---->
     </div>
 </div><div id="modal_container" data-authservice="0"></div>
 <div id="site_alert_modal_container">
 	<div id="inviteModal-container">				
-		<div id="inviteModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div id="inviteModal" class="modal hide fade in hidden-phone" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
 			<div class="modal-header">Send Invitation
 				<button type="button" class="fms_close" data-dismiss="modal" aria-hidden="true"><i class="fui-cross"></i></button>				
 			</div>
@@ -247,7 +256,7 @@
 	</div>
 	
 	<div id="auditionModal-container">				
-		<div id="auditionModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div id="auditionModal" class="modal hide fade in hidden-phone" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
 			<div class="modal-header"> Audition for <span>Project</span>
 				<button type="button" class="fms_close" data-dismiss="modal" aria-hidden="true"><i class="fui-cross"></i></button>				
 			</div>
@@ -266,7 +275,7 @@
 	</div>
 	
 	<div id="messageModal-container">				
-		<div id="messageModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div id="messageModal" class="modal hide fade in hidden-phone" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
 			<div class="modal-header"> Send Message
 				<button type="button" class="fms_close" data-dismiss="modal" aria-hidden="true"><i class="fui-cross"></i></button>				
 			</div>
@@ -293,8 +302,8 @@
 	
 </div>
 <footer >
-	<div class="colorbg grey footer"></div>
-		<div class="fms-info-footer">
+	<div class="colorbg grey footer hidden-phone"></div>
+		<div class="fms-info-footer hidden-phone">
 			<div class="fms-info-footer-container">
             	<ul class="fms-info-list">
             		<li>
