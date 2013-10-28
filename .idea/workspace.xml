@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a78a3dc1-78fc-4d08-af2d-4a1d5733a459" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/homepage.html" afterPath="$PROJECT_DIR$/public_html/homepage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/lib/css/mobile_home.css" afterPath="$PROJECT_DIR$/public_html/lib/css/mobile_home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/lib/less/mobile_home.less" afterPath="$PROJECT_DIR$/public_html/lib/less/mobile_home.less" />
     </list>
     <ignored path="cs351-fall2013.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +28,7 @@
       <file leaf-file-name="homepage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="433" column="43" selection-start="22673" selection-end="22673" vertical-scroll-proportion="0.14314516" vertical-offset="7290" max-vertical-offset="7854">
+            <state line="48" column="0" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.17741935" vertical-offset="728" max-vertical-offset="7888">
               <folding />
             </state>
           </provider>
@@ -276,7 +274,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -327,7 +325,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="433" column="43" selection-start="22673" selection-end="22673" vertical-scroll-proportion="0.14314516" vertical-offset="7290" max-vertical-offset="7854">
+        <state line="48" column="0" selection-start="2164" selection-end="2164" vertical-scroll-proportion="0.17741935" vertical-offset="728" max-vertical-offset="7888">
           <folding />
         </state>
       </provider>
