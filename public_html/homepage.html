@@ -16,12 +16,56 @@
   <link href="lib/css/bootstrap-responsive.css" media="only screen and (max-width:767px)" rel="stylesheet">
   <!-- END CSCI 351 CODE -->
 </head>
-<body>
-
+<div id="phonebody" class="hidden-desktop hidden-tablet visible-phone">
+	<!-- HTML page 2 code here -->
+	<div class="navbar navbar-inverse navbar-fixed-top " style="height:50px;">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span><img src="lib/img/settings.png"/></span>
+          </button>
+		  <a class="brand" href="#"><img src="lib/img/vectorobject.png"/> 
+		  <span style="color:white;">Find<span style="font-size:16px">my</span>Song 
+		  </span>
+		  </a>
+		  
+          <div class="nav-collapse collapse">
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 	
+	<div id="textscreen">
+		<span>Featured Musicians
+			<a href="#" id="seealltext">
+				(See All)
+			</a>
+		</span>
+	</div>
+	<div class="ft_musician" style="padding-right: 5%; padding-bottom:5%;">
+		<img src="lib/img/musician1a.png"/>
+	</div>
+	<div class="ft_musician" style="padding-bottom: 5%;">
+		<img src="lib/img/musician2a.png"/> 
+	</div>
+
+	<div class="ft_musician" style="padding-right: 5%;">
+		<img src="lib/img/musician3a.png"/>
+	</div>
+	<div class="ft_musician">
+		<img src="lib/img/musician4a.png"/>
+	</div>
+</div>
+	<!--homepage 2 code-->
+<body>	
 	<header>
 		<div class="colorbg grey header"></div>
-		<div class="container">		
+		<div class="container hidden-phone"">		
 			<div class="fms-home">
 				<a id="header-logo"	href="http://www.findmysong.com/" class="home-link">
 					<img src="http://www.findmysong.com/img/logo/fms_HeaderLogo_beta.png" alt=""/>				</a>
@@ -53,7 +97,10 @@
 			</div>
 			
 		</div>
-	</header><div id="home_page">
+	</header>
+	
+	<div id="home_page" class="hidden-phone">
+	
 	<div class="home_header">
     	<div id="home_header_top">
         	<div class="home_bg_images_bg">
@@ -292,7 +339,7 @@
   </div>	
 	
 </div>
-<footer >
+<footer class="hidden-phone">
 	<div class="colorbg grey footer"></div>
 		<div class="fms-info-footer">
 			<div class="fms-info-footer-container">
