@@ -12,8 +12,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
   <!-- CSCI 351 CODE -->
-  <link href="lib/css/mobile_home.css" media="only screen and (max-width:767px)" rel="stylesheet">
-  <link href="lib/css/bootstrap-responsive.css" media="only screen and (max-width:767px)" rel="stylesheet">
+	<link href="mobile_home.css" media="only screen and (max-width:767px)" rel="stylesheet">
+	<link href="lib/css/bootstrap-responsive.css" media="only screen and (max-width:767px)" rel="stylesheet">
+    
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" media="only screen and (max-width:767px)" ></script>
+
   <!-- END CSCI 351 CODE -->
 </head>
 <body>
@@ -116,7 +119,7 @@
     <div class="home_contact">
     	<div class="home_contact_top">
 			<div class="row">
-            	<div class="span6">
+            	<div >
                 	<p class="home_contact_top_title">Featured Musicians <a href="http://www.findmysong.com/users/search">(See All)</a></p>
                                         <div class="featured_musicians">
                     	<img src="http://www.findmysong.com/user_files/36/image/image_uploaded_from_url_1380843724.jpg"/>
@@ -143,11 +146,12 @@
                     	<a href="http://www.findmysong.com/users/profile/33"></a>
                     </div>
 					                </div>
-                <div class="span6">
+                <div id="featured-projects" >
                     <p class="home_contact_top_title">Featured Projects <a href="http://www.findmysong.com/projects/search">(See All)</a></p>
                         
-                        <ul id="pop-projects-list">
-														<li class="pop-project-list-item span3">						
+                        <ul id="pop-projects-list" class="carousel">
+							
+							<li class="pop-project-list-item span3" id="card" >						
 								<img class="projimg span3" src="http://www.findmysong.com/project_files/109/image/image_uploaded_from_url_1380767682.jpg"/>
 								<a class="projlink" href="http://www.findmysong.com/projects/profile/109"></a>
 								<div class="projinfo">
@@ -157,7 +161,7 @@
 								</div>					
 							
 							</li>
-														<li class="pop-project-list-item span3">						
+							<li class="pop-project-list-item span3" id="card">						
 								<img class="projimg span3" src="http://www.findmysong.com/project_files/110/image/image_uploaded_from_url_1380771922.jpg"/>
 								<a class="projlink" href="http://www.findmysong.com/projects/profile/110"></a>
 								<div class="projinfo">
@@ -167,8 +171,9 @@
 								</div>					
 							
 							</li>
-														<li class="pop-project-list-item span3">						
+							<li class="pop-project-list-item span3" id="card">						
 								<img class="projimg span3" src="http://www.findmysong.com/project_files/118/image/Rhye-Open.jpeg"/>
+								<a class="projlink" href="http://www.findmysong.com/projects/profile/118"></a>
 								<a class="projlink" href="http://www.findmysong.com/projects/profile/118"></a>
 								<div class="projinfo">
 									<span class="projowner">Thomas Honeyman</span>
@@ -177,7 +182,7 @@
 								</div>					
 							
 							</li>
-														<li class="pop-project-list-item span3">						
+							<li class="pop-project-list-item span3" id="card">						
 								<img class="projimg span3" src="http://www.findmysong.com/project_files/121/image/illustration-sunday-morning.jpg"/>
 								<a class="projlink" href="http://www.findmysong.com/projects/profile/121"></a>
 								<div class="projinfo">
@@ -187,6 +192,7 @@
 								</div>					
 							
 							</li>
+							
 								
 						</ul>
                 </div>
@@ -361,6 +367,12 @@
 <script src="http://www.findmysong.com/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="http://www.findmysong.com/js/fms_auth.js" type="text/javascript"></script>
 <script src="http://www.findmysong.com/js/facebook.js" type="text/javascript"></script>
+
+<!-- CS351 -->
+	<script type="text/javascript" src="lib/js/jquery.touchSwipe.min.js" media="only screen and (max-width:767px)"></script>
+	<script type="text/javascript" src="lib/js/scrollcontrol.js" media="only screen and (max-width:767px)" ></script>
+	
+<!-- END - CS351 -->
 
 <!--  Scripts added for FLAT UI -->
 <script src="http://www.findmysong.com/js/bootstrap-select.js" type="text/javascript"></script>
