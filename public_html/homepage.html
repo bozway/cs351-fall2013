@@ -18,11 +18,6 @@
   <!-- END CSCI 351 CODE -->
 </head>
 <body>
-	<div class="demo">
-		<form>
-			<input type="text" placeholder="Text goes here" />
-		</form>
-	</div>
 
 	<header>
 		<div class="colorbg grey header hidden-phone"></div>
@@ -148,10 +143,16 @@
     <!-- CS 351 CODE -->
     <div id="video_container" class="container visible-phone">
         <div  id="loginBar">
-            <span id="searchImg"><img src="img/home_page/search.jpg"></span>
+            <span id="searchImg" data-toggle="collapse" data-target=".search-collapse"><img src="img/home_page/search.jpg"></span>
             <span id="loginText">LOG IN</span>
             <button class="btn btn-success btn-large
             " type="button" id="signUpButton">Sign up</button>
+        </div>
+
+        <div class="search-collapse collapse">
+            <form>
+                <input type="text" />
+            </form>
         </div>
 
         <p id="vidText" class="lead">
