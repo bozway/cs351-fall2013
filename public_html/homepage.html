@@ -143,15 +143,15 @@
     <!-- CS 351 CODE -->
     <div id="video_container" class="container visible-phone">
         <div  id="loginBar">
-            <span id="searchImg" data-toggle="collapse" data-target=".search-collapse"><img src="img/home_page/search.jpg"></span>
+            <span id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="img/home_page/search.jpg"></span>
             <span id="loginText">LOG IN</span>
             <button class="btn btn-success btn-large
             " type="button" id="signUpButton">Sign up</button>
         </div>
 
-        <div class="search-collapse collapse">
-            <form>
-                <input type="text" />
+        <div id="search-collapse-div" >
+            <form id="search-collapse-form" class="collapse">
+                <input id="search-collapse-text" type="text" placeholder="Search FindMySong"/>
             </form>
         </div>
 
