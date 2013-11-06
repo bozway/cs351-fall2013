@@ -1,4 +1,5 @@
 
+
 /* Landscape phones and down */
 @color: black;
 @font-face {
@@ -176,4 +177,62 @@
             border-radius:5%;
         }
         
+
+
+
+ /* Part III */
+ 
+  
+    
+       
+    #featured-projects { 
+      
+        padding:10px;
+        overflow:hidden;
+        width:auto;   
+        -webkit-box-sizing: none;
+        box-sizing: none;
+        -moz-box-sizing: none;
+    }
+    
+    #pop-projects-list{
+    
+            float:left;
+        		display:inline;
+				
+				-webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 0.5s;
+				-webkit-transition-timing-function: ease-out;
+
+				width:3000px;
+				overflow:auto;
+				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+				-webkit-transform: translate3d(0px,0px,0px); 
+            
+    }
+    .carousel{
+          float:left;
+        		display:inline;
+				
+				-webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 0.5s;
+				-webkit-transition-timing-function: ease-out;
+
+				width:3000px;
+				overflow:auto;
+				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+				-webkit-transform: translate3d(0px,0px,0px); 
+        width:2000px;
+    }
+    #pop-projects-list{
+                
+                #card{
+                    /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+    			    -webkit-transform: translate3d(0px,0px,0px); 
+                    margin-right:20px;
+                }
+    }
+
+ 
 }
+
