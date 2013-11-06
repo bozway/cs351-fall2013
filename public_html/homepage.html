@@ -18,11 +18,6 @@
   <!-- END CSCI 351 CODE -->
 </head>
 <body>
-	<div class="demo">
-		<form>
-			<input type="text" placeholder="Text goes here" />
-		</form>
-	</div>
 
 	<header>
 		<div class="colorbg grey header hidden-phone"></div>
@@ -148,10 +143,29 @@
     <!-- CS 351 CODE -->
     <div id="video_container" class="container visible-phone">
         <div  id="loginBar">
-            <span id="searchImg"><img src="img/home_page/search.jpg"></span>
+            <span id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="img/home_page/search.jpg"></span>
             <span id="loginText">LOG IN</span>
             <button class="btn btn-success btn-large
             " type="button" id="signUpButton">Sign up</button>
+        </div>
+
+        <div id="search-collapse-div" >
+            <form id="search-collapse-form" class="collapse">
+                <input id="search-collapse-text" type="text" placeholder="Search FindMySong"/>
+            </form>
+        </div>
+
+        <!-- Play Video Modal -->
+        <div id="play_video_modal" class="modal hide fade" tabindex="-1" role="dialog">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+            <div class="modal-body">
+                <object width="100%" height="350">
+                    <param name="movie" value="//www.youtube.com/v/dQw4w9WgXcQ?version=3&amp;hl=en_US&amp;rel=0"></param>
+                    <param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+                    <embed src="//www.youtube.com/v/dQw4w9WgXcQ?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="100%" height="350" allowscriptaccess="always" allowfullscreen="true">
+                    </embed>
+                </object>
+            </div>
         </div>
 
         <p id="vidText" class="lead">
@@ -167,8 +181,11 @@
             <span>
                 Play the video!
             </span>
+            <a href="#play_video_modal" role="button" data-toggle="modal">
+                <img id="playIcon" src="img/home_page/play_vid_icon.png"/>
+            </a>
 
-            <img id="playIcon" src="img/home_page/play_vid_icon.png"/>
+
 
 
         </div>
@@ -258,16 +275,18 @@
 
 
 
-
-        <div class="home_contact_middle_bg hidden-phone">
+		<!--CS351 Code-->
+        <div class="home_contact_middle_bg">
             <div class="home_contact_middle">
-            	<div id="home_contact_container">
+            	<div id="home_contact_container">  
+				  <p class="visible-phone"><img  src="lib/img/footer2.png" width="100%" height="auto"/></p>
 	                <div class="home_contact_middle_left">
-	                    <p class="title">Music is better with friends.</p>
-	                    <p>Get social on FindMySong. Help your friends keep updated on your new music by connecting with Facebook, and follow along with your favorite artists as they work on new projects.</p>
-	                    <button data-gated="1" class="btn btn-small btn-block sign-in-fb">Connect with Facebook</button></p>
+	                    <p class="title">Music <br/>is better with friends.</p>
+	                    <p class="hidden-phone">Get social on FindMySong. Help your friends keep updated on your new music by connecting with Facebook, and follow along with your favorite artists as they work on new projects.</p>
+	                    <p class="visible-phone">Help your friends keep updated on your new music by connecting with Facebook.</p>
+						<div align="center"><button data-gated="1" class="btn btn-small btn-block sign-in-fb">Connect with Facebook</button></div>
 	                </div>
-	                <div class="home_contact_middle_right">
+	                <div class="home_contact_middle_right hidden-phone">
 	                    <p><span>Bring</span><br />your music to life</p>
 	                    <p>Every project on FindMySong is an independent musical creation by someone like you. </p>
 	                    <p><a href="http://www.findmysong.com/login" data-gated="1" >Ready to get started?</a></p>
@@ -275,6 +294,7 @@
             	</div>
             </div>
         </div>
+		<!--End of CS351 Code-->
     </div>
 </div><div id="modal_container" data-authservice="0"></div>
 <div id="site_alert_modal_container">
