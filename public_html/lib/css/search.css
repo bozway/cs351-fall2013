@@ -2,6 +2,7 @@
 body{padding-right:0px;padding-left:0px;font-family:'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif !important}
 .project_div img{height:80px;width:80px}
 .navbar-fixed-top{position:fixed;margin-right:0px;margin-left:0px;margin-bottom:0px}
+.search{position:relative;padding-top:60px}
 .textbox{width:60%}
 .filter{width:120%;height:50px}
 li{width:50%;height:50px}
@@ -21,4 +22,4 @@ html,body,.container,.tab-content{height:100%}
 #members{font-size:12px}
 .wrapper{min-height:100%;height:auto;height:100%;margin:0 auto -50px;}
 .push{height:50px;}
-.footer-wrapper{margin-top:300px;position:fixed;height:50px;background-color:#666768;color:white}
+.footer-wrapper{margin-top:-50px;position:fixed;height:50px;width:100%;background-color:#666768;color:white}
