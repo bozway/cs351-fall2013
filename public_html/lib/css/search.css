@@ -1,7 +1,8 @@
 /* CSS crunched with Crunch - http://crunchapp.net/ */
 body{padding-right:0px;padding-left:0px;font-family:'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif !important}
-.project_div img{height:80px;width:80px}
-.musician_div img{height:80px;width:80px}
+.navIcon a{color:white}.navIcon a:hover{text-decoration:none}
+.project_div img{border-bottom:thin solid gray;height:80px;width:80px}
+.musician_div img{border-bottom:thin solid gray;height:80px;width:80px}
 .navbar-fixed-top{position:fixed;margin-right:0px;margin-left:0px;margin-bottom:0px}
 .search{position:relative;padding-top:60px}
 .textbox{width:79%}
@@ -19,7 +20,9 @@ html,body,.container,.tab-content{height:100%}
 .container,.tab-content{position:relative}
 #slideProj,#slideMusic{background-image:linear-gradient(to bottom, #1873cc, #349bff);color:white;height:30px}
 .project_div .musician_div{height:120px}
-#projname #musicname{font-size:20px;font-weight:bold}
+table{width:100%;border-bottom:thin solid gray}
+#projname{font-size:20px;font-weight:bold}
+#musicname{font-size:20px;font-weight:bold}
 #place{color:grey;font-size:15px}
 #members{font-size:12px}
 .wrapper{min-height:100%;height:auto;height:100%;margin:0 auto -50px;}
