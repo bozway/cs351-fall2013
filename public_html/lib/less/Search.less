@@ -12,8 +12,8 @@ font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif !important;
 }
 .project_div img
 {   border-bottom:thin solid gray;
-    height:80px;
-    width:80px;
+    height:120px;
+    width:120px;
 }
 .musician_div img
 {   border-bottom:thin solid gray;
@@ -28,35 +28,79 @@ font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif !important;
     margin-right: 0px;
    margin-left: 0px;
    margin-bottom: 0px;
+   height:90px;
 }
+.navbar-brand
+{
+   font-size:20px; 
+}
+
 .search
 {
+    //width:100%;
     position:relative;
-    padding-top:60px;
+    padding-top:70px;
+    background-color: #191919;
+    margin-bottom:0px;
+    height:60px;
+    //border:solid yellow;
 }
 .textbox
-{width:79%;
+{
+    width:74%;
+    margin-left:20px;
+    margin-right:-10px;
+    margin-bottom:-1px;
+    outline: none;
+    border:none !important;
+    box-shadow:none !important;
+    
+}
+
+.dropDown
+{
+    margin-left:5px;
+    width:15%;
+    height:50px;
+    &:hover { background-color: #3A3C3D}
+    float:right;
 }
 .filter
 {
     width:100%;
-    height:50px;
+    height:60px;
+    margin-bottom:-2px;
     &:hover { background-color: #3A3C3D}
+    border:solid yellow;
 }
 
-li
-{width:50%;
- height:50px;
+.nav-pills>li
+{
+    height:60px;
+    width:50%;
+    float:left;
+    background-color:#F8F8F8;
 }
 .nav
 {
-    margin-bottom:0px;
+    margin-top:-2px;
+    margin-bottom:-2px;
 }
+.tabFont
+{
+    font-size:16px;
+    background-color:#F8F8F8;
+    line-height:100%;
+    width:auto;
+    height:60px;
+}
+
 .nav-pills > .active > a
 {
-    height: 30px;
+    height: 60px;
     background-color:#1E90FF;
 }
+
 
 .nav-pills > li > a 
 {
@@ -65,6 +109,7 @@ li
         text-align:center;
         vertical-align:middle;
         color:grey;
+        margin-right:0px;
         
 }
 
@@ -97,32 +142,82 @@ input[type="text"]
  border:none;
  color: white;
  background-image: linear-gradient(to bottom, #3A3C3D, #3A3C3D);
- 
-    
 }
 
-html, body, .container, .tab-content {
+.navbar .btn-navbar .icon-bar
+{
+    width:25px;
+    height:4px;
+}    
+
+html, body, .container{
+    width:100%;
     height: 100%;
+}
+
+.tab-content {
+    
+    width:100%;
+    height: 100%;
+    background-color:#F8F8F8;
 }
  
 .container, .tab-content {
     position: relative;
 }
 #slideProj, #slideMusic
-{background-image: linear-gradient(to bottom,#1873CC,#349BFF);
- color:white;
- height:30px;
+{
+    background-image: linear-gradient(to bottom,#1873CC,#349BFF);
+    color:white;
+    height:50px;
+    vertical-align:middle;
+    line-height:100%;
+    font-size:17px;
     
 }
-.project_div .musician_div
+
+.project_div
 {
-    height:120px;
+    height:auto;
+    background-color:#F8F8F8;
+}
+.musician_div
+{
+    height:auto;
+    background-color:#F8F8F8;
 }
 
-table
-{   width:100%;
+.projectTable
+{   
+    margin-top:0px;
+    margin-bottom:10px;
+    margin-left:10px;
+    width:95%;
     border-bottom:thin solid gray;
+    background-color:#F8F8F8;
+    border-left:3px;
+    height: 140px;
 }
+.pTWidth
+{
+    width:140px;
+}
+.musicianTable
+{   
+    margin-top:0px;
+    margin-bottom:10px;
+    margin-left:10px;
+    width:95%;
+    border-bottom:thin solid gray;
+    background-color:#F8F8F8;
+    border-left:3px;
+    height: 100px;
+}
+.mTRight
+{
+    text-align:right;
+}
+
 #projname
 {
     font-size:20px;
@@ -143,6 +238,12 @@ table
     font-size:12px;
 }
 
+#members em
+{
+    color:green;
+    font-style:normal;
+}
+
 .wrapper {
     min-height: 100%;
     height: auto; 
@@ -161,8 +262,23 @@ table
     background-color: #191919;
     color:white;
     vertical-align:middle;
+    font-size:16px;
+    line-height:100%;
     
 }
+
+.arrow
+{
+    float:right;
+    margin-right:20px;
+    margin-top:-5px;
+}
+.arrow img
+{
+    width:30px;
+    height:30px;
+}
+
 .footer-wrapper a
 {    &:hover { text-decoration:none;}
     color:white;
