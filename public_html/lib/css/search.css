@@ -7,6 +7,7 @@ body{padding-right:0px;padding-left:0px;font-family:'Roboto','Helvetica Neue',He
 .search{position:relative;padding-top:60px}
 .textbox{width:79%}
 .filter{width:100%;height:50px}.filter:hover{background-color:#3a3c3d}
+.btn-success{background-color:#3A3C3D}.btn-success:hover{background-color:#3a3c3d}
 li{width:50%;height:50px}
 .nav{margin-bottom:0px}
 .nav-pills>.active>a{height:30px;background-color:#1E90FF}
