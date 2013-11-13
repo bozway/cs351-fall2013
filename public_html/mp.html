@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+  
+<html >
+<head>
+  <title>Musician Profile | Find My Song</title>	
+	<script>var pageTitle = "Musician Profile";</script>		
+	<link rel="shortcut icon" href="http://www.findmysong.com/img/favicon.ico" />
+	
+	<link href="http://www.findmysong.com/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<link href="http://www.findmysong.com/css/flat-ui.css" rel="stylesheet" media="screen" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
+	<link href="http://www.findmysong.com/css/user_profile/fms_user_profile.css" rel="stylesheet" media="screen" />
+	<link href="http://www.findmysong.com/css/fms_signup_elements.css" rel="stylesheet" media="screen" />
+	<link href="http://www.findmysong.com/css/popups/fms_modals.css" rel="stylesheet" media="screen" />
+	<link href="http://www.findmysong.com/css/fms_icons.css" rel="stylesheet" media="screen" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- CSCI 351 CODE -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="lib/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="lib/css/mobile_musician_profile.css" media="only screen and (max-width:767px)" rel="stylesheet">
+	<!-- END CSCI 351 CODE -->
+</head>
+<body>
+	<header>
+		<div class="colorbg grey header hidden-phone"></div>
+		<div class="container hidden-phone">			
+			<div class="fms-home hidden-phone">
+				<a id="header-logo" href="http://www.findmysong.com/" class="home-link"><img src="http://www.findmysong.com/img/logo/fms_HeaderLogo_beta.png" alt=""/></a>
+			</div>
+			<div class="seperator hidden-phone"></div>	
+			<div class="fms-explore guest hidden-phone">
+				<div class="about guest">
+					<a href="http://www.findmysong.com/about" data-id="about_fms">About FMS</a>
+				</div>	
+				<div class="guest">
+					<a href="http://www.findmysong.com/users/search" data-id="musician_search">Search Musicians</a>
+				</div>
+				<div class="guest">
+					<a href="http://www.findmysong.com/projects/search" data-id="project_search">Search Projects</a>
+				</div>
+			</div>
+			<div class="fms-member hidden-phone">
+				<div class="seperator last"></div>
+				<div class="fms-user-portal guest">
+					<a href="http://www.findmysong.com/login" data-gated="1" data-linktype="1">Log in /</a>
+					<span data-gated="1"> Signup</span>
+				</div>	
+			</div>
+			<div class="show-fms-search-header hidden-phone">
+				<label class="fms-search"></label>
+				<div id="init-search" class="tooltip fade bottom in tooltip-light">
+					<div class="tooltip-arrow"></div>
+					<div class="tooltip-inner">
+						<span class="fms-header-search"><a href="http://www.findmysong.com/users/search">Musicians</a></span> | 
+						<span class="fms-header-search"><a href="http://www.findmysong.com/projects/search">Projects</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- CSCI 351 -->
+        <div class="navbar navbar-inverse navbar-fixed-top visible-phone">
+            <div class="navbar-inner visible-phone">
+                <div class="container visible-phone">
+
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    </button>
+                    <a class="brand" href="#">
+                        <img src="img/home_page/fms_icon.png">
+                        <span class="icon-bar"></span>
+                        FMS
+
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#featuredMusicians">Featured Musicians</a></li>
+                            <li><a href="#featuredProjects">Featured Projects</a></li>
+							<li><a href="#connectWithFB">Connect with FB</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <!-- END OF 351 -->
+	</header>
+	
+	<!-- CS 351 CODE -->
+	<div class="visible-phone" id="loginBar">
+            <span id="backImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="img/musician_profile/arrow.png"></span>
+            <span id="backToResultsText">Back to results</span>
+            <button class="btn btn-success btn-large
+            " type="button" id="contactButton">Contact</button>
+    </div>
+
+    <div id="mobile_profile_frontpage" class="visible-phone container">
+
+
+        <div id="mobile_name" >
+
+            <img id="mobile_profile_pic" src="img/musician_profile/honeyman.png" />
+
+            <div id="mobile_name_text">
+                Thomas Honeyman <br>
+                Los Angeles, CA
+            </div>
+        </div>
+
+        <div id="mobile_user_social">
+            <a id="yt_btn" href="http://www.youtube.com">
+                <img src="img/musician_profile/youtube_button.png" />
+            </a>
+
+
+            <a id="twt_btn" href="http://www.twitter.com">
+                <img src="img/musician_profile/twitter_button.png" />
+            </a>
+
+
+
+            <a id="fb_btn" href="http://www.facebook.com">
+                <img src="img/musician_profile/fb_button.png" />
+            </a>
+
+        </div>
+
+    </div>
+
+    <div id="spotlight_container" class="container visible-phone">
+        <div class="mp_bar">
+            <div class="mp_text_div">
+                <span class="mp_text">
+                    Spotlight
+                </span>
+            </div>
+        </div>
+
+        <div class="spotlight_showcase">
+            <img src="img/musician_profile/play_spotlight.png" />
+            <span class="showcase_name">Paper Walls</span>
+        </div>
+
+        <div class="spotlight_break"></div>
+
+        <div class="spotlight_showcase">
+            <img src="img/musician_profile/play_spotlight.png" />
+            <span class="showcase_name">Paper Walls</span>
+        </div>
+
+        <div class="spotlight_break"></div>
+
+        <div class="spotlight_showcase">
+            <img src="img/musician_profile/play_spotlight.png" />
+            <span class="showcase_name">Paper Walls</span>
+        </div>
+
+        <div id="show_portfolio">
+            <div id="show_portfolio_div">
+                <a id="show_portfolio_text" href="www.findmysong.com"> Show Portfolio </a>
+            </div>
+        </div>
+
+        <img class="show_portfolio_img" src="http://placehold.it/250x250" />
+        <img class="show_portfolio_img" src="http://placehold.it/250x250" />
+        <img class="show_portfolio_img" src="http://placehold.it/250x250" />
+        <img class="show_portfolio_img" src="http://placehold.it/250x250" />
+
+    </div>
+
+    <div id="skills_container" class="visible-phone">
+        <div class="mp_bar">
+            <div class="mp_text_div">
+                <span class="mp_text">
+                    Skills
+                </span>
+            </div>
+        </div>
+
+        <div id="skills_bar">
+            <img class="skills_btn" src="img/musician_profile/guitar.png" />
+            <img class="skills_btn" src="img/musician_profile/keyboard.png" />
+            <img class="skills_btn" src="img/musician_profile/microphone.png" />
+            <img class="skills_btn" src="img/musician_profile/sax.png" />
+        </div>
+    </div>
+
+    <div id="working_with_container" class="visible-phone">
+        <div class="mp_bar">
+            <div class="mp_text_div">
+                <span class="mp_text">
+                    Working with
+                </span>
+            </div>
+        </div>
+
+        <div id="working_with_bar">
+              <img class="skills_btn" src="img/musician_profile/actual_honeyman.png" />
+              <img class="skills_btn" src="http://placehold.it/120x120" />
+              <img class="skills_btn" src="http://placehold.it/120x120" />
+              <img class="skills_btn" src="http://placehold.it/120x120" />
+        </div>
+
+    </div>
+
+
+<!-- CS 351 CODE -->
+	<div id="user_profile_frontpage" class="hidden-phone">
+		<div class="fms-user-coverphoto">
+			<img src="http://www.findmysong.com/img/default_cover_photo.jpg"></img>
+		</div>
+		<div id="user_profile_body" class="row"> 
+			<div class="fms-page-sidebar span3">
+				<div class="profile-picture-container">
+					<img class="profile-picture" src="http://www.findmysong.com/user_files/43/image/170.png"></img>
+				</div>
+				<ul class="social-link"></ul>
+				<p class="role"></p>
+				<ul id="hotlink" class="hot-link"></ul>
+			</div>
+			<div class="fms-page-content span9">
+				<div class="user_info">
+					<div class="basic_info">
+						<p class="fullname">Zune Nguyen</p>
+						<p class="country"><i class="flag flag-us"> </i><span class="city">Los Angeles, </span> <span>United States</span></p>
+					</div>									
+					<div id="followers" class="social-info hidden">
+						<p class="social_count">0</p>
+						<p class="social_text">Followers</p>
+					</div>
+					<div id="likes" class="social-info hidden">
+						<p class="social_count">0</p>
+						<p class="social_text">Likes</p>
+					</div>
+				</div>
+				<ul class="options">
+					<li><button id="favorite" data-toggle="1" data-btn="con" data-userid="43" class="btn btn-success btn-embossed" type="button">Save Contact</button></li>
+					<li><button id="message" class="btn btn-block btn-embossed" type="button" data-userid="43" data-btn="msg" data-msgrecipient="userid"><i class="fui-mail"></i>Message</button></li>
+					<li><button id="Invite" class="btn btn-block inactive btn-embossed" type="button" data-userid="43" data-btn="inv" data-invrecipient="userid"><i class="fui-plus"></i>Invite</button></li>
+				</ul>
+				<ul class="spotlight">
+				</ul>
+				<div class="nav-wrap">
+					<ul id="navigation" class="nav-bar"><input name="" type="hidden" value="43" id="id" />
+						<li class="nav-tab active" id="projects">Project Portfolio</li>
+						<li class="nav-tab" id="biography">Biography</li>
+						<li class="nav-tab" id="workedwith">Worked With</li>
+						<li class="nav-tab" id="skills">Skills</li>
+					</ul>
+				</div>
+				<div id="detail_container">
+					<div id="projects_container">
+						<ul class="project-listing">	
+							<div class="nodata">
+								<p>This user has no projects yet!<br> You can <a class="invite_project" >invite them</a> to one of your projects.</p>
+							</div>
+						</ul>
+						<div style="clear:both"></div>
+					</div>				
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+</div>
+<div id="modal_container" data-authservice="0"></div>
+<div id="site_alert_modal_container">
+	<div id="inviteModal-container">				
+		<div id="inviteModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+			<div class="modal-header">Send Invitation
+				<button type="button" class="fms_close" data-dismiss="modal" aria-hidden="true"><i class="fui-cross"></i></button>				
+			</div>
+		<div class="modal-body">
+			<div id ="sideTitles" >
+				<p id="p1" class="subTitle">Musician</p>
+				<p id="p2" class="subTitle">Project</p>
+				<p id="p3" class="subTitle">Message</p>
+			</div>	
+			<div id = "main">
+				<div id = "musician">	
+					<img src="" id="profilePicture"/>				
+					<span id = "musicianName"></span>
+				</div>
+				<div id = "project">
+					<div class="btn-grey btn-embossed">
+						<select name="large" class="select-block mbl span3" id="project_invitation"></select>
+					</div>
+					<p>Don't have a project yet? <a href="http://www.findmysong.com/dashboard/project/manage">Create one</a> to start sending invitations!</p>
+				</div>
+				<div id="message">
+					<div>
+						<textarea class="span6" placeholder="Write a message..."></textarea>
+					</div>		
+				</div>
+				<button id="sendInvitation" class="btn btn-mini btn-block btn-primary">Send</button>
+			</div>
+		</div>
+	</div>								
+</div>
+<div id="auditionModal-container">				
+	<div id="auditionModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div class="modal-header"> Audition for <span>Project</span>
+			<button type="button" class="fms_close" data-dismiss="modal" aria-hidden="true"><i class="fui-cross"></i></button>				
+		</div>
+		<div class="modal-body">
+			<p class > Choose a Skill to Audition</p>
+			<p> To audition for a project, you have to select a specific skill to audition for.<br />Choose a skill from the dropdown and select "Audition" to get started! </p>
+			<div id="audition_skill_selection" class="btn-grey">
+				<select name="info" id="skill_audition" class="select-block mbl span3"></select>
+			</div>
+			<div class="clear"></div>
+			<button id="sendAudition" class="btn btn-block btn-primary">Audition</button>
+		</div>
+	</div>								
+</div>
+<div id="messageModal-container">				
+	<div id="messageModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div class="modal-header"> Send Message
+			<button type="button" class="fms_close" data-dismiss="modal" aria-hidden="true"><i class="fui-cross"></i></button>				
+		</div>
+		<div class="modal-body">
+			<div id ="sideTitles" >
+				<p id="p1" class="subTitle">Musician</p>
+				<p id="p3" class="subTitle">Message</p>
+			</div>	
+			<div id = "main">
+				<div id = "musician">	
+					<img id="profilePicture" src="http://www.findmysong.com/img/default_avatar_photo.jpg"/>				
+					<span id = "musicianName"></span>
+				</div>
+				<div id="message">
+					<div>
+						<textarea class="span6" placeholder="Write a message..."></textarea>
+					</div>				
+				</div>
+				<button id="sendMessage" class="btn btn-mini btn-block btn-primary">Send</button>
+			</div>
+		</div>								
+	</div>
+</div>	
+</div>
+<footer >
+	<div class="colorbg grey footer"></div>
+		<div class="fms-info-footer hidden-phone">
+			<div class="fms-info-footer-container">
+				<ul class="fms-info-list">
+					<li>
+						<ul>
+							<li class="prompt-signup">
+								<p class="title">Sign up.</p>
+								<p>(Don't have an account yet?<br/>Sign up to get started!)</p>
+								<p><button data-gated="1" class="btn btn-small btn-block btn-success">Sign up!</button></p>
+							</li>
+							<li class="social-media">
+								<p class="title">Follow us</p>
+								<p class="social-media-options">
+									<a href="http://www.facebook.com/FindMySong"><img src="http://www.findmysong.com/img/footer-facebook.png" alt=""/></a>
+									<a href="http://twitter.com/FindMySong"><img src="http://www.findmysong.com/img/footer-twitter.png" alt=""/></a>
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title">FMS</p>
+						<p><a href="http://www.findmysong.com/about">About</a></p>
+                        <p><a href="http://www.findmysong.com/contact">Contact</a></p>
+                        <p><a href="http://www.findmysong.com/help">Help Center</a></p>
+                    </li>
+                    <li>
+                    	<p class="title">Legal</p>
+                        <p><a href="http://www.findmysong.com/terms">Terms</a></p>
+                        <p><a href="http://www.findmysong.com/privacy">Privacy</a></p>
+                    </li>                  	
+				</ul>
+				<div>
+					<p class="title">Last from the Blog</p>
+					<p>
+						<a href="">
+							<img src="http://www.findmysong.com//img/home_page/blog.png"  />
+                            This Scandinavian pop trio and romantic single with their ...
+                        </a>
+                    </p>
+                    <p>
+                    	<a href="">
+                        	<img src="http://www.findmysong.com//img/home_page/blog.png"  />
+                            This Scandinavian pop trio and romantic single with their ...
+                        </a>
+                    </p>
+                    <p>
+                    	<a href="">
+                        	<img src="http://www.findmysong.com//img/home_page/blog.png"  />
+                            This Scandinavian pop trio and romantic single with their ...
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>	
+	<div class="container hidden-phone">
+		<ul id="slimlinks">
+			<li>Copyright &copy 2013 FindMySong</li>   
+		</ul>	  
+	</div>
+</footer>
+
+<script src="http://www.findmysong.com/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/fms_auth.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/facebook.js" type="text/javascript"></script>
+
+<!--  Scripts added for FLAT UI -->
+<script src="http://www.findmysong.com/js/bootstrap-select.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/bootstrap-switch.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/flatui-radio.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.tagsinput.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.placeholder.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.stacktable.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/application.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/application_bootstrap.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+	setTimeout(function(){var a=document.createElement("script");
+	var b=document.getElementsByTagName("script")[0];
+	a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0016/9661.js?"+Math.floor(new Date().getTime()/3600000);
+	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type="text/javascript">
+	(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+	typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+	b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+		mixpanel.init("a00113da8970d4306e46a049d80cfc9d");
+</script>
+<script src="http://www.findmysong.com/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery-queryParser.min.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/fms_main.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/popups/fms_modal.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/user_profile/fms_user_profile.js" type="text/javascript"></script>
+
+
+
+
+<script src="https://www.youtube.com/iframe_api" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/dashboard/jquery.poly.js" type="text/javascript"></script>
+
+</body>
+</html>
