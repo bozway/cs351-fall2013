@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/lib/css/mobile_musician_profile.css" afterPath="$PROJECT_DIR$/public_html/lib/css/mobile_musician_profile.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/lib/less/mobile_musician_profile.less" afterPath="$PROJECT_DIR$/public_html/lib/less/mobile_musician_profile.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/mp.html" afterPath="$PROJECT_DIR$/public_html/mp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs351-fall2013.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +39,7 @@
       <file leaf-file-name="mp.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public_html/mp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="9" selection-start="6833" selection-end="6836" vertical-scroll-proportion="0.9065934" vertical-offset="2344" max-vertical-offset="7769">
+            <state line="156" column="57" selection-start="6308" selection-end="6308" vertical-scroll-proportion="0.4894434" vertical-offset="2397" max-vertical-offset="7803">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -451,7 +450,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/mp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="9" selection-start="6833" selection-end="6836" vertical-scroll-proportion="0.9065934" vertical-offset="2344" max-vertical-offset="7769">
+        <state line="156" column="57" selection-start="6308" selection-end="6308" vertical-scroll-proportion="0.4894434" vertical-offset="2397" max-vertical-offset="7803">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
