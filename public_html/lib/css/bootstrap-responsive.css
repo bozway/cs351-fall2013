@@ -125,7 +125,7 @@
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .container,
   .navbar-static-top .container,
@@ -152,7 +152,7 @@
     width: 670px;
   }
   .span6 {
-    width: 570px;
+    width: 460px;
   }
   .span5 {
     width: 470px;
@@ -161,7 +161,7 @@
     width: 370px;
   }
   .span3 {
-    width: 270px;
+    width: 220px;
   }
   .span2 {
     width: 170px;
@@ -840,7 +840,7 @@
   .uneditable-input[class*="span"],
   .row-fluid [class*="span"] {
     display: block;
-    float: none;
+    float: left;
     width: 100%;
     margin-left: 0;
     -webkit-box-sizing: border-box;
