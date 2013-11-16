@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a78a3dc1-78fc-4d08-af2d-4a1d5733a459" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/lib/css/mobile_musician_profile.css" afterPath="$PROJECT_DIR$/public_html/lib/css/mobile_musician_profile.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/lib/less/mobile_musician_profile.less" afterPath="$PROJECT_DIR$/public_html/lib/less/mobile_musician_profile.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/mp.html" afterPath="$PROJECT_DIR$/public_html/mp.html" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> dev
     </list>
     <ignored path="cs351-fall2013.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +34,38 @@
       <file leaf-file-name="homepage.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="24" column="60" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0" vertical-offset="2324" max-vertical-offset="8738">
+=======
+            <state line="202" column="59" selection-start="9577" selection-end="9577" vertical-scroll-proportion="-66.64706" vertical-offset="35" max-vertical-offset="8738">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-responsive.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/lib/css/bootstrap-responsive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="13" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.60535717" vertical-offset="2432" max-vertical-offset="18955">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="featured_projects.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/FeaturedProjects/featured_projects.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="23" selection-start="768" selection-end="768" vertical-scroll-proportion="1.3846154" vertical-offset="529" max-vertical-offset="1156">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="format.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/FeaturedProjects/css/format.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="18" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="1700">
+>>>>>>> dev
               <folding />
             </state>
           </provider>
@@ -68,7 +103,11 @@
         <option value="$PROJECT_DIR$/public_html/lib/css/mobile_home.css" />
         <option value="$USER_HOME$/Desktop/FALL13/CSCI351/lab5/HOANG_ASSIGN5/assign5" />
         <option value="$PROJECT_DIR$/public_html/homepage.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/public_html/mp.html" />
+=======
+        <option value="$PROJECT_DIR$/public_html/lib/css/bootstrap-responsive.css" />
+>>>>>>> dev
       </list>
     </option>
   </component>
@@ -168,7 +207,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="img" />
+=======
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+>>>>>>> dev
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -311,7 +358,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+<<<<<<< HEAD
     <editor active="true" />
+=======
+    <editor active="false" />
+>>>>>>> dev
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -347,6 +398,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="37" column="49" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="8670">
           <folding />
         </state>
@@ -369,6 +421,9 @@
     <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="168" column="0" selection-start="8723" selection-end="8723" vertical-scroll-proportion="0.0" vertical-offset="2616" max-vertical-offset="8415">
+=======
+        <state line="168" column="0" selection-start="8712" selection-end="8712" vertical-scroll-proportion="0.0" vertical-offset="2856" max-vertical-offset="8738">
+>>>>>>> dev
           <folding />
         </state>
       </provider>
@@ -441,9 +496,41 @@
         <state line="1" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/FeaturedProjects/featured_projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="23" selection-start="768" selection-end="768" vertical-scroll-proportion="1.3846154" vertical-offset="529" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/FeaturedProjects/css/format.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="18" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/lib/css/bootstrap-responsive.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="24" column="60" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0" vertical-offset="2324" max-vertical-offset="8738">
+=======
+        <state line="202" column="59" selection-start="9577" selection-end="9577" vertical-scroll-proportion="-66.64706" vertical-offset="35" max-vertical-offset="8738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/lib/css/bootstrap-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="13" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.60535717" vertical-offset="2432" max-vertical-offset="18955">
+>>>>>>> dev
           <folding />
         </state>
       </provider>
