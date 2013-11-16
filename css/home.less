@@ -1,0 +1,456 @@
+/////////////////////////////////////////////////////////////
+//          INCLUDES              
+/////////////////////////////////////////////////////////////
+@import 'common_functions';
+@import 'main';
+body{
+    background-color:                   #efecea;
+}
+#home_page {
+    margin:                             0 auto;
+}
+a:focus{
+    outline:                            0;
+}
+/////////////////////////////////////////////////////////////
+//          Home page header
+/////////////////////////////////////////////////////////////
+
+@slider_transition_time:                0.50s;
+.home_header{
+    position:                           relative;
+    margin-bottom:                      105px;
+}
+#home_header_top{
+    height:                             575px;
+    margin:                             0 auto;
+    color:                              #ffffff;
+
+    .home_bg_images_bg{
+        height:                         575px;
+        position:                       relative;
+        overflow:                       hidden;
+        .function_transition(all, @slider_transition_time);
+        overflow:                       hidden;
+    }
+    #home-bg-images{
+        width:                          100%;        
+        position:                       relative;
+        .home-bg-color{
+            width:                      100%;
+            opacity:                    0;
+            position:                   absolute;            
+            min-height:                 575px;
+            min-width:                  960px;
+            .function_transition(all, @slider_transition_time);
+            &.show{
+                opacity:                            1;
+                .function_transition(all, @slider_transition_time);
+            }
+        }
+    }    
+}
+.home_header_text_container{
+    position:                           absolute;
+    left:                               50%;
+    margin-left:                        -470px;
+    top:                                0;
+}
+.home_header_links {
+    width:                              150px;
+    position:                           absolute;
+    left:                               0;
+    top:                                100px;
+    cursor:                             pointer;
+    ul{
+        margin:                         0;
+        li{
+            margin-bottom:              35px;
+            .font-thin();
+            a{
+                padding-left:           35px;
+                height:                 45px;
+                line-height:            45px;
+                font-size:              24px;
+                display:                block;
+                border-left:            5px solid transparent;
+                color:                  #ffffff;
+            }
+            a:hover{
+                border-left:            5px solid #ffffff;
+                color:                  #29ef78;
+                .font-light();
+            }
+            .show {
+                border-left:            5px solid #ffffff;
+                color:                  #29ef78;
+                .font-light();
+            }
+        }
+    }
+}
+
+.home_header_text{
+    position:                           absolute;
+    left:                               250px;
+    top:                                145px;
+    opacity:                            0;
+    .function_transition(all, @slider_transition_time);
+    p{
+        width:                          620px;
+        font-size:                      18px;
+        line-height:                    1.2;
+        .font-light();
+    }
+    .header_title{
+        font-size:                      60px;
+        .font-thin();
+    }
+    &.show{
+        opacity:                        1;
+        .function_transition(all, @slider_transition_time);
+    }
+}
+
+.home_header_play_btn{
+    position:                           absolute;
+    z-index:                            5;
+    top:                                505px;
+    left:                               50%;
+    width:                              140px;
+    height:                             140px;
+    background-color:                   rgba(204,204,204,0.3);
+    margin-left:                        -70px;
+    .function_border_radius(70px);
+    .home_header_play_btn_bg{
+        width:                          125px;
+        height:                         125px;
+        margin:                         8px auto;
+        background-color:               rgba(32,87,142,0.8);
+        .function_border_radius(65px);
+    }
+    i{
+        font-size:                      40px;
+        margin-left:                    45px;
+        margin-top:                     35px;
+        color:                          #ffffff;
+    }
+}
+/** What is this ridiculousness. Why are you targetting all the modals in this page and setting
+their background color to transparent white???
+Actually, I do know why - this is for the youtube player modal, but that still doesn't excuse this
+behaviour. With this generic class style, you are potentially setting the styles for even the 
+signup and login modals. If you need to style a specific modal - by all means, STYLE IT BY ID.
+.modal{
+    background-color:       rgba(255, 255, 255, 0);
+    height:                 500px;
+    width:                  770px;
+}
+.modal.fade{
+    top:                15%;
+    margin-left:        -387px;
+}
+**/
+.home_header_bottom{
+    height:                             260px;
+    background-color:                   #2e2e2e;
+    margin:                             0 auto 30px;
+    position:                           relative;
+    p{
+        width:                          750px;
+        margin:                         0 auto;
+        font-size:                      36px;
+        line-height:                    1.5;
+        color:                          #ffffff;
+        padding-top:                    120px;
+        text-align:                     center;
+        .font-thin();
+        span{
+            color:                      #38a6f8;
+        }
+    }
+    i{
+            position:                   absolute;
+            font-size:                  60px;
+            color:                      #2e2e2e;
+            left:                       50%;
+            margin-left:                -30px;
+            bottom:                     -47px;
+    }
+}
+/////////////////////////////////////////////////////////////
+//          Home page contact top
+/////////////////////////////////////////////////////////////
+.home_contact_top_title{
+    font-size:                          28px;
+    .font-light();
+    a{
+        font-size:                      18px;
+        color:                          #69b5ed;
+    }
+}
+.home_contact_top{
+    width:                              940px;
+    margin:                             0 auto 70px;
+
+}
+@transition_duration:       0.13s;
+.featured_musicians{
+    width:                              140px;
+    height:                             140px;
+    float:                              left;
+    margin-right:                       20px;
+    margin-bottom:                      20px;
+    position:                           relative;
+    a{
+        width:                          140px;
+        height:                         140px;
+        display:                        block;
+        position:                       absolute;
+        left:                           0;
+        top:                            0;
+        transition:                     none;
+        background-image:               url('@{baseurl}img/button_view_profile.png');
+        background-position:            50%;
+        background-repeat:              no-repeat;
+        background-color:               rgba(56,166,248,0.60);
+        opacity:                        0;
+        .function_transition(opacity, @transition_duration);
+        &:hover {
+            opacity:                        1;
+            .function_transition(opacity, @transition_duration);
+        }
+    }
+}
+#pop-projects-list {
+    margin:                 0px;
+}
+.pop-project-list-item {
+    @projects_pic_size:         150px;
+    @projects_pic_height:       140px;        
+    @projects_block_height:     300px;    
+    position:                   relative;
+    display:                    inline-block;        
+    height:                     @projects_block_height;
+    margin-bottom:              20px;
+    overflow:                   hidden;
+    &:nth-child(2n+1) {
+        margin-left:            0px; // takes care of the bootstrap margin        
+    }        
+    .projimg {
+        min-height:             @projects_pic_height;
+        overflow:               hidden;      
+        margin-left:            0px;            
+        position:               absolute;
+        top:                    0px;
+        left:                   0px;
+    }
+    .projlink {
+        min-height:             @projects_pic_height;
+        width:                  100%; // as wide as the pic.
+        display:                block;
+        background-image:       url('@{baseurl}img/button_view_profile.png');
+        background-position:    50%;
+        background-repeat:      no-repeat;
+        background-color:       rgba(56,166,248,0.60);
+        opacity:                0;
+        .function_transition(opacity, @transition_duration);
+        &:hover {               
+            opacity:                1;                
+        }
+    }        
+    .projinfo {
+        position:               absolute;
+        background-color:       #ffffff;
+        top:                    @projects_pic_height;
+        height:                 @projects_block_height - @projects_pic_height;
+        left:                   0px;
+        margin-left:            0px;
+        width:                  190px;
+        padding:                15px; // (span3(220px) - 190px) / 2            
+        span {
+            display:                block;
+        }
+    }
+    .projowner {
+        margin-bottom:          5px;
+        font-size:              22px;            
+        .font-normal();
+    }
+    .projtitle {
+        margin-bottom:          25px;
+        font-size:              18px;
+        .font-light();
+    }
+    .projdesc {            
+        font-size:              14px;
+        .font-normal();
+    }
+} // end of .pop-project-list-item
+/*
+.featured_projects{
+    width:                              220px;
+    height:                             300px;
+    float:                              left;
+    margin-right:                       20px;
+    margin-bottom:                      20px;
+    position:                           relative;
+    a{
+        width:                          220px;
+        height:                         140px;
+        display:                        block;
+        position:                       absolute;
+        left:                           0;
+        top:                            0;
+        transition:                     none;
+    }
+    a:hover{
+        background-image:               url(../img/button_view_profile.png);
+        background-position:            50%;
+        background-repeat:              no-repeat;
+        background-color:               rgba(56,166,248,0.75);
+    }
+    div{
+        height:                         160px;
+        position:                       absolute;
+        bottom:                         0;
+        background-color:               #ffffff;
+        width:                          220px;
+        p{
+            font-size:                  14px;
+            color:                      #666666;
+            line-height:                1.2;
+            margin-left:                20px;
+            margin-right:               20px;
+        }
+        .title{
+            font-size:                  18px;
+            color:                      #3a3a3a;
+            margin-bottom:              10px;
+            .font-light();
+        }
+        .name{
+            font-size:                  22px;
+            color:                      #3a3a3a;
+            margin-top:                 18px;
+            margin-bottom:              0;
+        }
+    }    
+} // end of .featured_projects
+*/
+.no-margin-right{
+    margin-right:                       0;
+}
+/////////////////////////////////////////////////////////////
+//          Home page contact middle
+/////////////////////////////////////////////////////////////
+.home_contact_middle_bg{
+    background-color:                   #000000;
+}
+#home_contact_container {
+    width:                              960px;
+    margin:                             0px auto;
+    position:                           relative;
+}
+.home_contact_middle{
+    width:                              100%;
+    height:                             465px;
+    background-image:                   url('@{baseurl}img/home_page/bottom_bg_img.jpg');
+    background-position:                center;
+    background-repeat:                  no-repeat;
+    background-size:                    cover;
+}
+.home_contact_middle_left{
+    width:                              380px;
+    height:                             230px;
+    position:                           absolute;
+    top:                                110px;
+    left:                               35px;
+    p{
+        font-size:                      16px;
+        color:                          #dbdbdb;
+        line-height:                    1.2;
+        margin-bottom:                  40px;
+        .font-light();
+    }
+    .title{
+        font-size:                      28px;
+        width:                          180px;
+        color:                          #ffffff;
+        margin-bottom:                  10px;
+        line-height:                    1;
+        .font-thin();
+    }
+    a{
+        display:            block;
+        width:              190px;
+        height:             50px;
+        line-height:        50px;
+        text-indent:        10px;
+        color:              white;
+        text-decoration:    none;
+        cursor:             pointer;
+        margin-bottom:      20px;
+        -webkit-border-radius: 3px;
+        border-radius:      3px;
+        -webkit-box-shadow: 1px 1px 0 0 rgba(255,255,255,0.15);
+        box-shadow:         1px 1px 0 0 rgba(255,255,255,0.15);
+        background-color:   #406dbf;
+    }
+    .sign-in-fb{
+        height:             50px;
+        width:              225px;
+        border-radius:      2px;
+        font-size:          17px;
+        background-color:   rgba(255,0,0,0);
+        border:             3px solid;
+        border-radius:      8px;
+        border-color:       #40599C;
+        .font-normal();
+    }
+}
+.home_contact_middle_right{
+    width:                              325px;
+    height:                             325px;
+    position:                           absolute;
+    right:                              72px;
+    top:                                70px;
+    background-color:                   rgba(105,181,237,0.8);
+    .function_border_radius(300px);
+    p{
+        text-align:                     center;
+        color:                          #ffffff;
+        font-size:                      16px;
+        line-height:                    1.2;
+        width:                          250px;
+        margin:                         0 auto;
+        .font-light();
+    }
+    p:first-child{
+        margin-top:                     70px;
+        margin-bottom:                  20px;
+        font-size:                      28px;
+        line-height:                    1;
+        span{
+            .font-thin();
+        }
+    }
+    p:last-child{
+        margin-top:                     20px;
+        a{
+            color:                      #ffffff;
+            text-decoration:            underline;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

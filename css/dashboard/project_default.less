@@ -1,0 +1,111 @@
+@import '../main';
+@import '../common_functions';
+
+// ------------------ Header ---------------------------
+.default-header {
+    color:                  white;
+    height:                 205px;
+    .container {
+        position:               relative;
+        padding-top:            50px;
+    }
+}
+
+.project-title {
+    font-size:              33px;
+    height:                 33px;
+    line-height:            33px;
+    .font-thin();
+}
+
+.project-description {
+    font-size:              16px;
+    line-height:            20px;
+    .font-light();
+}
+
+#create_project_button {
+    position:               absolute;
+    top:                    80px;
+    right:                  0;
+    width:                  200px;
+}
+
+
+
+/****************************
+*******Project Default*******
+*****************************/
+
+
+.project-default-container{
+     width:             1200px;
+     margin:            auto;
+     background-color:  #F9F7F6;
+     .project-default-body{
+         width:         950px;
+         margin-left:   130px;
+         ul{
+            list-style-type:    none;
+            margin:             0px;
+            li{
+                float:          left;
+                height:         257px;
+                width:          300px;
+                padding-right:  25px;
+                p{
+                    font-size:  16px;
+                    color:      #444444;
+                    .font-light ();
+                }
+                p:first-of-type{
+                    font-size:      24px;
+                    color:          #38A6F8;
+                    .font-thin ();
+                    padding-top:    42px;
+                }
+                .demo-col{
+                    display:    inline-table;
+                    margin:     0px;
+                    width:      163px;
+                    .btn.btn-large{
+                        &.hover{
+                            background-color:   #2ECC71;
+                        }
+                    }
+                }
+            }
+            li:last-of-type{
+                padding-right:  0px;
+            }
+         }
+    }
+}
+
+.helpful-articles-container{
+    width:              950px;
+    display:            inline-block;
+    vertical-align:     text-top;
+    margin-top:         80px;
+    padding-bottom:     31px;
+    font-size:          24px;
+    .font-normal ();
+    .more-info{
+        font-size:      24px;
+        .font-light ();
+        display:        inline;
+    }
+    p{
+        font-size:          31px;
+        font-weight:        500;
+        .font-light ();
+        margin-top:         15px;
+    }
+    a{
+        display:        inline;
+        color:          #2985CA;
+        &.hover{
+            color:      #ACD7F7;
+        }
+    }
+}

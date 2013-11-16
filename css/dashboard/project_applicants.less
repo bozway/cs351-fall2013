@@ -1,0 +1,317 @@
+@import '../main';
+@import '../common_functions';
+
+// ------------------------ COMMON ELEMENTS ------------------------------
+.dashboard-subtitle {
+    border-top:             45px solid transparent;
+    font-size:              24px;
+    color:                  #2985ca;
+    span {
+        display:            inline-block;
+        vertical-align:         middle;
+    }
+}
+
+.dashboard-separator {
+    border-bottom:          1px solid #D7CAC9;
+}
+
+body {
+    background-color:           #F9F7F6;    
+}
+.profile-photo-hover {
+    background-color:       rgba(56, 166, 248, 0.75);
+    background-image:       url('/img/button_view_profile.png');
+    background-position:    center;
+    background-repeat:      no-repeat;
+    width:        f          140px;
+    height:                 140px;
+    position:               absolute;
+    top:                    0px;
+    left:                   0px;
+    opacity:                0;
+    &:hover {
+        opacity:            1;
+    }
+}
+
+// ------------------ Header ---------------------------
+.dashboard-header {
+    background-image:       url('/img/dashboard_header_extended.png');
+    background-repeat:      no-repeat;
+    background-color:       #37314f;
+    background-position:    center;
+    color:                  white;
+    height:                 200px;
+    .container {
+        position:               relative;
+        padding-top:            50px;
+    }
+}
+
+.project-title {
+    font-size:              33px;
+    height:                 33px;
+    line-height:            33px;
+    .font-thin();
+}
+
+.project-description {
+    font-size:              16px;
+    line-height:            20px;
+    .font-light();
+}
+
+#basic_setting_save {
+    width:                  150px;
+    position:               absolute;
+    right:                   0;
+    top:                    80px;
+}
+
+.project-create-navlink {
+    width:                  80px;
+    position:               absolute;
+    top:                    50px;
+    right:                  10px;
+}
+
+// ---------------------- PAGE SPECIFIC ---------------------------
+#project-applicants {
+    .font-light();   
+    margin-bottom:          100px;
+}
+#sortby {
+    margin-top:             30px;
+    height:                 68px;
+    .btn-group {
+        float:              right;
+    }
+    ul{
+        li{
+            cursor:         pointer;    
+        }   
+    }
+    // Overide color of dropdown menu
+    .btn-grey {
+        .btn.btn-info {
+            background-color:       #EDEDED;
+            color:                  #888888;
+        }
+        .btn-group.open .btn.btn-info.dropdown-toggle {
+            background-color:       #AAAAAA;
+        }
+    }
+}
+.applicant-list-item {
+    background-color:       white;
+    margin-bottom:          25px;
+    position:               relative;
+}
+.applicant-photo {
+    width:                  140px;
+    height:                 140px;
+}
+#applicant-list{
+    &>p{
+        text-align:             center;
+    }
+}
+.applicant-list-item {
+    .btn-block.save-contact {
+        width:                  120px;
+        margin-top:             25px;
+        float:                  left;
+        padding:                6px;
+    }
+    .btn-block.message-contact {
+        width:                  120px;
+        margin-top:             25px;
+        float:                  left;
+        margin-right:           10px;
+        padding:                6px;
+    }
+}
+.applicant-name {
+    font-size:                  25px;
+    margin-bottom:              0;
+    line-height:                30px;
+    height:                     30px;
+    margin-top:                 10px;
+}
+.applicant-skill {
+    font-size:                  16px;
+    margin-bottom:              0;
+    .font-normal();
+}
+.applicant-accept {
+    font-size:                  30px;
+    color:                      #adadad;
+    position:                   absolute;
+    right:                      200px;
+    top:                        40px;
+    cursor:                     pointer;
+    &:hover{
+        color:                  #43B765;
+    }
+}
+.applicant-hide {
+    font-size:                  30px;
+    color:                      #adadad;
+    position:                   absolute;
+    right:                      120px;
+    top:                        40px;
+    cursor:                     pointer;
+    &:hover{
+        color:                  red;
+    }
+}
+.applicant-re-shown{
+    width:                      110px;
+    position:                   absolute;
+    top:                        15px;
+    right:                      25px;
+    .btn.btn-primary {
+    background-color:           #f39c12;
+    }
+    .btn.btn-primary:hover,
+    .btn.btn-primary:focus,
+    .btn-group:focus .btn.btn-primary.dropdown-toggle {
+    background-color:           #f6b143;
+    }
+   
+}
+
+.applicant-experience {
+    position:                   absolute;
+    left:                       530px;
+    top:                        90px;
+    color:                      black;
+    .content-data {
+        color:                  #a6a6a6;
+        margin-left:            5px;
+    }
+}
+
+// -------------------------- OLD ------------------------------
+
+
+.body-container{
+    width:              950px;
+    margin:             auto;
+}
+#project_applicants{
+    width:                  765px;
+    display:                inline-block;
+}
+.project-header {
+    position:               relative;
+    border-bottom:          2px solid #6a6a6a;
+}
+.project-title {
+    font-size:              30px;
+    height:                 40px;
+    line-height:            40px;
+    padding-left:           10px;
+    span{
+        .font-light();
+    }
+}
+
+.project-description {
+    font-size:              16px;
+    padding-left:           10px;
+}
+
+
+// ------------------ Project Listing ---------------------------
+.project_applicant_item {
+    height:                 170px;
+    border-top:             1px solid #6a6a6a;
+    border-bottom:          1px solid #6a6a6a;
+    margin-top:             20px;
+    position:               relative;
+    &.hidden{
+        display:     none;
+    }
+}
+
+.project-applicant-img {
+    height:                 150px;
+    width:                  150px;
+    display:                inline-block;
+    border:                 10px solid transparent;
+    float:                  left;
+}
+.project-applicant-detail{
+    width:                  300px;
+    float:                  left;
+    padding:                10px;
+}
+.project-applicant-social {
+    position:               relative;
+    top:                    38px;
+    button {
+        width:              70px;   
+    }
+    p {
+        display:            inline;
+        line-height:        50px;
+    }
+}
+.project-applicant-name {
+    font-size:              20px;
+}
+
+.project-applicant-option {
+    padding:                10px;
+    width:                  230px;
+    float:                  right;
+    position:               relative;
+    .fms-button {
+        margin:             5px;   
+    }
+    .status {
+        position:           absolute;
+        top:                10px;
+        left:               123px;
+    }
+    .bottom {
+        position:           absolute;
+        top:                108px;
+        left:               123px;
+    }
+}
+
+.fms-button.warning {background-color:@color_attention;}
+.fms-button.toggle {background-color:#286a9c;}
+.fms-button-no-hover {position:absolute;top:10px;left:123px;margin:5px}
+.fms-button-no-hover {
+    width:                  100px;
+    height:                 40px;
+    background-color:       #2985cb;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow:1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+    -moz-box-shadow:1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+    -o-box-shadow:1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+    -ms-box-shadow:1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+    box-shadow:1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+    line-height:            40px;
+    text-align:             center;
+    color:                  white;
+    font-size:              14px;
+    cursor:                 pointer;
+    border:                 none;
+    &.special {
+        background-color:   #85c457;
+    }
+    &.warning {
+        background-color:   @color_attention;   
+    }
+    &.inactive {
+        opacity:            0.5   
+    }
+}
+

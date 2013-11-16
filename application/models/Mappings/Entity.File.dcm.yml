@@ -1,0 +1,43 @@
+Entity\File:
+  type: entity
+  table: file
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO        
+    name:
+      type:     string
+    path:
+      type:     string
+    creationTime:
+      type:     datetime
+    uploadIp:
+      type:     string  
+    modifiedTime:
+      nullable: true
+      type:     datetime
+    type:
+      nullable: true
+      type:     integer
+    subtype:
+      nullable: true
+      type:     integer
+  
+
+#One to one relations
+
+#One to many relations
+
+#Many to one relations
+      
+  manyToOne:
+    owner:
+      targetEntity: User
+      inversedBy:   files
+    
+
+#Many to many relations
+
+      

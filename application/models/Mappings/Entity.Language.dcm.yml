@@ -1,0 +1,20 @@
+Entity\Language:
+  type: entity
+  table: language
+  fields:    
+    isoCode:
+      type: string
+      id:   true
+    languageName:
+      nullable: false
+      type:     string
+
+
+        
+#One to one relations
+
+#One to many relations
+
+#Many to one relations
+
+#Many to many relations

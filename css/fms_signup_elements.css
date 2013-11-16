@@ -1,0 +1,1871 @@
+.error {
+  color: red;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+  font-weight: 400;
+  background-color: #f9f7f6;
+  min-width: 960px;
+}
+.pageheader_container {
+  display: none;
+}
+header {
+  position: relative;
+}
+header .member {
+  position: relative;
+}
+footer {
+  position: relative;
+}
+.colorbg {
+  width: 100%;
+}
+.colorbg.blue {
+  background-color: #4b9ec8;
+}
+.colorbg.grey {
+  background-color: #2f2f2f;
+}
+.colorbg.header {
+  position: absolute;
+  height: 80px;
+  z-index: -1;
+}
+.colorbg.footer {
+  position: absolute;
+  height: 340px;
+  z-index: -1;
+  margin-top: 20px;
+}
+/****        Header         ****/
+.header-large-icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  bottom: 30px;
+  cursor: pointer;
+  margin-left: -20px;
+}
+.header-small-icon {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  bottom: 40px;
+  cursor: pointer;
+}
+.header-unread-num {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 0px;
+  right: -5px;
+  color: white;
+  background-color: red;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.header-account {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  left: 750px;
+  bottom: 20px;
+  cursor: pointer;
+  color: white;
+  line-height: 60px;
+}
+.header-account img {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+}
+.header-account div {
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  width: 50px;
+  height: 50px;
+  background-image: url('http://www.cs351.gurtem.com/img/header_example.png');
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+.arrow-container {
+  width: 950px;
+  height: 0px;
+  margin: auto;
+  position: relative;
+}
+#header_arrow {
+  position: absolute;
+  border-bottom: 10px solid #38a6f8;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -10px;
+}
+.profile-arrow {
+  display: block;
+  left: 267px;
+}
+.project-arrow {
+  display: block;
+  left: 355px;
+}
+.message-arrow {
+  display: block;
+  left: 441px;
+}
+.none-arrow {
+  display: none;
+}
+header .container {
+  position: relative;
+  width: 960px;
+}
+header .profile-icon {
+  left: 250px;
+}
+header .project-icon {
+  left: 320px;
+}
+header .message-icon {
+  left: 390px;
+}
+header .search-project-icon {
+  left: 660px;
+}
+header .search-musician-icon {
+  left: 700px;
+}
+.home-link {
+  display: inline-block;
+}
+.fms-home {
+  height: 80px;
+  float: left;
+}
+.fms-home a {
+  margin-top: 12px;
+}
+.seperator {
+  height: 30px;
+  float: left;
+  margin-top: 25px;
+  margin-left: 33px;
+  border-right: 1px solid;
+  border-right-color: #3F3F3F;
+}
+.seperator.last {
+  margin-left: 10px;
+}
+.fms-explore {
+  height: 80px;
+  float: left;
+  margin-left: 30px;
+}
+.fms-explore div {
+  height: 51px;
+  width: 79px;
+  float: left;
+  text-align: center;
+  margin-right: 44px;
+  margin-top: 25px;
+}
+.fms-explore div.member {
+  width: 43px;
+  margin-top: 22px;
+}
+.fms-explore div.guest {
+  margin-left: 53px;
+}
+.fms-explore div a {
+  color: #D7D7D7;
+  font-weight: 300;
+  font-size: 16px;
+}
+.fms-explore div.active {
+  border-bottom: 4px solid;
+  border-bottom-color: #3699E3;
+}
+.fms-explore div.about {
+  line-height: 35px;
+}
+.show-fms-search-header {
+  height: 80px;
+  width: 90px;
+  float: right;
+  display: none;
+}
+.show-fms-search-header.member {
+  display: inline;
+}
+.show-fms-user-menu-header {
+  float: left;
+  height: 80px;
+  width: 57px;
+}
+.fms-search {
+  height: 35px;
+  width: 35px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 25px;
+  background-image: url('http://www.cs351.gurtem.com/img/grey-search-icon.png');
+  background-repeat: no-repeat;
+  display: none;
+}
+.fms-search.member {
+  display: inline;
+}
+.fms-search.hover {
+  background-image: url('http://www.cs351.gurtem.com/img/home-search-icon.png');
+}
+.fms-member {
+  float: right;
+  height: 80px;
+  width: 150px;
+}
+.fms-member .fms-user-portal {
+  float: right;
+  width: 125px;
+  height: 80px;
+}
+.fms-member .fms-user-portal.member {
+  line-height: 88px;
+  text-indent: 0px;
+}
+.fms-member .fms-user-portal.member a .member-profile-img {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin-top: 10px;
+  background-image: url("http://www.cs351.gurtem.com/img/default_avatar_photo.jpg");
+  background-size: 100% 100%;
+}
+.fms-member .fms-user-portal.member .fms-user-settings {
+  display: inline;
+  margin-left: 9px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+.fms-member .fms-user-portal.guest {
+  line-height: 80px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.fms-member .fms-user-portal.guest a,
+.fms-member .fms-user-portal.guest span {
+  color: #D7D7D7;
+  cursor: pointer;
+}
+.fms-member .fms-user-portal.guest a:hover,
+.fms-member .fms-user-portal.guest span:hover {
+  color: #2985ca;
+}
+.freeze-space {
+  height: 115px;
+  width: 100%;
+  display: none;
+}
+.freeze-space.freeze {
+  display: block;
+  position: relative;
+  z-index: -1;
+}
+.freeze-space.freeze .dashboard-header-bg {
+  background-image: url('http://www.cs351.gurtem.com/img/dashboard_header_extended.png');
+  background-repeat: no-repeat;
+  background-color: #37314f;
+  background-position: center;
+  height: 205px;
+  top: 115px;
+  position: absolute;
+  width: 100%;
+}
+.fms-header {
+  top: 0px;
+  height: 105px;
+  width: 100%;
+  position: relative;
+}
+.fms-header.freeze {
+  position: fixed;
+  height: 115px;
+  z-index: 9001;
+}
+#init-search.tooltip.fade.bottom.in.tooltip-light {
+  top: 69px;
+  left: -60px;
+  display: none;
+}
+#init-search.tooltip.fade.bottom.in.tooltip-light.show {
+  display: inline;
+}
+#init-search.tooltip-light .tooltip-inner {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 300;
+  font-size: 18px;
+  text-indent: -4px;
+  color: white;
+  background-color: #323232;
+  box-shadow: 0px -3px 15px #000000;
+  border-radius: 0px;
+}
+#init-search.tooltip-light .tooltip-inner .fms-header-search a {
+  color: white;
+}
+#init-search.tooltip-light .tooltip-inner .fms-header-search a:hover {
+  color: #69B5ED;
+}
+#init-search.tooltip-light .tooltip-inner span:first-of-type {
+  margin-right: 10px;
+}
+#init-search.tooltip-light .tooltip-inner span:last-of-type {
+  margin-left: 10px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#init-search.tooltip-light.bottom .tooltip-arrow {
+  border-bottom-color: #323232;
+}
+#fms-user-settings-menu.tooltip.fade.bottom.in.tooltip-light {
+  top: 69px;
+  left: -60px;
+  display: none;
+}
+#fms-user-settings-menu.tooltip.fade.bottom.in.tooltip-light.show {
+  display: inline;
+}
+#fms-user-settings-menu.tooltip-light .tooltip-inner {
+  height: 218px;
+  line-height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  text-indent: -4px;
+  color: white;
+  background-color: #323232;
+  box-shadow: 0px -3px 15px #000000;
+  border-radius: 0px;
+  padding: 0px;
+}
+#fms-user-settings-menu.tooltip-light .tooltip-inner a {
+  color: white;
+}
+#fms-user-settings-menu.tooltip-light .tooltip-inner a:hover {
+  color: #69B5ED;
+}
+#fms-user-settings-menu.tooltip-light .tooltip-inner ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#fms-user-settings-menu.tooltip-light .tooltip-inner ul li {
+  height: 40px;
+  line-height: 40px;
+}
+#fms-user-settings-menu.tooltip-light .tooltip-inner ul li.bottom-border {
+  border-bottom: 2px solid;
+  border-bottom-color: #515050;
+}
+#fms-user-settings-menu.tooltip-light .tooltip-inner ul li:first-of-type {
+  height: 46px;
+  line-height: 46px;
+}
+#fms-user-settings-menu.tooltip-light .tooltip-inner .fms-user-logout {
+  background-color: #373636;
+}
+#fms-user-settings-menu.tooltip-light.bottom .tooltip-arrow {
+  border-bottom-color: #323232;
+}
+/**
+ All out modals are quite tall, so we must make them absolute 
+ with respect to the page, so that it can be scrolled, to reach
+ the bottom of the modal for people who have smaller screens.
+ 
+**/
+.modal {
+  top: 15%;
+  position: absolute !important;
+}
+#site_alert_modal_container .fms_close {
+  height: 23px;
+  right: 10px;
+  top: 0px;
+}
+/****       Footer          ****/
+footer .container {
+  line-height: 38px;
+}
+footer .fms-info-footer {
+  margin: 0 auto;
+  background-color: #232323;
+  height: 320px;
+}
+footer .fms-info-footer-container {
+  width: 940px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+footer .fms-info-footer-container p {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #666666;
+}
+footer .fms-info-footer-container .title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+}
+footer .fms-info-footer-container .fms-info-list {
+  width: 640px;
+  margin: 0;
+  padding-top: 30px;
+}
+footer .fms-info-footer-container .fms-info-list > li {
+  float: left;
+  margin-right: 100px;
+  margin-bottom: 0px;
+  min-height: 135px;
+}
+footer .fms-info-footer-container .fms-info-list > li a {
+  color: #656666;
+  font-size: 16px;
+}
+footer .fms-info-footer-container .fms-info-list > li a:hover {
+  color: #38a6f8;
+}
+footer .fms-info-footer-container .fms-info-list > li .btn {
+  color: #ffffff;
+  width: 100px;
+  margin-top: 20px;
+}
+footer .fms-info-footer-container .fms-info-list > li .social-media-options a {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  font-size: 11px;
+  float: left;
+  position: relative;
+}
+footer .fms-info-footer-container .fms-info-list > li .social-media-options a i {
+  position: absolute;
+  font-size: 25px;
+  left: 0px;
+  line-height: 0.8;
+  margin-top: 7px;
+}
+footer .fms-info-footer-container .fms-info-list > li .social-media-options a img {
+  background-size: 100% 100%;
+}
+footer .fms-info-footer-container .fms-info-list > li .social-media-options a:first-child i {
+  color: #2985CA;
+  background-color: #ffffff;
+}
+footer .fms-info-footer-container .fms-info-list > li .social-media-options a:first-child i:hover {
+  color: #549DD5;
+}
+footer .fms-info-footer-container .fms-info-list > li .prompt-signup {
+  margin-bottom: 50px;
+}
+footer .fms-info-footer-container .fms-info-list > li.social-media {
+  min-height: 1px;
+}
+footer .fms-info-footer-container .fms-info-list > li.social-media .title {
+  margin-bottom: 0px;
+}
+footer .fms-info-footer-container .fms-info-list > li.social-media .social-media-options a {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+footer .fms-info-footer-container div {
+  position: absolute;
+  top: 30px;
+  left: 640px;
+}
+footer .fms-info-footer-container div p {
+  width: 200px;
+}
+footer .fms-info-footer-container div p a {
+  display: block;
+  float: left;
+  width: 280px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #666666;
+}
+footer .fms-info-footer-container div p a img {
+  float: left;
+  margin-right: 15px;
+}
+footer .fms-info-footer-container div p a:hover {
+  color: #38a6f8;
+}
+footer .fms-info-footer-container div .title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+}
+footer.slim .fms-info-footer {
+  display: none;
+}
+footer.slim .colorbg {
+  height: 38px;
+  margin-top: 0px;
+}
+footer #slimlinks {
+  margin: 0px;
+}
+footer #slimlinks li {
+  display: inline-block;
+  padding-left: 50px;
+}
+footer #slimlinks li:nth-of-type(1) {
+  margin-right: 420px;
+  padding-left: 0px;
+}
+/****       Buttons and various things      ****/
+.button {
+  display: inline-block;
+  color: white;
+  font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.button.orange {
+  background-color: #f15a23;
+}
+.button-medium {
+  line-height: 24px;
+  font-size: 26px;
+  padding: 8px 30px;
+  border-radius: 14px;
+}
+.button-large {
+  font-size: 28px;
+  line-height: 1em;
+  padding: 12px 35px;
+  border-radius: 15px;
+}
+.cf {
+  clear: both;
+}
+.user-profile-title {
+  width: 30px;
+  height: 20px;
+  border-bottom: 2px solid #3D9DCF;
+  white-space: nowrap;
+  position: relative;
+}
+.fms-button {
+  width: 100px;
+  height: 40px;
+  background-color: #2985cb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  -o-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  -ms-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+.fms-button.inactive {
+  background-color: #999999;
+}
+.fms-button.inactive:hover {
+  background-color: #666666;
+}
+.fms-button.special {
+  background-color: #85c457;
+}
+.fms-button.special:hover {
+  background-color: #6ba541;
+}
+.fms-button:hover {
+  background-color: #286a9c;
+}
+.audio-player {
+  clear: both;
+  height: 70px;
+}
+.audio-player div {
+  float: left;
+  background-color: white;
+  border-bottom: 2px solid #2985ca;
+}
+.audio-player.loading {
+  opacity: 0.5;
+}
+.audio-player .play-delete {
+  background-color: transparent;
+  background-image: url("http://www.cs351.gurtem.com/img/close_icon_grey.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+}
+.play-button {
+  width: 40px;
+  height: 40px;
+  border-right: 1px solid #dfdfdf;
+  cursor: pointer;
+  background-image: url("http://www.cs351.gurtem.com/img/pause_icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.play-button.pause {
+  background-image: url("http://www.cs351.gurtem.com/img/play_icon.png");
+}
+.play-progress {
+  width: 250px;
+  height: 40px;
+  border-right: 1px solid #dfdfdf;
+  position: relative;
+}
+.play-volume {
+  width: 40px;
+  height: 40px;
+  background-image: url("http://www.cs351.gurtem.com/img/volume_icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fms_audio_info {
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  line-height: 40px;
+  text-indent: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.fms_audio_length {
+  position: absolute;
+  right: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+.fms-progress-bar {
+  background-color: #cae8ff;
+  width: 0px;
+  height: 40px;
+}
+.volume-bar {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  top: 35px;
+  left: 5px;
+}
+.volume-bar.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+  width: 30px;
+  height: 2px;
+  background-color: #B9B9B9;
+  border: none;
+}
+.audio-player-placeholder {
+  width: 330px;
+  height: 40px;
+  border: 2px solid #D0D0D0;
+  margin-bottom: 26px;
+}
+.flag {
+  width: 34px;
+  height: 20px;
+  display: inline-block;
+  background: url("http://www.cs351.gurtem.com/img/flag_US.jpg") no-repeat;
+}
+.flag.flag-ad {
+  background-position: -16px 0;
+}
+.flag.flag-ae {
+  background-position: -32px 0;
+}
+.flag.flag-af {
+  background-position: -48px 0;
+}
+.flag.flag-ag {
+  background-position: -64px 0;
+}
+.flag.flag-ai {
+  background-position: -80px 0;
+}
+.flag.flag-al {
+  background-position: -96px 0;
+}
+.flag.flag-am {
+  background-position: -112px 0;
+}
+.flag.flag-an {
+  background-position: -128px 0;
+}
+.flag.flag-ao {
+  background-position: -144px 0;
+}
+.flag.flag-ar {
+  background-position: -160px 0;
+}
+.flag.flag-as {
+  background-position: -176px 0;
+}
+.flag.flag-at {
+  background-position: -192px 0;
+}
+.flag.flag-au {
+  background-position: -208px 0;
+}
+.flag.flag-aw {
+  background-position: -224px 0;
+}
+.flag.flag-az {
+  background-position: -240px 0;
+}
+.flag.flag-ba {
+  background-position: 0 -11px;
+}
+.flag.flag-bb {
+  background-position: -16px -11px;
+}
+.flag.flag-bd {
+  background-position: -32px -11px;
+}
+.flag.flag-be {
+  background-position: -48px -11px;
+}
+.flag.flag-bf {
+  background-position: -64px -11px;
+}
+.flag.flag-bg {
+  background-position: -80px -11px;
+}
+.flag.flag-bh {
+  background-position: -96px -11px;
+}
+.flag.flag-bi {
+  background-position: -112px -11px;
+}
+.flag.flag-bj {
+  background-position: -128px -11px;
+}
+.flag.flag-bm {
+  background-position: -144px -11px;
+}
+.flag.flag-bn {
+  background-position: -160px -11px;
+}
+.flag.flag-bo {
+  background-position: -176px -11px;
+}
+.flag.flag-br {
+  background-position: -192px -11px;
+}
+.flag.flag-bs {
+  background-position: -208px -11px;
+}
+.flag.flag-bt {
+  background-position: -224px -11px;
+}
+.flag.flag-bv {
+  background-position: -240px -11px;
+}
+.flag.flag-bw {
+  background-position: 0 -22px;
+}
+.flag.flag-by {
+  background-position: -16px -22px;
+}
+.flag.flag-bz {
+  background-position: -32px -22px;
+}
+.flag.flag-ca {
+  background-position: -48px -22px;
+}
+.flag.flag-catalonia {
+  background-position: -64px -22px;
+}
+.flag.flag-cd {
+  background-position: -80px -22px;
+}
+.flag.flag-cf {
+  background-position: -96px -22px;
+}
+.flag.flag-cg {
+  background-position: -112px -22px;
+}
+.flag.flag-ch {
+  background-position: -128px -22px;
+}
+.flag.flag-ci {
+  background-position: -144px -22px;
+}
+.flag.flag-ck {
+  background-position: -160px -22px;
+}
+.flag.flag-cl {
+  background-position: -176px -22px;
+}
+.flag.flag-cm {
+  background-position: -192px -22px;
+}
+.flag.flag-cn {
+  background-position: -208px -22px;
+}
+.flag.flag-co {
+  background-position: -224px -22px;
+}
+.flag.flag-cr {
+  background-position: -240px -22px;
+}
+.flag.flag-cu {
+  background-position: 0 -33px;
+}
+.flag.flag-cv {
+  background-position: -16px -33px;
+}
+.flag.flag-cw {
+  background-position: -32px -33px;
+}
+.flag.flag-cy {
+  background-position: -48px -33px;
+}
+.flag.flag-cz {
+  background-position: -64px -33px;
+}
+.flag.flag-de {
+  background-position: -80px -33px;
+}
+.flag.flag-dj {
+  background-position: -96px -33px;
+}
+.flag.flag-dk {
+  background-position: -112px -33px;
+}
+.flag.flag-dm {
+  background-position: -128px -33px;
+}
+.flag.flag-do {
+  background-position: -144px -33px;
+}
+.flag.flag-dz {
+  background-position: -160px -33px;
+}
+.flag.flag-ec {
+  background-position: -176px -33px;
+}
+.flag.flag-ee {
+  background-position: -192px -33px;
+}
+.flag.flag-eg {
+  background-position: -208px -33px;
+}
+.flag.flag-eh {
+  background-position: -224px -33px;
+}
+.flag.flag-england {
+  background-position: -240px -33px;
+}
+.flag.flag-er {
+  background-position: 0 -44px;
+}
+.flag.flag-es {
+  background-position: -16px -44px;
+}
+.flag.flag-et {
+  background-position: -32px -44px;
+}
+.flag.flag-eu {
+  background-position: -48px -44px;
+}
+.flag.flag-fi {
+  background-position: -64px -44px;
+}
+.flag.flag-fj {
+  background-position: -80px -44px;
+}
+.flag.flag-fk {
+  background-position: -96px -44px;
+}
+.flag.flag-fm {
+  background-position: -112px -44px;
+}
+.flag.flag-fo {
+  background-position: -128px -44px;
+}
+.flag.flag-fr {
+  background-position: -144px -44px;
+}
+.flag.flag-ga {
+  background-position: -160px -44px;
+}
+.flag.flag-gb {
+  background-position: -176px -44px;
+}
+.flag.flag-gd {
+  background-position: -192px -44px;
+}
+.flag.flag-ge {
+  background-position: -208px -44px;
+}
+.flag.flag-gf {
+  background-position: -224px -44px;
+}
+.flag.flag-gg {
+  background-position: -240px -44px;
+}
+.flag.flag-gh {
+  background-position: 0 -55px;
+}
+.flag.flag-gi {
+  background-position: -16px -55px;
+}
+.flag.flag-gl {
+  background-position: -32px -55px;
+}
+.flag.flag-gm {
+  background-position: -48px -55px;
+}
+.flag.flag-gn {
+  background-position: -64px -55px;
+}
+.flag.flag-gp {
+  background-position: -80px -55px;
+}
+.flag.flag-gq {
+  background-position: -96px -55px;
+}
+.flag.flag-gr {
+  background-position: -112px -55px;
+}
+.flag.flag-gs {
+  background-position: -128px -55px;
+}
+.flag.flag-gt {
+  background-position: -144px -55px;
+}
+.flag.flag-gu {
+  background-position: -160px -55px;
+}
+.flag.flag-gw {
+  background-position: -176px -55px;
+}
+.flag.flag-gy {
+  background-position: -192px -55px;
+}
+.flag.flag-hk {
+  background-position: -208px -55px;
+}
+.flag.flag-hm {
+  background-position: -224px -55px;
+}
+.flag.flag-hn {
+  background-position: -240px -55px;
+}
+.flag.flag-hr {
+  background-position: 0 -66px;
+}
+.flag.flag-ht {
+  background-position: -16px -66px;
+}
+.flag.flag-hu {
+  background-position: -32px -66px;
+}
+.flag.flag-ic {
+  background-position: -48px -66px;
+}
+.flag.flag-id {
+  background-position: -64px -66px;
+}
+.flag.flag-ie {
+  background-position: -80px -66px;
+}
+.flag.flag-il {
+  background-position: -96px -66px;
+}
+.flag.flag-im {
+  background-position: -112px -66px;
+}
+.flag.flag-in {
+  background-position: -128px -66px;
+}
+.flag.flag-io {
+  background-position: -144px -66px;
+}
+.flag.flag-iq {
+  background-position: -160px -66px;
+}
+.flag.flag-ir {
+  background-position: -176px -66px;
+}
+.flag.flag-is {
+  background-position: -192px -66px;
+}
+.flag.flag-it {
+  background-position: -208px -66px;
+}
+.flag.flag-je {
+  background-position: -224px -66px;
+}
+.flag.flag-jm {
+  background-position: -240px -66px;
+}
+.flag.flag-jo {
+  background-position: 0 -77px;
+}
+.flag.flag-jp {
+  background-position: -16px -77px;
+}
+.flag.flag-ke {
+  background-position: -32px -77px;
+}
+.flag.flag-kg {
+  background-position: -48px -77px;
+}
+.flag.flag-kh {
+  background-position: -64px -77px;
+}
+.flag.flag-ki {
+  background-position: -80px -77px;
+}
+.flag.flag-km {
+  background-position: -96px -77px;
+}
+.flag.flag-kn {
+  background-position: -112px -77px;
+}
+.flag.flag-kp {
+  background-position: -128px -77px;
+}
+.flag.flag-kr {
+  background-position: -144px -77px;
+}
+.flag.flag-kurdistan {
+  background-position: -160px -77px;
+}
+.flag.flag-kw {
+  background-position: -176px -77px;
+}
+.flag.flag-ky {
+  background-position: -192px -77px;
+}
+.flag.flag-kz {
+  background-position: -208px -77px;
+}
+.flag.flag-la {
+  background-position: -224px -77px;
+}
+.flag.flag-lb {
+  background-position: -240px -77px;
+}
+.flag.flag-lc {
+  background-position: 0 -88px;
+}
+.flag.flag-li {
+  background-position: -16px -88px;
+}
+.flag.flag-lk {
+  background-position: -32px -88px;
+}
+.flag.flag-lr {
+  background-position: -48px -88px;
+}
+.flag.flag-ls {
+  background-position: -64px -88px;
+}
+.flag.flag-lt {
+  background-position: -80px -88px;
+}
+.flag.flag-lu {
+  background-position: -96px -88px;
+}
+.flag.flag-lv {
+  background-position: -112px -88px;
+}
+.flag.flag-ly {
+  background-position: -128px -88px;
+}
+.flag.flag-ma {
+  background-position: -144px -88px;
+}
+.flag.flag-mc {
+  background-position: -160px -88px;
+}
+.flag.flag-md {
+  background-position: -176px -88px;
+}
+.flag.flag-me {
+  background-position: -192px -88px;
+}
+.flag.flag-mg {
+  background-position: -208px -88px;
+}
+.flag.flag-mh {
+  background-position: -224px -88px;
+}
+.flag.flag-mk {
+  background-position: -240px -88px;
+}
+.flag.flag-ml {
+  background-position: 0 -99px;
+}
+.flag.flag-mm {
+  background-position: -16px -99px;
+}
+.flag.flag-mn {
+  background-position: -32px -99px;
+}
+.flag.flag-mo {
+  background-position: -48px -99px;
+}
+.flag.flag-mp {
+  background-position: -64px -99px;
+}
+.flag.flag-mq {
+  background-position: -80px -99px;
+}
+.flag.flag-mr {
+  background-position: -96px -99px;
+}
+.flag.flag-ms {
+  background-position: -112px -99px;
+}
+.flag.flag-mt {
+  background-position: -128px -99px;
+}
+.flag.flag-mu {
+  background-position: -144px -99px;
+}
+.flag.flag-mv {
+  background-position: -160px -99px;
+}
+.flag.flag-mw {
+  background-position: -176px -99px;
+}
+.flag.flag-mx {
+  background-position: -192px -99px;
+}
+.flag.flag-my {
+  background-position: -208px -99px;
+}
+.flag.flag-mz {
+  background-position: -224px -99px;
+}
+.flag.flag-na {
+  background-position: -240px -99px;
+}
+.flag.flag-nc {
+  background-position: 0 -110px;
+}
+.flag.flag-ne {
+  background-position: -16px -110px;
+}
+.flag.flag-nf {
+  background-position: -32px -110px;
+}
+.flag.flag-ng {
+  background-position: -48px -110px;
+}
+.flag.flag-ni {
+  background-position: -64px -110px;
+}
+.flag.flag-nl {
+  background-position: -80px -110px;
+}
+.flag.flag-no {
+  background-position: -96px -110px;
+}
+.flag.flag-np {
+  background-position: -112px -110px;
+}
+.flag.flag-nr {
+  background-position: -128px -110px;
+}
+.flag.flag-nu {
+  background-position: -144px -110px;
+}
+.flag.flag-nz {
+  background-position: -160px -110px;
+}
+.flag.flag-om {
+  background-position: -176px -110px;
+}
+.flag.flag-pa {
+  background-position: -192px -110px;
+}
+.flag.flag-pe {
+  background-position: -208px -110px;
+}
+.flag.flag-pf {
+  background-position: -224px -110px;
+}
+.flag.flag-pg {
+  background-position: -240px -110px;
+}
+.flag.flag-ph {
+  background-position: 0 -121px;
+}
+.flag.flag-pk {
+  background-position: -16px -121px;
+}
+.flag.flag-pl {
+  background-position: -32px -121px;
+}
+.flag.flag-pm {
+  background-position: -48px -121px;
+}
+.flag.flag-pn {
+  background-position: -64px -121px;
+}
+.flag.flag-pr {
+  background-position: -80px -121px;
+}
+.flag.flag-ps {
+  background-position: -96px -121px;
+}
+.flag.flag-pt {
+  background-position: -112px -121px;
+}
+.flag.flag-pw {
+  background-position: -128px -121px;
+}
+.flag.flag-py {
+  background-position: -144px -121px;
+}
+.flag.flag-qa {
+  background-position: -160px -121px;
+}
+.flag.flag-re {
+  background-position: -176px -121px;
+}
+.flag.flag-ro {
+  background-position: -192px -121px;
+}
+.flag.flag-rs {
+  background-position: -208px -121px;
+}
+.flag.flag-ru {
+  background-position: -224px -121px;
+}
+.flag.flag-rw {
+  background-position: -240px -121px;
+}
+.flag.flag-sa {
+  background-position: 0 -132px;
+}
+.flag.flag-sb {
+  background-position: -16px -132px;
+}
+.flag.flag-sc {
+  background-position: -32px -132px;
+}
+.flag.flag-scotland {
+  background-position: -48px -132px;
+}
+.flag.flag-sd {
+  background-position: -64px -132px;
+}
+.flag.flag-se {
+  background-position: -80px -132px;
+}
+.flag.flag-sg {
+  background-position: -96px -132px;
+}
+.flag.flag-sh {
+  background-position: -112px -132px;
+}
+.flag.flag-si {
+  background-position: -128px -132px;
+}
+.flag.flag-sk {
+  background-position: -144px -132px;
+}
+.flag.flag-sl {
+  background-position: -160px -132px;
+}
+.flag.flag-sm {
+  background-position: -176px -132px;
+}
+.flag.flag-sn {
+  background-position: -192px -132px;
+}
+.flag.flag-so {
+  background-position: -208px -132px;
+}
+.flag.flag-somaliland {
+  background-position: -224px -132px;
+}
+.flag.flag-sr {
+  background-position: -240px -132px;
+}
+.flag.flag-ss {
+  background-position: 0 -143px;
+}
+.flag.flag-st {
+  background-position: -16px -143px;
+}
+.flag.flag-sv {
+  background-position: -32px -143px;
+}
+.flag.flag-sx {
+  background-position: -48px -143px;
+}
+.flag.flag-sy {
+  background-position: -64px -143px;
+}
+.flag.flag-sz {
+  background-position: -80px -143px;
+}
+.flag.flag-tc {
+  background-position: -96px -143px;
+}
+.flag.flag-td {
+  background-position: -112px -143px;
+}
+.flag.flag-tf {
+  background-position: -128px -143px;
+}
+.flag.flag-tg {
+  background-position: -144px -143px;
+}
+.flag.flag-th {
+  background-position: -160px -143px;
+}
+.flag.flag-tj {
+  background-position: -176px -143px;
+}
+.flag.flag-tk {
+  background-position: -192px -143px;
+}
+.flag.flag-tl {
+  background-position: -208px -143px;
+}
+.flag.flag-tm {
+  background-position: -224px -143px;
+}
+.flag.flag-tn {
+  background-position: -240px -143px;
+}
+.flag.flag-to {
+  background-position: 0 -154px;
+}
+.flag.flag-tr {
+  background-position: -16px -154px;
+}
+.flag.flag-tt {
+  background-position: -32px -154px;
+}
+.flag.flag-tv {
+  background-position: -48px -154px;
+}
+.flag.flag-tw {
+  background-position: -64px -154px;
+}
+.flag.flag-tz {
+  background-position: -80px -154px;
+}
+.flag.flag-ua {
+  background-position: -96px -154px;
+}
+.flag.flag-ug {
+  background-position: -112px -154px;
+}
+.flag.flag-um {
+  background-position: -128px -154px;
+}
+.flag.flag-us {
+  background-position: 0px 0px;
+}
+.flag.flag-uy {
+  background-position: -160px -154px;
+}
+.flag.flag-uz {
+  background-position: -176px -154px;
+}
+.flag.flag-va {
+  background-position: -192px -154px;
+}
+.flag.flag-vc {
+  background-position: -208px -154px;
+}
+.flag.flag-ve {
+  background-position: -224px -154px;
+}
+.flag.flag-vg {
+  background-position: -240px -154px;
+}
+.flag.flag-vi {
+  background-position: 0 -165px;
+}
+.flag.flag-vn {
+  background-position: -16px -165px;
+}
+.flag.flag-vu {
+  background-position: -32px -165px;
+}
+.flag.flag-wales {
+  background-position: -48px -165px;
+}
+.flag.flag-wf {
+  background-position: -64px -165px;
+}
+.flag.flag-ws {
+  background-position: -80px -165px;
+}
+.flag.flag-ye {
+  background-position: -96px -165px;
+}
+.flag.flag-yt {
+  background-position: -112px -165px;
+}
+.flag.flag-za {
+  background-position: -128px -165px;
+}
+.flag.flag-zanzibar {
+  background-position: -144px -165px;
+}
+.flag.flag-zm {
+  background-position: -160px -165px;
+}
+.flag.flag-zw {
+  background-position: -176px -165px;
+}
+#modal_container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#modal_container form {
+  margin: 0;
+}
+#modal_container .modal-body {
+  padding: 0;
+  border: none;
+  margin: 0;
+  width: 100%;
+  max-height: 445px;
+  height: 445px;
+  overflow: visible;
+}
+#modal_container .modal-header {
+  clear: both;
+  padding: 0px;
+  border-bottom: none;
+  height: 60px;
+}
+#modal_container .modal-body-title {
+  width: 620px;
+  height: 60px;
+  line-height: 85px;
+  margin: 0 auto;
+}
+#modal_container #signupSkillsModal .modal-title {
+  max-width: 620px;
+  overflow: hidden;
+  max-height: 60px;
+  display: inline-block;
+}
+#modal_container .modal-title {
+  font-size: 32px;
+  font-weight: 100;
+}
+#modal_container .modal-title .user_name {
+  font-weight: 300;
+}
+#modal_container .modal-signup-stage {
+  display: block;
+  float: right;
+  width: 35px;
+  font-size: 24px;
+  color: #E0DEDF;
+}
+#modal_container .modal-signup-stage.active {
+  color: #3584c8;
+}
+#modal_container .modal-body-content {
+  width: 620px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+#modal_container .fms_close {
+  background-image: url("../img/close.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
+  float: right;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+#modal_container .user-profile-title {
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid #3D9DCF;
+  white-space: nowrap;
+  position: relative;
+}
+#modal_container .user-profile-description {
+  font-size: 10px;
+  line-height: 12px;
+  padding-top: 80px;
+  width: 330px;
+}
+#modal_container .user-profile-description .demo-icons > span {
+  color: #999999;
+  margin: 0 0 32px 16px;
+}
+#modal_container .user-profile-description .search-skill-db {
+  width: 273px;
+  padding-left: 56px;
+  font-size: 12px;
+  margin-top: -45px;
+  padding-bottom: 27px;
+}
+#modal_container label.error {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  font-size: 12px;
+  color: #FA8072;
+}
+#modal_container .fms_checkbox {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #3284C9;
+  background-color: white;
+  float: left;
+}
+#modal_container .fms_checkbox.checked {
+  background-image: url("../img/icon_checked.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#modal_container .fms-button {
+  background-color: #2985cb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  -o-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  -ms-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.15);
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+#modal_container .fms-button.inactive {
+  background-color: #DDDCDC;
+}
+#modal_container .fms-button.inactive:hover {
+  background-color: #666666;
+}
+#modal_container .fms-button.special {
+  background-color: #5bb75b;
+}
+#modal_container .fms-button.special:hover {
+  background-color: #6ba541;
+}
+#modal_container .fms-button:hover {
+  background-color: #286a9c;
+}
+#modal_container .helper {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/popover.png");
+  cursor: pointer;
+}
+#modal_container .helper.float {
+  position: absolute;
+  top: -25px;
+  right: 5px;
+}
+#modal_container .popover-right-dark {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#modal_container .popover-right-dark .popover {
+  border-radius: 0px;
+}
+#modal_container .popover-right-dark .popover-title {
+  display: none;
+}
+#modal_container .popover-right-dark .popover.fade.right {
+  background-color: #434343;
+  width: 160px;
+}
+#modal_container .popover-right-dark .popover.fade.right.out {
+  width: 160px;
+}
+#modal_container .popover-right-dark .popover.fade.right .popover-content {
+  padding: 8px;
+  margin: 0;
+  border: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+#modal_container .popover-right-dark .arrow {
+  border-right-color: #434343;
+}
+#modal_container .popover-top-dark {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#modal_container .popover-top-dark .popover {
+  border-radius: 0px;
+}
+#modal_container .popover-top-dark .popover-title {
+  display: none;
+}
+#modal_container .popover-top-dark .popover.fade.top {
+  background-color: #434343;
+  width: 140px;
+}
+#modal_container .popover-top-dark .popover.fade.top.out {
+  width: 140px;
+}
+#modal_container .popover-top-dark .popover.fade.top .popover-content {
+  padding: 8px;
+  margin: 0;
+  border: 0;
+  font-size: 10px;
+  line-height: 15px;
+}
+#modal_container .popover-top-dark .popover.fade.top .arrow {
+  border-top-color: #434343;
+  position: absolute;
+  left: 20%;
+}
+#modal_container .popover-top-dark .popover.top .arrow {
+  left: 20%;
+}
+#modal_container .popover-top-light {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#modal_container .popover-top-light .popover {
+  border-radius: 0px;
+}
+#modal_container .popover-top-light .popover-title {
+  display: none;
+}
+#modal_container .popover-top-light .popover.fade.top {
+  background-color: white;
+  width: 140px;
+}
+#modal_container .popover-top-light .popover.fade.top.out {
+  width: 140px;
+}
+#modal_container .popover-top-light .popover.fade.top .popover-inner .popover-content {
+  padding: 8px;
+  margin: 0;
+  border: 0;
+  font-size: 10px;
+  line-height: 15px;
+}
+#modal_container .popover-top-light .popover.top .arrow {
+  border-top-color: white;
+}
+#modal_container .popover-top-light .popover-content {
+  padding: 8px;
+  margin: 0;
+  border: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8a8a8a;
+}
+#modal_container .popover-right-light {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#modal_container .popover-right-light .popover {
+  border-radius: 0px;
+}
+#modal_container .popover-right-light .popover-title {
+  display: none;
+}
+#modal_container .popover-right-light .popover.fade.right {
+  background-color: #e2e2e2;
+  width: 140px;
+}
+#modal_container .popover-right-light .popover.fade.right.out {
+  width: 140px;
+}
+#modal_container .popover-right-light .popover.fade.right .popover-content {
+  padding: 2px;
+  margin: 0;
+  border: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8a8a8a;
+}
+#modal_container .popover-right-light .popover.right .arrow {
+  border-right-color: #e2e2e2;
+}
+#modal_container .audio-player {
+  clear: both;
+  height: 70px;
+}
+#modal_container .audio-player div {
+  float: left;
+  background-color: white;
+  border-bottom: 2px solid #2985ca;
+}
+#modal_container .audio-player.loading {
+  opacity: 0.5;
+}
+#modal_container .audio-player .play-delete {
+  background-color: transparent;
+  background-image: url("../img/close_icon_grey.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+}
+#modal_container .play-button {
+  width: 40px;
+  height: 40px;
+  border-right: 1px solid #dfdfdf;
+  cursor: pointer;
+  background-image: url("../img/pause_icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#modal_container .play-button.pause {
+  background-image: url("../img/play_icon.png");
+}
+#modal_container .play-progress {
+  width: 250px;
+  height: 40px;
+  border-right: 1px solid #dfdfdf;
+  position: relative;
+}
+#modal_container .play-volume {
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/volume_icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#modal_container .fms_audio_info {
+  position: absolute;
+  height: 40px;
+  width: 200px;
+  line-height: 40px;
+  text-indent: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#modal_container .fms_audio_length {
+  position: absolute;
+  right: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+#modal_container .fms-progress-bar {
+  background-color: #cae8ff;
+  width: 0px;
+  height: 40px;
+}
+#modal_container .volume-bar {
+  width: 40px;
+  height: 20px;
+  position: relative;
+  top: 35px;
+  left: 5px;
+}
+#modal_container .ui-slider-handle.ui-state-default.ui-corner-all {
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  margin-top: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: #18578A;
+}
+#modal_container .volume-bar.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+  width: 30px;
+  height: 2px;
+  background-color: #B9B9B9;
+  border: none;
+}
+#modal_container .audio-player-placeholder {
+  width: 430px;
+  height: 40px;
+  border: 2px solid #D0D0D0;
+  margin-bottom: 26px;
+}
+.signup_country {
+  width: 220px;
+  float: left;
+}
+.signup_country .btn.btn-danger {
+  background-color: #EDEDED;
+  color: #888888;
+}
+.signup_country .btn-group.open .btn.btn-danger.dropdown-toggle {
+  background-color: #AAAAAA;
+}
+.signup_country .btn.btn-large {
+  padding: 9px 12px 10px;
+}
+.signup_gender {
+  width: 220px;
+  float: right;
+  margin-right: 60px;
+}
+.signup_gender .btn.btn-danger {
+  background-color: #EDEDED;
+  color: #888888;
+}
+.signup_gender .btn-group.open .btn.btn-danger.dropdown-toggle {
+  background-color: #AAAAAA;
+}
+.signup_gender .btn.btn-large {
+  padding: 9px 12px 10px;
+}
+.fms_button .pull-right {
+  float: none;
+  margin-left: 10px;
+}

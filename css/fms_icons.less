@@ -1,0 +1,142 @@
+@import 'common_functions';
+@baseurl:               'http://www.cs351.gurtem.com/';
+@skill_tile:            100px;
+
+// to use, you can either user <i class="skill-tile-faded *category name*"> </i> OR <i class="skill-tile-faded" data-categoryid="*category id number*"> </i>
+// This will give you a grey icon, that transitions to full colored icon on hover.
+i.skill-icon-faded {
+    height:                 @skill_tile;
+    width:                  @skill_tile;
+    display:                block; 
+    visibility:             visible;
+    background-repeat:      no-repeat;
+    background-size:        100% 100%;
+    .function_transition(all, 0.20s);
+    &.vocals, &[data-categoryid="8"] {
+        background-image:           url('@{baseurl}img/skill_icons/Microphone_GRAY.png');
+        &:hover {
+            background-image:           url('@{baseurl}img/skill_icons/Microphone.png');
+        }
+    }
+    &.guitar, &[data-categoryid="4"] {
+        background-image:           url('@{baseurl}img/skill_icons/Guitar_GRAY.png');
+        &:hover {
+            background-image:           url('@{baseurl}img/skill_icons/Guitar.png');
+        }
+    }
+    &.bass, &[data-categoryid="2"] {
+        background-image:           url('@{baseurl}img/skill_icons/ElectricGuitar_GRAY.png');
+        &:hover {
+            background-image:           url('@{baseurl}img/skill_icons/ElectricGuitar.png');
+        }
+    }
+    &.keyboard, &[data-categoryid="5"] {
+        background-image:           url('@{baseurl}img/skill_icons/Keyboard_GRAY.png');
+        &:hover {
+            background-image:           url('@{baseurl}img/skill_icons/Keyboard.png');
+        }
+    }
+    &.electronic-instruments, &[data-categoryid="3"] {
+        background-image:           url('@{baseurl}img/skill_icons/Sound_GRAY.png');
+        &:hover {
+            background-image:           url('@{baseurl}img/skill_icons/Sound.png');
+        }
+    }
+    &.wind-instruments, &[data-categoryid="9"] {
+        background-image:           url('@{baseurl}img/skill_icons/Sax_GRAY.png');
+        &:hover {
+            background-image:           url('@{baseurl}img/skill_icons/Sax.png');
+        }
+    }
+    &.other-strings, &[data-categoryid="7"] {
+        background-image:           url('@{baseurl}img/skill_icons/Violin_GRAY.png');
+        &:hover {
+            background-image:           url('@{baseurl}img/skill_icons/Violin.png');
+        }
+    }
+    &.additional-skills, &[data-categoryid="1"] {
+        background-image:           url('@{baseurl}img/skill_icons/Person_GRAY.png');
+        &:hover {
+            background-image:           url('@{baseurl}img/skill_icons/Person.png');
+        }
+    }
+    &.additional-skills, &[data-categoryid="10"] {
+        background-image:           url('@{baseurl}img/skill_icons/Drum_GRAY.png');
+        &:hover {
+            background-image:           url('@{baseurl}img/skill_icons/Drum.png');
+        }
+    }
+} 
+// end of the .skill-icon-faded class
+// to use, you can either user <i class="skill-tile *category name*"> </i> OR <i class="skill-tile" data-categoryid="*category id number*"> </i>
+// This will give you a grey icon, that transitions to full colored icon on hover.
+i.skill-icon {
+    height:                 @skill_tile;
+    width:                  @skill_tile;
+    display:                block;
+    visibility:             visible;
+    background-repeat:      no-repeat;
+    background-size:        100% 100%;
+    .function_transition(all, 0.20s);
+    &.vocals, &[data-categoryid="8"] {
+        background-image:           url('@{baseurl}img/skill_icons/Microphone.png');
+    }
+    &.guitar, &[data-categoryid="4"] {
+        background-image:           url('@{baseurl}img/skill_icons/Guitar.png');
+    }
+    &.bass, &[data-categoryid="2"] {
+        background-image:           url('@{baseurl}img/skill_icons/ElectricGuitar.png');
+    }
+    &.keyboard, &[data-categoryid="5"] {
+        background-image:           url('@{baseurl}img/skill_icons/Keyboard.png');
+    }
+    &.electronic-instruments, &[data-categoryid="3"] {
+        background-image:           url('@{baseurl}img/skill_icons/Sound.png');
+    }
+    &.wind-instruments, &[data-categoryid="9"] {
+        background-image:           url('@{baseurl}img/skill_icons/Sax.png');
+    }
+    &.other-strings, &[data-categoryid="7"] {
+        background-image:           url('@{baseurl}img/skill_icons/Violin.png');
+    }
+    &.additional-skills, &[data-categoryid="1"] {
+        background-image:           url('@{baseurl}img/skill_icons/Person.png');
+    }
+    &.additional-skills, &[data-categoryid="10"] {
+        background-image:           url('@{baseurl}img/skill_icons/Drum.png');
+    }
+}
+// end of the .skill-icon class
+
+
+// The header icons
+@dashboard_icon_square:             45px;
+.dashboard-icon {
+    height:                 @dashboard_icon_square;
+    width:                  @dashboard_icon_square;
+    background-repeat:      no-repeat;
+    background-size:        100% 100%; 
+    .function_transition(all, 0.15s);
+    &.fmsicon-profile {
+        background-image:           url('@{baseurl}img/header_icon_profile.png');
+        margin-top:                 -6px;
+        &:hover, &.active {
+            background-image:           url('@{baseurl}img/header_icon_profile_active.png');
+        }
+    }
+    &.fmsicon-project {
+        background-image:           url('@{baseurl}img/header_icon_project.png');
+        margin-top:                 -7px;
+        &:hover, &.active {
+            background-image:           url('@{baseurl}img/header_icon_project_active.png');
+        }
+    }
+    &.fmsicon-message {
+        background-image:           url('@{baseurl}img/header_icon_message.png');
+        margin-top:                 -4px;
+        &:hover, &.active {
+            background-image:           url('@{baseurl}img/header_icon_message_active.png');
+        }
+    }
+}
+// end of header icons

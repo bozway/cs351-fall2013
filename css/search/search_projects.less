@@ -1,0 +1,281 @@
+@import '../main';
+@import '../common_functions';
+//============banner colors======================================
+@fms_bg_color:                      #3584c8;
+@banner_text_color:                 #f4f4f4;
+@seachbar_bg_color:                 #28679e;      
+@searchby_text_color:               #90abc3;
+@search_input_color:                #90abc3;
+@searchby_menu_text_color:          #2c3e50;
+@searchby_menu_text_selected_color: white;
+
+//==============my project needs section colors==========================================
+@my_project_needs_color:        black; 
+@short_line_color:              #54a8d3;
+@dropdown_text_color:           #888888;
+@dropdownShadow:                #bebebe;
+@filter_title_color:            #6a6a6a;
+@clear_all_color:               @fms_bg_color;
+@style_text_color:              #2a2a2a;
+@advanced_filter_color:         @style_text_color;
+@toggle_button_color:           @fms_bg_color;
+@toggle_unselected_color:       #d7dcde;
+
+p{
+    margin: 0 0;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: @dropdown_text_color;
+}
+.buffer{
+    height:             200px;
+    width:              1500px;
+    background:         green;
+}
+.verticalBuffer{
+    display:            inline;
+    height:             20px;
+    width:              20px;
+    background:         yellow;
+}
+//=======================================banner===============================
+#bannerWrapper{   
+    background:        @fms_bg_color;
+}
+#searchBanner{
+    height:             173px;
+    width:              940px;  
+}
+#bannerText{
+    margin:             0;
+    margin-top:         55px;
+    font-size:          45px;
+    .font-thin ();
+    line-height:        1em;    
+    color:              @banner_text_color;
+}
+#searchBar{
+        margin-top:             22px;   
+        width:                  1000px;
+    
+}
+//==============================================search bar========================================================
+
+#searchBy{
+    display:                inline-block;            
+    .fms_caret{
+        right:              20px;
+    }
+    &.fms_dropdown_container {
+        span {
+            color:                  white;
+        }        
+        background:             @seachbar_bg_color;
+        border:                 none;
+        //border-right:           2px solid #3584c8;
+        p {         
+            padding:                0;
+            position:               relative;
+            width:                  inherit;
+            height:                 inherit;
+            line-height:            50px;
+            cursor:                 pointer;       
+        }
+    }    
+}
+
+#normalinput,#textextinput{
+    border:                 none;
+    border-radius:          0;
+    height:                 24px;
+    margin:                 0;
+    margin-left:            2px;   
+    margin-bottom:          2px;
+    padding:                16px 0px 10px 23px;
+    width:                  700px !important;
+    background:             @seachbar_bg_color;
+    color:                  white;
+}
+#generalSearch{
+    border-radius:          0;    
+    position:               relative;
+    left:                   -2px;
+    margin-bottom:          2px;
+    height:                 50px;
+    width:                  50px;
+    background-color:       @seachbar_bg_color;
+    font-size:              15px;
+    padding:                15px 10px;
+    //color:                  @dropdown_text_color;
+    color:                  #B2BCC5;
+}
+//==========================================================sider bar===========================================================================
+
+// search body part.....................
+.title{
+    margin-top:             25px;
+    font-size:              25px;
+    margin-bottom:          10px;
+    .font-thin();
+}
+#my_project{
+    color:                  @my_project_needs_color;
+}
+.shortLine{
+    width:              30px;
+    border-color:       @short_line_color;
+    margin:             0;
+}
+//project and skill dropdwon------------------------------------------------
+.dropdown01{    
+    margin-top:             25px;
+    .fms_caret{
+        right:              18px;
+        top:                16px;
+    }
+    &.fms_dropdown_container {
+        box-shadow:             0px 3px 0px @dropdownShadow;
+        border:                 none;
+        width:                  220px;
+        height:                 37px;
+        border-radius:          10px;
+        ul{
+            width:              216px !important;
+        }
+        p {         
+            padding:                0;
+            position:               relative;
+            width:                  inherit;
+            height:                 inherit;
+            line-height:            37px;
+            cursor:                 pointer;
+            span:first-child{
+                width:              160px;
+                border-right:       2px solid #d9d9d9;    
+            }
+        }
+    }    
+}
+#select_skill{
+    margin-top:             25px;
+}
+//genre and influence------------------------------------
+
+.filter_title{
+    margin-top:             16px;
+    margin-bottom:          12px;
+    color:                  @filter_title_color;
+    position:               relative;
+}
+#skill_style ul{
+    margin-left:                0;
+    .selected{
+        color:              @toggle_button_color !important;
+    }
+    .second-icon.fui-checkbox-checked, .second-icon.fui-checkbox-unchecked{
+        font-size:          20px;
+        margin-right:       15px;
+        cursor:             pointer;
+    }
+    p{
+         //color:              @style_text_color;
+        span:first-child{
+            color:              @toggle_unselected_color; 
+        }         
+    }
+
+}
+.clear{
+    position:               absolute;
+    right:                  1px;
+    top:                    0px;
+    font-size:              10px;
+    color:                  @clear_all_color;
+    cursor:                 pointer;
+}
+//--search button------------------
+#searchByMySkill{
+    margin-top:             34px;
+    width:                  100px;
+    margin-left:            0px;
+}
+//=================================================advanced filter====================
+@project_exp_color:             #6a6a6a;
+#advanced_filter{
+    color:              @advanced_filter_color;
+    margin-top:         48px;
+}
+.project_exp_title{
+    margin-top:         25px;
+    color:              @project_exp_color;
+    font-size:          16px;
+    .font-thin();
+}
+#state_dropdown ul{
+    top:                    2px;
+}
+#zipcode{
+    margin-top:             25px;
+}
+#audio_previe_text{
+    margin-left:                30px;
+}
+#audio_preview_check_box{
+    position:               absolute;
+    z-index:                1;
+    font-size:              20px;
+    cursor:                 pointer;
+    color:                  #549dd5;
+}
+#apply_filter{
+    margin-top:             16px;
+    width:                  126px;
+    line-height:            22px;
+    margin-bottom:          40px;
+    margin-left:            0px;
+}
+//======================================================================================================
+#result_header{
+    display:                none;
+    #result_count{
+        //vertical-align:        middle;
+        //line-height:            74px; 
+        //width:                  300px;
+    }    
+    position:               relative;
+    height:                 98px;
+    #sortBy{
+        position:           absolute;
+        right:              0px;
+        top:                -5px;
+        width:              162px;
+        ul{
+            width:          158px;
+        }
+        p span:first-child{
+            width:          70%;
+        }
+    }
+}
+#result_header_placeholder {
+    margin:                 0;
+    height:                 98px;
+    text-align:             center;
+    line-height:            98px;
+    font-size:              20px;
+    .font-normal();
+}
+.fui-checkbox-checked {
+    color:                  #2985ca;
+}
+#i2{
+    margin-bottom:          30px;
+}
+#i1{
+    .second-icon.fui-checkbox-unchecked{
+        color:               #bdc3c7;
+    }
+   .second-icon.fui-checkbox-checked{
+       color:               #2985ca;
+   }
+}

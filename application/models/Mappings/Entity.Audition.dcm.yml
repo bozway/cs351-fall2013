@@ -1,0 +1,50 @@
+Entity\Audition:
+  type: entity
+  table: audition
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    cl:
+      type: string
+      nullable: true
+    status:
+      type:     integer
+      nullable: true
+    creationTime:
+      type:     datetime
+    
+#One to one relations
+
+#One to Many relations
+
+#Many to one relations
+      
+  manyToOne:
+    applicant:
+      targetEntity: User
+      inversedBy:   auditions  
+    project:
+      targetEntity: Project
+      inversedBy:   auditions
+    skill:
+      targetEntity: ProjectSkill
+      inversedBy:   auditions
+
+#Many to many relations    
+  manyToMany:
+    files:
+      targetEntity: File
+      joinTable:
+        name: Audition_File
+        joinColumns:
+          auditionID:
+            referencedColumnName: id
+        inverseJoinColumns:
+          fileID:
+            referencedColumnName: id
+            unique: true
+    
+    

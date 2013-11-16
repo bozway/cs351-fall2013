@@ -1,0 +1,32 @@
+Entity\Message:
+  type: entity
+  table: message
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    content:
+      type:     string
+      length:   1000
+    creationTime:
+      type:     datetime
+    
+#One to one relations
+
+#One to many relations
+
+#Many to one relations
+
+  manyToOne:
+    sender:
+      targetEntity: User
+      inversedBy:   messageSent
+    thread:
+      targetEntity: Thread
+      inversedBy:   messages
+      
+
+#Many to many relations    
+

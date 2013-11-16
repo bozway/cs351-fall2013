@@ -1,0 +1,151 @@
+@import '../main';
+
+body{
+    background-color:           #f9f7f6;
+}
+.clear{
+    clear:                      both;
+}
+/*----------help_center_header----------*/
+.help_center_header{
+    //width:                      1200px;
+    width:                      100%;
+    height:                     270px;
+    background:                 black url('@{baseurl}img/help_center_head.jpg') no-repeat center;
+    //background-image:           url(../../img/help_center_head.png);
+    //margin:                     0 auto;
+    p{
+        text-align:             center;
+        font-size:              35px;
+        color:                  #ffffff;
+        margin:                 0;
+        line-height:            1.3;
+        .font-thin ();
+    }
+    p:first-child{
+        font-size:              50px;
+        padding-top:            60px;
+        span{
+            .font-normal();
+        }
+    }
+}
+/*----------help_center_content----------*/
+.help_center_content{
+    width:                      940px;
+    margin:                     50px auto;
+    ul:first-child{
+        margin-left:            0;
+    }
+    li{
+        font-size:              18px;
+        margin-bottom:          15px;
+        .font-light();
+        a{
+            color:              #38a6f8;
+        }
+    }
+    .content_title{
+        .font-normal ();
+        font-size:              20px;
+    }
+}
+/*----------FAQ header----------*/
+.faq_header{
+    width:                      1200px;
+    height:                     270px;
+    background-image:           url(../../img/help_center_head.png);
+    margin:                     0 auto;
+    p{
+        font-size:              75px;
+        color:                  #ffffff;
+        padding-top:            50px;
+        padding-left:           185px;
+        .font-thin ();
+    }
+}
+.faq_content{
+    width:                      940px;
+    margin :                    20px auto;
+    position:                   relative;
+    .faq_content_left{
+        h2{
+            width:              50px;
+            white-space:        nowrap;
+            font-size:          36px;
+            color:              #38A6F8;
+            margin-bottom:      35px;
+            border-bottom:      2px solid #38A6F8;
+            padding-bottom:     10px;
+            padding-top:        50px;
+            .font-thin ();
+        }
+        #FMS_Essentials{
+            border-top:         none;
+            padding-top:        0;
+        }
+        h3{
+            font-size:          20px;
+            margin-bottom:      20px;
+            .font-normal ();
+        }
+        p{
+            font-size:          15px;
+            margin-bottom:      32px;
+            .font-light ();
+            span{
+                .font-normal ();
+            }
+        }
+    }
+    .faq_content_right{
+        position:               absolute;
+        right:                  0;
+        h2{
+            font-size:          30px;
+            width:              140px;
+            white-space:        nowrap;
+            padding-bottom:     15px;
+            border-bottom:      1px solid #cccccc;
+            .font-thin();
+        }
+        h3{
+            font-size:          18px;
+            margin-top:         25px;
+            .font-normal();
+        }
+        p{
+            margin-bottom:      0;
+        }
+        a{
+            font-size:          14px;
+            color:              #38a6f8;
+            .font-light();
+        }
+    }
+    .top{
+            //width:              45px;
+            color:              #38a6f8;
+            padding-top:        20px;
+            position:           absolute;
+            right:              135px; // line up with the text in the right sidebar
+            border-bottom:      1px solid #38a6f8;
+            .font-normal();
+        }
+}
+/*----------help_center_footer----------*/
+.help_center_footer{
+    margin:                     100px auto 0;
+    width:                      660px;
+    border-top:                 1px solid #cdcdcd;
+    p{
+        text-align:             center;
+        padding-top:            40px;
+        .font-light ();
+        a{
+            color:              #38a6f8;
+        }
+    }
+}
+
+

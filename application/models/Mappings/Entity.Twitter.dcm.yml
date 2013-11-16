@@ -1,0 +1,32 @@
+Entity\Twitter:
+  type: entity
+  table: twitter
+  fields:    
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    twitterUserId:
+      type:     string
+    accessToken:
+      type:     string
+    tokenSecret:
+      type:     string
+      nullable: true
+    expire:
+      type:     datetime
+      nullable: true
+      
+#One to one relations
+
+  oneToOne:
+    user:
+      targetEntity: User
+      mappedBy:     TW
+
+#One to Many relations
+
+#Many to one relations
+
+#Many to many relations    

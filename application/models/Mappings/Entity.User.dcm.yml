@@ -1,0 +1,214 @@
+Entity\User:
+  type: entity
+  table: user
+  fields:    
+    id:
+      type:     integer
+      id:       true
+      generator:
+        strategy: AUTO
+    password:
+      type:     string
+      length:   32
+    firstName:
+      type:     string
+      length:   255
+    lastName:
+      type:     string
+      length:   255
+    email:
+      type:     string
+      length:   255
+      unique:   true
+    creationTime:
+      type:     datetime
+    registrationIP:
+      type:     string   
+    lastLoginIP:
+      type:     string
+      nullable: true
+    lastLoginTime:
+      type:     datetime
+    status:
+      type:     integer
+      nullable: false 
+    dob:
+      type:     date
+      nullable: true
+    gender:
+      nullable: true
+      type:     integer
+    privacy:
+      type:     integer
+      nullable: true
+    city:
+      type:     string
+      nullable: true
+    zipCode:
+      type:     string
+      nullable: true
+    unreadThread:
+      type:     integer
+      nullable: true
+    webAddress:
+      type:     string
+      nullable: true  
+    biography:
+      type:     string
+      nullable: true
+      length:   2000
+    agentName:
+      type:     string
+      nullable:  true
+    agentEmail:
+      type:     string
+      nullable:  true
+    agentPhone:
+      type:     string
+      nullable:  true
+    managerName:
+      type:     string
+      nullable:  true
+    managerEmail:
+      type:     string
+      nullable:  true
+    managerPhone:
+      type:     string
+      nullable:  true
+    bookingName:
+      type:     string
+      nullable:  true
+    bookingEmail:
+      type:     string
+      nullable:  true
+    bookingPhone:
+      type:     string
+      nullable:  true
+    publisherName:
+      type:     string
+      nullable:  true
+    publisherEmail:
+      type:     string
+      nullable:  true
+    publisherPhone:
+      type:     string
+      nullable:  true
+    recordName:
+      type:     string
+      nullable:  true
+    recordWebsite:
+      type:     string
+      nullable:  true
+    PWL:
+      type:     string
+      nullable:  true
+    FBL:
+      type:     string
+      nullable:  true
+    TWL:
+      type:     string
+      nullable:  true       
+    SCL:
+      type:     string
+      nullable: true
+    pwToken:
+      type:     string
+      length:   32
+      nullable: true
+    pwTokenCreationTime:
+      type:     datetime
+      nullable: true
+
+
+#one to one relations
+  oneToOne:
+    profilePicture:
+      targetEntity: File 
+    coverPhoto:
+      targetEntity: File  
+    FB:
+      targetEntity: Facebook
+      inversedBy:   user
+    TW:
+      targetEntity: Twitter
+      inversedBy:   user
+       
+    # location:
+      # targetEntity: Location
+
+
+#one to many relations
+  oneToMany:
+    projects:
+      targetEntity: ProjectMember
+      mappedBy    : user
+    files:
+      targetEntity: File
+      mappedBy:     owner
+    auditions:
+      targetEntity: Audition
+      mappedBy:     applicant
+    messageSent:
+      targetEntity: Message
+      mappedBy:     sender
+    skills:
+      orderBy:      { 'ranking': 'ASC'}
+      targetEntity: UserSkill
+      mappedBy:     user
+    threads:   
+      targetEntity: ThreadUser   
+      mappedBy:     user      
+    myProjects:
+      targetEntity: Project
+      mappedBy:     owner  
+
+#Many to one relations
+  manyToOne:
+    country:
+      targetEntity: Country
+      joinColumn:
+        name: countryCode
+        referencedColumnName: isoCode
+    state:
+      targetEntity: USState
+      joinColumn:
+        name: state 
+        referencedColumnName: abbreviatedName
+    language:
+      targetEntity: Language
+      joinColumn:
+        name: languageCode
+        referencedColumnName: isoCode      
+
+    
+#Many to many relations
+      
+  manyToMany:
+    contacts:
+      targetEntity: User
+      joinTable:
+        name: user_contacts
+        joinColumns:
+          user_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          contacts_id:
+            referencedColumnName: id
+  
+    # skills:
+      # targetEntity: Skill
+      # joinTable:
+        # name: User_Skill
+        # joinColumns:
+          # user_id:
+            # referencedColumnName: id
+        # inverseJoinColumns:
+          # skill_id:
+            # referencedColumnName: id
+
+
+    
+                  
+            
+        
+    

@@ -1,0 +1,37 @@
+Entity\Skill:
+  type: entity
+  table: skill
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    name:
+      type:     string
+    iconPath:
+      type:     string
+    type:
+      type:     integer
+    popularity:
+      nullable: true
+      type:     integer
+    searchTimes:
+      nullable: true
+      type:     integer
+        
+
+        
+#One to one relations
+
+#One to many relations
+  oneToMany:
+    skills:
+      targetEntity: Skill
+      mappedBy:     category
+#Many to one relations
+  manyToOne:
+    category:
+      targetEntity: Skill
+      inversedBy  : skills 
+#Many to many relations

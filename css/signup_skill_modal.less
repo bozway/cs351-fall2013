@@ -1,0 +1,183 @@
+@size_modal_width:          950px;
+@size_modal_height:         633px;
+@modalContentHeight:        450px;
+@modalContentWidth:         756px;
+@input_border_gray:         rgba(230, 230, 230, 0.75);
+@search_input_gray:         #b8b8b8;
+
+////////////////////////////////////
+//  Container
+////////////////////////////////////
+
+@import 'common_functions';
+@import 'main';
+
+#signupSkillsModal {
+    width:                  @size_modal_width;
+    height:                 @size_modal_height;
+    margin-left:            -(@size_modal_width / 2);
+    background-color:       #F5F3F4;
+    color:                  #3A3A3A;
+    overflow:               hidden;
+    
+    // Overide element styles
+    .modal-body-content {
+        width:                  @modalContentWidth;
+        height:                 @modalContentHeight;
+    }
+    .user-profile-title {
+        clear:                  both;
+    }
+    .user-profile-description {
+        clear:                  both;
+        font-size:              10px;
+        width:                  330px;
+    }
+}
+
+////////////////////////////////////
+//  Column 1
+////////////////////////////////////
+#skill_column1 {
+    width:                  @modalContentWidth/2;
+    height:                 @modalContentHeight;
+    overflow:               hidden;
+    float:                  left;
+}
+
+.skill-select-area {
+    width:                  330px;
+    li {
+        border:             6px solid transparent;
+        border-left:        0;
+        border-top:         0;
+        margin:             0;
+        padding:            0;
+        float:              left;
+    }
+    p {
+        font-size:          12px;
+        background-color:   white;
+        padding:            8px;
+        margin:             0;
+        border:             none;
+        cursor:             pointer;
+        &.selected {
+            background-color:   @color_button_blue;
+            color:              white;
+        }
+        &:hover {
+            color:              white;
+            background-color:   @color_button_blue;
+        }
+    }
+}
+
+#common_skills {
+    height:                 180px;   
+}
+
+#extra_skills {
+    height:                 60px;   
+}
+
+#skillsearchbox {
+    color:                  #2a2a2a;
+    &:-webkit-input-placeholder {color: #2a2a2a;}
+    &:-moz-placeholder {color: #2a2a2a; opacity: 1.0;}
+    &:-ms-input-placeholder {color: #2a2a2a;}
+    font-family:            @base_font_family;
+    .font-normal();
+    line-height:            20px;
+    width:                  320px;    
+    height:                 20px; 
+  
+    box-shadow:             none;
+    background:             url('../img/fms_user_portal/icon_magnifying_glass.png') 290px 0px no-repeat;
+    border-radius:          20px;
+    
+}
+
+////////////////////////////////////
+//  Column 2
+////////////////////////////////////
+#skill_selected {
+    li {
+        clear:              both;
+        position:            relative;
+        p {
+            background-color:   #3690d4;
+            color:              white;
+            padding:            0px;
+            display:            block;
+            line-height:        35px;
+            padding-left:       20px;
+            width:              235px;
+            height:             35px;
+        }
+        img{
+            position:               absolute;
+            right:                  0px;
+            top:                    0px;
+            background-color:       #1867a2;
+            cursor:                 pointer;
+        }
+    }
+}
+
+.skill-selected-handle{
+    background-color:               #1867a2;
+}
+
+#skill_column2 {
+           width:                   255px;
+           height:                  450px;
+           overflow:                hidden;
+         
+           margin-top:              -40px;
+           position:                absolute;
+           left:                    380px;
+    p{
+        display:            inline-block;   
+    }
+    #help_skill_selection{
+        display:        inline-block;
+        position:       relative;
+        right:          -50px;
+    }
+}
+
+
+
+////////////////////////////////////
+//  Submit area
+////////////////////////////////////
+#skill_column3 {
+    width:                  110px;
+    height:                 360px;
+    right:                  0;
+    position:               absolute;
+}
+
+#help_skill_popover{
+    position:               absolute;
+    left:                   0px;
+    top:                    60px;
+    display:                block;
+    width:                  50px;
+    background-color:       gray;    
+}
+
+#error_message {
+    display:                none;
+    width:                  100px;
+    position:               absolute; 
+    right:                  0px;
+    top:                    25px;
+}
+#skills-submit {
+    position:               absolute; 
+    bottom:                 0;
+    right:                  0;
+    line-height:            36px;
+}

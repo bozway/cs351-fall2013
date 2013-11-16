@@ -1,0 +1,31 @@
+Entity\Facebook:
+  type: entity
+  table: facebook
+  fields:    
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    facebookUserId:
+      type:     string
+    accessToken:
+      type:     string
+    expire:
+      type:     datetime
+      nullbale: true
+      
+#One to one relations
+
+  oneToOne:
+    user:
+      targetEntity: User
+      mappedBy:     FB
+
+#One to Many relations
+
+#Many to one relations
+
+#Many to many relations    
+
+    

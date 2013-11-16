@@ -1,0 +1,150 @@
+@import '../main';
+@import '../common_functions';
+
+#result_count{
+        font-size:                  20px;
+        .font-light();
+}
+#musician_search_result{
+    .project_info{
+        width:                      700px;
+        height:                     140px;
+        position:                   relative;
+    }
+    li{
+        list-style-type:            none;
+    }
+    .project_play{
+        width:                  140px;
+        height:                 140px; 
+        float:                  left;
+        img{
+            width:                  140px;
+            height:                 140px;
+        }
+    }
+    .project_detail_info{
+        float:                      left;
+        width:                      455px;
+        margin-left:                20px;
+    }
+    .project_title{
+        font-size:                  24px;
+        color:                      #2985ca;
+        .font-light();
+    }
+    .project_location{
+        font-size:                  14px;
+        height:                     15px;
+        color:                      #2a2a2a;
+        margin-top:                 2px;
+        margin-bottom:              20px;
+    }
+    .user_intro{
+        font-size:                  12px;
+        color:                      #6a6a6a;
+        .font-light();
+        a{
+            color:                  #3584c8;
+        }
+    }
+    .save_message{
+        margin-top:                 25px;
+        p{
+            font-size:              12px;
+            color:                  #2a2a2a;
+            float:                  left;
+        }
+        p:last-child{
+            margin-left:            50px;
+        }
+    }
+    .project_photo_hover{
+        line-height:            140px;
+        text-align:             center;
+        width:                  140px;        
+        height:                 140px;
+        left:                   0px;
+        position:               absolute;
+        top:                    0px;
+        opacity:                0;
+        font-size:              37px;
+        background-image:       url('/img/PLAYER_PLAY.png');
+        background-position:    center;
+        background-repeat:      no-repeat;
+        &.pause {
+            background-image:   url('/img/PLAYER_PAUSE.png');
+        }
+    }
+    .project_details{
+        float:                      right;
+        width:                      60px;
+        .match_rating{
+            position:               relative;
+            padding-top:            25px;
+            font-size:              11px;
+            color:                  #666666;
+        }
+        .rating_value{
+            font-size:              27px;
+            position:               absolute;
+            top:                    5px;
+            color:                  #0a0906;
+            .font-light();
+            span{
+                position:           absolute;
+                top:                -5px;
+                font-size:          14px;
+            }
+        }
+    }
+    hr{
+        margin-top:                 30px;
+    }
+    .project_msg_audition{
+        position:                   absolute;
+        left:                       637px;
+        top:                        50px;
+        button{
+            border:                 none;
+            background-color:       transparent;
+            i{
+                color:              #3584c8;
+                font-size:          25px;
+            }
+        }
+    }
+}
+
+.back_to_top{
+    width:                  121px;
+    height:                 30px;
+    background-color:       #333333;
+    float:                  right;
+    background-image:       url('/img/back_to_top.png');
+    background-repeat:      no-repeat;
+    background-position:    right;
+    font-family:            @base_font_family;
+    color:                  white;
+    text-indent:            -25px;
+    font-size:              12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

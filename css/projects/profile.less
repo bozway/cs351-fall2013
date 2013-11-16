@@ -1,0 +1,392 @@
+@import '../main';
+@import '../common_functions';
+
+@skill_tile:               63px;
+.project_public_content {
+    margin-bottom:          50px;
+}
+body{
+    background-color:       #fbfaf9;   
+}
+.profile-container {
+    div, img {
+        vertical-align:         text-top;
+    }
+}
+
+.profile-container{
+    width:                  940px;   
+    margin:                 auto;
+    padding-top:            40px;
+}
+.profile-header{ 
+    .cover-container {
+        width:              300px;
+        height:             300px;
+        margin:             0px;
+        overflow:           hidden;
+        display:            inline-block;
+    }
+    
+    .project-title {
+        .font-light ();
+        font-size:          32px; 
+        line-height:        1;
+    }
+     .project-creator{         
+         .font-normal();
+         font-size:         18px;
+         line-height:        1;
+     }
+    #project-basic-info .info{        
+         .font-normal();
+         font-size:         15px;
+         margin-top:        15px;
+         vertical-align :   middle ;
+         line-height:       35px;
+         color:             #222222;
+         .icon{
+            width:          24px;
+            color:          #a9a9a9;
+            font-size:      22px;
+            vertical-align: middle;
+         }
+         span{
+            margin:         0px 6px 0px 3px;   
+         }
+    }
+    #project-basic-info  .info img{
+        vertical-align:     text-bottom;
+        margin-right:       10px;        
+    }
+    #project-basic-info .info span{
+        color:              #666666
+    }
+    #linkTW{        
+        width:              36px;
+        padding:            8px 7px 8px 6px;   
+        margin-right:       5px;
+        background-color:   #49AECB; 
+    }
+    #linkFB{
+        padding:            8px;    
+        margin-right:       5px;
+        background-color:   #406DBF;
+    }
+    .span7 {
+        margin-top:         20px;
+        position:           relative; 
+    }
+    .popover {        
+        background-color:   #d8d8d8;
+        position:           absolute;
+        top:                -8px;
+        left:               95px; 
+        -webkit-border-radius: 0px;
+        height:             33px;
+        color:              #ffffff;
+        border-radius:      0px;
+        display:            block;        
+        margin:             0 13px 0 -3px;
+        width:              auto;
+   }
+   .popover.right .arrow { 
+       border-right-color:   #d8d8d8;
+    }
+.span7 .audition {
+        width:              160px;
+        .font-normal();
+        font-size:          22px;
+        position:           absolute;
+        top:                45px;
+        right:              20px; 
+        background-color:   #2ecc71;
+    }
+}
+#clear{
+        border:             1px solid #85b9e0;
+        margin:             30px auto;
+}
+.project_need li{
+        height:             63px;
+        margin-bottom:      10px;
+        position:           relative;
+}
+.project_need li .skill_name{
+        cursor:             pointer;
+        font-size:          16px;
+        left:               70px;
+        line-height:        63px;
+        padding-left:       15px;
+        position:           absolute;
+        top:                0;
+        width:              215px;
+}
+.project_need li .skill_name:hover{
+        background-color:   #D4E4F1;
+}
+.project_need li img{
+        float:              left;
+        background-color:   #FFFFFF;
+        padding-right:      10px;
+}
+.project_need{
+    #hotlink{
+        margin:             0px;
+    }
+    .fui-arrow-right{
+        position:           absolute;
+        right:              8px;
+        top:                0;
+        color:              #38a6f8;
+    }
+    .hot-link li p .down_arrow {
+        transform:          rotate(90deg);
+        -webkit-transform:  rotate(90deg);
+        -moz-transform:     rotate(90deg);
+        filter:            progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+        position:           absolute;
+        right:              8px;
+        top:                0;
+        color:              #38a6f8;
+    }
+    .show {
+        background-color:   #FFFFFF;
+        position:           absolute;
+        top:                64px;
+        left:               69px;
+        float:              left;  
+        visibility:         visible;
+        box-shadow:         0 5px 10px rgba(0, 0, 0, 0.3);
+        verflow-y:          auto;
+        height:             auto;
+        width:              210px;
+        z-index:            1;
+        padding:            10px;
+        p {
+            width:             210px;
+            white-space:       normal;
+            word-wrap:         break-word;
+            .font-light ();
+            font-size:         15px;
+            span{
+                .font-medium ();
+            }
+        }
+    }
+    .btn.btn-inverse {
+        .font-normal();
+        font-size:            20px;
+        background-color:     #202020;
+        margin-bottom:        15px;
+        text-align:           left;
+        cursor:               default;
+        span{
+            font-size:            15px;                 
+        }
+    }
+    .btn.btn-inverse:hover {
+        background-color:     #202020;
+    }
+}
+
+.project_member{
+    margin-top:             50px;
+    margin-bottom:          50px;
+    .btn.btn-inverse {
+        .font-normal();
+        font-size:              20px;
+        background-color:       #202020;
+        margin-bottom:          15px;
+        text-align:             left;
+        cursor:                 default;
+    }
+    .btn.btn-inverse:hover {
+        background-color:       #202020;
+    } 
+    li {
+        line-height:            0px;
+        border:                 2px solid #f3f2f1;    
+        height:                 70px;
+        margin-bottom:          10px;
+        position:               relative;
+        overflow:               hidden;
+    }    
+    .hovered {
+        border:            2px solid #38a6f8;
+    }
+    li .member_cover{
+        float:                 left;
+        width:                 70px;
+        height:                70px;
+        margin-right:         10px;
+        &:hover{
+            background-image:   url('@{baseurl}img/project_profile_search.jpg');
+            img {
+                visibility:         hidden;
+            }
+        }
+        img{
+            background-color:      #FFFFFF;
+            width:                 70px;
+            height:                70px;
+        }
+    }
+    ul {
+        margin:                0px;   
+    }
+    p {
+       line-height:            1;
+    }
+     .member_name{
+         padding-top:           5px;
+        .font-normal(); 
+         font-size:             16px;
+     }
+     .joined_skill{
+          line-height:          14px;
+         .font-normal(); 
+         font-size:             13px;  
+         span{
+             color:             #909090;
+             margin-left:       5px;
+         }
+     }
+     .msg-icon{
+         cursor:                pointer;
+         position:              absolute;
+         top:                   40px;
+         right:                10px;
+         color:                 #999999;
+         font-size:             16px;
+          &:hover{
+            color:                  #38a6f8;
+        }
+     }
+}
+.project_description{
+    margin-bottom:          50px;
+}
+.video_preview{
+        margin-top:             29px;
+}
+.project_tag{
+    margin-top:             50px;
+    border:                 2px solid #38a6f8;
+    border-radius:          6px;
+    padding:                5px 5px 0px 5px;
+    .tag{
+        border-radius:            3px;
+        color:                    #ffffff;
+        background-color:         #38a6f8;
+        margin-right:             3px;
+        margin-bottom:            5px;
+        display:                  inline-block;
+        font-family:              @base_font_family;
+        font-size:                15px;
+        font-weight:              400;
+        height:                   22px;
+        padding:                  5px;
+        text-transform:           capitalize;
+        text-indent:              8px;
+        line-height:              20px;
+    }
+}
+.hot-link i.skill-icon {
+    height:                 @skill_tile;
+    width:                  @skill_tile;
+    display:                block;
+    visibility:             visible;
+    background-size:        cover;
+    .function_transition(all, 0.20s);
+    &.vocals, &[data-categoryid="8"] {
+        background-image:           url('@{baseurl}img/skill_icons/Microphone.png');
+    }
+    &.guitar, &[data-categoryid="4"] {
+        background-image:           url('@{baseurl}img/skill_icons/Guitar.png');
+    }
+    &.bass, &[data-categoryid="2"] {
+        background-image:           url('@{baseurl}img/skill_icons/ElectricGuitar.png');
+     
+    }
+    &.keyboard, &[data-categoryid="5"] {
+        background-image:           url('@{baseurl}img/skill_icons/Keyboard.png');
+    }
+    &.electronic-instruments, &[data-categoryid="3"] {
+        background-image:           url('@{baseurl}img/skill_icons/Sound.png');
+    }
+    &.wind-instruments, &[data-categoryid="9"] {
+        background-image:           url('@{baseurl}img/skill_icons/Sax.png');
+    }
+    &.other-strings, &[data-categoryid="7"] {
+        background-image:           url('@{baseurl}img/skill_icons/Violin.png');
+    }
+    &.additional-skills, &[data-categoryid="1"] {
+        background-image:           url('@{baseurl}img/skill_icons/Person.png');
+    }
+}
+
+
+// Music player
+#audio_player {
+    background-color:       #232323;
+    height:                 45px;
+    width:                  265px;
+    .function_border_radius(6px);
+}
+.demo-play-button {
+    background-image:       url('@{baseurl}img/media_control_play.png');
+    background-position:    center;
+    background-repeat:      no-repeat;
+    height:                 inherit;
+    width:                  45px;
+    cursor:                 pointer;
+    float:                  left;
+    &.pause {
+        background-image:       url('@{baseurl}img/media_control_pause.png');
+    }
+}
+.demo-progress-bar {
+    width:                  220px;
+    background-color:       #3f3f3f;
+    height:                 inherit;
+    float:                  left;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.demo-buffer-bar{
+    background-color:       #535353;
+    height:                 inherit;
+    float:                  left;
+}
+.demo-progress {
+    width:                  0px;
+    height:                 inherit;
+    background-color:       #368ED0;
+    float:                  left;
+}
+
+.demo-stop-button {
+    background-image:       url('@{baseurl}img/media_control_stop.png');
+    background-position:    center;
+    background-repeat:      no-repeat;
+    height:                 inherit;
+    width:                  40px;
+    cursor:                 pointer;
+    float:                  left;
+}
+.nodata{
+        border:                         1px dashed #bababa;
+        height:                         85px;
+        padding-top:                    20px;
+        p{
+            text-align:                 center;
+            color:                      #575656;
+            font-size:                  20px;
+            .font-thin ();
+        }
+        a{
+            text-decoration: underline;
+            cursor:         pointer;
+        }
+}

@@ -1,0 +1,20 @@
+Entity\Country:
+  type: entity
+  table: country
+  fields:    
+    isoCode:
+      type: string
+      id:   true
+    countryName:
+      nullable: false
+      type:     string
+
+
+        
+#One to one relations
+
+#One to many relations
+
+#Many to one relations
+
+#Many to many relations

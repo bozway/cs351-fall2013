@@ -1,0 +1,664 @@
+@import '../main';
+@import '../common_functions';
+
+body {
+    background-color:       #f9f7f6;
+}
+.dashboard-project-skill-hint {
+    margin-top:             98px;
+}
+.skill-tile {
+    display:                block;
+    float:                  left;
+    margin-left:            15px;
+    img {
+        display:            none;
+    }
+    .skill-icon-faded, .skill-icon {
+        width:              90px;
+        height:             90px;
+    }
+}
+
+.search-skill-hint {
+    color:                  #9e9191;
+    font-size:              14px;
+    .font-normal();
+    // It needs to be covered up by the skills, and only visible when there are no skills.
+   position:               absolute;
+    margin-left:            20px;
+    z-index:                -1;
+    span {
+        display:            inline-block;
+        width:              250px;
+        vertical-align:     middle;        
+    }
+    .fui-alert {
+        font-size:          26px; 
+        display:            inline-block;
+        width:              30px;
+    }
+}
+
+.skill-owner {
+    background-color:       white;
+    font-size:              18px;
+    margin-bottom:          10px;
+    position:               relative;
+    -webkit-box-shadow:     inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:        inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    box-shadow:             inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+    .function_border_radius(2px);
+    .font-normal();
+    height:                 60px;
+    line-height:            60px;
+    .myskill-title {
+        width:              200px;
+        float:              left;
+        text-indent:            20px;
+    }
+    .myskill-select-wrap {
+        width:              180px;
+        float:              right;
+        .btn-group {
+            width:          180px;   
+        }
+        .btn{
+             background-color:  #ededed; 
+             color:             #888888;
+             -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+            -moz-box-shadow:    inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+            box-shadow:         inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+        }
+        .btn-group.open .btn.dropdown-toggle, .btn.active {
+            background-color:   #ededed; 
+            -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+            -moz-box-shadow:    inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+            box-shadow:         inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+        }
+            
+        .caret{
+            border-top-color:   #888888;
+            border-bottom-color: #888888;
+        }
+        #saved-skills-toggler {
+            width:          140px;   
+        }
+    }
+    .fui-alert {
+        float:              right;
+        width:              58px;
+        color:              #eac317;
+        text-align:         center;
+        visibility:         hidden;
+    }
+    .fui-check-inverted {
+        display:            none;
+        float:              right;
+        width:              58px;
+        color:              #77D99B;
+        text-align:         center;
+    }
+    .popover {
+        width:              150px;
+    }
+    .popover-title {
+        display:            none;   
+    }
+    .popover-content {
+        padding-bottom:     10px;
+        font-size:          12px;
+    }
+    .popover.top .arrow {
+        margin-left:        37px;
+    }
+    #help_myskills, #help_teamskills {
+        position:           absolute;
+        top:                20px;
+        right:              75px;
+    }
+}
+
+#project-skills .tag-block:nth-child(1){
+    border-right:          1px dashed #cccccc;
+}
+#project-skills .tag-block:nth-child(2){
+    border-left:          1px dashed #cccccc;
+    position:               relative;
+    left:                   -1px;
+}
+.tag-block-wrap {
+    background-color:       white;   
+}
+
+.skill-tag-list .skill-tag {
+    background-color:       #ebedee;
+    line-height:            22px;
+    padding:                5px;
+    margin-bottom:          10px;
+    margin-right:           10px;
+    display:                inline-block;
+    label {
+        vertical-align:     middle;
+        margin:             0;
+        margin-left:        10px;
+        margin-right:       10px;
+    }
+}
+
+.selected-skill-item.active .selected-skill-header {
+    border-bottom:          1px dashed #cccccc;
+}
+
+.performer-name {
+    margin-left:            20px;   
+}
+
+.skill-description-arrow {
+    position:               absolute;
+    right:                  300px;
+    top:                    -10px;
+    height:                 20px;
+    width:                  20px;
+    .function_transform( rotate(45deg) );
+    background-color:       white;
+}
+
+// Header element
+.save-btn-wrap {
+    width:                  140px;
+    position:               absolute;
+    top:                    95px;
+    right:                  0;
+}
+.save-draft-link {
+    position:               absolute;
+    right:                  0;
+    top:                    150px;
+    text-align:             right;
+    cursor:                 pointer;
+    color:                  white;
+    text-decoration:        underline;
+    &:hover {
+        text-decoration:    underline;
+    }
+}
+.publish-btn-wrap {
+    position:               absolute;
+    right:                  0;
+    top:                    80px;
+    width:                  134px;
+}
+.goback-btn-wrap {
+    position:               absolute;
+    right:                  145px;
+    top:                    80px;
+    width:                  134px;
+}
+.project-create-navlink {
+    position:               absolute;
+    top:                    45px;
+    right:                  0;
+    text-align:             right;
+}
+
+#project-skills .second-icon.fui-radio-checked {
+    color:                  #38A6F8;
+}
+
+// -------------------------- PREVIOUS (MODIFIED) -----------------------
+#project-skills {
+    .font-light();
+    
+    // The skill icons in the My Saved Skills dropdown
+    .saved-skill-tile {
+        width:                  20px;
+        height:                 20px;
+    }
+    
+    
+    
+    @width_sidebar:         230px;
+    @width_basket:          700px;
+    @width_margins:         10px;
+    @width_skill_icon:      60px;
+    @width_skill_tile:      70px;    
+    @height_skill_tile:     70px;
+    @height_skill_active:   350px;
+    @height_skill_inactive: 80px;
+    @height_tag_block:      125px;
+    @width_skill_input:     170px;
+    @height_skill_input:    35px;
+    @width_tag_input:       160px;
+    @width_tag_block:       (@width_basket / 2 - 20);
+    @height_tag_input:      39px;
+    @height_tag_header:     45px;
+    position:               relative;
+    //.function_centerize(940px);
+    margin-bottom:          50px;
+    ul { margin: 0px; }
+    .disable-user-select();
+    .save-btn-container{
+           position:        absolute;
+           top:             0px;
+           right:           20px;
+           display:         inline-block;
+    }    
+    &>p{
+        width:              550px;
+    }
+    .error-message {
+        position:               absolute;
+        top:                    -20px;
+        right:                  5px;
+    }
+    #skill-basket-toggle-container {
+        position:               relative;
+        height:                 60px;        
+        #owner-skills {
+            width:              114px;      
+            float:              left;
+        }
+        #team-skills {
+            width:              154px;      
+            float:              right;
+        }
+    }
+    .skill-basket-toggle {                    
+        height:                 39px;
+        line-height:            39px;  
+        text-align:             center;
+        .font-medium ();
+        font-size:              18px;
+        color:                  white;
+        display:                inline-block;        
+        margin-bottom:          0px;
+        margin-top:             8px;
+        border:                 3px solid #38a6f8;
+        color:                  #38a6f8;
+        .function_transition(all, 0.33s);
+        .function_border_radius(4px);
+        
+        &.active {       
+            color:                  white;
+            background-color:       #38a6f8;
+            .function_transition(all, 0.33s);
+            -webkit-box-shadow:     inset 0 5px 5px -3px #308dd3;
+            -moz-box-shadow:        inset 0 5px 5px -3px #308dd3;
+            -o-box-shadow:          inset 0 5px 5px -3px #308dd3;
+            -ms-box-shadow:         inset 0 5px 5px -3px #308dd3;
+            box-shadow:             inset 0 5px 5px -3px #308dd3;
+        }
+        &:hover {
+            opacity:                0.66;
+        }
+        &:active {
+            opacity:                1.0;
+        }
+    }
+    
+    #skill-sidebar {
+        position:               relative;
+        .skill-list-wrapper {            
+            position:               absolute;
+            top:                    0px;
+            right:                  0px;
+            background-color:       white;
+            visibility:             hidden;
+            //display:                none;
+            width:                  300px;
+            //margin: 10px 10px 0px 10px;
+            z-index:                200;
+            .function_box_shadow(2px, 5px, 24px, 0px, rgba(50, 50, 50, 0.4));
+            .function_border_radius(5px);
+            .skill-icon {
+                width:              80px;
+                height:             80px;
+                margin:             10px;
+                float:              left;
+                visibility:         inherit;
+                transition:         none;
+            }
+            .skill-name {
+                display:            block;
+                height:             110px;
+                line-height:        110px;
+                width:              200px;
+                overflow:           hidden;
+            }
+            
+        } // end of .skill-list-wrapper
+        .skill-list-item {
+            width:                  110px;
+            display:                inline-block;
+            vertical-align:         top;
+            padding:                10px;
+            line-height:            30px;
+            margin-left:            10px;
+            //cursor:                 pointer;
+            //color:                  white;
+            color:                  black;
+            &:hover {
+                //background-color:           #0C568D;                
+            }
+        }
+        
+    } // end of #skill-sidebar
+    .skill-tile-wrapper {
+        margin-top:             5px;
+        width:                  315px;
+        margin-left:            -15px;        
+    } // end of .skill-tile-wrapper
+    
+    #selected-skill-container {
+        //width:              @width_basket;
+        min-height:         465px;
+        //float:              left;
+        //background-color:   #eeeeee;
+        .function_transition(background-color, 0.33s);
+    } // end of #selected-skill-container
+    #selected-skill-list-owner {
+        margin-bottom:          50px;
+    }
+    .selected-skill-item {
+        //background-color:   #FFFFFF;
+        //.function_centerize((@width_basket - 2 * @width_margins));
+        max-height:             @height_skill_inactive;      
+        //border:             1px solid black;
+        overflow:           hidden;
+        margin-bottom:      15px;
+        .function_transition(all, 0.33s);
+        &.active {
+            min-height:             @height_skill_active;
+            max-height:             100%;
+            .function_box_shadow(0px, 0px, 10px, 1px, rgba(0, 0, 0, 0.1));
+        }       
+    } // end of .selected-skill-item
+    //.bg-owner {
+    //    .function_transition(background-color, 0.33s);
+    //    background-color:           @color_button_blue;   
+    //}
+    //.bg-team {
+    //    .function_transition(background-color, 0.33s);
+    //    background-color:           @color_logo_light_blue;
+    //}
+    .selected-skill-header {
+        background-color:       white;
+        .skill-name {
+            font-size:          26px;
+            line-height:        75px;
+            height:             75px;
+            display:            inline-block;
+        }
+        .remove-skill-btn {
+            float:              right;
+            width:              55px;
+            height:             75px;
+            line-height:        75px;
+            margin:             0;
+        }
+        .skill-action {
+            float:              right;
+            font-size:          16px;
+            line-height:        75px;
+            height:             75px;
+            color:              #429eeb;
+            text-decoration:    underline;
+            margin-right:       35px;
+            margin-bottom:      0;
+            &:hover {
+                color:              @color_button_blue;
+                text-decoration:    underline;
+            }
+        }
+    } // end of selected-skill-header
+    .skill-category-icon {
+        display:            inline-block;        
+        height:             @width_skill_icon;
+        width:              @width_skill_icon;
+        padding:            7px;
+        margin:             0;
+    }
+    .tag-block {
+        //display:            inline-block;
+        //height:             @height_tag_block;  
+        float:              left;
+        width:              305px;     
+        min-height:          @height_tag_block;   
+        height:             auto;
+        //margin-left:        5px;
+        position:           relative;
+        width:              309px;
+        background-color:   white;
+    } 
+    .tag-header {
+        height:             @height_tag_header;
+        line-height:        40px;
+        padding-left:       10px;
+        //.font-bold();
+        position:           relative;
+        // TEXTEXT SUGGESTIONS OVERRIDE
+        .text-core .text-wrap .text-dropdown .text-list .text-suggestion {
+            line-height:                20px;            
+        }
+        &.collapsed {
+            height:         0;   
+        }
+    }
+    .skill-tag-list {
+        //position:           absolute;
+        //top:                @height_tag_header;
+        padding-left:       @width_margins;
+        padding-right:      5px;
+        margin-top:         15px;
+    }
+    .skill-tag-delete {        
+        display:            inline-block;
+        width:              20px;
+        height:             22px;
+        margin:             0;
+        background-image:   url("@{baseurl}img/close.png");
+        background-repeat:  no-repeat;
+        background-position: center;        
+        position:           relative;
+        // Only need it at 1 to get above the slimScroll div, but still under the textext suggestions.
+        z-index:            1;
+    }
+    .skill-tag-content {
+        display:            inline-block;
+    }
+    .skill-description {
+        //.function_centerize(650px);
+        height:             120px;
+        margin-top:         20px;
+        margin-bottom:      5px; 
+        position:           relative;
+    }
+    .skill-description-input {
+        height:             100px;
+        //width:              636px; //stupid bootstrap padding and border messing up my party
+        width:              100%;
+        overflow:           hidden;
+        border:             none;
+        background-color:   white;
+        .function_border_radius(0px);
+        margin:             0px;
+        padding-left:       0px;
+        padding-right:      0px;
+    } // end of #inputContainer
+    .tag-input {
+        display:            inline-block;
+        //width:              @width_tag_input;
+        width:              250px;
+        //position:           absolute;
+        margin-right:       5px;
+        margin-top:         10px;
+        //right:              0px;
+        //top:                0px;
+    }
+    #skillInfluenceSpecifier {
+        //width:              @width_tag_input !important;
+        width:              200px;
+        //height:             @height_tag_input;
+        //height:             20px;
+        line-height:        @height_tag_input;
+    }
+    #skillGenreSpecifier {
+        //width:              @width_tag_input !important;
+        width:              200px;
+        //height:             @height_tag_input;
+        //height:             20px;
+        line-height:        @height_tag_input;
+    }
+    #skillSpecifier-wrapper {
+        .function_centerize(@width_skill_input);
+        margin-top:         20px;
+        margin-bottom:      20px;
+        &.create {
+            margin:             0px;
+            margin-top:         80px;
+            margin-left:        15px;
+        }
+    }
+    #skillSpecifier {
+        //width:              @width_skill_input !important;
+        //height:             @height_skill_input;
+        line-height:        @height_skill_input;
+    }
+}
+
+
+// ------------------ Header ---------------------------
+.default-header {
+    background-image:       url('@{baseurl}img/dashboard_header_extended.png');
+    background-repeat:      no-repeat;
+    background-color:       #37314f;
+    background-position:    center;
+    color:                  white;
+    height:                 200px;
+    .container {
+        position:               relative;
+        padding-top:            35px;
+    }
+}
+
+.project-title {
+    font-size:              33px;
+    height:                 33px;
+    line-height:            33px;
+    .font-thin();
+}
+
+.project-description {
+    font-size:              16px;
+    line-height:            20px;
+    .font-light();
+     a{
+        color:              #62bcff;
+        text-decoration:    underline;
+    }
+}
+
+.dashboard-subtitle {
+    border-top:             45px solid transparent;
+    font-size:              24px;
+    color:                  #2985ca;
+    span {
+        display:            inline-block;
+        vertical-align:         middle;
+    }
+}
+
+.dashboard-separator {
+    border-bottom:          1px solid #D7CAC9;
+    margin-bottom:          20px;
+    margin-top:             30px;
+}
+
+
+
+// ----------------------- OVERIDE STYLES FOR EDIT ----------------------
+#project-skills.edit {
+    .skill-tile-wrapper {
+        margin-left:        -7px;
+        width:              788px;
+    }
+    .skill-tile {
+        margin-left:        7px;   
+        width:              80px;
+        height:             80px;
+    }
+    .skill-icon-faded, .skill-icon {
+        height:             80px;
+        width:              80px;
+    }
+    #skill-basket-toggle-container {
+        height:             50px;
+    }
+    #skill-basket-toggle-inner-container {
+        width:              300px;   
+        float:              right;   
+    }
+    #skillSpecifier-wrapper {
+        width:              300px;
+        height:             50px;
+        margin:             0;
+        float:              left;
+//        .text-core {
+//            float:          left;
+//        }
+//        #skillSpecifier {
+//            //height:         21px;   
+//        }
+//        .btn {
+//            border-bottom-right-radius: 20px;
+//            border-top-right-radius: 20px;
+//        }
+    }
+    .tag-block {
+        width:              389px;   
+    }
+    .skill-description-input {
+        //width:              780px;   
+        width:              100%;
+        overflow:           hidden;
+    }
+    .skill-description-arrow {
+        position:           absolute;
+        right:              380px;
+    }
+    
+    #skill-sidebar .skill-list-wrapper {
+        position:           absolute;
+        top:                -10px;
+    }
+    .skill-list-wrapper[id='1'] {
+        position:           absolute;
+        left:               -10px;
+    }
+    .skill-list-wrapper[id='2'] {
+        position:           absolute;
+        left:               77px;
+    }
+    .skill-list-wrapper[id='3'] {
+        position:           absolute;
+        left:               164px;
+    }
+    .skill-list-wrapper[id='4'] {
+        position:           absolute;
+        left:               251px;
+    }
+    .skill-list-wrapper[id='5'] {
+        position:           absolute;
+        left:               338px;
+    }
+    .skill-list-wrapper[id='7'] {
+        position:           absolute;
+        left:               425px;
+    }
+}
+#project-skills .selected-skill-list-wrapper:first-of-type .skill-owner{
+        background-color:       #e1dbd4;
+}
+
+

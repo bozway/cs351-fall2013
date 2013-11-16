@@ -1,0 +1,169 @@
+i.skill-icon-faded {
+  height: 100px;
+  width: 100px;
+  display: block;
+  visibility: visible;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+i.skill-icon-faded.vocals,
+i.skill-icon-faded[data-categoryid="8"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Microphone_GRAY.png');
+}
+i.skill-icon-faded.vocals:hover,
+i.skill-icon-faded[data-categoryid="8"]:hover {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Microphone.png');
+}
+i.skill-icon-faded.guitar,
+i.skill-icon-faded[data-categoryid="4"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Guitar_GRAY.png');
+}
+i.skill-icon-faded.guitar:hover,
+i.skill-icon-faded[data-categoryid="4"]:hover {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Guitar.png');
+}
+i.skill-icon-faded.bass,
+i.skill-icon-faded[data-categoryid="2"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/ElectricGuitar_GRAY.png');
+}
+i.skill-icon-faded.bass:hover,
+i.skill-icon-faded[data-categoryid="2"]:hover {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/ElectricGuitar.png');
+}
+i.skill-icon-faded.keyboard,
+i.skill-icon-faded[data-categoryid="5"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Keyboard_GRAY.png');
+}
+i.skill-icon-faded.keyboard:hover,
+i.skill-icon-faded[data-categoryid="5"]:hover {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Keyboard.png');
+}
+i.skill-icon-faded.electronic-instruments,
+i.skill-icon-faded[data-categoryid="3"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Sound_GRAY.png');
+}
+i.skill-icon-faded.electronic-instruments:hover,
+i.skill-icon-faded[data-categoryid="3"]:hover {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Sound.png');
+}
+i.skill-icon-faded.wind-instruments,
+i.skill-icon-faded[data-categoryid="9"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Sax_GRAY.png');
+}
+i.skill-icon-faded.wind-instruments:hover,
+i.skill-icon-faded[data-categoryid="9"]:hover {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Sax.png');
+}
+i.skill-icon-faded.other-strings,
+i.skill-icon-faded[data-categoryid="7"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Violin_GRAY.png');
+}
+i.skill-icon-faded.other-strings:hover,
+i.skill-icon-faded[data-categoryid="7"]:hover {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Violin.png');
+}
+i.skill-icon-faded.additional-skills,
+i.skill-icon-faded[data-categoryid="1"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Person_GRAY.png');
+}
+i.skill-icon-faded.additional-skills:hover,
+i.skill-icon-faded[data-categoryid="1"]:hover {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Person.png');
+}
+i.skill-icon-faded.additional-skills,
+i.skill-icon-faded[data-categoryid="10"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Drum_GRAY.png');
+}
+i.skill-icon-faded.additional-skills:hover,
+i.skill-icon-faded[data-categoryid="10"]:hover {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Drum.png');
+}
+i.skill-icon {
+  height: 100px;
+  width: 100px;
+  display: block;
+  visibility: visible;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+i.skill-icon.vocals,
+i.skill-icon[data-categoryid="8"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Microphone.png');
+}
+i.skill-icon.guitar,
+i.skill-icon[data-categoryid="4"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Guitar.png');
+}
+i.skill-icon.bass,
+i.skill-icon[data-categoryid="2"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/ElectricGuitar.png');
+}
+i.skill-icon.keyboard,
+i.skill-icon[data-categoryid="5"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Keyboard.png');
+}
+i.skill-icon.electronic-instruments,
+i.skill-icon[data-categoryid="3"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Sound.png');
+}
+i.skill-icon.wind-instruments,
+i.skill-icon[data-categoryid="9"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Sax.png');
+}
+i.skill-icon.other-strings,
+i.skill-icon[data-categoryid="7"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Violin.png');
+}
+i.skill-icon.additional-skills,
+i.skill-icon[data-categoryid="1"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Person.png');
+}
+i.skill-icon.additional-skills,
+i.skill-icon[data-categoryid="10"] {
+  background-image: url('http://www.cs351.gurtem.com/img/skill_icons/Drum.png');
+}
+.dashboard-icon {
+  height: 45px;
+  width: 45px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  -moz-transition: all 0.15s ease-in-out 0s;
+  -o-transition: all 0.15s ease-in-out 0s;
+  -ms-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+}
+.dashboard-icon.fmsicon-profile {
+  background-image: url('http://www.cs351.gurtem.com/img/header_icon_profile.png');
+  margin-top: -6px;
+}
+.dashboard-icon.fmsicon-profile:hover,
+.dashboard-icon.fmsicon-profile.active {
+  background-image: url('http://www.cs351.gurtem.com/img/header_icon_profile_active.png');
+}
+.dashboard-icon.fmsicon-project {
+  background-image: url('http://www.cs351.gurtem.com/img/header_icon_project.png');
+  margin-top: -7px;
+}
+.dashboard-icon.fmsicon-project:hover,
+.dashboard-icon.fmsicon-project.active {
+  background-image: url('http://www.cs351.gurtem.com/img/header_icon_project_active.png');
+}
+.dashboard-icon.fmsicon-message {
+  background-image: url('http://www.cs351.gurtem.com/img/header_icon_message.png');
+  margin-top: -4px;
+}
+.dashboard-icon.fmsicon-message:hover,
+.dashboard-icon.fmsicon-message.active {
+  background-image: url('http://www.cs351.gurtem.com/img/header_icon_message_active.png');
+}

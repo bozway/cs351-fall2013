@@ -1,0 +1,228 @@
+.clear {
+  clear: both;
+}
+#site_alert_modal_container {
+  border-radius: 0px !important;
+}
+#site_alert_modal_container .modal-body {
+  max-height: 700px;
+  max-width: 700px;
+  overflow: visible;
+}
+#site_alert_modal_container .modal-header {
+  text-align: center;
+  position: relative;
+  font-size: 50px;
+  border-bottom: none;
+  margin-top: 20px;
+  font-weight: 200;
+}
+#site_alert_modal_container .fms_close {
+  height: 22px;
+  position: absolute;
+  border: none;
+  background-color: #ffffff;
+  color: #ababab;
+  font-size: 25px;
+}
+#site_alert_modal_container .subTitle {
+  font-weight: 500;
+}
+#site_alert_modal_container #project_invitation {
+  font-weight: 400;
+  -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+}
+#site_alert_modal_container #project_invitation .caret {
+  border-bottom-color: black;
+  border-top-color: black;
+}
+#site_alert_modal_container #skill_audition {
+  font-weight: 400;
+  -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+}
+#site_alert_modal_container #skill_audition .caret {
+  border-bottom-color: black;
+  border-top-color: black;
+}
+#site_alert_modal_container #inviteModal {
+  width: 780px;
+  margin-left: -390px;
+  border-radius: 0px;
+}
+#site_alert_modal_container #inviteModal #sideTitles {
+  font-size: 20px;
+  float: left;
+  text-align: right;
+  margin-left: 60px;
+}
+#site_alert_modal_container #inviteModal #main {
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 520px;
+}
+#site_alert_modal_container #inviteModal #sendInvitation {
+  width: 100px;
+  float: right;
+}
+#site_alert_modal_container #inviteModal #profilePicture {
+  height: 100px;
+  width: 100px;
+}
+#site_alert_modal_container #inviteModal #musician {
+  height: 100px;
+}
+#site_alert_modal_container #inviteModal #musicianName {
+  font-weight: 100;
+  font-size: 35px;
+  color: #2985ca;
+  margin-left: 20px;
+}
+#site_alert_modal_container #inviteModal textarea {
+  height: 270px;
+  width: 530px;
+}
+#site_alert_modal_container #inviteModal #project {
+  margin-top: 30px;
+}
+#site_alert_modal_container #inviteModal #project p {
+  font-size: 15px;
+}
+#site_alert_modal_container #inviteModal #project .dropdown-menu {
+  box-shadow: 3px 4px 10px 1px rgba(0, 0, 0, 0.33);
+}
+#site_alert_modal_container #inviteModal #message {
+  margin-top: 30px;
+}
+#site_alert_modal_container #inviteModal #p1 {
+  margin-top: 20px;
+}
+#site_alert_modal_container #inviteModal #p2 {
+  margin-top: 80px;
+}
+#site_alert_modal_container #inviteModal #p3 {
+  margin-top: 110px;
+}
+#site_alert_modal_container #inviteModal .btn-grey {
+  width: 360px;
+  /**do...NOT. make it any darker!
+            .btn-group.open .btn.btn-danger.dropdown-toggle {
+                background-color:   #AAAAAA;
+            }
+            **/
+
+}
+#site_alert_modal_container #inviteModal .btn-grey .btn.btn-danger {
+  background-color: #ededed;
+  color: #888888;
+}
+#site_alert_modal_container #messageModal {
+  width: 780px;
+  margin-left: -390px;
+  border-radius: 0px;
+}
+#site_alert_modal_container #messageModal #sideTitles {
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  margin-left: 60px;
+}
+#site_alert_modal_container #messageModal #main {
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 530px;
+}
+#site_alert_modal_container #messageModal #sendMessage {
+  width: 100px;
+  float: right;
+}
+#site_alert_modal_container #messageModal #profilePicture {
+  height: 100px;
+  width: 100px;
+}
+#site_alert_modal_container #messageModal #musician {
+  height: 100px;
+}
+#site_alert_modal_container #messageModal #musicianName {
+  font-weight: 100;
+  font-size: 35px;
+  color: #2985ca;
+  margin-left: 20px;
+}
+#site_alert_modal_container #messageModal textarea {
+  height: 270px;
+  width: 530px;
+}
+#site_alert_modal_container #messageModal #project {
+  margin-top: 30px;
+}
+#site_alert_modal_container #messageModal #message {
+  margin-top: 30px;
+}
+#site_alert_modal_container #messageModal #p1 {
+  margin-top: 20px;
+}
+#site_alert_modal_container #messageModal #p3 {
+  margin-top: 100px;
+}
+#site_alert_modal_container #auditionModal {
+  width: 780px;
+  margin-left: -390px;
+  border-radius: 0px;
+}
+#site_alert_modal_container #auditionModal .modal-body {
+  padding-left: 75px;
+}
+#site_alert_modal_container #auditionModal p {
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+#site_alert_modal_container #auditionModal p:first-child {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+#site_alert_modal_container #auditionModal #message {
+  margin-top: 20px;
+}
+#site_alert_modal_container #auditionModal #message p {
+  float: left;
+  font-size: 20px;
+}
+#site_alert_modal_container #auditionModal #message div {
+  float: left;
+  margin-left: 30px;
+  width: 530px;
+  height: 175px;
+}
+#site_alert_modal_container #auditionModal #message div textarea {
+  width: 530px;
+  height: 175px;
+}
+#site_alert_modal_container #auditionModal #sendAudition {
+  width: 135px;
+  float: right;
+  margin: 20px 48px 20px 0;
+}
+#site_alert_modal_container #auditionModal .dropdown-menu {
+  box-shadow: 3px 4px 10px 1px rgba(0, 0, 0, 0.33);
+}
+#site_alert_modal_container #auditionModal .btn-grey {
+  width: 220px;
+  /** WHY MAKE IT DARKER!?!?
+            .btn-group.open .btn.btn-info.dropdown-toggle {
+                background-color:   #AAAAAA;
+            }
+            **/
+
+}
+#site_alert_modal_container #auditionModal .btn-grey .btn.btn-info {
+  background-color: #ededed;
+  color: #888888;
+}

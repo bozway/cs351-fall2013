@@ -1,0 +1,26 @@
+Entity\TagSearchTimes:
+  type: entity
+  table: tagsearchtimes
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    name:
+      type: string
+    searchTimes:
+      type: integer
+
+    
+#One to one relations
+
+#One to Many relations
+
+#Many to one relations
+      
+
+
+#Many to many relations    
+
+    

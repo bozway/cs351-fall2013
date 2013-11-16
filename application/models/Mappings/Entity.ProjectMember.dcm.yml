@@ -1,0 +1,55 @@
+Entity\ProjectMember:
+  type: entity
+  table: projectmember
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    role:
+      type: integer
+    ranking:
+      type:     integer
+      nullable: true
+    visibility:
+      type:     boolean
+    creationTime:
+      type:     datetime
+    past_participant_skills:
+      type:     string
+      nullable: true
+      length:   100 
+  
+#One to one relations
+
+
+
+#One to many relations
+
+  oneToMany:
+    skillForProject:
+      targetEntity: ProjectSkill
+      mappedBy:     performer
+      
+
+
+#Many to one relations
+      
+  manyToOne:
+    project:
+      targetEntity: Project
+      inversedBy:   members
+    user:
+      targetEntity: User
+      inversedBy:   projects
+
+#Many to many relations  
+       
+  
+
+      
+
+        
+  
+  

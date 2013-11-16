@@ -1,0 +1,333 @@
+////////////////////////////////////////////////////////////
+//          INCLUDES              
+////////////////////////////////////////////////////////////
+@import 'common_functions';
+@import 'main';
+
+////////////////////////////////////////////////////////////
+//          LOGIN MODAL STYLING              
+////////////////////////////////////////////////////////////
+@size_modal_width:          950px;
+@size_modal_height:         633px;
+@modalContentHeight:        300px;
+@modalContentWidth:         735px;
+
+
+#signup_audio_uploader {
+    margin-top:             20px;
+    .fms-button.special {
+        position:           absolute;
+        top:                -10px;
+        right:              0px;
+    }
+}
+
+#profileModal {
+    width:                  @size_modal_width;
+    height:                 @size_modal_height;
+    margin-left:            -(@size_modal_width / 2);
+    background-color:       #F5F3F4;
+    color:                  #3A3A3A;
+    //overflow:               hidden;
+
+    .date-of-birth input[type="text"] {
+        width:                  45px;
+        text-indent:            0px;
+        text-align:             center;
+    }
+    .modal-body-content {
+        width:                  @modalContentWidth;
+        height:                 @modalContentHeight;
+    }
+    
+    #help_privacy_button {
+        position:           absolute;
+        top:                0px;
+        left:               55px;
+    }
+    
+     #help_upload_button {
+        position:           absolute;
+        top:                0px;
+        left:               160px;
+    }
+    
+    #help_privacy_wrap {
+        position:           absolute;
+        left:               113px;
+        top:                25px;
+    }
+    
+    #help_upload_wrap {
+        position:           absolute;
+        left:               217px;
+        top:                -10px;
+        font-size:          10px;
+    }
+}
+
+////////////////////////////////
+//  Column 1
+////////////////////////////////
+#column1 {
+    width:                  200px;
+    height:                 @modalContentHeight;
+    float:                  left;
+}
+
+.photo-uploader {
+    width:                  160px;
+    height:                 230px;
+}
+
+#profile_photo_wrap {
+    height:                 160px;
+    width:                  160px;
+    overflow:               hidden;
+    position:               relative;
+    margin:                 0;
+    padding:                0;
+    border:                 none;
+}
+.profile-photo {
+    height:                 160px;
+    width:                  160px;
+    max-width:              none;
+}
+
+#profile_link_wrap {
+    width:                  160px;
+    position:               relative;
+    margin:                 0;
+    padding:                0;
+    border:                 none;
+    background-color:       white;
+}
+
+.profile-pic-link {
+    width:                  70px;
+    border-left:            10px solid transparent;
+    font-size:              10px;
+    float:                  left;
+    cursor:                 pointer;
+    text-decoration:        underline;
+    margin:                 0;
+    &:hover {
+        color:              #666666;
+        text-decoration:    underline;
+    }
+}
+
+#img_url_enter {
+    display:                none;
+    width:                  160px;
+    input[type="text"] {
+        clear:              both;
+        display:            block;
+        width:              150px;
+        height:             20px;
+        font-size:          10px;
+        text-indent:        2px;
+        border-color:       #AED1EB;
+        margin-bottom:      5px;
+        margin-left:        auto;
+        margin-right:       auto;
+    }
+    .fms-button {
+        width:              40px;
+        height:             20px;
+        padding:            0;
+        line-height:        20px;
+        font-size:          10px;
+        position:           relative;
+        left:               35px;
+    }
+    a {
+        font-size:          10px;
+        cursor:             pointer;
+        text-decoration:    underline;
+        position:           relative;
+        left:               40px;
+    }
+}
+
+#country, #gender {
+    font-size:              14px;
+}
+#country_options, #gender_options {
+    .btn, .btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover {
+        font-size:          14px;
+    }
+}
+
+
+#city{
+    position:               relative;
+    top:                    0px;
+    background-position:    160px 8px;
+    background-repeat:      no-repeat;
+    margin-left:            15px;
+}
+
+////////////////////////////////
+//  Column 2
+////////////////////////////////
+#column2 {
+    width:                  80px;
+    height:                 @modalContentHeight;
+    float:                  left;
+    //overflow:               hidden;
+}
+
+.privacy {
+    height:                 230px;
+    .radio {
+        float:              left;
+    }
+    p   {
+        text-indent:        10px;
+        font-size:          14px;
+        line-height:        22px;   
+    }
+}
+
+.date-of-birth {
+    height:                 50px;
+    li {
+        float:              left;
+        border:             0;
+        border-right:       10px solid rgba(0,0,0,0.0) !important;
+        padding:            0;
+        margin:             0;
+    }
+}
+
+////////////////////////////////
+//  Column 3
+////////////////////////////////
+#column3 {
+    width:                  520px;
+    height:                 @modalContentHeight;
+    float:                  left;
+    //overflow:               hidden;
+    position:               relative;
+    top:                    -10px;
+    
+    // Overide
+    .user-profile-description {
+        width:                  310px;
+        float:                  left;
+        .font-light();
+        margin-bottom:          30px;
+    }
+}
+
+
+#upload_file {
+    float:                  right;
+}
+
+#spotlight {
+    clear:                  both;
+}
+
+////////////////////////////////
+//  Submit Area
+////////////////////////////////
+.submit-area {clear:        both;}
+#back, #submit {
+    float:                  left;
+    font-size:              14px;
+}
+#skip {
+    .font-light ();
+    float:                  left;
+  
+    width:                  80px;
+    margin-left:            15px;
+    margin-top:             10px;
+}
+#submit {
+    display:            block;
+    float:             right
+}
+
+#form_error {
+    position:           relative;
+    label.error {
+        position:               relative;
+        font-size:              12px;
+        color:                  #FA8072;
+    }
+}
+
+//////////////////////////////////////////////////
+//  Still Testing - image cropping
+//////////////////////////////////////////////////
+#img_crop_container {
+    width:              400px;
+    position:           absolute;
+    top:                150px;
+    left:               50%;
+    background-color:   white;
+    margin-left:        -200px;
+    display:            none;
+    border:             1px solid black;
+}
+
+#img_crop_wrap {
+    max-width:          360px;
+    //max-height:         360px;
+    border-style:       solid;
+    border-color:       #3A3A3A;
+    border-width:       10px 20px 10px 20px;
+    padding:            0;
+    margin:             0;
+    
+}
+
+#crop {
+    position:           relative;
+    left:               10px;
+    top:                -5px;
+    width:              60px;
+    height:             30px;
+    line-height:        30px;
+    font-size:          12px;
+}
+
+#img_crop_info {
+    width:              250px;
+    float:              left;
+    font-size:          12px;
+    text-indent:        50px;
+}
+
+#img_crop_close {
+    float:              right;
+    width:              60px;
+    color:              #D1D1D1;
+    cursor:             pointer;
+}
+
+#usstate_dropdown {
+    height:             39px;
+    line-height:        39px;
+    float:              left;
+}
+#city {
+    float:              left;
+    margin-right:       15px;
+}
+#gender_dropdown {
+    height:             39px;
+    line-height:        39px;
+    float:              left;
+}
+
+.user_info {position:   relative;}
+#modal_container .user_info label.error{
+    position:           absolute;
+    top:                90px;
+    left:               250px;
+}

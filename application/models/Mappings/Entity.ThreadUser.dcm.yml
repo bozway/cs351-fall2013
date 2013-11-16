@@ -1,0 +1,40 @@
+Entity\ThreadUser:
+  type: entity
+  table: threaduser
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    readFlag:
+      type: integer
+      
+ 
+  
+#One to one relations
+      
+
+
+#One to many relations
+      
+
+
+#Many to one relations
+  manyToOne:
+    user:
+      targetEntity: User  
+    thread:
+      targetEntity: Thread
+      
+
+
+#Many to many relations  
+       
+  
+
+      
+
+        
+  
+  

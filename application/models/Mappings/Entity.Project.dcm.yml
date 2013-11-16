@@ -1,0 +1,144 @@
+Entity\Project:
+  type: entity
+  table: project
+  fields:    
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    name:
+      nullable: true
+      type:     string 
+    isSave:
+      type:     boolean   
+    city:
+      nullable: true
+      type:     string
+    ranking:
+      nullable: true
+      type:     integer
+    zipCode:
+      nullable: true
+      type:     string
+    creationTime:
+      type:     date  
+    tags:
+      type:     array
+      nullable: true
+    startDate:
+      type:     date
+      nullable: true
+    duration:
+      type:     integer
+      nullable: true
+    listLength:
+      type:     string
+      nullable: true
+    description:
+      nullable: true
+      type:     string
+      length:   2000
+    completeTime:
+      type:     date
+      nullable: true
+    videoPreview:
+      nullable: true
+      type:     string
+    status:
+      type:     integer 
+      nullable: true 
+    visibility:
+      type:     boolean
+      nullable: true
+    showCountry:
+      type:     boolean
+      nullable: true
+    showCity:
+      type:     boolean
+      nullable: true      
+    showAudioPreview:
+      type:     boolean
+      nullable: true
+    showTags:
+      type:     boolean
+      nullable: true
+    showDescription:
+      type:     boolean
+      nullable: true
+    showLanguage:
+      type:     boolean
+      nullable: true
+    showStartDate:
+      type:     boolean
+      nullable: true
+    showDuration:
+      type:     boolean
+      nullable: true
+    showListLength:
+      type:     boolean
+      nullable: true      
+    showVideoPreview:
+      type:     boolean
+      nullable: true
+    lastEditTime:
+      type:     datetime
+      nullable: true
+ 
+ 
+        
+#One to one relations
+
+
+      
+
+#One to many relations
+
+  oneToMany:
+    auditions:
+      targetEntity: Audition
+      mappedBy    : project
+    skills:
+      targetEntity: ProjectSkill 
+      mappedBy    : project
+    members:
+      targetEntity: ProjectMember
+      mappedBy:     project
+    files:
+      targetEntity: ProjectFile
+      mappedBy:     owner
+    contracts:
+      targetEntity: Contract
+      mappedBy:     projects
+
+#Many to one relations
+  
+  manyToOne:
+    country:
+      targetEntity: Country
+      joinColumn:
+        name: countryCode
+        referencedColumnName: isoCode 
+    state:
+      targetEntity: USState
+      joinColumn:
+        name: state 
+        referencedColumnName: abbreviatedName 
+    owner:
+      targetEntity: User
+    photo:
+      targetEntity: ProjectFile      
+    language:
+      targetEntity: Language
+      joinColumn:
+        name: languageCode
+        referencedColumnName: isoCode
+
+#Many to many relations
+
+          
+  
+  
+
+
+    

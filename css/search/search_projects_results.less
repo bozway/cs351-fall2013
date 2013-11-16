@@ -1,0 +1,191 @@
+@import '../main';
+@import '../common_functions';
+
+#result_count{
+        font-size:                  20px;
+        .font-light();
+}
+li{
+    margin-bottom:      45px;
+    margin-top:         40px;
+    background-color:   #ffffff;
+    .project_info{
+        height:             180px;
+        width:              620px;
+        position:           relative;
+        .project_content{
+            height:             180px;
+            width:              480px;
+            float:              left;
+            background-image:   url('/img/base_cd.png');
+            background-repeat:      no-repeat;
+            background-position-x:  36px;
+            position:               absolute;
+            .project_detail_info{
+                height:             180px;
+                width:              260px;
+                background-color:   #ffffff;
+                float:              right;
+                position:           relative;
+                .project_title{
+                    position:       absolute;
+                    font-family:    @base_font_family;
+                    font-size:      25px;
+                    color:          #3d3d3d;
+                    height:         52px;
+                    width:          240px;
+                    margin-left:    20px;
+                }
+                .project_location{
+                    position:       absolute;
+                    font-family:    @base_font_family;
+                    font-size:      15px;
+                    color:          #6a6a6a;
+                    height:         40px;
+                    width:          240px;
+                    margin-top:     45px;
+                    margin-left:    20px;
+                }
+                .project_end_date{
+                    position:               absolute;
+                    height:                 30px;
+                    width:                  240px;
+                    margin-top:             90px;
+                    margin-left:            20px;
+                    background-image:       url('/img/icon_calendar.png');
+                    background-repeat:      no-repeat;
+                    background-position:    left;
+                    text-indent:            30px;
+                    line-height:            30px;
+                    
+                }
+                .project_msg_audition{
+                    position:       absolute;
+                    height:         40px;
+                    width:          170px;
+                    margin-top:     140px;
+                    margin-left:    20px;
+                    .message{
+                        height:             40px;
+                        width:              40px;
+                        border-radius:      7px;
+                        background-color:   #999999;
+                        background-image:   url('/img/icon_mail.png');
+                        float:              left;
+                    }
+                    .audition{
+                        height:             40px;
+                        width:              122px;
+                        border-radius:      7px;
+                        background-color:   #85C457;
+                        background-image:   url('/img/icon_addcontact.png');
+                        background-repeat:  no-repeat;
+                        float:              right;
+                        position:           relative;
+                        color:              white;
+                        font-family:        @base_font_family;
+                        text-indent:        30px;
+                    }
+                }
+            }
+        }
+        .project_play{
+            height:             180px;
+            width:              180px;
+            float:              left;
+            position:           relative;
+            
+        }
+        .project-photo-hover {
+            position:           absolute;
+            top:                0;
+            left:               0;
+            height:             180px;
+            width:              180px;
+            z-index:            100;
+            background-repeat:  no-repeat;
+            background-position:    center;
+             &:hover{
+                background-image:   url("/img/play_button.png");
+            }
+        }
+        img{
+            
+            width:                  180px;
+            height:                 180px;
+        }
+       
+        .project_details{
+            height:             180px;
+            width:              140px;
+            float:              right;
+            .view_project{
+                height:                 40px;
+                width:                  inherit;
+                margin-top:             140px;
+                border-radius:          6px;
+                background-color:       #333333;
+                background-image:       url('/img/forward_arrow.png');
+                background-repeat:      no-repeat;
+                background-position:    right;
+                font-family:            @base_font_family;
+                color:                  white;
+                text-indent:            -20px;
+            }
+        }
+    }
+    hr{
+        margin:             15px 0px 10px 0px;
+        border:             0;
+        border-top:         1px solid #eee;
+        border-bottom:      1px solid #fff;
+        color:              #6a6a6a;
+        size:               15pt;
+    }
+    .project_rating{
+        height:         62px;
+        width:          620px;
+        position:       relative;
+        .rating{
+            height:             62px;
+            width:              220px;
+            float:              left;
+            margin-top:         2px;
+        }
+        .influences{
+            height:             62px;
+            width:              400px;
+            float:              right;
+            position:           absolute;
+            margin-left:        220px;
+        }
+        .progress_bar_cust{
+            height:             15px;
+            width:              108px;
+            margin-top:         10px;
+            display:            inline-block;
+            text-indent:        2px;
+            float:              left;
+        }
+        .percent_message{
+            margin-top:     7px;
+            float:          right;
+            position:       absolute;
+            margin-left:    120px;
+        }
+    }
+}
+    
+.pagination{
+    height:             30px;
+    width:              625px;
+    background-color:   #C0C0C0;
+    position:           relative;
+    .paginate{
+        width:          504px;
+        height:         30px;
+        background-color:  #6a6a6a; 
+        float:              left;
+    }
+}
+

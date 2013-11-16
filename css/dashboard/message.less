@@ -1,0 +1,337 @@
+@import '../main';
+@import '../common_functions';
+
+body{
+    background-color:   #f4f4f4;
+}
+.dashboard-header-bg{
+    height:             95px !important;   
+}
+////////////////////
+//contacts_container
+////////////////////
+#message_contacts_container{
+    display:                none;
+    .default-header {
+        color:                  white;
+        height:                 95px;
+        .container {
+            position:               relative;
+            padding-top:            20px;
+            p{
+                .font-thin ();
+                font-size:              30px;
+                text-align:             center;
+            }
+        }
+    }
+    .page-content{
+        margin-top:         40px;
+    }
+    .tool-bar{
+        li{
+            cursor:         pointer;   
+        }
+        // Overide color of dropdown menu
+        .btn-grey {
+            .btn.btn-info {
+                background-color:       #EDEDED;
+                color:                  #888888;
+            }
+            .btn-group.open .btn.btn-info.dropdown-toggle {
+                background-color:       #AAAAAA;
+            }
+        }
+    }
+    .contact_container{
+        height:             136px;
+        margin-bottom:      30px;
+        position:           relative;
+        background-color:   #ffffff;
+        .btn-delete{
+            position:absolute;
+            right:5px;
+            top:5px;
+        }
+        .contact-photo{
+            position:               relative;
+            width:                  136px;
+            height:                 136px;
+            float:                  left;
+            margin-right:           20px;
+            img{
+                width:              100%;
+                height:             100%;
+            }
+            a{
+                position:               absolute;
+                width:                  100%;
+                height:                 100%;
+                top:                    0px;
+                left:                   0px;
+                background-image:       url(/img/button_view_profile.png);
+                background-color:       rgba(56, 166, 248, 0.75);
+                background-repeat:      no-repeat;
+                background-position:    center center;
+                opacity:                0;
+            }
+            a:hover{
+                opacity:            1;
+            }
+        }
+        .contact-name{
+            font-size:          25px;
+            color:              #2a2a2a;
+            margin-bottom:      -5px;
+        }
+        .contact-skills{
+            span{
+                font-size:      12px;
+                color:          #666666;
+            }
+            .hidden{
+                display:        none;   
+            }
+            .more-link{
+                color:          #38a6f8;
+                display:        inline-block;
+            }
+        }
+        .inv{
+            position:               absolute;
+            top:                    90px;
+            left:                   155px;
+            width:                  60px;
+        }
+        .msg{
+            position:               absolute;
+            top:                    90px;
+            left:                   230px;
+            width:                  100px;
+            background-image:       url(/img/icon_mail_grey.png);
+            background-repeat:      no-repeat;
+            background-position:    4px center;
+            text-indent:            20px;
+        }
+    }
+}
+////////////////////
+//message_container
+////////////////////
+@message_content_margin:        30px;
+#message_conversation_container{
+    display:                    none;
+    .default-header {
+        color:                  white;
+        height:                 95px;
+        .container {
+            position:               relative;
+            padding-top:            20px;
+            #new_thread{
+                position:           absolute;
+                right:              0px;
+                top:                25px;
+                font-size:          17px;
+            }
+            p{
+                text-align:             center;
+                .font-thin ();
+                font-size:              30px;
+            }
+        }
+    }
+    .page-content {
+        position:                   relative;
+    }
+    .background{
+        position:                   absolute;
+        z-index:                    -20;
+        height:                     100%;
+        &.left-bg{
+            left:                   0;
+            width:                  50%;
+            background-color:       #f3ede9;
+        }
+        &.right-bg{
+            right:                  0;
+            width:                  50%;
+            background-color:       #f9f7f6;
+        }
+    }
+    .border{
+      height:                   1px;
+      background-color:         #9c9c9c;
+      margin:                   0px 0px 8px 0px;
+      &.blue{
+        background-color:       #38a6f8;
+        margin-top:             21px;
+      }
+    }
+    .thread-container{
+        background-color:       #f3ede9;
+        padding:                @message_content_margin 0px @message_content_margin 0px;
+        height:                 100%;
+    }
+    .message-container{
+        background-color:       #f9f7f6;
+        padding:                @message_content_margin 0px @message_content_margin 0px;
+        padding-left:           20px;
+        margin-left:            0px;
+    }
+    .conv-contact-list{
+        font-size:              20px;
+        color:                  #2a2a2a;
+    }
+    .nav-tabs{
+        li a{
+            padding:            7px 6px 8px; 
+            border:             0px;
+            color:              #2a2a2a;
+            font-size:          16px;
+            span{
+                &.blue{
+                    color:      #38a6f8;  
+                }
+            }
+        }
+        li.active > a{
+            background-color:   #f3ede9;
+            color:              #2a2a2a;
+            font-weight:        500;
+        }
+    }
+    .tab-content{
+        padding:                5px;
+        border:                 0px;
+    }
+    .thread{
+        cursor:                 pointer;
+        background-color:       #fefdfd;
+        border-bottom:          1px solid #7f7f7f;
+        margin-bottom:          10px;
+        div,p,img{
+            margin:             0px;
+        }
+        img{
+            width:              70px;
+            height:             70px;
+            vertical-align:     top;
+            display:            inline-block;
+        }
+        .thread-content{
+            width:              210px;
+            height:             70px;
+            display:            inline-block;
+            .thread-title{
+                font-size:      15px;
+                color:          #232323;
+            }
+            .thread-preview{
+                font-size:      13px;
+                color:          #9c9c9c;
+            }
+            .thread-time{
+                font-size:      12px;
+                color:          #7f7f7f;
+            }
+        }
+        &.selected{
+            p{color:            #bbbbbb !important;}
+        }
+        &.unread{
+             border-bottom:          1px solid #38a6f8;
+            .thread-title{
+                color:               #38a6f8;
+            }
+        }
+    }
+    #thread_template{
+        display:                none;   
+    }
+    #conv_contact_input{
+        width:                  165px;          
+    }
+    .message-container-row{
+        margin-bottom:          20px;
+    }
+    .empty-chat-history{
+        img{
+            width:                  101px;
+            height:                 77px;
+            display:                block;
+            margin:                 auto;
+        }
+        p{
+            font-size:              20px;
+            color:                  #7b7b7b;
+            text-align:             center;   
+        }
+    }
+    .message{
+        img{
+            display:            inline-block;
+            width:              60px;
+            height:             60px;
+            vertical-align:     top;
+            cursor:             pointer;
+        }
+        .message-sender{
+            font-size:          18px;
+            color:              #232323;
+        }
+        .message-time{
+            font-size:          12px;
+            color:              #333333;
+        }
+        .message-content{
+            font-size:          14px;
+            color:              #666666;
+        }
+    }
+    #message_template{
+        display:                none;   
+    }
+    .message-seperator{
+        margin:                             5px 0px 10px -20px;
+        div:nth-of-type(1), div:nth-of-type(3){
+                height:                     1px;
+                background-color:           #DDDDDD;
+                margin-top:                 8px;
+        }
+        .message-date{
+            font-size:      14px;
+            text-align:     center;
+            color:          #232323;
+        }
+    }
+    #message_date_template{
+        display:                none;
+    }
+    #new_message{
+        margin-bottom:              0px;
+        position:                   relative;
+        #new_message_input{
+            width:                  500px;
+        }
+        label.error{
+            position:               absolute;
+            bottom:                 -10px;
+            margin:                 0px;   
+        }
+        label.checkbox{
+            input{
+                display:            block;   
+            }
+            position:               absolute;
+            bottom:                 -10px;
+            right:                  12px;
+            margin:                 0px;
+            font-size:              12px;
+            color:                  #9d9d9d;
+        }
+    }
+    #new_message_btn{
+        font-size:              17px;
+    }
+}
+    

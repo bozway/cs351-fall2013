@@ -1,0 +1,520 @@
+@color_fms_blue: #3584c8;
+@color_tab_gray: #c2c2c2;
+@color_big_font: #757575;
+@color_normal_font: #757575;
+@color_video_play: rgba(255,255,255,0.6);
+@color_skill_gray:   #2a2a2a;
+@color_font_light: #6a6a6a;
+@color_font_normal: #2a2a2a;
+
+
+@import '../main';
+@import '../common_functions';
+
+////////////////////////////////////////////////////////////////////////////////
+//  Styles that may affect the global
+////////////////////////////////////////////////////////////////////////////////
+div, img, iframe {
+    padding:                            0px;
+    margin:                             0px;
+    border:                             0px;
+}
+////////////////////////////////////////////////////////////////////////////////
+//  Page as a whole
+////////////////////////////////////////////////////////////////////////////////
+#user_profile_frontpage {
+    font-family:                        @base_font_family;
+    color:                              @color_font_normal;
+    background-color:                   #F5F3F4;
+}
+///////////////////////////////
+//  Cover Photo
+///////////////////////////////
+.fms-user-coverphoto {
+    height:                             445px;
+    position:                           relative;
+    overflow:                           hidden;
+    img {
+        width:                          100%;
+        min-height:                     445px;
+        min-width:                      1280px        
+    }
+}
+///////////////////////////////
+//  Page Body
+///////////////////////////////
+#user_profile_body {
+    width:                              940px;
+    margin:                             0 auto;
+    position:                           relative;
+    background-color:                   #F5F3F4;
+    min-height:                         600px;
+    padding-bottom:                      50px;
+}
+.fms-page-sidebar{
+    margin-left:                        0;
+}
+.fms-page-content{
+    overflow:                           hidden;
+}
+//////////////////////////////
+//  Sidebar
+///////////////////////////////
+.profile-picture-container {
+    position:                           relative;
+    height:                             170px;
+}
+.profile-picture {
+    position:                           absolute;
+    top:                                -25px; 
+    bottom:                             0;
+    height:                             220px;
+}
+.social-link {
+    margin:                             0;
+    margin-top:                         35px;
+    li {
+        font-size:                      13px;
+        margin-bottom:                  10px;
+        cursor:                         pointer;
+        &:hover {
+            text-decoration:            underline;   
+        }
+    }
+}
+.role {
+    .font-light();
+    height:                             75px;
+    line-height:                        75px;
+    font-size:                          30px;
+    color:                              #2a2a2a;
+}
+.hot-link {
+    margin:                             0;
+    li {
+        margin-bottom:                  10px;
+        border:                         none;
+        padding:                        0;
+        p {
+            font-size:                  16px;
+            text-align:                 center;
+            line-height:                30px;
+            height:                     30px;
+            margin:                     0;
+            border:                     none;
+            cursor:                     pointer;
+            color:                      @color_font_light;
+            background-color:           #EBEBEB;
+            position:                   relative;
+            span{
+                position:               absolute;
+                right:                  8px;
+                top:                    0;                
+            }
+            .down_arrow{
+                -webkit-transform:      rotate(90deg);
+                -moz-transform:         rotate(90deg);
+                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+            }
+            &:hover {
+                background-color:       #C2C2C2;
+            }
+        }
+        div {
+            display:                    none;
+            margin:                     0;
+            border:                     none;
+            padding:                    10px;
+            color:                      black;
+            background-color:           white;  
+            span{
+                word-break:             break-all; 
+                word-wrap:              break-word;
+            }
+        }
+    }
+}
+///////////////////////////////
+//  user_info
+///////////////////////////////
+.user_info{
+    margin-top:                         15px;
+}
+.basic_info{
+    float:left;
+    .fullname {
+        .font-light ();
+        font-size:                  40px;
+        height:                     65px;
+        line-height:                65px;
+        margin-bottom:              0px;
+    }
+    .flag {
+        margin-left:                5px;
+    }
+    .country {
+        height:             20px;        
+        font-size:          14pt;
+        span {
+            display:                inline-block;
+            vertical-align:         top;
+            line-height:            24px;
+        }
+        .city {
+            .font-light();   
+            margin-left:                10px;
+        }
+        img{
+            height:                     30px;
+            width:                      50px;
+        }
+    }
+}
+
+.social-info{
+    float:                              right;
+    width:                              100px;
+    .font-light ();
+    .social_count {
+        color:                          #3584c8;
+        font-size:                      40px;
+        text-align:                     right;
+        margin-bottom:                  0;
+    }
+    .social_text {
+        color:                          #6a6a6a;
+        font-size:                      16px;
+        text-align:                     right;
+        margin-top:                     -20px;
+    }
+    &.hidden{
+        visibility:     hidden;
+    }
+}
+
+///////////////////////////////
+//  botton && spotlight
+///////////////////////////////
+@nav_bar_bottom_border:                 8px;
+.options {
+    clear:                              both;
+    margin:                             0;
+    margin-top:                         (150 - @nav_bar_bottom_border); // subtract the border on the nav tabs
+    li {
+        margin:                         5px 15px 5px 0;
+        padding:                        0;
+        float:                          left;
+        button{
+            font-weight:                400;
+        }
+    }
+}
+.spotlight {
+    clear:                              both;
+    margin:                             0;
+    li {
+        clear:                          both;
+        height:                         70px;
+        line-height:                    70px;
+        background-color:               #f8f7f7;
+        &:hover {
+            background-color:           white;     
+        }
+        span {
+            display:                    block;
+            line-height:                70px;
+        }
+        .spotlight-play {
+            float:                      left;
+            width:                      70px;
+            height:                     70px;
+            cursor:                     pointer;
+            position:                   relative;
+            text-align:                 center;
+        }
+        .spotlight-name {
+            float:                      left;
+            height:                     70px;
+        }
+        .spotlight-time {
+            width:                      70px;
+            height:                     70px;
+            float:                      right;
+        }
+    }
+}
+/////////////////////////////
+//  Navigation
+/////////////////////////////
+.nav-wrap{
+    margin-bottom:                      20px;
+}
+.nav-bar {
+    clear:                              both;
+    margin:                             0;
+    height:                             45px;
+    border-bottom:                      @nav_bar_bottom_border solid #3584c8;
+    margin-top:                         15px;
+    position:                           relative;
+    width:                              720px;      // in case the element wrap around
+}
+
+.nav-tab {
+    float:                              left;
+    color:                              white;
+    height:                             45px;
+    line-height:                        45px;
+    cursor:                             pointer;
+    text-align:                         center;
+    background-color:                   #15558b;
+    border-top:                         0;
+    &.active {
+        background-color:               #3584c8;
+        border-top:                     6px solid #3584c8;
+        position:                       relative;
+        top:                            -5px;
+    }
+}
+#projects {
+    width:                              225px;
+    border-right:                       1px solid #3584c8;
+}
+#biography {
+    width:                              165px;
+    border-right:                       1px solid #3584c8;
+}
+#workedwith {
+    width:                              177px;   
+    border-right:                       1px solid #3584c8;  
+}
+#skills {
+    width:                              130px;
+    border-right:                       1px solid #3584c8;  
+}
+/////////////////////////////
+//  Project Listing
+/////////////////////////////
+.project-listing{
+    margin:0;
+    li{
+        position:                       relative;
+        float:                          left;
+        height:                         220px;
+        width:                          220px;
+        margin-right:                   20px;
+        margin-bottom:                  20px;
+        p {
+            background-color:           rgba(0,0,0,0.66);
+            width:                      215px;
+            min-height:                 40px;
+            line-height:                35px;
+            margin:                     0;
+            padding-left:               5px;
+            border:                     none;
+            font-size:                  16px;
+            color:                      #ffffff;
+            text-align:                 left;
+            position:                   absolute;
+            left:                       0;
+            bottom:                     0;
+            .fui-play, .fui-pause{
+                float:                  right;
+                margin-right:           10px;
+                cursor:                 pointer;
+            }
+        }
+    }
+    .no-margin-right{
+        margin-right:                   0;
+    }
+}
+.project-img-hover {
+    z-index:                            100;
+    position:                           absolute;
+    left:                               0;
+    top:                                0;
+    display:                            block;
+    width:                              220px;
+    height:                             180px;
+    background-color:                   rgba(56, 166, 248, 0.75);
+    background-image:                   url("../../img/project_play_button.png");
+    background-position:                50% 50%;
+    background-repeat:                  no-repeat;
+    opacity:                            0;
+    &:hover {
+        opacity:                        1;
+    }
+}
+
+/////////////////////////////
+//  worked_with
+/////////////////////////////
+.user_profile{
+    margin:                             0;
+    li{
+        position:                       relative;
+        float:                          left;
+        height:                         200px;
+        width:                          220px;
+        margin-right:                   20px;
+        margin-bottom:                  20px;
+        // hide the overflow so the images don't peek out from the bottom
+        overflow:                       hidden;
+        img{
+            width:                      220px;
+            // let the height extend down, so the aspect ratio is not distorted.
+            //height:                     200px; 
+        }
+        p {
+            background-color:           #ffffff;
+            width:                      220px;
+            height:                     60px;
+            margin:                     0;
+            padding:                    0;
+            border:                     none;
+            color:                      #000000;
+            text-align:                 left;
+            text-indent:                15px;
+            position:                   absolute;
+            left:                       0;
+            bottom:                     0;
+            .member_fullname{
+                width:                  219px;
+                font-size:              22px;
+                height:                 30px;
+                float:                  left;
+            }
+            .user_projects{
+                width:                  219px;
+                font-size:              12px;
+                height:                 30px;
+                float:                  left;
+            }
+        }
+    }
+    .no-margin-right{
+        margin-right:                   0;
+    }
+}
+.user-img-hover {
+    z-index:                            100;
+    position:                           absolute;
+    left:                               0;
+    top:                                0;
+    display:                            block;
+    width:                              220px;
+    height:                             140px;
+    background-color:                   rgba(56, 166, 248, 0.75);
+    background-image:                   url("../../img/project_play_button.png");
+    background-position:                center;
+    background-repeat:                  no-repeat;
+    opacity:                            0;
+    &:hover {
+        opacity:                        1;
+    }
+}
+/////////////////////////////
+// skills
+/////////////////////////////
+.skill-bar{
+    height:                             80px;
+    line-height:                        80px; 
+    font-size:                          20pt;
+    .font-light();
+    background-color:                   #ffffff;
+    border-bottom:                      1px dashed #cccccc;
+    img{
+        width:                          55px;
+        height:                         55px;
+        margin:                         -5px 18px 0 18px;
+    }
+    p{
+        width:                          200px;
+        height:                         70px;
+        line-height:                    70px;
+        float:                          right;
+        text-align:                     right;
+        margin-right:                   20px;
+        margin-bottom:                  0;
+    }
+}
+.skill-body{
+    background-color:                   #ffffff;
+    height:                             177px;
+    margin-bottom:                      20px;
+    .skill-video-container{
+        width:                          220px;
+        height:                         160px;
+        float:                          left;
+        display:                        inline-block;
+        position:                       relative;
+        padding:                        5px;
+        border-right:                   1px dashed #cccccc;
+    }
+    .skill-genres, .skill-influence{
+        display:                        inline-block;
+        float:                          left;
+        width:                          215px;
+        height:                         160px;
+        padding:                        12px 0 0 18px;
+        font-size:                      18px;
+        color:                          #979da4;
+        .font-normal ();
+        p{
+            font-size:                  20px;
+            .font-light();
+        }
+        .skill_tag {
+            margin:                     0 3px 8px 0;
+            font-size:                  13px;
+            float:                      left;
+            color:                      #879394;
+            padding:                    5px 8px;
+            background-color:           #ebedee;
+            .function_border_radius(3px);            
+        }
+    }
+}
+
+.nodata{
+        border:                         1px dashed #bababa;
+        height:                         85px;
+        padding-top:                    20px;
+        p{
+            text-align:                 center;
+            color:                      #575656;
+            font-size:                  20px;
+            .font-thin ();
+        }
+        a{
+            text-decoration: underline;
+            cursor:         pointer;
+        }
+}
+
+
+
+// TEMP solution
+.project-listing img{
+    width:          100%;
+    height:         100%;
+}
+
+
+.skill-body.not_has_video {
+    .skill-genres {
+        width:              320px;
+        padding-right:      15px;
+    }
+    
+    .skill-influence {
+        width:              320px;
+        border-left:        1px dashed #cccccc;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+@import '../main';
+
+#result_count{
+        line-height:                74px;
+        font-size:                  20px;
+        .font-light();
+}
+#project_search_result{   
+    li{
+     position:              relative;
+    list-style-type:        none;
+     height:                185px;
+     border-bottom:         1px solid #e7e7e7;
+     margin-bottom:         20px;
+    }
+    .project_play{
+     width:                 180px;
+     height:                166px;
+     float:                 left;
+     margin-right:          20px;
+     img{
+     width:                 180px;
+     height:                166px;
+     }
+    }
+    .project_photo_hover{
+    line-height:            160px;
+    text-align:             center;
+    height:                 166px;
+    width:                  180px;
+    left:                   0px;
+    position:               absolute;
+    top:                    0px;
+    opacity:                0;
+    font-size:              37px;
+    background-image:       url('/img/PLAYER_PLAY.png');
+    background-repeat:      no-repeat;
+    background-position:    center;
+    &.pause {
+        background-image:   url('/img/PLAYER_PAUSE.png');
+    }
+    }
+    .project_detail_info{
+        width:              500px;
+        float:              right;
+       
+    }
+    .project_title{
+     font-size:              24px;
+    .font-light () ;
+     color:                  #2985ca;
+     margin-bottom:          15px;
+    }
+    .project_location{
+        .font-normal ();
+        font-size:            14px;
+        color:                #afaeae;
+        margin-bottom:        15px;
+    }
+    .project_tag{
+        width:                  400px;
+        height:                 80px;
+        .tag {
+            border-radius:      3px;
+            color:              #8d989f;
+            background-color:   #ecf0f1;
+            margin-right:       3px;
+            margin-bottom:      5px;
+            display:            inline-block;
+            font-family:        'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;
+            font-size:          15px;
+            font-weight:        400;
+            height:             22px;
+            padding:            5px;
+    }
+    }
+    .msg-icon {
+            cursor:             pointer;
+            position:           absolute;
+            top:                30px;
+            right:              10px;
+            color:              #3584c8;
+            font-size:          22px;
+            }
+    .rating_value{
+         position:              absolute;
+         top:                   0px;
+         right:                 0px;
+         font-size:             27px;
+        .font-light () ;
+        min-width:              40px;
+        span{
+         position:              absolute;
+         top:                   -5px;
+         right:                 0px;
+         font-size:             14px;
+        }
+    }
+    .match_rating{
+         position:              absolute;
+         top:                   20px;
+         right:                 0px;
+         .font-normal ();
+        font-size:              11px;
+    }
+    .project_details{
+        width:                  53px;
+        height:                 35px;
+        position:               absolute;
+        top:                    0;
+        right:                  0;
+        border-left:            1px solid #e2e2e2;
+}
+    .lasts{
+        color:                  #6a6a6a;
+        .font-normal ();
+        font-size:              12px;
+      
+    }
+    .ends{
+        color:                  #6a6a6a;
+        .font-normal ();
+        font-size:              12px;
+       margin-left:             20px;
+    }
+}
+
+.back_to_top{
+    width:                  121px;
+    height:                 30px;
+    background-color:       #333333;
+    float:                  right;
+    background-image:       url('/img/back_to_top.png');
+    background-repeat:      no-repeat;
+    background-position:    right;
+    font-family:            @base_font_family;
+    color:                  white;
+    text-indent:            -25px;
+    font-size:              12px;
+}

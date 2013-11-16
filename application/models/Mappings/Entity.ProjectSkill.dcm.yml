@@ -1,0 +1,62 @@
+Entity\ProjectSkill:
+  type: entity
+  table: projectskill
+  fields:    
+    id:
+      type:       integer
+      id:         true
+      generator:
+        strategy: AUTO
+    description:
+      type:     string
+      nullable: true
+    isOpen:
+      type:     boolean
+    requiredFileList:
+      type:     string
+      nullable: true 
+    preSplit:
+      type:     float
+      nullable: true
+  
+#One to one relations
+  
+    # contract:
+      # targetEntity: Contract
+    # restriction:
+      # targetEntity: Restriction
+
+
+#One to many relations
+      
+  oneToMany:
+    auditions:
+      targetEntity: Audition
+      mappedBy    : skill
+    # invites:
+      # targetEntity: Invite
+      # mappedBy:     projectSkill
+
+#Many to one relations
+      
+  manyToOne:
+    project:
+      targetEntity: Project
+    skill:
+      targetEntity: Skill   
+    performer:
+      targetEntity: ProjectMember         
+
+#Many to many relations  
+       
+  manyToMany:
+    genres:
+      targetEntity: Genre
+    influences:
+      targetEntity: Influence      
+
+      
+
+        
+  
+  

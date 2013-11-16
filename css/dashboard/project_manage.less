@@ -1,0 +1,200 @@
+@import '../main';
+@import '../common_functions';
+
+////////////////////
+//header
+////////////////////
+
+.default-header {
+    color:                  white;
+    height:                 205px;
+    .container {
+        position:               relative;
+        padding-top:            25px;
+        p{
+            .font-light ();
+            font-size:          16px;     
+        }
+        p:first-of-type{
+            .font-thin ();
+            font-size:          33px;
+        }
+    }
+}
+
+.page-content{
+    margin-top:         40px;
+}
+
+/////////////////////////
+//navigation and tool bar
+////////////////////////
+.nav-container{
+    margin-left:                    0px;
+    ul{
+        li{
+            margin:                 0px;
+            a{
+                padding:            7px 11px 8px 15px;
+                color:              #2a2a2a;
+                font-size:          16px;
+                border-bottom:      2px solid #E1E4E7;
+                margin:             0px;
+            }
+            &:hover{
+                a{
+                     border-bottom:         2px solid #E1E4E7;
+                }
+            }
+            &.active{
+                a{
+                     color:                 #2985ca;
+                     border-bottom:         0px;
+                     background-color:      @color_body_background;
+                     &:hover, &:focus{
+                        color:                 #2985ca;
+                        background-color:           @color_body_background;
+                    }
+                }
+            }
+        }
+    }
+}
+.tool-bar{
+     a{
+        cursor:             pointer;   
+     }
+    // Overide color of dropdown menu
+    .btn-grey {
+        .btn.btn-info {
+            background-color:       #EDEDED;
+            color:                  #888888;
+        }
+        .btn-group.open .btn.btn-info.dropdown-toggle {
+            background-color:       #AAAAAA;
+        }
+    }
+}
+////////////////////
+//projects
+////////////////////
+.project-filter{
+    .project_filter_option{
+        font-size:          13px;
+        color:              #6a6a6a;
+        display:            inline-block;
+        margin:             0px 30px 40px 0px;
+    }
+}
+.tab-content{
+    padding:                0px;
+    border:                 0px;
+    min-height:             300px;
+}
+.noproject{
+    //width:                  970px;
+    text-align:             center;
+    border:                 1px dashed #c4c3c2;
+    height:                 150px;
+    line-height:            150px;
+    //vertical-align:         middle;
+    //display:                table-cell;
+    font-size:              26px;
+    color:                  #2f2f2f;
+    .font-thin();
+    a{
+        text-decoration:                underline;
+    }
+}
+.project{
+    margin-bottom:          25px;
+    background-color:       #ffffff;
+    &.owner{
+        background-image:        url(/img/owner_ribbon.png);
+        background-repeat:       no-repeat;
+        background-position:     right top;
+    }
+    .project-img{
+        position:               relative;
+        height:                 140px;
+        img{
+            width:              100%;
+            height:             100%;
+        }
+        a{
+            position:           absolute;
+            width:              100%;
+            height:             100%;
+            top:                0px;
+            left:               0px;
+            background-image:       url(/img/button_view_profile.png);
+            background-color:       rgba(56, 166, 248, 0.75);
+            background-repeat:      no-repeat;
+            background-position:    center center;
+            opacity:                0;
+        }
+        a:hover{
+            opacity:            1;
+        }
+    }
+    .project-info{
+        position:           relative;
+        height:             140px;
+        p, a{
+            margin-bottom:      0px;
+            overflow:           hidden;
+            text-overflow:      ellipsis;
+            line-height:        1.4;
+        }
+        .project-name{
+            color:              #2985ca;
+            font-size:          20px;
+            max-height:         60px;
+            display:            block;
+            margin-top:         5px;
+            &.unpublished{
+                 color:         #333333;  
+            }
+        }
+        .project-member-info{
+            position:           absolute;
+            bottom:             5px; 
+            p{
+                max-height:         40px;  
+                color:              #444444;
+                font-size:          14px;
+                span{
+                    color:          #999999;   
+                }
+            }
+        }
+        .btn{
+            position:       absolute;
+            bottom:         20px;
+            width:          auto;
+            display:        inline-block;
+            font-size:      15px;
+            color:          #ffffff;
+        }
+        .btn-delete{
+            left:           60px;
+            &:hover{
+                background-color:   #E74C3C;   
+            }
+        }
+        .btn-view{
+            left:           160px;   
+        }
+        .btn-message{
+            background-image:       url(/img/icon_mail_grey.png);
+            background-repeat:      no-repeat;
+            background-position:    4px center;
+            text-indent:            20px;
+        }
+        .btn-withdraw{
+            position:               absolute;
+            top:                    5px;
+            right:                  5px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+Entity\HotUser:
+  type: entity
+  table: hotuser
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    popularity:
+      type: integer
+
+    
+#One to one relations
+  oneToOne:
+    user:
+      targetEntity: User
+
+#One to Many relations
+
+#Many to one relations
+      
+
+
+#Many to many relations    
+
+    

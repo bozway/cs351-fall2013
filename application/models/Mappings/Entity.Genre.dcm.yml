@@ -1,0 +1,34 @@
+Entity\Genre:
+  type: entity
+  table: genre
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    name:
+      type:     string
+      nullable: false
+    popularity:
+      nullable: true
+      type:     integer
+    searchTimes:
+      nullable: true
+      type:     integer
+    type:
+      type:     integer
+#One to one relations
+
+#One to many relations
+  oneToMany:
+    genres:
+      targetEntity: Genre
+      mappedBy:     category
+#Many to one relations
+  manyToOne:
+    category:
+      targetEntity: Genre
+      inversedBy  : genres 
+
+#Many to many relations

@@ -1,0 +1,49 @@
+Entity\UserSkill:
+  type: entity
+  table: userskill
+  fields:    
+    id:
+      type:     integer
+      id:       true
+      generator:
+        strategy: AUTO
+    ranking:
+      type:     string
+      length:   32
+    videoPreview:
+      nullable: true
+      type:     string
+      
+
+
+#one to one relations
+
+
+#one to many relations
+
+      
+
+#Many to one relations
+
+  manyToOne:
+    user:
+      targetEntity: User
+      inversedBy:   skills
+    skill:
+      targetEntity: Skill      
+    
+#Many to many relations
+
+  manyToMany:
+    genres:
+      targetEntity: Genre
+    influences:
+      targetEntity: Influence   
+      
+
+
+    
+                  
+            
+        
+    

@@ -1,0 +1,36 @@
+Entity\Thread:
+  type: entity
+  table: thread
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    creationTime:
+      type:     datetime
+      nullable: false
+
+        
+#One to one relations
+
+#One to many relations
+      
+  oneToMany:
+    messages:
+      orderBy:      { 'creationTime': 'ASC'}      
+      targetEntity: Message
+      mappedBy:     thread
+    participants:
+      targetEntity: ThreadUser
+      mappedBy:     thread
+        
+
+#Many to one relations
+
+#Many to many relations
+
+
+    
+
+   

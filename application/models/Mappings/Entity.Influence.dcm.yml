@@ -1,0 +1,25 @@
+Entity\Influence:
+  type: entity
+  table: influence
+  fields:    
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    name:
+      type:     string
+    popularity:
+      nullable: true
+      type:     integer
+    searchTimes:
+      nullable: true
+      type:     integer
+
+#One to one relations
+
+#One to many relations
+
+#Many to one relations
+
+#Many to many relations

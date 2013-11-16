@@ -1,0 +1,33 @@
+Entity\ContractItem:
+  type: entity
+  table: contractitem
+  fields:    
+    id:
+      type: integer
+      id:   true
+    status:
+      type: integer
+    pay:
+      nullable: true
+      type:     float
+    equity:
+      nullable: true
+      type:     float
+        
+#One to one relations 
+
+
+            
+
+#One to many relations
+
+
+#Many to one relations
+  manyToOne:
+    mainContract:
+      targetEntity: Contract
+      inversedBy:   contractItems
+    signee:
+      targetEntity: ProjectMember      
+
+#Many to many relations

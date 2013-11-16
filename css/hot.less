@@ -1,0 +1,231 @@
+/////////////////////////////////////////////////////////////
+//          INCLUDES              
+/////////////////////////////////////////////////////////////
+@import 'common_functions';
+@import 'main';
+
+
+
+
+@container_width:               940px;
+@triangle_edge_height:          18px;      
+@color_text_blue:               #38a6f8;
+#whatshot-header {
+    background-image:           url('@{baseurl}img/dashboard_header_extended.png');
+    background-repeat:          no-repeat;
+    background-color:           #37314f;
+    background-position:        center;
+    height:                     110px;
+    width:                      100%;
+    color:                      white;
+    font-size:                  33px;
+    .font-thin();
+    line-height:                110px;
+}
+#quicklinks-colorbg {
+    background-image:           url('@{baseurl}img/home_page/banner_whatshot.jpg');
+    background-repeat:          no-repeat;
+    background-color:           black;
+    background-position:        center;
+    height:                     275px;
+    width:                      100%;    
+}
+#pop-people-colorbg, #pop-projects-colorbg{
+    background-color:           #eeecec;             
+}
+#quicklinks-content{
+    position:                   absolute;
+    top:                        0px;
+    left:                       50%;
+    margin-left:                -(@container_width/2);
+}
+#whatshot {
+    background-color:       #efecea;
+    min-height:             800px;
+    ul {
+        margin:             0px;
+    }
+    .whatshot-row {
+        position:               relative;
+    }
+    .whatshot-content-title {
+        color:                  @color_text_blue;
+        font-size:              20px;
+        display:                block;
+        margin-top:             20px;
+        margin-bottom:          15px;
+    }
+    #quicklinks-list{
+        margin:                 0px;   
+    }
+    .triangle{
+        position:               absolute;
+        border-top:             @triangle_edge_height solid #121212;
+        border-left:            @triangle_edge_height solid transparent;
+        border-right:           @triangle_edge_height solid transparent;
+        bottom:                 -(@triangle_edge_height);
+        left:                   50%;
+        margin-left:            -(@triangle_edge_height);
+    }
+    @quicklink_item_width:          180px;
+    @quicklink_icon_width:          120px;
+    @transition_duration:           0.13s;
+    .quicklinks-list-item {
+        display:                inline-block;
+        width:                  @quicklink_item_width;
+        margin-right:           (@container_width - @quicklink_item_width*5)/4 - 4;
+        vertical-align:         top;
+        text-align:             center;
+        margin-top:             10px;
+        img {
+            width:                  @quicklink_icon_width;
+        }
+        &:last-of-type{
+            margin-right:            0px;   
+        }
+    }    
+    .quicklinks-link {
+        color:                  white;
+        display:                inline-block;        
+        opacity:                0.60;
+        .function_transform(scale(1.0));
+        &:hover {
+            opacity:                1.0;
+            .function_transition(opacity, @transition_duration, @easeInBack);            
+            .function_transform(scale(1.2));
+            .quicklinks-link-title {                                
+                color:                  @color_text_blue;
+                .function_transition(color, @transition_duration, @easeInBack);
+            }
+        }
+    }
+    .quicklinks-link-title {        
+        font-size:              16px;
+        display:                block;
+        margin-top:             20px;
+    }
+    .pop-people-list-item {
+        @people_pic_size:       140px;
+        width:              @people_pic_size;
+        height:             @people_pic_size;
+        float:              left;
+        margin-right:       20px;
+        margin-bottom:      20px;
+        position:           relative;
+        &:last-of-type {
+            margin-right:       0px;
+        }
+        a{
+            width:                  @people_pic_size;
+            height:                 @people_pic_size;
+            display:                block;
+            position:               absolute;
+            left:                   0px;
+            top:                    0px;
+            background-image:       url('@{baseurl}img/button_view_profile.png');
+            background-position:    50%;
+            background-repeat:      no-repeat;
+            background-color:       rgba(56,166,248,0.60);
+            opacity:                0;
+            .function_transition(opacity, @transition_duration);
+            &:hover {                
+                opacity:            1;                
+            }
+        }
+        .profile-pic {
+            width:              @people_pic_size;
+            height:             @people_pic_size;
+        }
+    }    
+    #pop-projects-content {
+        padding-bottom:             50px;
+    }
+    .pop-project-list-item {
+        @projects_pic_size:         150px;
+        @projects_pic_height:       140px;        
+        @projects_block_height:     300px;
+        position:                   relative;
+        display:                    inline-block;        
+        height:                     @projects_block_height;
+        overflow:                   hidden;
+        &:first-child {
+            margin-left:            0px; // takes care of the bootstrap margin
+        }        
+        .projimg {
+            min-height:             @projects_pic_height;
+            overflow:               hidden;      
+            margin-left:            0px;            
+            position:               absolute;
+            top:                    0px;
+            left:                   0px;
+        }
+        .projlink {
+            min-height:             @projects_pic_height;
+            width:                  100%; // as wide as the pic.
+            display:                block;
+            background-image:       url('@{baseurl}img/button_view_profile.png');
+            background-position:    50%;
+            background-repeat:      no-repeat;
+            background-color:       rgba(56,166,248,0.60);
+            opacity:                0;
+            .function_transition(opacity, @transition_duration);
+            &:hover {               
+                opacity:                1;
+            }
+        }        
+        .projinfo {
+            position:               absolute;
+            background-color:       #ffffff;
+            top:                    @projects_pic_height;
+            height:                 @projects_block_height - @projects_pic_height;
+            left:                   0px;
+            margin-left:            0px;
+            width:                  190px;
+            padding:                15px; // (span3(220px) - 190px) / 2            
+            span {
+                display:                block;
+            }
+        }
+        .projowner {
+            margin-bottom:          5px;
+            font-size:              22px;            
+            .font-normal();
+        }
+        .projtitle {
+            margin-bottom:          25px;
+            font-size:              18px;
+            .font-light();
+        }
+        .projdesc {            
+            font-size:              14px;
+            .font-normal();
+        }
+    } // end of .pop-project-list-item
+    #whatshot-content-trending {
+        background-color:           #f7f7f7;
+        padding-bottom:             100px;
+    }
+    .whatshot-content-supertitle {
+        font-size:                  40px;
+        .font-thin();
+        display:                    block;
+        margin-top:                 25px;
+    }
+    .tagblock {
+        &:first-of-type {
+            margin-left:                0px;
+        }
+        .tag {
+            background-color:           @color_text_blue;
+            display:                    inline-block;
+            //line-height:                24px;
+            text-align:                 center;
+            padding:                    5px 15px 5px 15px;
+            color:                      white;
+            margin-bottom:              5px;
+            margin-right:               3px;
+            border-radius:              5px;
+        }
+    }
+    // end of #whatshot-content-trending
+} // end of #whatshot

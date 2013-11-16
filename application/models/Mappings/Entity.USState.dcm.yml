@@ -1,0 +1,19 @@
+Entity\USState:
+  type: entity
+  table: usstate
+  fields:    
+    abbreviatedName:
+      type: string
+      id:   true
+    fullName:
+      type:     string
+
+
+        
+#One to one relations
+
+#One to many relations
+
+#Many to one relations
+
+#Many to many relations

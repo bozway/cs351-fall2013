@@ -1,0 +1,465 @@
+////////////////////////////////////////////////////////////
+//          INCLUDES              
+////////////////////////////////////////////////////////////
+@import 'common_functions';
+@import 'main';
+
+@size_modal_width:          620px;
+@size_modal_height:         445px;
+@modalContentWidth:         620px;
+@modalContentHeight:        300px;
+#modal_container {
+  ul {
+      list-style-type:        none;
+      margin:                 0;
+      padding:                0
+  }
+  
+  form {
+      margin:                 0;   
+  }
+  ////////////////////////////////
+  //  Modal Container
+  ////////////////////////////////
+  .modal-body {
+      padding:                0;
+      border:                 none;
+      margin:                 0;
+      width:                  100%;
+      max-height:             @size_modal_height;
+      height:                 @size_modal_height;
+      overflow:               visible;
+  }
+  
+  .modal-header {
+      clear:                  both;
+      padding:                0px;
+      border-bottom:          none;
+      height:                 60px;
+  }
+  
+  .modal-body-title {
+      width:                  @modalContentWidth;
+      height:                 60px;
+      line-height:            85px;
+      margin:                 0 auto;
+  }
+  #signupSkillsModal {
+      .modal-title {
+            max-width:          620px;
+            overflow:           hidden;
+            max-height:         60px;
+            display:            inline-block;
+      }
+  }
+  .modal-title {
+        font-size:          32px;
+        .font-thin();
+      .user_name {
+          .font-light();   
+      }
+      
+  }
+  
+  .modal-signup-stage {
+      display:                block;
+      float:                  right;
+      width:                  35px;
+      font-size:              24px;
+      color:                  #E0DEDF;
+      &.active {
+          color:              #3584c8;   
+      }
+  }
+  
+  .modal-body-content {
+      width:                  @modalContentWidth;
+      height:                 @modalContentHeight;
+      position:               relative;
+      margin:                 0 auto;
+  }
+  
+  ////////////////////////////////
+  //  Title
+  ////////////////////////////////
+  .fms_close {
+      background-image:       url("../img/close.png"); 
+      background-repeat:      no-repeat;
+      background-color:       transparent;
+      width:                  30px;
+      height:                 30px;
+      border:                 none;
+      float:                  right;
+      margin-top:             15px;
+      margin-right:           30px;
+  }
+  
+  .user-profile-title {
+      width:                  30px;
+      height:                 30px;
+      border-bottom:          2px solid #3D9DCF;
+      white-space:            nowrap;
+      position:               relative;
+  }
+  
+  .user-profile-description {
+      font-size:            10px;
+      line-height:          12px;
+      padding-top:          80px;
+      width:                330px;
+      .demo-icons > span{
+          color:        #999999;
+          margin:       0 0 32px 16px;
+      }
+      .search-skill-db{
+            width:              273px;
+            padding-left:       56px;
+            font-size:          12px;
+            margin-top:         -45px;
+            padding-bottom:     27px; 
+      }
+  }
+  
+
+
+  
+  ////////////////////////////////
+  //  Dropdown List
+  ////////////////////////////////
+
+  
+  ////////////////////////////////
+  //  Form Validation
+  ////////////////////////////////
+  label.error {
+      position:               absolute;
+      //top:                    -20px; // this is topside error
+      top:                      55px;
+      left:                     15px;
+      font-size:              12px;
+      color:                  #FA8072;
+  }
+  ////////////////////////////////
+  //  Checkbox
+  ////////////////////////////////
+  .fms_checkbox {
+      height:                 12px;
+      width:                  12px;
+      border:                 1px solid #3284C9;
+      background-color:       white;
+      &.checked {
+          background-image:       url("../img/icon_checked.png");
+          background-repeat:      no-repeat;
+          background-position:    center;   
+      }
+      float:                  left;
+  }
+  
+  
+  ////////////////////////////////
+  //  Buttons
+  ////////////////////////////////
+  .fms-button {
+    
+      //height:                 40px;
+      background-color:       #2985cb;
+      .function_border_radius(3px);
+      .function_box_shadow(1px, 1px, 0px, 0px, rgba(255,255,255,0.15)); 
+      //line-height:            40px;
+      text-align:             center;
+      color:                  white;
+      //font-size:              14px;
+      cursor:                 pointer;
+      border:                 none;
+      &.inactive {
+          background-color:   #DDDCDC;
+          &:hover{
+              background-color:#666666;
+          }
+      }
+      
+      &.special {
+          background-color:   #5bb75b;
+          &:hover{
+              background-color:#6ba541;
+          }
+      }
+      &:hover {
+          background-color:    #286a9c;   
+      }
+  }
+  
+  ////////////////////////////////
+  //  Popovers
+  ////////////////////////////////
+  
+  .helper {
+      display:                block;
+      width:                  20px;
+      height:                 20px;
+      background-image:       url("../img/popover.png");
+      cursor:                 pointer;
+      &.float {
+          position:           absolute;
+          top:                -25px;
+          right:              5px;
+      }
+  }
+  
+  .popover-right-dark {
+      .popover{border-radius:0px}
+      .popover-title { display: none; }
+      .popover.fade.right {
+          background-color:       #434343;
+          &.out {width:           160px;}
+          width:                  160px;
+          .popover-content {
+              padding:            8px;
+              margin:             0;
+              border:             0;
+              font-size:          12px;
+              line-height:        15px;
+          }
+      }
+      .arrow {
+          border-right-color:     #434343;
+      }
+      .disable-user-select();
+  }
+  
+  .popover-top-dark {
+      .popover{border-radius:0px}
+      .popover-title { display: none; }
+      .popover.fade.top {
+  
+          background-color:       #434343;
+          width:                  140px;
+          &.out {width:           140px;}
+         .popover-content {
+              padding:            8px;
+              margin:             0;
+              border:             0;
+              font-size:          10px;
+              line-height:        15px;
+          }
+          .arrow {
+              border-top-color:     #434343;
+              position:           absolute;
+              left:               20%;
+          }
+      }
+      .disable-user-select();
+      .popover.top .arrow {
+          left:               20%;
+      }
+  }
+  
+  .popover-top-light {
+      .popover{border-radius:0px}
+      .popover-title { display: none; }
+      .popover.fade.top {
+          background-color:       white;
+          width:                  140px;
+          &.out {width:           140px;}
+          .popover-inner .popover-content {
+              padding:            8px;
+              margin:             0;
+              border:             0;
+              font-size:          10px;
+              line-height:        15px;
+          }
+      }
+      .popover.top .arrow {
+              border-top-color:   white;
+        }
+        .popover-content {
+          padding:            8px;
+              margin:             0;
+              border:             0;
+              font-size:          12px;
+              line-height:        15px;
+              color:              #8a8a8a;
+      }
+      .disable-user-select();
+  }
+  
+  .popover-right-light {
+       .popover{border-radius:0px}
+      .popover-title { display: none; }
+      .popover.fade.right {
+          background-color:       #e2e2e2;
+          &.out {width:           140px;}
+          width:                  140px;
+          .popover-content {
+              padding:            2px;
+              margin:             0;
+              border:             0;
+              font-size:          12px;
+              line-height:        15px;
+              color:              #8a8a8a;
+          }
+      }
+      .popover.right .arrow {
+          border-right-color:     #e2e2e2;
+      }
+      .disable-user-select();
+  }
+  
+  ////////////////////////////////
+  //  Music Player
+  ////////////////////////////////
+  .audio-player {
+      clear:                  both;
+      height:                 70px;
+      div {
+          float:              left;
+          background-color:   white;
+          border-bottom:      2px solid #2985ca;
+      }
+      &.loading {
+          opacity:            0.5;   
+      }
+      
+      .play-delete {
+          background-color:   transparent;
+          background-image:   url("../img/close_icon_grey.png");
+          background-position:center;
+          background-repeat:  no-repeat;
+          width:              40px;
+          height:             40px;
+          cursor:             pointer;
+          border:             none;
+      }
+  }
+  
+  .play-button {
+      width:                  40px;
+      height:                 40px;
+      border-right:           1px solid #dfdfdf;
+      cursor:                 pointer;
+      background-image:       url("../img/pause_icon.png");
+      background-repeat:      no-repeat;
+      background-position:    center; 
+      &.pause {
+          background-image:   url("../img/play_icon.png"); 
+          //background-color:   #2985ca;
+      }
+  }
+  
+  .play-progress {
+      width:                  250px;
+      height:                 40px;
+      border-right:           1px solid #dfdfdf;
+      position:               relative;
+  }
+  
+  .play-volume {
+      width:                  40px;
+      height:                 40px;
+      background-image:       url("../img/volume_icon.png");
+      background-repeat:      no-repeat;
+      background-position:    center; 
+  }
+  
+  .fms_audio_info {
+      position:               absolute;
+      height:                 40px;
+      width:                  200px;
+      line-height:            40px;
+      text-indent:            20px;
+      overflow:               hidden;
+      white-space:            nowrap;
+  }
+  
+  .fms_audio_length {
+      position:               absolute;
+      right:                  10px;
+      height:                 40px;
+      line-height:            40px;
+  }
+  
+  .fms-progress-bar {
+      background-color:       #cae8ff;
+      width:                  0px;
+      height:                 40px;
+  }
+  
+  // Volume control bar
+  .volume-bar {
+      width:                  40px;
+      height:                 20px;
+      position:               relative;
+      top:                    35px;
+      left:                   5px;
+  }
+  
+  
+  // the volume control button
+  .ui-slider-handle.ui-state-default.ui-corner-all {
+      width:                  6px;
+      height:                 6px;
+      margin-left:            -3px;
+      margin-top:             2px;
+      .function_border_radius(3px);
+      border:                 none;
+      //border:                 0 solid transparent;
+      //border-top:             8px solid transparent;
+      //border-left:            10px solid transparent;
+      outline:                none;
+      background-color:       #18578A;
+  }
+  
+  // the volume control bar
+  .volume-bar.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+      width:                  30px;
+      height:                 2px;
+      background-color:       #B9B9B9;
+      border:                 none;
+  }
+  
+  // audio file placeholder
+  .audio-player-placeholder {
+      width:                  430px;
+      height:                 40px;
+      border:                 2px solid #D0D0D0;
+      margin-bottom:          26px;
+  }
+}
+.signup_country{
+    width:                  220px;
+    float:                  left;
+    .btn.btn-danger {
+       background-color:       #EDEDED;
+       color:                  #888888;
+}
+ .btn-group.open .btn.btn-danger.dropdown-toggle {
+        background-color:       #AAAAAA;
+
+    }
+      .btn.btn-large{
+    padding: 9px 12px 10px;
+    }
+}
+.signup_gender{
+      width:                  220px;
+      float:                  right;
+   
+      margin-right:           60px;
+    .btn.btn-danger {
+       background-color:       #EDEDED;
+       color:                  #888888;
+}
+ .btn-group.open .btn.btn-danger.dropdown-toggle {
+        background-color:       #AAAAAA;
+
+    }
+    .btn.btn-large{
+    padding:                    9px 12px 10px;
+    }
+}
+.fms_button{
+    .pull-right {
+    float:                      none;
+    margin-left: 10px;
+}
+}

@@ -1,0 +1,27 @@
+Entity\HotProject:
+  type: entity
+  table: hotproject
+  fields:    
+    id:
+      type: integer
+      id:   true
+      generator:
+        strategy: AUTO
+    popularity:
+      type: integer
+
+    
+#One to one relations
+  oneToOne:
+    project:
+      targetEntity: Project
+
+#One to Many relations
+
+#Many to one relations
+      
+
+
+#Many to many relations    
+
+    

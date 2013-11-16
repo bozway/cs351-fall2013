@@ -1,0 +1,99 @@
+/////////////////////////////////////////////////////////////
+//          Common functions              
+/////////////////////////////////////////////////////////////
+
+
+.function_box_shadow(@bx_shdw_right, @bx_shdw_bottom, @bx_shdw_blur, @bx_shdw_size, @bx_shdw_color) {
+    -webkit-box-shadow: @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_size @bx_shdw_color;
+    -moz-box-shadow:    @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_size @bx_shdw_color;
+    -o-box-shadow:      @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_size @bx_shdw_color;
+    -ms-box-shadow:     @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_size @bx_shdw_color;
+    box-shadow:         @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_size @bx_shdw_color;
+}
+
+.function_box_shadow(@position, @bx_shdw_right, @bx_shdw_bottom, @bx_shdw_blur, @bx_shdw_color,@bx_shdw_right1, @bx_shdw_bottom1, @bx_shdw_blur1, @bx_shdw_color1) {
+    -webkit-box-shadow: @position @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_color,@bx_shdw_right1 @bx_shdw_bottom1 @bx_shdw_blur1 @bx_shdw_color1;
+    -moz-box-shadow:    @position @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_color,@bx_shdw_right1 @bx_shdw_bottom1 @bx_shdw_blur1 @bx_shdw_color1;
+    -o-box-shadow:      @position @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_color,@bx_shdw_right1 @bx_shdw_bottom1 @bx_shdw_blur1 @bx_shdw_color1;
+    -ms-box-shadow:     @position @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_color,@bx_shdw_right1 @bx_shdw_bottom1 @bx_shdw_blur1 @bx_shdw_color1;
+    box-shadow:         @position @bx_shdw_right @bx_shdw_bottom @bx_shdw_blur @bx_shdw_color,@bx_shdw_right1 @bx_shdw_bottom1 @bx_shdw_blur1 @bx_shdw_color1;
+}
+
+.function_text_drop_shadow (@x, @y, @blur, @color) {
+    text-shadow:        @x @y @blur @color;
+}
+// This will emulate the Photoshop text glow fx
+.function_text_glow (@spread, @blur, @color) {
+    text-shadow:        -@spread 0px @blur @color, 
+                        @spread 0px @blur @color, 
+                        0px -@spread @blur @color, 
+                        0px @spread @blur @color;
+}
+
+.function_centerize(@width) {
+    width:              @width;
+    margin:             0px auto;
+}
+
+.function_border_radius(@radius){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+@easeOutCubic:          cubic-bezier(0.215, 0.61, 0.355, 1);
+@easeInQuart:           cubic-bezier(0.895, 0.03, 0.685, 0.22);
+@easeInBack:            cubic-bezier(0.6, -0.28, 0.735, 0.045);
+// Transition on two properties
+.function_dual_transition(@propertyone: all, @duration: 0.5s, @easing: ease-in-out, @delay: 0s, @propertytwo: all, @durationtwo: 0.5s, @easingtwo: ease-in-out, @delaytwo: 0s) {
+    -webkit-transition:     @propertyone @duration @easing @delay, @propertytwo @durationtwo @easingtwo @delaytwo;
+    -moz-transition:        @propertyone @duration @easing @delay, @propertytwo @durationtwo @easingtwo @delaytwo;
+    -o-transition:          @propertyone @duration @easing @delay, @propertytwo @durationtwo @easingtwo @delaytwo;
+    -ms-transition:         @propertyone @duration @easing @delay, @propertytwo @durationtwo @easingtwo @delaytwo;
+    transition:             @propertyone @duration @easing @delay, @propertytwo @durationtwo @easingtwo @delaytwo;
+}
+.function_transition(@property: all, @duration: 0.5s, @easing: ease-in-out, @delay: 0s) {
+    -webkit-transition:     @property @duration @easing @delay;
+    -moz-transition:        @property @duration @easing @delay;
+    -o-transition:          @property @duration @easing @delay;
+    -ms-transition:         @property @duration @easing @delay;
+    transition:             @property @duration @easing @delay;
+}
+.function_transform(@property) {
+    -webkit-transform:     @property;
+    -moz-transform:        @property;
+    -o-transform:          @property;
+    -ms-transform:         @property;
+    transform:             @property;
+}
+.function_transition_on_transform(@duration: 0.5s, @easing: ease-in-out, @delay: 0s) {
+    .function_transition(-webkit-transform, @duration, @easing, @delay);
+    .function_transition(-moz-transform, @duration, @easing, @delay);
+    .function_transition(-o-transform, @duration, @easing, @delay);
+    .function_transition(-ms-transform, @duration, @easing, @delay);
+    .function_transition(transform, @duration, @easing, @delay);
+}
+
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+    -webkit-transform:  rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -moz-transform:     rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -o-transform:       rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -ms-transform:      rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    transform:          rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+// This creates a complete two color gradient
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin, @start, @stop);
+    background-image: -moz-linear-gradient(@origin, @start, @stop);
+    background-image: -o-linear-gradient(@origin, @start, @stop);
+    background-image: -ms-linear-gradient(@origin, @start, @stop);
+    background-image: linear-gradient(@origin, @start, @stop);
+}
+// This makes a quick and dirty dark gradient
+.quick-gradient (@origin: left, @alpha: 0.2) {
+    background-image: -webkit-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -moz-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -o-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: -ms-linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+    background-image: linear-gradient(@origin, rgba(0,0,0,0.0), rgba(0,0,0,@alpha));
+}

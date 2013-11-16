@@ -1,0 +1,407 @@
+////////////////////////////////////////////////////////////
+//          INCLUDES              
+////////////////////////////////////////////////////////////
+@import 'common_functions';
+@import 'main';
+////////////////////////////////////////////////////////////
+//          LOGIN MODAL STYLING              
+////////////////////////////////////////////////////////////
+@size_modal_width:          620px;
+@size_modal_height:         505px;
+@modalContentHeight:        340px;
+@modalContentWidth:         620px;
+#modal_container {
+    input.error {
+        box-shadow:             0px 0px 15px 1px #FC605B;
+        color:                  red !important; 
+    }
+  #signupModal {
+      width:                  @size_modal_width;
+      height:                 @size_modal_height;
+      background-color:       #000000;
+      color:                  white;
+      margin-left:              -310px;
+      &.login {
+          width:                460px;
+          height:               475px;
+          margin-left:          -230px;
+      }
+      // Overide element style
+      .modal-body-title {
+            margin-bottom:          40px;
+            text-indent:            30px;
+            line-height:            70px;
+            font-size:              26px;
+            .close-signup-modal {
+                float:              right;
+                display:            inline-block;
+                background-image:   url('@{baseurl}img/close_icon_white.png'); 
+                margin-right:       26px;
+                margin-top:         20px;
+                background-repeat:  no-repeat;
+                width:              14px;
+                height:             14px;
+            }
+            &.login {
+                width:              100%;
+            }
+      }
+      .modal-body-content {
+          width:                  @modalContentWidth;
+          height:                 @modalContentHeight;
+      }
+  }
+  
+  .input-block {
+      height:           86px;  
+  }
+  
+  #fms_signin_form {
+       height:               330px;
+       input[type="text"],  input[type="email"], input[type="password"] { 
+           width:               250px; 
+       }
+       .form-column {
+           float:               left;
+           position:            relative;
+           &.login{
+               width:           420px;
+               margin-left:     30px;
+            }
+       }
+        .input-block {
+            height:             86px;  
+            &.login{
+                height:             75px;
+            }
+        }
+        .fms-login-actions {
+            list-style-type:        none;
+            float:                  right;
+            margin-right:           12px;
+            li {
+                display:            inline-block;
+                height:             20px;
+                margin-left:        0px;
+                width:              125px;
+                line-height:        45px;
+                margin-right:       0px;
+            }
+        }
+    } // end of #fms_signin_form
+  // The forgot password link
+  #forgotlink {
+      text-decoration:          underline;
+      color:                    #f2f2f2;
+      &:hover {
+          color:                    #2985ca;
+      }
+  }
+  
+  @signup_prompt_height:            75px;
+  .fms-user-signup{
+        height:             @signup_prompt_height;
+        text-align:         center;
+        line-height:        @signup_prompt_height;
+        font-size:          14px;
+        background-color:   #202020;
+  }
+  
+  .fms-login-social-conn {
+        list-style-type: none;
+        li{
+            height:         70px;
+            margin:         0;
+            width:          228px;
+            display:        inline-block;
+        }
+        li:first-of-type{
+            border-bottom-left-radius: 5px;
+        }
+        li:last-of-type{
+            border-bottom-right-radius: 5px;
+        }
+  }
+  
+  #loginlabel {
+      height:                 60px;
+      width:                  160px;
+      line-height:            60px;
+      text-align:             center;
+      float:                  right;
+      color:                  #2985ca;
+      span {
+          border:             10px;
+          cursor:             pointer;
+          //text-decoration:    underline !important;
+          &.active {
+              color:          white;
+              text-decoration:none    !important;
+          }
+          &:hover {
+              text-decoration:underline;   
+          }
+      }
+  }
+  
+  #signin_modal_body {
+      //display:                none; 
+      .function_transition();
+      .social-media-wrapper {
+          margin-left:        100px;
+          float:              left;
+      }
+      
+      .form-wrapper {
+          margin-left:        30px;   
+          float:              left;
+      }
+      .signin_submit_btn{
+            width:              108px;
+            display:            inline-block;
+            font-size:          14px;
+      }
+  }
+  
+  #signup_modal_body {
+      display:                none;
+      .function_transition();
+  }
+  
+  
+  
+  ////////////////////////////////
+  //  Facebook and Twitter
+  ////////////////////////////////
+  .options-column {
+      display:              inline-block;
+      width:                265px;
+      height:               70px;
+      margin-left:          30px;
+      text-align:           center;
+  }
+  #anchor_login, #anchor_signup {
+      text-decoration:      underline;
+  }
+  .signup_facebook_button {
+      display:                block;
+      background-color:       #406dc0; // facebook blue
+      line-height:            50px;
+      border-radius:          5px;
+      color:                  #f2f2f2;
+      background-image:       url('@{baseurl}img/fms_user_portal/icon_facebook.png');
+      background-repeat:      no-repeat;
+      background-position:    20px 14px;
+  }
+  .social-media-wrapper {
+      float:                  left;
+      width:                  268px;
+      height:                 220px;
+      border-right:           1px solid #393939;
+      margin:                 0;
+  }
+  
+  .social-media-tiles {   
+      list-style-type:      none;
+      li{
+            line-height:        20px;
+            width:              250px;
+            float:              left;
+            margin-left:        50px;
+            height:             50px;
+            font-size:          14px;
+            .font-normal ();
+      }
+      li:first-of-type{
+          line-height:          50px;
+      }
+      li:last-of-type{
+          margin-bottom:        35px;
+      }
+  }
+
+  .social-media-tile {
+      a {
+          display:            block;
+          width:              230px;
+          height:             50px;
+          line-height:        50px;
+          text-indent:        10px;
+          color:              white;
+          text-decoration:    none;
+          cursor:             pointer;
+          margin-bottom:      20px;
+          .function_border_radius(3px);
+          .function_box_shadow(1px, 1px, 0px, 0px, rgba(255,255,255,0.15)); 
+          img {border:        10px solid rgba(0,0,0,0.0)}
+          &.login{
+            height:                     70px;
+            text-align:                 center;
+            line-height:                70px;
+            border-top-left-radius:     0px;
+            border-top-right-radius:    0px;
+          }
+      }
+      &.facebook a{
+          background-color:   #406dbf;
+          border-bottom-right-radius: 0px;
+      }
+      &.twitter a {
+          background-color:   #49aecb;   
+          border-bottom-left-radius: 0px;
+      }
+  }  
+  
+  ////////////////////////////////
+  //  The form input
+  ////////////////////////////////
+  .form-column {
+      width:                    290px;
+      height:                   220px;
+      float:                    right;
+      margin:                   0;
+      margin-right:             7px;
+      li  {
+          position:           relative;
+          span.add-on{
+                background-color:   #2A2A2A;
+                border:             0;
+                height:             @input_height;
+                line-height:        @input_height;
+                width:              140px;
+                color:              white;
+                font-size:          16px;
+                .font-normal ();
+                padding-top:        8px;
+                padding-bottom:     8px;
+          }
+      }
+  }
+  ////////////////////////////////
+  // Customized popover
+  ////////////////////////////////
+  
+  #help_psw_wrap {
+      height:         0px;
+      width:          0px;
+      position:       absolute;
+      left:           226px;
+      top:            -12px;
+  }
+  #help_email_wrap {
+      height:         0px;
+      width:          0px;
+      position:       absolute;
+      left:           226px;
+      top:            -12px;
+  }
+  #help_name_wrap {
+      height:         0px;
+      width:          0px;
+      position:       absolute;
+      left:           226px;
+      top:            -12px;
+  }
+  #help_login_wrap {
+      height:         0px;
+      width:          0px;
+      position:       absolute;
+      right:            10px;
+      top:            25px;
+  }
+  .login_error_sign {
+      width:          20px;
+      height:         20px;
+      float:          left;
+  }
+  .login_error_message {
+      float:          left;
+      width:          120px;
+  }
+  .login_error_title {
+      font-size:      11pt;
+      font-weight:    bold;
+      line-height:    15px;
+      margin:         0;
+  }
+  .login_error_body {
+      font-size:      10pt;
+      line-height:    15px;
+  }
+  
+  
+  
+  ////////////////////////////////
+  //  Terms and submit button
+  ////////////////////////////////
+  .join-terms-wrapper {
+      clear:                  both;
+      width:                  @modalContentWidth;
+      margin:                 0 auto;
+      input {
+          float:              left; 
+      }
+  }
+  
+  .join-terms-wrapper .popover.fade.right.in{
+      width:                  500px;
+      display:                block;
+      position:               relative;
+      top:                    0px !important;
+      left:                   20px !important;
+      .popover-inner .popover-content {
+          font-size:          12px;
+          line-height:        16px;
+          padding:            8px;
+      }
+  }
+  
+  .join-terms-wrapper .popover.right .arrow:after {
+      border-right-color:     #434343;
+      clear:                  both;
+  }
+  .signup_submit_btn{
+        width:              108px;
+        float:              right;
+        margin-right:       27px;
+        margin-top:         -49px;
+        font-size:          15px;
+  }
+  #fms-terms-signup-message {
+        width:              430px;
+        font-size:          12px;
+        padding-left:       55px;
+        line-height:        16px;
+        padding-top:        22px;
+        a {
+            text-decoration:     underline;
+        }
+  }
+  #checkbox {
+      position:         relative;
+      top:              30px;
+      left:             26px;
+  }
+}
+
+@input_height:              35px;
+#signin_modal_body, #fms_signup_form{
+    input[type="text"],  input[type="email"], input[type="password"]{ 
+        height:             @input_height; 
+        width:              260px; 
+        background-color:   #373737; 
+        border:             0px;
+        color:              white;
+        &.login{
+            border-bottom-left-radius:  0px;
+            border-top-left-radius:     0px;
+        }
+    }
+    [name="invitation_code"] { width:           208px; }
+    .fms-terms-signup{
+        height:                     75px;
+        background-color:           #1F1F1F;
+        border-bottom-left-radius:  5px;
+        border-bottom-right-radius: 5px;
+    }
+}

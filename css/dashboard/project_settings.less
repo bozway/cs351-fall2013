@@ -1,0 +1,86 @@
+@import '../main';
+
+.dashboard-header {
+    background-image:       url('/img/dashboard_header_extended.png');
+    background-repeat:      no-repeat;
+    background-color:       #37314f;
+    background-position:    center;
+    color:                  white;
+    height:                 200px;
+    .container {
+        position:               relative;
+        padding-top:            50px;
+    }
+}
+
+.project-title {
+    font-size:              33px;
+    height:                 33px;
+    line-height:            33px;
+    .font-thin();
+}
+
+.project-description {
+    font-size:              16px;
+    line-height:            20px;
+    .font-light();
+}
+.body-container{
+    width:              950px;
+    margin:             auto;
+    height:             627px;
+}
+
+.dashboard-project-settings-container{
+    width:              765px;
+    display:            inline-block;
+    ul{
+        list-style-type:    none;
+        margin:             0px;
+        width:              400px;
+        float:              left;
+        li{
+            height:         230px;
+            p{
+                font-size:  15px;
+                color:      #444444;
+                .font-light ();
+                margin-left: 25px;
+            }
+            p:first-of-type{
+                font-size:      30px;
+                .font-thin ();
+                padding-top:    35px;
+                margin-bottom:  0px;
+            }
+            .demo-col{
+                width:      144px;
+                float:      right;
+                .btn.btn-large{
+                    font-size:  14px;
+                    .font-normal ();
+                    &.hover{
+                        background-color:   #2ECC71;
+                    }
+                }
+            }
+        }
+    }
+    .project-url{
+        float:          right;
+        width:          320px;
+        height:         130px;
+        input{
+            width:              310px;
+            .font-thin ();
+            background-color:   white;
+            color:              #979DA4;
+            font-size:          15px;
+        }
+        p{
+            font-size:      30px;
+            .font-thin ();
+            padding-top:    35px;
+        }
+    }
+}

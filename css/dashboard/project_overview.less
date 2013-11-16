@@ -1,0 +1,235 @@
+@import '../main';
+
+// ------------------------ COMMON ELEMENTS ------------------------------
+.dashboard-subtitle {
+    border-top:             45px solid transparent;
+    font-size:              24px;
+    color:                  #2985ca;
+    .font-light();
+    span {
+        display:            inline-block;
+        vertical-align:         middle;
+    }
+}
+
+.dashboard-separator {
+    border-bottom:          1px solid #D7CAC9;
+}
+
+body {
+    background-color:           #F9F7F6;
+}
+
+.profile-photo-hover {
+    background-color:       rgba(56, 166, 248, 0.75);
+    background-image:       url('/img/button_view_profile.png');
+    background-position:    center;
+    background-repeat:      no-repeat;
+    width:                  140px;
+    height:                 140px;
+    position:               absolute;
+    top:                    0px;
+    left:                   0px;
+    opacity:                0;
+    &:hover {
+        opacity:            1;
+    }
+}
+
+// ------------------ Header ---------------------------
+.dashboard-header {
+    background-image:       url('/img/dashboard_header_extended.png');
+    background-repeat:      no-repeat;
+    background-color:       #37314f;
+    background-position:    center;
+    color:                  white;
+    height:                 200px;
+    .container {
+        position:               relative;
+        padding-top:            50px;
+    }
+}
+
+.project-title {
+    font-size:              33px;
+    height:                 33px;
+    line-height:            33px;
+    .font-thin();
+    span{
+        .font-light();
+    }
+}
+
+.project-description {
+    font-size:              16px;
+    line-height:            20px;
+}
+
+#basic_setting_save {
+    width:                  150px;
+    position:               absolute;
+    right:                   0;
+    top:                    80px;
+}
+
+.project-create-navlink {
+    width:                  80px;
+    position:               absolute;
+    top:                    50px;
+    right:                  10px;
+}
+.dashboard-header-btn {
+    width:                  180px;
+    position:               absolute;
+    top:                    75px;
+    right:                  0px;
+}
+
+// ------------------------ PAGE SPECIFIC --------------------------------
+.container {
+    .font-light();   
+}
+.member-list-item {
+    height:                 140px;
+    background-color:       white;
+    margin-bottom:          35px;
+    position:               relative;
+}
+
+.member-name {
+    font-size:              25px;
+    height:                 35px;
+    margin:                 0;
+}
+
+.member-skill {
+    .font-normal();
+    font-size:              16px;
+}
+
+.member-photo {
+    height:                 140px;
+    width:                  140px;
+}
+
+.member-list-item {
+    position:               relative;
+    .btn-block.save-contact {
+        width:                  120px;
+        margin-top:             25px;
+        float:                  left;
+        padding:                6px;
+    }
+    .btn-block.message-contact {
+        width:                  120px;
+        margin-top:             25px;
+        float:                  left;
+        margin-right:           10px;
+        padding:                6px;
+    }
+    .btn-block.leave-project {
+        width:                  120px;
+        position:               absolute;
+        right:                  20px;
+        top:                    20px;
+        cursor:                 pointer;
+        padding:                6px;
+    }
+    .fui-cross {
+        position:               absolute;
+        right:                  10px;
+        top:                    10px;
+        cursor:                 pointer;
+        color:                  #ADADAD;
+        font-size:              20px;
+        .font-thin();
+    }
+    .owner-ribbon {
+        background-image:       url('/img/owner_ribbon.png');
+        background-position:    center;
+        background-repeat:      no-repeat;
+        display:                block;
+        width:                  47px;
+        height:                 76px;
+        position:               absolute;
+        top:                    0;
+        right:                  5px;
+    }
+}
+
+
+.info-block {
+    border-bottom:              1px solid #D7CAC9;
+    position:                   relative;
+}
+.info-icon {
+    position:                   absolute;
+    right:                      10px;
+    top:                        10px;
+    font-size:                  25px;
+    color:                      #ADACAC;
+}
+.info-subtitle1 {
+    font-size:                  16px;
+    height:                     20px;
+    margin:                     0;
+}
+.info-subtitle2 {
+    font-size:                  14px;
+    .font-normal();
+    margin-bottom:              0px;
+    margin-top:                 5px;
+}
+.info-subtitle3 {
+    font-size:                  14px;
+    .font-normal();
+    margin-bottom:              10px;
+    margin-top:                 20px;
+}
+
+.info-content-highlighted {
+    font-size:                  26px;
+}
+.info-content-faded {
+    font-size:                  14px;
+    .font-normal();
+    color:                      #A6A6A6;
+    margin-bottom:              5px;
+}
+.info-content-tabbed {
+    font-size:                  16px;
+    .font-normal();
+    background-color:           white;
+    height:                     15px;
+    line-height:                15px;
+    padding:                    10px;
+    margin-bottom:              8px;
+}
+
+// ------------------------ PAST MEMBER -----------------------------------
+#past-member {
+    display:                    none;   
+}
+#show-past-member {
+    text-align:                 center;
+    cursor:                     pointer;
+}
+
+.social-btn-wrap {
+    height:                     150px;
+    margin-top:                 50px;
+}
+.facebook-btn-wrap {
+    width:                      100px;
+    float:                      left;
+    .fui-facebook {
+         margin-left:            15px;
+    }
+}
+.twitter-btn-wrap {
+    width:                      100px;
+    float:                      right;
+    .fui-twitter {
+        margin-left:            15px;
+    }
+}
