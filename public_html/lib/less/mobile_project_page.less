@@ -162,5 +162,73 @@
         
         #project_influences_and_description p{
             color:grey
-        } 
+        }
+        
+        #similar_projects { 
+            background:#D3D3D3;
+            padding:10px;
+            overflow-x:hidden;
+            width: 100%;   
+            -webkit-box-sizing: none;
+            box-sizing: none;
+            -moz-box-sizing: none;
+        }
+        
+        #similar_project_top_title {
+            height:5%; 
+            background-color:black;
+            color: white;
+        }
+        
+        .span6 p{
+        color:whitesmoke; 
+        font-size:2em;
+        font-family:Roboto,Helvetica, Arial, sans-serif;
+        }
+        
+        .span3{
+            width: 220px;
+        }
+    
+        #similar_project_top_title .span6{
+        padding-top:6%;
+        padding-bottom:5%;
+        padding-left:8%;
+        font-weight:300;
+        }
+    
+        #pop-projects-list{
+            float:left;
+        	display:inline;
+				-webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 0.5s;
+				-webkit-transition-timing-function: ease-out;
+			width: 1000px;
+			overflow-x: hidden;
+			/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+			-webkit-transform: translate3d(0px,0px,0px); 
+            
+        }
+        
+        .carousel{
+            float:left;
+        	display:inline;
+			    -webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 0.5s;
+				-webkit-transition-timing-function: ease-out;
+
+				width:3000px;
+				overflow-x: hidden;
+				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+				-webkit-transform: translate3d(0px,0px,0px); 
+            width: 100%;
+        }
+        
+        #pop-projects-list{
+                #card{
+                    /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+    			    -webkit-transform: translate3d(0px,0px,0px); 
+                    margin-right:20px;
+                }
+        }
     }
