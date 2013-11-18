@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spinning | Find My Song</title>	
+	<script>var pageTitle = "Spinning";</script>		
+	<link rel="shortcut icon" href="http://www.findmysong.com/img/favicon.ico" />
+	<link href="http://www.findmysong.com/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<link href="http://www.findmysong.com/css/flat-ui.css" rel="stylesheet" media="screen" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css"><link href="http://www.findmysong.com/css/FMS/dropdown.1384323597.css" rel="stylesheet" media="screen" />
+	<link href="http://www.findmysong.com/css/projects/profile.1384327337.css" rel="stylesheet" media="screen" />
+	<link href="http://www.findmysong.com/css/popups/fms_modals.1384323598.css" rel="stylesheet" media="screen" />
+	<link href="http://www.findmysong.com/css/fms_icons.1384400974.css" rel="stylesheet" media="screen" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<!-- CSCI 351 CODE -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="lib/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="lib/css/mobile_project_page.css" media="only screen and (max-width:767px)" rel="stylesheet">
+	<!-- END CSCI 351 CODE -->
+</head>
+<body>
+	<header>
+		<div class="colorbg grey header hidden-phone"></div>
+		<div class="container hidden-phone">		
+			<div class="fms-home">
+				<a id="header-logo"	href="http://www.findmysong.com/" class="home-link">
+					<img src="http://www.findmysong.com/img/logo/logo.png" alt=""/>				
+				</a>
+			</div>
+            <div class=""></div>
+			<div class="fms-explore guest">
+				<div class="about guest"><a href="http://www.findmysong.com/about" data-id="about_fms">About FMS</a></div>
+				<div class="guest"><a href="http://www.findmysong.com/#featured_artist" data-id="musician_search">Featured Musicians</a></div>
+				<div class="guest"><a href="http://www.findmysong.com/#featured_project" data-id="project_search">Featured Projects</a></div>
+			</div>
+			
+			<div class="fms-member">
+				<div class=""></div>
+				<div class="fms-user-portal guest">
+					<a href="http://www.findmysong.com/login" data-gated="1" data-linktype="1">Log in</a>
+					<div class="header-signup-btn">
+						<a class="btn btn-large btn-success btn-embossed" data-gated="1">Sign up</a>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="show-fms-search-header ">
+				<label class="fms-search"></label>
+				<div id="init-search" class="tooltip fade bottom in tooltip-light">
+					<div class="tooltip-arrow"></div>
+					<div class="tooltip-inner">
+						<span class="fms-header-search"><a href="http://www.findmysong.com/users/search">Musicians</a></span> | 
+						<span class="fms-header-search"><a href="http://www.findmysong.com/projects/search">Projects</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- CSCI 351 -->
+        <div class="navbar navbar-inverse navbar-fixed-top visible-phone">
+            <div class="navbar-inner visible-phone">
+                <div class="container visible-phone">
+
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    </button>
+                    <a class="brand" href="#">
+                        <img src="img/home_page/fms_icon.png">
+                        <span class="icon-bar"></span>
+                        FMS
+
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#featuredMusicians">Featured Musicians</a></li>
+                            <li><a href="#featuredProjects">Featured Projects</a></li>
+							<li><a href="#connectWithFB">Connect with FB</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <!-- END OF 351 -->
+		
+	</header>
+	
+	<!-- CS 351 CODE -->
+	<div class="visible-phone" id="loginBar">
+            <span id="backImg" data-toggle="collapse" data-target="#search-collapse-form"><a href=""><img src="img/musician_profile/arrow.png"></a></span>
+            <span id="backToResultsText">Back to results</span>
+            <button class="btn btn-success btn-large
+            " type="button" id="contactButton">Contact</button>
+    </div>
+	
+	<div class="visible-phone">
+		
+	Open Project
+	
+	Share
+	
+	Location: Los Angeles, CA
+	Type: Work for hire
+	Project ends: 12-02-2014
+	
+	</div>
+	
+	<div id="project_influences_and_description" class="visible-phone">
+    	<div>
+    		<h6>INFLUENCES</h6>
+
+    		<p>Lorem ipsum dolor sit amet, consectetur adepiscing elit.
+    		</p>
+    	</div>
+    	
+    	<div>
+    		<h6>DESCRIPTION</h6>
+
+    		<p>
+    		Lorem ipsum dolor sit amet, consectetur adispiscing elit. Curabitur a 	cursus lorem, nec adipiscing est. Suspendisse piscing ac urna non facilisis...
+    		</p>
+    	</div>
+    	<a type="button" data-toggle="collapse" href="#read">Read more [+]</a>
+    	<div id="read" class="collapse out">Contents</div>
+
+    </div>
+
+    <div id="working_with_container" class="visible-phone">
+        <div class="mp_bar">
+            <div class="mp_text_div">
+                <span class="mp_text">
+                    Members
+                </span>
+            </div>
+        </div>
+
+        <div id="working_with_bar" class="visible-phone">
+              <img class="working_with_btn" src="img/musician_profile/actual_honeyman.png" />
+              <img class="working_with_btn" src="img/musician_profile/actual_honeyman.png" />
+              <img class="working_with_btn" src="img/musician_profile/actual_honeyman.png" />
+              <img class="working_with_btn" src="img/musician_profile/actual_honeyman.png" />
+        </div>
+
+    </div>
+
+    <div id="skills_container" class="visible-phone">
+        <div class="mp_bar">
+            <div class="mp_text_div">
+                <span class="mp_text">
+                    Skills needed
+                </span>
+            </div>
+        </div>
+
+        <div id="skills_bar">
+            <img class="skills_btn" src="img/musician_profile/guitar.png" />
+            <img class="skills_btn" src="img/musician_profile/keyboard.png" />
+            <img class="skills_btn" src="img/musician_profile/microphone.png" />
+            <img class="skills_btn" src="img/musician_profile/sax.png" />
+        </div>
+    </div>
+
+
+    <div id="contact_owner" class="visible-phone">
+    	<p> You got enquires or questions about this project? Send an email to the owner.</p>
+
+    	<button class="btn btn-large btn-block"> Send a message </button>
+    	<button class="btn btn-large btn-block btn-success" id="apply_for_audition_btn"> Apply for Audition</button>
+
+    </div>
+	
+	<!-- END OF 351 -->
+	
+	<div class="profile-container hidden-phone">
+		<div class="profile-header">
+			<div class="row">
+				<div class="span4">
+					<img class="cover-container" src="http://www.findmysong.com/project_files/260/image/WW.png"/>
+				</div>
+		
+				<div class="span8" id="project-basic-info">
+					<div class="span8">
+						<p class="project-title">Spinning</p>
+						<p class="project-creator">by <a href="http://www.findmysong.com/users/profile/85" target="_blank">
+							Thomas Honeyman</a>
+						</p>
+					</div>
+			
+					<div class="span4">
+						<p class="info"><span class="fui-location icon"></span>Location:<span>Los Angeles, CA, US</span></p>
+						<p class="info"><span class="fui-user icon"></span>Language:<span>Unknown</span></p>
+					</div>
+					<div class="span3">
+						<div class="span4">
+							<p class="info"><span class="fui-time icon"></span>Duration:<span>3 </span></p>
+							<p class="info"><span class="fui-calendar icon"></span>Project Starts:<span>12 November 2013</span></p>
+						</div>
+					</div>
+					<div class="span7">
+					<!--Share on Twitter-->
+						<a id="linkTW" href="http://twitter.com/share?text=Check out my FindMySong project at &amp;url=http://www.findmysong.com/projects/profile/260" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Twitter!">
+							<img src="http://www.findmysong.com/img/fms_user_portal/icon_twitter.png">
+						</a>
+					<!--Share on Facebook-->
+						<a id="linkFB" class="" href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p%5Btitle%5D=Spinning&amp;p%5Burl%5D=http://www.findmysong.com/projects/profile/260&amp;p%5Bsummary%5D=I'm looking to do a cowrite on this song with a great lyricist/singer.Spinning is a synth-pop track that I started writing about two months ago. I was digging through my old Logic Pro files looking for ideas to write with, and came across a really old voc...&amp;p%5Bimages%5D%5B0%5D=http://www.findmysong.com/project_files/260/image/WW.png"onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="">					
+							<img src="http://www.findmysong.com/img/fms_user_portal/icon_facebook.png">		
+						</a>     
+						<div>
+							<div class="popover right">
+								<div class="arrow"></div>            
+								<div class="popover-content">
+									<p>Share</p>
+								</div>
+							</div>
+						</div>
+						<div class="video_preview">
+							<div id="audio_player">
+								<div class="demo-play-button"></div>	         			
+								<div class="demo-progress-bar">
+									<div class="demo-buffer-bar">
+									<div class="demo-progress"></div>
+									</div>   
+								</div>
+								<audio class="preview_audio"  src="http://www.findmysong.com/project_files/260/audio/Spinning.mp3"></audio>
+							</div>
+						</div>
+						<a href="#fakelink" class="btn btn-large btn-block btn-success audition" data-projectid="260" data-btn="aud">AUDITION</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="clear"></div>
+		<div class="project_public_content row">
+			<div class="span4">
+				<div>
+					<div class="project_need">
+						<span class="btn btn-large btn-block btn-inverse">Project Needs</span>
+						<ul class="hot-link" id="hotlink">
+							<li><span><i class="skill-icon" data-categoryid="8"> </i></span>
+								<p class="skill_name">General Vocals<span class="fui-arrow-right"></span></p>
+								<div class="show" style="display:none;">
+									<p><span>Genres: </span>House, Electronic, Synth Pop</p>
+									<p><span>Influences: </span>Justin Timberlake, Frank Ocean, Passion Pit</p>
+									<p><span>Details: </span>No special requirements.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="project_member">
+					<span class="btn btn-large btn-block btn-inverse">Members</span>
+					<ul>
+						<li>
+							<a class="member_cover" href="http://www.findmysong.com/users/profile/85"><img src="http://www.findmysong.com/user_files/85/image/1-photo.jpeg"/></a>
+							<p class="member_name">Thomas Honeyman</p>
+							<p class="joined_skill">Joined:<span>2013-11-12</span></p>
+							<p class="joined_skill">Skills:<span>Producer</span></p>
+							<span data-userid="85" data-btn="msg" class="msg-icon fui-mail"></span>      
+						</li>
+						<li>
+							<a class="member_cover" href="http://www.findmysong.com/users/profile/87"><img src="http://www.findmysong.com/user_files/87/image/374616_10150499051973357_175921935_n.jpg"/></a>
+							<p class="member_name">Riley Knapp</p>
+							<p class="joined_skill">Joined:<span>2013-11-12</span></p>
+							<p class="joined_skill">Skills:<span>Lyricist</span></p>
+							<span data-userid="87" data-btn="msg" class="msg-icon fui-mail"></span>      
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="span8">
+				<div class="project_description">
+					<p><h4>I'm looking to do a cowrite on this song with a great lyricist/singer.</h4><div><br></div><div>Spinning is a synth-pop track that I started writing about two months ago. I was digging through my old Logic Pro files looking for ideas to write with, and came across a really old vocal melody. The melody I found became the centerpiece of this track. Unfortunately, I wrote out the verse, a break, and a second verse but I'm a bit stumped on where to go from here.</div><div><br></div><div>Optimally I'd like to work with a singer &amp; lyricist who has a bit of a piercing voice. A great example is Passion Pit; a vocal which can cut through really thick synthesizers. You can see more details over on the left under Project Needs.</div><div><br></div><div>As you can see from my profile, I'm based in Los Angeles. I'm not totally opposed to working with someone outside the area, but I'd definitely like it more if we can meet up in person. If you think you're a good fit, audition and we can get started!</div></p>
+				</div>
+				<div class="profile-content">
+					<div class="project_tag">
+						<div class="tag">Passion Pit  </div>
+						<div class="tag">Gossamer  </div>
+						<div class="tag">Synth Pop  </div>
+						<div class="tag">Upbeat  </div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal_container" data-authservice="0"></div>
+	<div id="contract_modal_container">
+		<div id="contract_modal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+			<div class="modal-header">Contract History
+				<div class="cross-icon"></div>				
+			</div>
+			<div class="modal-body">
+				<div class="version-list-column">
+					<p>Contract Dates</p>
+					<ul class="version-list">
+						<!--
+						<li>
+							<p class="contract-date">December 21 2013</p>
+							<div class="contract-status confirmed"></div>
+						</li>
+						-->
+					</ul>
+				</div>
+				<div class="member-list-column">
+					<p class="member-list-header">Unconfirmed Contract</p>
+					<ul class="member-list">
+						<!--
+						<li>
+							<img class="member-photo" src="http://www.findmysong.com/img/default_avatar_photo.jpg">
+							<p class="member-name">Thomas Honeyman</p>
+							<div class="member-split">100%</div>
+							<div class="member-status confirmed"></div>
+						</li>
+						-->
+					</ul>
+					<button class="btn btn-mini btn-block btn-success confirmContract">Confirm</button>
+					<p class="tool-link">Create New Version</p>
+					<p class="contract-info confirmed hide">This is your current contract!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="site_alert_modal_container">
+		<div id="inviteModal-container">				
+			<div id="inviteModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+				<div class="modal-header">Send Invitation
+					<button type="button" class="fms_close" data-dismiss="modal" aria-hidden="true"><i class="fui-cross"></i></button>				
+				</div>
+				<div class="modal-body">
+					<div id ="sideTitles" >
+						<p id="p1" class="subTitle">Musician</p>
+						<p id="p2" class="subTitle">Project</p>
+						<p id="p3" class="subTitle">Message</p>
+					</div>	
+					<div id = "main">
+						<div id = "musician">	
+							<img src="" id="profilePicture"/>				
+							<span id = "musicianName"></span>
+						</div>
+						<div id = "project">
+							<div class="btn-grey btn-embossed">
+								<select name="large" class="select-block mbl span3" id="project_invitation">
+				
+								</select>
+							</div>
+							<p>Don't have a project yet? <a href="http://www.findmysong.com/dashboard/project/manage">Create one</a> to start sending invitations!</p>
+						</div>
+						<div id="message">
+							<div>
+								<textarea class="span6" placeholder="Write a message..."></textarea>
+							</div>		
+						</div>
+						<button id="sendInvitation" class="btn btn-mini btn-block btn-primary">Send</button>
+					</div>
+				</div>
+			</div>								
+		</div>
+		
+		<div id="auditionModal-container">				
+			<div id="auditionModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+				<div id="auditionModalContent">
+					<div class="span4">
+						<div class="modal-title"> Audition for <span>Project</span></div>
+						<div id="audition_modal_skill_container" class="fms_dropdown_container dropdown02">
+							<p ><span id="audition_modal_skill">Choose a skill to audition</span><span class="fms_caret"></span></p>
+							<div class="fms_dropdown_menu_container">
+								<div class="fms_dropdown_arrow_container">
+									<div class="fms_dropdown_arrow after"></div>
+									<div class="fms_dropdown_arrow before"></div>
+								</div>
+								<ul  class="fms_dropdown_menu">
+								</ul>
+							</div>
+						</div>	
+						<div id="audition_skill_preview" class="audition-skill-preview">
+							<div class="audition-skill-title">
+								<img id="audition_modal_skill_icon" src="/img/skill_icons/Sax.png"></img>
+								<div>
+									<p id="audition_modal_skill_name">Harmonica</p>
+									<p id="audition_modal_skill_match">30%</p>
+								</div>
+								<span id="audition_skill_delete" class="fui-cross-inverted"></span>
+							</div>
+							<div>
+								<p class="audition-skill-detail-title">Genres</p>
+								<p id="audition_modal_skill_genre" class="audition-skill-detail-content">Contemporary Jazz, Alternative Pop</p>
+							</div>
+							<div>
+								<p class="audition-skill-detail-title">Influences</p>
+								<p id="audition_modal_skill_influence" class="audition-skill-detail-content">Contemporary Jazz, Alternative Pop</p>
+							</div>
+						</div>
+					</div>
+					<div class="span5 offset1">
+						<div class="modal-title">Attach files (<span id="audition_files_count">0</span>/3)</div>
+						<div class="modal-description">You can attach a file to accompany your audition to this project. Don't include a resume, 
+							since your FindMySong profile is automatically included in your audition. 
+							<span>Files should be no more than 5mb.</span></div>
+						<div id="audition_audio_uploader" class="audio_uploader_v2">
+							<div class="audio-preview-container">
+								<div class="audio-player-template loading">
+									<div class="audio-player-control"><span class="fui-play"></span></div>
+									<div class="audio-player-info"><span>--</span></div>
+									<div class="audio-player-delete"><span class="fui-cross-inverted"></span></div>
+									<div class="audio-player-time"><span>--:--</span></div>
+									<div class="audio-player-download"><a href=""><span class="fui-exit"></span></a></div>
+									<audio>
+										<source src=""></source>
+									</audio>
+								</div>
+							</div>
+							<input id="audition_audio_uploader_file" name="files[]" type="file" style="display: none"  />
+							<div class="audio-files-preload"></div>
+							<div class="audio-upload-btn-container">
+								<button type="button" class="btn btn-large btn-block btn-embossed">Upload File</button>
+							</div>
+							<p class="audio-upload-error"></p>
+							<input class="audio-file-input" type="file" name="files[]" style="display: none" />
+						</div>
+					</div>
+					<div class="span10 audition-modal-separator"></div>
+					<div class="span10">
+						<div class="modal-title">Personal Note</div>
+						<textarea id="auditionMessage" name="auditionMessage" rows=5 class="span10"></textarea>
+						<div class="auditionMessageErr">
+							<label id="auditionMessageErr" for="auditionMessage"></label>
+						</div>
+					</div>
+					<div style="clear:both"></div>
+					<div class="audition-modal-submit">
+						<div class="span1 offset7">
+							<a id="closeAudition" data-dismiss="modal">cancel</a>
+						</div>
+						<div class="span2">
+							<a id="sendAudition" class="btn btn-large btn-block btn-success btn-embossed">Audition!</a>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+					
+				<div id="auditionModalConfirmation"  style="display: none">
+					<span id="closeConfirmationIcon" class="fui-cross"></span>
+					<div class="audition-modal-confirmaton-icon">
+						<div class="fui-check-inverted"></div>
+					</div>
+					<div class="audition-modal-confirmation-title">You've successfully sent your audition!</div>
+					<p class="span6 offset2">The owner of this project has received your audition. If they think you’re a perfect match, you'll be accepted into the project! They can also reach out to you to get to know you better before moving forward. Check back soon to see their response! </p>
+					<p class="span6 offset2">If you’d like to view or withdraw this audition, you can do that from your <a href="http://www.findmysong.com/dashboard/project/manage">Manage Applications</a> page.</p>
+					<div class="audition-modal-confirmation-close span2 offset4">
+						<a id="closeConfirmation" class="btn btn-large btn-block btn-success btn-embossed">OK!</a>
+					</div>
+				</div>
+				<!--
+				<div class="modal-body">
+					<p class > Choose a Skill to Audition</p>
+					<p> To audition for a project, you have to select a specific skill to audition for.<br />Choose a skill from the dropdown and select "Audition" to get started! </p>
+					<div id="audition_skill_selection" class="btn-grey">
+						<select name="info" id="skill_audition" class="select-block mbl span3">
+		
+						</select>
+					</div>
+					<div class="clear"></div>
+					<button id="sendAudition" class="btn btn-block btn-primary">Audition</button>
+				</div>
+				-->
+			</div>								
+		</div>
+		
+		<div id="applicant_modal_container">				
+			<div id="applicant_modal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+				<div id="applicant_modal_content">
+					<span id="applicant_modal_close" class="fui-cross"></span>
+					<div id="applicant_modal_title">
+						<img id="applicant_modal_profile_image" src="" />
+						<p id="applicant_modal_fullname">Waylan Wong</p>
+						<p id="applicant_modal_split">Offered <span>30</span>% Copyright</p>
+						<div style="clear:both"></div>
+					</div>
+					<div class="modal-title">Attached Files</div>
+					<div class="audio_uploader_v2">
+						<div class="audio-preview-container">
+							<div class="audio-player-template loading">
+								<div class="audio-player-control"><span class="fui-play"></span></div>
+								<div class="audio-player-info"><span>--</span></div>
+								<div class="audio-player-delete"><span class="fui-cross-inverted"></span></div>
+								<div class="audio-player-time"><span>--:--</span></div>
+								<div class="audio-player-download"><a href=""><span class="fui-exit"></span></a></div>
+								<audio>
+									<source src=""></source>
+								</audio>
+								<div class="audio-player-progress">
+									<div class="ui-slider"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-title">Personal Note</div>
+					<div class="applicant-modal-notes-container">
+						<div id="applicant_modal_notes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut. utu.labore et dolore magna aliqua. </div>
+						<div id="applicant_modal_btn_container">
+							<a id="audition_modal_accept" class="btn btn-large btn-block btn-success btn-embossed">Accept</a>
+						</div>
+					</div>
+				</div>
+			</div>								
+		</div>
+		
+		<div id="messageModal-container">				
+			<div id="messageModal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+				<div class="modal-header"> Send Message
+					<button type="button" class="fms_close" data-dismiss="modal" aria-hidden="true"><i class="fui-cross"></i></button>				
+				</div>
+				<div class="modal-body">
+					<div id ="sideTitles" >
+						<p id="p1" class="subTitle">Musician</p>
+						<p id="p3" class="subTitle">Message</p>
+					</div>	
+					<div id = "main">
+						<div id = "musician">	
+							<img id="profilePicture" src="http://www.findmysong.com/img/default_avatar_photo.jpg"/>				
+						<span id = "musicianName"></span>
+						</div>
+						<div id="message">
+							<div>
+								<textarea class="span6" placeholder="Write a message..."></textarea>
+							</div>				
+						</div>
+						<button id="sendMessage" class="btn btn-mini btn-block btn-primary">Send</button>
+					</div>
+				</div>								
+			</div>
+		</div>
+		<div id="createProjectModal-container">	
+			<div id="create_project_modal" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+				<div class="modal-header">NEW PROJECT
+					<p>Before you start, choose the right type.</p>
+					<div class="cross-icon"></div>				
+				</div>
+				<div class="modal-body">
+					<div class="type-container" data-type="1">
+						<div class="type-img quick"></div>
+						<p class="type-desc">Get started right away working under a Creative Commons license</p>
+						<div class="type-name">Quick Project</div>
+					</div>
+									<div class="type-container" data-type="3">
+						<div class="type-img copyright"></div>
+						<p class="type-desc">Co-write music and manage your copyright securely</p>
+						<div class="type-name">Copyright Split</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+ 
+	<footer >
+        <div class="sign_up_bar hidden-phone">
+			<div class="container">
+				<p><span>Sign up</span> Don't have an account yet?Sign up to get started!</p>
+				<a class="btn btn-small btn-block btn-embossed btn-success" data-gated="1">Sign Up!</a>
+			</div>
+		</div>
+    	<div class="colorbg grey footer hidden-phone"></div>
+		<div class="fms-info-footer hidden-phone">
+			<div class="fms-info-footer-container">
+            	<ul class="fms-info-list">
+            		<li>
+	            		<p class="title">FindMySong.com</p>
+                        <p>Copyright &copy 2013</p>
+	                </li>
+                    <li>
+                    	<p class="title">FMS</p>
+                        <p><a href="http://www.findmysong.com/about">About</a></p>
+                        <p><a href="http://www.findmysong.com/contact">Contact</a></p>
+                        <p><a href="http://www.findmysong.com/help">Help Center</a></p>
+                    </li>
+                    <li>
+                    	<p class="title">Legal</p>
+                        <p><a href="http://www.findmysong.com/terms">Terms</a></p>
+                        <p><a href="http://www.findmysong.com/privacy">Privacy</a></p>
+                    </li>                  	
+                
+                <li>
+                	<p class="title">Follow us</p>
+                    <p class="social-media-options">
+		                <a href="http://www.facebook.com/FindMySong"><img alt="" src="http://www.findmysong.dev/img/footer-facebook.png"></a>
+		                <a href="http://twitter.com/FindMySong"><img alt="" src="http://www.findmysong.dev/img/footer-twitter.png"></a>
+		            </p>
+                </li>
+            </div>
+        </div>
+    </footer>
+
+<script src="http://www.findmysong.com/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/fms_auth.1384323636.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/facebook.js" type="text/javascript"></script>
+
+<!--  Scripts added for FLAT UI -->
+<script src="http://www.findmysong.com/js/bootstrap-select.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/bootstrap-switch.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/flatui-radio.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.tagsinput.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.placeholder.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.stacktable.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/application.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/application_bootstrap.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+	setTimeout(function(){var a=document.createElement("script");
+	var b=document.getElementsByTagName("script")[0];
+	a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0016/9661.js?"+Math.floor(new Date().getTime()/3600000);
+	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type="text/javascript">
+	(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+	typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+	b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+		mixpanel.init("a00113da8970d4306e46a049d80cfc9d");
+</script>
+<script src="http://www.findmysong.com/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery-queryParser.min.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/fms_main.1384323637.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/popups/fms_modal.1384323644.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/projects/profile.1384323644.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.fileupload.1384323638.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.fileupload-process.1384323638.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.fileupload-resize.1384323638.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.fileupload-validate.1384323638.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/jquery.fileupload-ui.1384323638.js" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/utility.1384323640.js" type="text/javascript"></script>
+
+
+
+
+<script src="https://www.youtube.com/iframe_api" type="text/javascript"></script>
+<script src="http://www.findmysong.com/js/dashboard/jquery.poly.js" type="text/javascript"></script>
+
+</body>
+</html>
