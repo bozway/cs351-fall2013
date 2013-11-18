@@ -1,0 +1,211 @@
+<!DOCTYPE html>   
+<html lang="en">   
+	<head>   
+	 <meta charset="utf-8">   
+	 <title>Search Musicians</title>   
+	 <meta name="description" content="Twitter Bootstrap Basic pills Based Navigation Example"> 
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	 
+	   <link href="lib/css/bootstrap.css" rel="stylesheet">
+	   <link href="lib/css/bootstrap-responsive.css" rel="stylesheet">
+	   <link href="http://www.gurtem.com/fms_351/css/flat-ui.css" rel="stylesheet" media="screen" />
+		<link href="lib/css/AboutUs.css" rel="stylesheet"> 
+	</head>  
+ <body> 
+	 <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+		 
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="navIcon">
+		  &nbsp;<img id="logo" border="0" src="lib/img/icon.png" class="img-rounded" width="60" height="67.5" />
+           <a class="navbar-brand" href="#">FindmySong</a></div>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li class="active"><a href="#">Login</a></li>
+              <li><a href="#">Featured Musicians</a></li>
+              <li><a href="#">Featured Projects</a></li>
+			  <li><a href="#">Connect with FB</a></li>
+              
+            </ul>
+            
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+	 </div>
+	 
+	 <div  id="loginBar">
+            <span id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><i class="icon-search icon-white"></i></span>
+            <span id="loginText">LOG IN</span>
+            <button class="btn btn-success btn-large
+            " type="button" id="signUpButton">Sign up</button>
+        </div>
+
+        <div id="search-collapse-div" >
+            <form id="search-collapse-form" class="collapse">
+                <input id="search-collapse-text" type="text" placeholder="Search FindMySong"/>
+            </form>
+        </div>
+	 
+	 
+	  <div id="slideshow">
+		<ul>
+			<li id="img1"><a href="#"><img src="lib/img/cake.jpg" alt="" /></a></li>
+			<li id="img2"><a href="#"><img src="lib/img/cat.jpg" alt="" /></a></li>
+			<li id="img3"><a href="#"><img src="lib/img/dog.jpg" alt="" /></a></li>
+			<li id="img4"><a href="#"><img src="lib/img/rabbit.jpg" alt="" /></a></li>
+		</ul>
+	  </div>
+	  <div id="slideshow-nav">
+		<ul>
+			<li><a href="#img1">change img</a></li>
+			<li><a href="#img2">change img</a></li>
+			<li><a href="#img3">change img</a></li>
+			<li><a href="#img4">change img</a></li>
+		</ul>
+	  </div>
+	  
+	  <div id='mission'>
+	  <h3><em>FindMySong</em></h3>
+	  <h3> Its purpose, its life, its mission!</h3>
+	  <p> Gaining a foothold in the music industry is hard. Making it and having a music career is even harder.
+		  And getting the big break that we all <em>(secretly)</em> hope for, seems nearly impossible.</p>
+	  <p> Maybe you cannot get access to the right means to produce your song; maybe you're missing that one
+		connection to your success or maybe you want to advertise your music, but you can't figure out how.
+	  </p>
+	  <p> Being musicians ourselves, we have run into many challenges that every now and then left us feeling
+		discouraged, questioning our talent and wishing someone to be there to understand what we were going
+		through.
+	  </p>
+	  <p> Because of that we created FindMySong, an online platform that allows musicians from all over the
+		world to connect and network with other musicians.
+	  </p>
+	  <p>
+	  
+		
+        <!-- Play Video Modal -->
+        <div id="play_video_modal" class="modal hide fade" tabindex="-1" role="dialog">
+                <button type="button" class="close" data-dismiss="modal">x</button>
+            <div class="modal-body">
+                <object width="100%" height="350">
+                    <param name="movie" value="//www.youtube.com/v/dQw4w9WgXcQ?version=3&amp;hl=en_US&amp;rel=0"></param>
+                    <param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+                    <embed src="//www.youtube.com/v/dQw4w9WgXcQ?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="100%" height="350" allowscriptaccess="always" allowfullscreen="true">
+                    </embed>
+                </object>
+            </div>
+        </div>
+
+    <div style="position: relative; left: 0; top: 0;">
+        <a href="#play_video_modal" role="button" data-toggle="modal">
+            <img src="lib/img/play_spotlight.png" height="auto" width="80%" alt="..." id="play"/>
+        </a>
+    </div>
+
+    </p>
+	  
+	  
+	  </div>
+	  <div id='mission2'>
+	  <p>FindMySong made it its mission to give its users and opportunity to form <em>mutually beneficial relationships
+	   and to collaborate on projects,</em> while providing that often times much needed support-system.
+	  </p>
+	  <p>
+	  FindMySong's community understands the struggles you face and <em>supports you on your way to success.</em> Join Findmysong now,
+	  create your profile, upload your songs and make new ones with others, work on projects and network with like-minded people and watch
+	  friends from all over the world listen to your music, rate it, buy it and love it.
+	  </p>
+	  </div>
+	  
+	  <div id="benefit">
+	  <table>
+	  <tr>
+		<td>
+			<button class="btn btn-success" type="button">Sign up</button>
+			<br>
+			<br>
+			<button class="btn btn-inverse" type="button">Get in touch</button>
+			<br>
+			<br>
+			<em>Follow us:</em>
+			<br>
+			<button class="btn btn-primary" type="button">Like us on Facebook</button>
+			<br>
+			<br>
+			<button class="btn btn-info" type="button">Follow us on Twitter</button>
+		</td>
+		<td id='benefit_desc'>
+		<h4>FMS - its benefits</h4> 
+		<h6>Using <em>FindMySong,</em> you can:</h6>
+		<p>Create and customize your professional profile. <br><br> Upload your own songs. <br><br>
+		Contact and connect with other musicians worldwide. <br><br>
+		Rate and comment on songs.<br><br> Receive and give feedback.<br><br> Work on your as well as other
+		people's projects.<br><br> Ask questions, get answers and communicate in a professional forum.<br><br>
+		Showcase your talent.<br><br>Manage your own copyright.<br><br>Establish a name for yourself in the
+		industry!
+		</p>
+	
+		</td>
+		
+	  </tr>
+	  </table>
+	  </div>
+	  
+	  <div id="footer">
+		<div id="footer1">
+			<em>Sign up &nbsp</em>Don't have an account yet? Sign up to get started!
+			<button class="btn btn-success" type="button">Sign up</button>
+		</div>
+		<div id="footer2">
+			<table>
+				<tr>
+					<th>FindmySong.com</th>
+					<th> FMS</th>
+					<th> Legal</th>
+					<th>Follow us</th>
+				</tr>
+				<tr>
+					<td> Copyright &copy 2013</td>
+					<td> About<br> Contact<br> Help Center</td>
+					<td> Terms<br> Privacy</td>
+					<td> </td>
+				</tr>
+			</table>
+		</div>
+		<div id="footer3">
+		<em>Top</em>
+		
+		</div>
+	  </div>
+	 
+	 
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	  <script src="lib/js/jquery.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+	<script src="lib/js/jquery.scrollTo.js"></script>
+	<script src="lib/js/jquery.localscroll.js"></script>
+	<script src="lib/js/scripts.js"></script>
+	<script>
+		$document.ready(function() {
+		$("#slideshow").css("overflow","hidden");
+		$("#slideshow-nav").css("visibility","visible");
+		$("#slideshow-nav a[href=#img1]").addClass("active");
+		
+		$("#slidehsow-nav").localScroll({
+		target:'#slideshow', axis:'x';
+		});
+		
+		$("#slideshow-nav a").click(function(){
+		$("#slideshow-nav a").removeClass("active");
+		$(this).addClass("active");
+		});
+		});
+	</script>
+	</body>  
+</html> 

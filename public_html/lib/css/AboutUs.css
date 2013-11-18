@@ -1,0 +1,34 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+#loginBar{position:relative;width:100%;background-color:rgba(0,0,0,0.25);height:60px}
+#searchImg>img{margin-top:0px;height:100%}
+span#searchImg{position:relative;float:left;width:30%;height:100%}
+span#loginText{position:absolute;float:left;width:20%;margin-top:22px;margin-left:21%;color:white;font-weight:500;font-size:16px}
+#signUpButton{position:relative;float:right;margin:5px;margin-right:10px}
+#slideshow{width:600px;height:500px;overflow-x:hidden;overflow-y:hidden;margin-top:-80px;margin-bottom:0px;margin-left:0px;margin-right:0px}
+#slideshow-nav{width:250px;margin:0 auto 200px auto;visibility:visible}
+#slideshow ul{width:2400px;list-style:none}
+#slideshow-nav ul{list-style:none}
+#slideshow ul li{float:left}
+#slideshow-nav ul li{float:left}
+#slideshow-nav{margin-top:-50px}
+#slideshow-nav ul li a{display:block;width:10px;height:10px;float:left;margin-top:-50px;margin:0 10px;background-color:grey;text-indent:-9999px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;box-shadow:0px 0px 0px #000;-moz-box-shadow:0px 0px 0px #000;-webkit-box-shadow:0px 0px 0px #000}
+#slideshow-nav ul li a:hover,#slideshow-nav ul li a.active{background-color:#a89d8a}
+#mission{background-color:#F9F9F9;height:auto}
+h3{margin-left:10%;margin-right:10%}
+h6{font-weight:100}
+p{margin-left:10%;margin-right:10%}
+em{font-style:normal;color:#66CCFF}
+#mission2>p{text-align:center}
+#benefit{background-color:#F9F9F9}
+#benefit .btn{width:80%}
+#benefit_desc>p{line-height:90%}
+td{width:50%}
+#play{position:relative;margin-top:20px;margin-left:10%;margin-right:10%}
+.btn.btn-primary{background-color:#3b5998}
+.btn.btn-info{background-color:#1FC2FF}
+#footer1{color:#8D8E8E;background-color:#1B1C1D;height:50px}
+#footer1>em{color:white}
+#footer2{color:#8D8E8E;background-color:#323334}
+#footer3{color:#8D8E8E;background-color:#444649;height:50px}
+th{font-weight:100;color:white;text-align:left}
+#footer1 .btn.btn-success{float:right}
