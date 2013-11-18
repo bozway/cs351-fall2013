@@ -28,7 +28,9 @@ class Fms extends Authenticated_service {
 				"Open+Sans:700",	
 		); */
 		$data ['css_ref'] = array (
-				"css/home.css" 
+				"css/home.css",
+				"css/bootstrap-responsive.min.css",
+				"css/mobile_home.css",
 		);
 		$data ['extrascripts'] = array (
 				"js/jquery.validate.min.js",
