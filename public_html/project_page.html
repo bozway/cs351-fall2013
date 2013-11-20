@@ -48,15 +48,77 @@
             </div>
         </div>
     </header>
-
-
-    <div class="visible-phone" id="loginBar">
+	
+	<div id="video_container" class="container visible-phone">
+        <div id="loginBar">
             <span id="backImg" data-toggle="collapse" data-target="#search-collapse-form"><a href=""><img src="img/musician_profile/arrow.png"></a></span>
             <span id="backToResultsText">Back to results</span>
             <button class="btn btn-success btn-large
             " type="button" id="contactButton">Contact</button>
-    </div>
+		</div>
 
+        <div id="search-collapse-div" >
+            <form id="search-collapse-form" class="collapse">
+                <input id="search-collapse-text" type="text" placeholder="Search FindMySong"/>
+            </form>
+        </div>
+
+        <!-- Play Video Modal -->
+        <div id="play_video_modal" class="modal hide fade" tabindex="-1" role="dialog">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+            <div class="modal-body">
+                <object width="100%" height="350">
+                    <param name="movie" value="//www.youtube.com/v/dQw4w9WgXcQ?version=3&amp;hl=en_US&amp;rel=0"></param>
+                    <param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+                    <embed src="//www.youtube.com/v/dQw4w9WgXcQ?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="100%" height="350" allowscriptaccess="always" allowfullscreen="true">
+                    </embed>
+                </object>
+            </div>
+        </div>
+
+        <p id="vidText" class="lead">
+			<br><br><br>
+            Paper Walls<br>
+            <span id="artist">by Thomas Honeyman</span><br>
+        </p>
+        <a href="#play_video_modal" role="button" data-toggle="modal">
+            <img id="playIcon" src="img/musician_profile/play_spotlight.png"/>
+        </a>
+    </div>
+	
+	<div id="playVidBar" class="row-fluid visible-phone">
+        <span>
+            Open Project
+        </span>
+        Share <a id="fb_btn" href="http://www.facebook.com">
+            <img src="img/musician_profile/fb_button.png" />
+        </a>
+
+        <a id="twt_btn" href="http://www.twitter.com">
+            <img src="img/musician_profile/twitter_button.png" />
+        </a>
+
+        <a id="yt_btn" href="http://www.youtube.com">
+            <img src="img/musician_profile/youtube_button.png" />
+        </a>
+    </div>
+	<div id="project_details" class="visible-phone">
+		<table>
+			<tr>
+				<td>Location:</td>
+				<td>Los Angeles, CA</td>
+			</tr>
+			<tr>
+				<td>Type:</td>
+				<td>Work for hire</td>
+			</tr>
+			<tr>
+				<td>Project ends:</td>
+				<td>12-02-2014</td>
+			</tr>
+		</table>
+			
+	</div>
 
     <div id="para">
     	<div>
@@ -77,11 +139,6 @@
     	<div id="read" class="collapse out">Contents</div>
 
     </div>
-
-
-
-
-
 
     <div id="working_with_container" class="visible-phone">
         <div class="mp_bar">
