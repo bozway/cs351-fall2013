@@ -6,6 +6,7 @@
         font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif !important;
         position:relative;
         background-color:#F9F9F9;
+        min-width:503px;
     }
     .navIcon{
         line-height:55%;
@@ -50,8 +51,8 @@
         height: 100%;
     }
     #loginBar {
-        position: absolute;
-        margin-top:-79px;
+        position: relative;
+        margin-top:63px;
         margin-left:0px;
         margin-right:-20px;
         width: 100%;
@@ -98,14 +99,16 @@
     }
     #search-collapse-div {
         height:50px;
-        margin-top:157px;
-        position:relative;
+        margin-top:0px;
+        position:absolute;
+        width:100%;
     }
         
     #search-collapse-text {
         
         background-color:rgb(38,93,133);
         margin-top:1px;
+        color:white;
     }
 
     .carousel-indicators {
@@ -114,13 +117,12 @@
         left:43%;
         
     }
+
     .carousel {
-        margin-top:-79px;
+        margin-top:0px;
         position:absolute;
+        //border:solid;
         //height:60%;
-    }
-    .slideshow{
-        position:relative;
     }
     
     #mission
@@ -161,24 +163,65 @@
     {
         text-align:center;
         font-size:14px;
+        padding-top:15px;
         margin-left:15%;
         margin-right:15%;
+        padding-bottom:30px;
     }
     #benefit
     {
         background-color:#F9F9F9;
+        padding-top:20px;
+        padding-bottom:30px;
+        margin-right:10%;
     }
     #benefit .btn
     {
         width:80%;   
+        margin-left:15%;
     }
+    .followUs{
+        padding-top:40px;
+        margin-left:15%;
+        font-size:20px;
+        font-weight:300;
+    }
+    .ftbutton{
+        height:30px;
+        vertical-align:middle;
+        line-height:13px;
+        font-size:12px;
+        font-weight:bold;
+        margin-bottom:-10px;
+    }
+    .bImg{
+        margin-top:-10px;
+        margin-left:-20px;
+        padding-right:12px;
+    }
+    
     #benefit_desc > p
     {
-        line-height:90%;
+        line-height:95%;
+        font-size:15px;
+        font-style:italic;
+        margin-left:50px;
+        margin-top:10px;
+        color:grey;
     }
     td
     {
         width:50%;
+    }
+    h4{
+        font-size:25px;
+        font-weight:300;
+        color:black;
+    }
+    h6{
+        margin-top:-10px;
+        font-size:18px;
+        font-weight:400;
     }
     #play
     {
@@ -191,37 +234,102 @@
     .btn.btn-primary {
         background-color: #3b5998;
     }
+    .btn.btn-inverse{
+        background-color:rgb(52,73,94);
+    }
+    .btn.btn-success{
+        background-color:rgb(100,189,98); 
+        margin-top:25px;
+    }
     .btn.btn-info {
         background-color: #1FC2FF;
     }
 
     #footer1
     {   
-        color:	#8D8E8E;
+        color:	rgb(102,102,102);
         background-color: #1B1C1D;
-        height: 50px;
+        height: 70px;
+        line-height:180%;
+        font-size:10px;
+    }
+    .signInFt{
+        background-color:rgb(100,189,98);
+        float:right;
+        width:80px;
+        height:30px;
+        margin-top:-4px;
+        line-height:10px;
+        margin-right:30px;
+        font-size:14px;
     }
     #footer1>em
     {
         color:white;
+        font-size:14px;
     }
     #footer2
     {   
         color:	#8D8E8E;
-        background-color: #323334; 
+        background-color: rgb(35,35,35); 
+        width:100%;
+        padding-top:30px;
+        padding-bottom:10px;
+    }
+    .wrapper {
+        min-height: 100%;
+        height: auto; 
+        height: 100%;
+        margin: 0 auto -50px; /* same as the footer */
+    }
+ 
+    .push {
+        height: 50px; /* same as the footer */
     }
     #footer3
     {   
-        color:	#8D8E8E;
-        background-color: #444649;
+        color:rgb(72,173,274);
+        background-color: rgb(48,48,48);
         height: 50px;
+        width:100%;
+        line-height:95%;
+        font-size:16px;
+        position:fixed;
+        margin-top:0px;
     }
-    th
+    .footerTable th
     {   
         font-weight:100;
         color:white;
+        width:28%;
         text-align:left;
+        font-weight:300;
     }
+    .footerTable{
+        width:95%;
+        margin-left:20px;
+        //margin-right:-20px;
+    }
+    .footerTable td{
+        width:28%;
+        text-align:left;
+        line-height:2;
+        font-size:10px;
+        vertical-align: baseline;
+        color:rgb(102,102,102);
+    }
+    .fb2{
+        margin-left:-2px;
+        margin-top:8px;
+    }
+    .tw2{
+        margin-left:10px;
+        margin-top:7px;
+    }
+    .topIcon{
+        margin-top:-10px;
+    }
+    
     #footer1 .btn.btn-success {
         float: right;
     }
