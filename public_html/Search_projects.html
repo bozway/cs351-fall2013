@@ -61,14 +61,14 @@
 		<div class="row">  
 			<div class="span8">  
 			<ul id="myTab" class="nav nav-pills nav-justified">  
-			 <li><a href="#project" data-toggle="pill" class="tabFont">&nbsp<br>Projects</a></li>     
-			 <li class="active"><a href="#musicians" data-toggle="pill" class="tabFont">&nbsp<br>Musicians</a></li>  
+			 <li class="active"><a href="#project" data-toggle="pill" class="tabFont">&nbsp<br>Projects</a></li>     
+			 <li><a href="#musicians" data-toggle="pill" class="tabFont">&nbsp<br>Musicians</a></li>  
 			</ul>  
 			</div> 
 				
 			<div class="tab-content">
 			<!--Project tab content-->
-			<div class="tab-pane" id="project">
+			<div class="tab-pane active" id="project">
 			<div id="slideProj">&nbsp<br>&nbsp&nbspSlide project to audition</div>
 			<div class="project_div">
 				<table class="projectTable">
@@ -132,7 +132,7 @@
 			</div>
 			</div>
 			<!--Musicians tab content-->
-			<div class="tab-pane active" id="musicians">
+			<div class="tab-pane" id="musicians">
 			<div id="slideMusic">&nbsp<br>&nbsp&nbspSlide musician to contact</div>
 				<div class="musician_div">
 				<table class="musicianTable">
@@ -231,8 +231,8 @@
 	 
 	  <!-- Placed at the end of the document so the pages load faster -->
 	  <script>
-     //$('#myTab a[href="#project"]').tab('show');
-	//$('#myTab a[href="#musicians"]').tab('show')
+	$('#myTab a[href="#project"]').tab('show');
+	$('#myTab a[href="#musicians"]').tab('show')
 	</script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
