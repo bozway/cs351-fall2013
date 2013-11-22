@@ -15,7 +15,8 @@
             position: relative;
             width: 100%;
             background-image:url('../../img/whatshot/bluebk.png');
-            height:3.85%
+            height:3.85%;
+            margin-top:-3px;
     }
     
     span#welcomeText {
@@ -34,5 +35,196 @@
         height:100%;
         
     }
+    #popMusicians { 
+         background:#EEEBEB;
+        //padding:10px;
+        overflow-x:hidden;
+        //overflow-y:hidden;
+        width: 100%;   
+        -webkit-box-sizing: none;
+        box-sizing: none;
+        -moz-box-sizing: none;
+        margin-top:-50px;
+        //border:solid;
+    }
+    #pop-musicians-list{
     
+            float:left;
+        	display:inline;
+			-webkit-transition-property: -webkit-transform;
+			-webkit-transition-duration: 0.5s;
+			-webkit-transition-timing-function: ease-out;
+
+			width: 1000px;
+			overflow-x: hidden;
+			/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+			-webkit-transform: translate3d(0px,0px,0px); 
+			//margin-left:10px;
+			//margin-top:-15px;
+            
+    }
+    #popMusicians .pop-project-list-item {
+        height:120px;
+    }
+    #popMusicians #pop-projects-list{
+        margin-top:0;
+    }
+    #musicianContent{
+        margin-left:10px;
+        padding-top:5px;
+    }
+    #musicianContent > p{
+        font-size:20px;
+        font-weight:400;
+    }
+    ul, ol {
+        padding: 0;
+        margin: 0 0 0px 0px;
+    }
+    .musimg{
+        height:120px;
+        width:120px;
+    }
+    #featured-projects { 
+         background:#EEEBEB;
+        padding:10px;
+        overflow-x:hidden;
+        width: 100%;   
+        -webkit-box-sizing: none;
+        box-sizing: none;
+        -moz-box-sizing: none;
+    }
+    #projectContent > p{
+        font-size:20px;
+        font-weight:400;
+    }
+    #background {
+        //position: fixed;
+        position:;
+        top: 0px;
+        left: 0px;
+        //width: 100%;
+        height: 188px;
+        background-color: white; 
+        margin-left:-10px;
+        margin-top:-10px;
+        margin-right:-10px;
+        
+    }
+    
+    .span3{
+        width: 220px;
+    }
+    
+    #projectContent{
+        width:90%;
+        margin-left:8px;
+        margin-right:8px;
+        
+    }
+    #pop-projects-list{
+    
+            float:left;
+        		display:inline;
+				-webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 0.5s;
+				-webkit-transition-timing-function: ease-out;
+
+				width: 1000px;
+				overflow-x: hidden;
+				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+				-webkit-transform: translate3d(0px,0px,0px); 
+				//margin-left:10px;
+				margin-top:-15px;
+            
+    }
+    .carousel{
+          float:left;
+        		display:inline;
+				
+				-webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 0.5s;
+				-webkit-transition-timing-function: ease-out;
+
+				width:3000px;
+				overflow-x: hidden;
+				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+				-webkit-transform: translate3d(0px,0px,0px); 
+        width: 100%;
+        margin-bottom:0;
+    }
+    #pop-projects-list{
+                
+                #card{
+                    /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+    			    -webkit-transform: translate3d(0px,0px,0px); 
+                    margin-right:20px;
+                }
+    }
+    #pop-musicians-list{
+                
+                #card1{
+                    /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+    			    -webkit-transform: translate3d(0px,0px,0px); 
+                    margin-right:20px;
+                }
+    }
+    #influences{
+        margin-top:20px;
+        height:auto;
+        //border:solid;
+        float:left;
+    }
+    #infContent{
+        margin-left:10px;
+    }
+    #infContent > p{
+        font-size:20px;
+        font-weight:400;
+    }
+    .infDiv1{
+        float:left;
+        background-color:white;
+        height:30px;
+        width:90px;
+        //margin-left:10px;
+        margin-right:5px;
+        margin-bottom:10px;
+        border:2px white solid;
+        border-radius:7px;
+    }
+    .infDiv2{
+        float:left;
+        background-color:white;
+        height:30px;
+        width:80px;
+        //margin-left:10px;
+        margin-right:5px;
+        margin-bottom:10px;
+        border:2px white solid;
+        border-radius:7px;
+    }
+    .infDiv3{
+        float:left;
+        background-color:white;
+        height:30px;
+        width:70px;
+        //margin-left:10px;
+        margin-right:5px;
+        margin-bottom:10px;
+        border:2px white solid;
+        border-radius:7px;
+    }
+    #genres{
+        margin-top:20px;
+        position:relative;
+        float:left;
+    }
+    #genContent{
+        margin-left:10px;
+    }
+    #genContent > p{
+        font-size:20px;
+        font-weight:400;
+    }
 }
