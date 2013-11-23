@@ -24,16 +24,52 @@
     }
     
     #fms_brand {
-        padding-left:10%;   
-        
+        padding-left:10%;      
     }
+    
+    header{
+        height:auto;    
+    }
+    
     .navbar-fixed-top{
-        background-color: #232323;
+        background-color: black;
         position: fixed;
         top: 0;
         margin:0;
     }
-        
+     .icon-bar{
+         width:5px;
+         height:5px;
+         line-height:5px;
+     }   
+     
+     .navbar-inverse .btn-navbar{
+         color:#888888;
+     }
+     
+     strong{
+           font-weight:400; 
+           font-size:20px;
+           color:#FFFFFF;
+     }
+     
+     .container button{
+          margin-top:12px !important;
+     }
+     
+     #loginBar button{
+        margin-top:9px !important;   
+     }
+     .brand{
+        padding-top:10px !important;
+        padding-bottom:5px !important;
+     }
+     
+     .navbar-inner{
+        min-height:1px !important;
+        background-color:black !important;
+        padding-bottom:1.5% !important;
+     }
         .row-fluid{
             position: relative;
             width: 100%;
@@ -54,7 +90,11 @@
             position: relative;
             width: 100%;
             background-color: rgba(0,0,0,0.25);
-            height:11.77%
+            height:13%
+        }
+        #searchImg > img{
+            margin-top:0px;
+            height:100%;
         }
         
         span#searchImg{
@@ -67,10 +107,11 @@
             position: absolute;
             float: left;
             width:20%;
-            margin:15px;
-            margin-left:30px;
+            margin-top:22px;
+            margin-left:21%;
             color:white;
-            font-size:20px;
+            font-weight:500;
+            font-size:16px;
         }
         
         #signUpButton {
@@ -84,8 +125,31 @@
             position:absolute;
             bottom: 0;
             background-color:#232323;
-            height:12.5%;
-            
+            height:14.5%;
+            font-weight:200;
+        }
+        .playIconDiv{
+            height:100%;
+            width:72px;
+            background-color:#292929;
+            float:right;
+        }
+        
+        #playIcon{
+            height:80%;
+            margin-top:6px;
+            margin-right:2px;
+            float: right;
+        }
+        
+        #playVidBar span{
+            font-size:25px !important;
+            padding-top:18px !important;
+            padding-left:6% !important;
+            font-weight:300;
+            color:white;
+            font-family: 'Roboto';
+            position:absolute;
         }
         
         #play_video_modal {
@@ -98,35 +162,23 @@
         
         #search-collapse-text {
             background-color:#373737;
+            margin-top:1px;
         }
         
         #vidText {
             font-family: 'Roboto';
             color:white;
             font-size:35px;
+            line-height:85%;
             position:absolute;
-            padding-top:5px;
-            padding-left:10px;
+            padding-top:5%;
+            padding-left:5%;
         }
         
         #anywhere {
             color: #125D60;
             font-family: 'Roboto';
             font-weight: 700;
-        }
-        
-        
-        #playVidBar span{
-            color:white;
-            font-size: 30px; 
-            font-family: 'Roboto';
-            padding-top:20px;
-            padding-left:20px;
-            position:absolute;
-        }
-        
-        #playIcon {
-            float: right;   
         }
         
         
@@ -261,9 +313,10 @@
             // background-color:rgba(0,0,0,0);
             background-color:#363636;
             padding-right:0px;
-            padding-bottom:60%;
             width:100%;
             margin-right:-100px;
+            height: 900px;
+            
         } 
         .home_contact_middle_left{
             padding-right:0px;
@@ -278,6 +331,12 @@
             font-family:'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif !important;
             font-size:17px;
         }
+        
+        .home_contact_middle_left button{
+            width:90% !important;
+            float:left;
+        }
+        
         .home_contact_middle_left .title{
             text-transform:uppercase;
             //font-weight:900;
