@@ -86,33 +86,13 @@
 	</header>
 	
 	<!-- CS 351 CODE -->
-	<div class="visible-phone" id="loginBar">
+	<div id="video_container" class="container visible-phone">
+        <div id="loginBar">
             <span id="backImg" data-toggle="collapse" data-target="#search-collapse-form"><a href=""><img src="img/musician_profile/arrow.png"></a></span>
             <span id="backToResultsText">Back to results</span>
             <button class="btn btn-success btn-large
             " type="button" id="contactButton">Contact</button>
-    </div>
-	
-	<div class="visible-phone">
-		<div id="primary_img">
-			<img width="100%" src="img/project_profile/play_image.png">
 		</div>
-		<div id="open_project_row">
-			<span id="op">Open Project</span><span id="share">Share</span>
-			<span id="location">Location: Los Angeles, CA</span>
-			<span id="type">Type: Work for hire</span>
-			<span id="project_ends">Project ends: 12-02-2014</span>
-		</div>
-	
-	</div>
-	
-	<div id="video_container" class="container visible-phone">
-        <div  id="loginBar">
-            <span id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="img/home_page/search.jpg"></span>
-            <span id="loginText">LOG IN</span>
-            <button class="btn btn-success btn-large
-            " type="button" id="signUpButton">Sign up</button>
-        </div>
 
         <div id="search-collapse-div" >
             <form id="search-collapse-form" class="collapse">
@@ -134,32 +114,54 @@
         </div>
 
         <p id="vidText" class="lead">
-            FMS<br>
-            HELPS<br>
-            CREATORS<br>
-            MAKE MUSIC<br>
-            FROM<br>
-            <span id="anywhere">ANYWHERE.</span>
+			<br><br><br>
+            Paper Walls<br>
+            <span id="artist">by Thomas Honeyman</span><br>
         </p>
-
-        <div id="playVidBar" class="row-fluid">
-            <span>
-                Play the video!
+        <a href="#play_video_modal" role="button" data-toggle="modal">
+            <img id="playIcon" src="img/musician_profile/play_spotlight.png"/>
+        </a>
+		<div id="playVidBar" class="row-fluid">
+            <span id="open_project">
+                Open Project
             </span>
-            <a href="#play_video_modal" role="button" data-toggle="modal">
-                <img id="playIcon" src="img/home_page/play_vid_icon.png"/>
-            </a>
+			<span id="share_btn">
 
+				<a id="yt_btn" href="http://www.youtube.com">
+					<img src="img/musician_profile/youtube_button.png" />
+				</a>
 
+				<a id="twt_btn" href="http://www.twitter.com">
+					<img src="img/musician_profile/twitter_button.png" />
+				</a>
 
-
+				<a id="fb_btn" href="http://www.facebook.com">
+					<img src="img/musician_profile/fb_button.png" />
+				</a>
+			
+				<span id="share_txt">
+					Share
+				</span>
+			</span>
         </div>
-
     </div>
 	
+	<div id="info_container" class="container visible-phone">
+		<div id="info_row" class="row-fluid"><br>
+			<span id="info_location">Location:</span>
+			<span id="data_entry">Los Angeles, CA</span>
+		</div><br>
+		<div id="info_row" class="row-fluid">
+			<span id="info_type">Type:</span>
+			<span id="data_entry">Work for hire</span>
+		</div><br>
+		<div id="info_row" class="row-fluid">
+			<span id="info_end">Project ends:</span>
+			<span id="data_entry">12-02-2014</span>
+		</div>
+	</div>
 	
-	
-	
+	<hr>
 	
 	<div id="project_influences_and_description" class="visible-phone">
     	<div>
