@@ -1,0 +1,43 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+body{padding-right:0px;padding-left:0px;font-family:'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif !important}
+.navIcon a{color:white}.navIcon a:hover{text-decoration:none}
+.project_div img{border-bottom:thin solid gray;height:120px;width:120px}
+.musician_div img{border-bottom:thin solid gray;height:80px;width:80px}
+.navbar-fixed-top{position:fixed;margin-right:0px;margin-left:0px;margin-bottom:0px;height:90px}
+.navbar-brand{font-size:20px}
+.search{position:relative;padding-top:70px;background-color:#191919;margin-bottom:0px;height:60px}
+.textbox{width:74%;margin-left:20px;margin-right:-10px;margin-bottom:-1px;outline:none;border:none !important;box-shadow:none !important}
+.dropDown{margin-left:5px;width:15%;height:50px;float:right}.dropDown:hover{background-color:#3a3c3d}
+.filter{width:100%;height:60px;margin-bottom:-2px;border:solid yellow}.filter:hover{background-color:#3a3c3d}
+.nav-pills>li{height:60px;width:50%;float:left;background-color:#F8F8F8}
+.nav{margin-top:-2px;margin-bottom:-2px}
+.tabFont{font-size:16px;background-color:#F8F8F8;line-height:100%;width:auto;height:60px}
+.nav-pills>.active>a{height:60px;background-color:#1E90FF}
+.nav-pills>li>a{border-radius:0px;height:30px;text-align:center;vertical-align:middle;color:grey;margin-right:0px}
+input[type="text"]{border-radius:0px;background-color:#191919;color:white;height:50px;padding:0px 0px;margin-bottom:0px}
+.btn-group{width:19%}
+.btn-group>.btn:first-child{border-bottom-left-radius:0px;border-top-left-radius:0px}
+.btn-group>.dropdown-toggle{border-top-right-radius:0px;border-bottom-right-radius:0px}
+.btn{background-color:#666768;border:none;color:white;background-image:linear-gradient(to bottom, #3a3c3d, #3a3c3d)}
+.navbar .btn-navbar .icon-bar{width:25px;height:4px}
+html,body,.container{width:100%;height:100%}
+.tab-content{width:100%;height:100%;background-color:#F8F8F8}
+.container,.tab-content{position:relative}
+#slideProj,#slideMusic{background-image:linear-gradient(to bottom, #1873cc, #349bff);color:white;height:50px;vertical-align:middle;line-height:100%;font-size:17px}
+.project_div{height:auto;background-color:#F8F8F8}
+.musician_div{height:auto;background-color:#F8F8F8}
+.projectTable{margin-top:0px;margin-bottom:10px;margin-left:10px;width:95%;border-bottom:thin solid gray;background-color:#F8F8F8;border-left:3px;height:140px}
+.pTWidth{width:140px}
+.musicianTable{margin-top:0px;margin-bottom:10px;margin-left:10px;width:95%;border-bottom:thin solid gray;background-color:#F8F8F8;border-left:3px;height:100px}
+.mTRight{text-align:right}
+#projname{font-size:20px;font-weight:bold}
+#musicname{font-size:20px;font-weight:bold}
+#place{color:grey;font-size:15px}
+#members{font-size:12px}
+#members em{color:green;font-style:normal}
+.wrapper{min-height:100%;height:auto;height:100%;margin:0 auto -50px;}
+.push{height:50px;}
+.footer-wrapper{margin-top:-50px;position:fixed;height:50px;width:100%;background-color:#191919;color:white;vertical-align:middle;font-size:16px;line-height:100%}
+.arrow{float:right;margin-right:20px;margin-top:-5px}
+.arrow img{width:30px;height:30px}
+.footer-wrapper a{color:white}.footer-wrapper a:hover{text-decoration:none}

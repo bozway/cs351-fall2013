@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0be9ae77-0a6b-425b-9c74-023bed168a81" name="Default" comment="" />
+=======
+    <list default="true" id="a78a3dc1-78fc-4d08-af2d-4a1d5733a459" name="Default" comment="">
+      <change type="MOVED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\Search_musicians.html" afterPath="$PROJECT_DIR$/public_html/search.html" />
+      <change type="MOVED" beforePath="C:\Users\Yen Hoang\Documents\GitHub\cs351-fall2013\public_html\mp.html" afterPath="$PROJECT_DIR$/public_html/musician_profile.html" />
+    </list>
+>>>>>>> dev
     <ignored path="cs351-fall2013.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +33,11 @@
       <file leaf-file-name="homepage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8738">
+=======
+            <state line="26" column="34" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.6471698" vertical-offset="99" max-vertical-offset="8738">
+>>>>>>> dev
               <folding />
             </state>
           </provider>
@@ -47,6 +58,19 @@
       <MyDateState />
     </option>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/public_html/lib/css/mobile_home.css" />
+        <option value="$USER_HOME$/Desktop/FALL13/CSCI351/lab5/HOANG_ASSIGN5/assign5" />
+        <option value="$PROJECT_DIR$/public_html/lib/css/bootstrap-responsive.css" />
+        <option value="$PROJECT_DIR$/public_html/homepage.html" />
+      </list>
+    </option>
+  </component>
+>>>>>>> dev
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
@@ -112,6 +136,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+>>>>>>> dev
         </subPane>
       </pane>
     </panes>
@@ -125,6 +192,22 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
+<<<<<<< HEAD
+=======
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+>>>>>>> dev
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -160,9 +243,15 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2661654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> dev
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -172,6 +261,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -191,14 +281,118 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8738">
+=======
+        <state line="202" column="59" selection-start="9577" selection-end="9577" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/lib/css/bootstrap-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="13" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0" vertical-offset="2432" max-vertical-offset="18955">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="0" selection-start="8712" selection-end="8712" vertical-scroll-proportion="0.0" vertical-offset="2856" max-vertical-offset="8738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="170" column="20" selection-start="8458" selection-end="8458" vertical-scroll-proportion="0.0" vertical-offset="2633" max-vertical-offset="8330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="33" selection-start="3875" selection-end="3875" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="8160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="0" selection-start="8211" selection-end="8211" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="8143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="19" selection-start="8037" selection-end="8037" vertical-scroll-proportion="0.0" vertical-offset="2856" max-vertical-offset="8126">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="0" selection-start="7881" selection-end="8033" vertical-scroll-proportion="0.0" vertical-offset="2779" max-vertical-offset="7990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="409" column="38" selection-start="19822" selection-end="19822" vertical-scroll-proportion="0.0" vertical-offset="6679" max-vertical-offset="7990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="3862" selection-end="3862" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="7480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="3862" selection-end="3862" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="6128" selection-end="6128" vertical-scroll-proportion="0.0" vertical-offset="1511" max-vertical-offset="6936">
+>>>>>>> dev
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8738">
+=======
+    <entry file="file://$PROJECT_DIR$/public_html/lib/css/mobile_home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/lib/css/bootstrap-responsive.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/lib/css/bootstrap-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="13" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.5957821" vertical-offset="2432" max-vertical-offset="18955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="34" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.6471698" vertical-offset="99" max-vertical-offset="8738">
+>>>>>>> dev
           <folding />
         </state>
       </provider>
