@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+		<title>Find My Song</title>
+			<script>var pageTitle = "Home";</script>		<link rel="shortcut icon" href="http://www.gurtem.com/fms_351/img/favicon.ico" />
+	<link href="http://www.gurtem.com/fms_351/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<link href="http://www.gurtem.com/fms_351/css/flat-ui.css" rel="stylesheet" media="screen" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css"><link href="http://www.gurtem.com/fms_351/css/home.css" rel="stylesheet" media="screen" />
+	<link href="http://www.gurtem.com/fms_351/css/popups/fms_modals.css" rel="stylesheet" media="screen" />
+	<link href="http://www.gurtem.com/fms_351/css/fms_icons.css" rel="stylesheet" media="screen" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <!-- CSCI 351 CODE -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="lib/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="lib/css/mobile_home.css" media="only screen and (max-width:767px)" rel="stylesheet">
+  <link href="lib/css/whatshot.css" media="only screen and (max-width:767px)" rel="stylesheet">
+  <!-- END CSCI 351 CODE -->
+</head>
+
+<body>
+
+	<header>
+		<div class="colorbg grey header hidden-phone"></div>
+		<div class="container hidden-phone">
+			<div class="fms-home">
+				<a id="header-logo"	href="http://www.gurtem.com/fms_351/" class="home-link">
+					<img src="http://www.gurtem.com/fms_351/img/logo/fms_HeaderLogo_beta.png" alt=""/>				</a>
+			</div>
+			<div class="seperator hidden-phone"></div>
+			<div class="fms-explore guest hidden-phone">
+									<div class="about guest"><a href="http://www.gurtem.com/fms_351/about" data-id="about_fms">About FMS</a></div>
+					<div class="guest"><a href="http://www.gurtem.com/fms_351/users/search" data-id="musician_search">Search Musicians</a></div>
+					<div class="guest"><a href="http://www.gurtem.com/fms_351/projects/search" data-id="project_search">Search Projects</a></div>
+							</div>
+			
+			<div class="fms-member hidden-phone">
+				<div class="seperator last"></div>
+				<div class="fms-user-portal guest">
+											<a href="http://www.gurtem.com/fms_351/login" data-gated="1" data-linktype="1">Log in / 
+						</a><span data-gated="1"> Signup</span>
+									</div>	
+			</div>
+			
+			<div class="show-fms-search-header hidden-phone">
+				<label class="fms-search"></label>
+				<div id="init-search" class="tooltip fade bottom in tooltip-light">
+					<div class="tooltip-arrow"></div>
+					<div class="tooltip-inner">
+						<span class="fms-header-search"><a href="http://www.gurtem.com/fms_351/users/search">Musicians</a></span> | 
+						<span class="fms-header-search"><a href="http://www.gurtem.com/fms_351/projects/search">Projects</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!-- CSCI 351 -->
+        <div class="navbar navbar-inverse navbar-fixed-top visible-phone">
+            <div class="navbar-inner visible-phone">
+                <div class="container visible-phone">
+
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    </button>
+					<img id="navbarimg" src="img/whatshot/sunglassdude.png"/>
+                    <a class="brand" href="#">
+                        <img src="img/home_page/fms_icon.png">
+                        <span class="icon-bar"></span>
+                        <strong>FindmySong</strong>
+
+                    </a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#homepage">Home</a></li>
+                            <li><a href="#featured-musicians">Featured Musicians</a></li>
+                            <li><a href="#featured-projects">Featured Projects</a></li>
+							<li><a href="http://www.facebook.com/FindMySong">Connect with FB</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+	
+	</header>
+		
+		<div  id="welcomeBar" class="container visible-phone">
+			<span id="welcomeText">Welcome back.</span>
+			<span id="magGlass" data-toggle="collapse" data-target="#search-collapse-form"><img src="img/whatshot/searchicon.png"></span>
+		</div>
+
+		<div id="search-collapse-div" >
+			<form id="search-collapse-form" class="collapse">
+				<input id="search-collapse-text" type="text" placeholder="Search FindMySong"/>
+			</form>
+		</div>
+		
+		<div id="popMusicians">
+			<div id="musicianContent">
+			<p class="home_contact_top_title">Popular Musicians <a href="http://www.gurtem.com/fms_351/projects/search">(See All)</a></p>
+			<ul id="pop-musicians-list" class="carousel">
+							
+					<li class="pop-project-list-item" id="card1" >						
+						<img class="musimg img-rounded" src="lib/img/c1.png"/>				
+							
+					</li>
+					<li class="pop-project-list-item" id="card1" >						
+						<img class="musimg img-rounded" src="lib/img/c2.png"/>				
+							
+					</li>
+					<li class="pop-project-list-item" id="card1" >						
+						<img class="musimg img-rounded" src="lib/img/c3.png"/>				
+							
+					</li>
+					<li class="pop-project-list-item" id="card1" >						
+						<img class="musimg img-rounded" src="lib/img/c4.png"/>				
+							
+					</li>
+					<li class="pop-project-list-item" id="card1" >						
+						<img class="musimg img-rounded" src="lib/img/c1.png"/>				
+							
+					</li>
+			</ul>
+			</div>
+		</div>
+		
+		<div id="featured-projects" class="span6" >
+            <div id="background">
+			<div id="projectContent">
+            <p class="home_contact_top_title">Most liked Projects <a href="http://www.gurtem.com/fms_351/projects/search">(See All)</a></p>
+                        
+                <ul id="pop-projects-list" class="carousel">
+							
+					<li class="pop-project-list-item span3" id="card" >						
+						<img class="projimg span3" src="lib/img/project1.png"/>
+						<a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/109"></a>
+						<div class="projinfo">
+							<span class="projowner">Vince Fong</span>
+							<span class="projtitle">What Does The Dog ...</span>
+							<p class="projdesc">Everyone love what does the fox say, so I want to make a song what does the dog ...</p>
+						</div>					
+							
+					</li>
+					<li class="pop-project-list-item span3" id="card">						
+						<img class="projimg span3" src="lib/img/project1.png"/>
+						<a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/110"></a>
+						<div class="projinfo">
+							<span class="projowner">Thomas Honeyman</span>
+							<span class="projtitle">The City feat. Dyl...</span>
+						<p class="projdesc">The City feat. Dylan ByrdThe City is a song t...</p>
+						</div>					
+							
+					</li>
+					<li class="pop-project-list-item span3" id="card">						
+						<img class="projimg span3" src="lib/img/project1.png"/>
+						<a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/118"></a>
+						<a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/118"></a>
+						<div class="projinfo">
+							<span class="projowner">Thomas Honeyman</span>
+							<span class="projtitle">Open by Rhye</span>
+							<p class="projdesc">Rhye - Open             I've been working on ...</p>
+						</div>					
+							
+					</li>
+					<li class="pop-project-list-item span3" id="card">						
+						<img class="projimg span3" src="lib/img/project1.png"/>
+						<a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/121"></a>
+						<div class="projinfo">
+							<span class="projowner">Thomas Honeyman</span>
+							<span class="projtitle">Sunday Morning</span>
+							<p class="projdesc">Sunday Morning - Maroon 5Maroon 5's Songs Abo...</p>
+						</div>					
+							
+					</li>
+							
+								
+				</ul>
+			</div>
+			</div>
+        </div>
+		
+		<div id="influences">
+			<div id="infContent">
+			<p class="home_contact_top_title">Influences</p>
+			<div class="infDiv1">&nbsp;</div><div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+			<div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div><div class="infDiv1">&nbsp;</div>
+			<div class="infDiv2">&nbsp;</div><div class="infDiv1">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+			</div>
+		</div>
+		<div id="genres">
+			<div id="genContent">
+			<p class="home_contact_top_title">Genres</p>
+			<div class="infDiv1">&nbsp;</div><div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+			<div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div><div class="infDiv1">&nbsp;</div>
+			<div class="infDiv2">&nbsp;</div><div class="infDiv1">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+			</div>
+		</div>
+        <!-- END OF 351 -->
+		
+
+<script src="http://www.gurtem.com/fms_351/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/fms_auth.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/facebook.js" type="text/javascript"></script>
+
+<!-- CS351 -->
+	<script type="text/javascript" src="lib/js/jquery.touchSwipe.min.js" media="only screen and (max-width:767px)"></script>
+	<script type="text/javascript" src="lib/js/scrollcontrol.js" media="only screen and (max-width:767px)" ></script>
+	
+<!-- END - CS351 -->
+
+<!--  Scripts added for FLAT UI -->
+<script src="http://www.gurtem.com/fms_351/js/bootstrap-select.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/bootstrap-switch.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/flatui-radio.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/jquery.tagsinput.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/jquery.placeholder.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/jquery.stacktable.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/application.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/application_bootstrap.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+	setTimeout(function(){var a=document.createElement("script");
+	var b=document.getElementsByTagName("script")[0];
+	a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0016/9661.js?"+Math.floor(new Date().getTime()/3600000);
+	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type="text/javascript">
+	(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+	typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+	b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+		mixpanel.init("a00113da8970d4306e46a049d80cfc9d");
+</script>
+<script src="http://www.gurtem.com/fms_351/js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/jquery-queryParser.min.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/fms_main.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/popups/fms_modal.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/fms_home.js" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/fms_analytics_home.js" type="text/javascript"></script>
+
+
+
+
+<script src="https://www.youtube.com/iframe_api" type="text/javascript"></script>
+<script src="http://www.gurtem.com/fms_351/js/dashboard/jquery.poly.js" type="text/javascript"></script>
+
+		
+		
+</body>
+</html>
