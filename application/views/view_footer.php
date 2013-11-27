@@ -82,7 +82,7 @@
 	
 </div>
 <?php $enableSlimFooter = (isset($enableSlimFooter)) ? $enableSlimFooter : FALSE; ?>
-<footer <?php if ($enableSlimFooter) { echo 'class="slim"'; }?>>
+<footer class="hidden-phone" <?php if ($enableSlimFooter) { echo 'class="slim"'; }?>>
 	<div class="colorbg grey footer"></div>
 		<div class="fms-info-footer">
 			<div class="fms-info-footer-container">
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </div>	
-	<div class="container">
+	<div class="container hidden-phone">
 	  <ul id="slimlinks">
 	    <li>Copyright &copy <?php echo date('Y'); ?> FindMySong</li>
 	    <?php if ($enableSlimFooter) { ?>
