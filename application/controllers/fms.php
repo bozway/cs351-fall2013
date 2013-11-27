@@ -37,7 +37,7 @@ class Fms extends Authenticated_service {
 				"js/fms_home.js",
 				//"js/fms_home.min.js",
 				"js/fms_analytics_home.js",
-				//"js/fms_analytics_home.min.js",				
+				//"js/fms_analytics_home.min.js",
 		);
 		
 		// $data['loggedinUser'] = $this->userId;

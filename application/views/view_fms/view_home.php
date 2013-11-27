@@ -114,21 +114,24 @@
     <div class="home_contact">
     	<div class="home_contact_top">
 			<div class="row">
-            	<div class="span6">
+            	<div id="featured-musicians" class="span6">
                 	<p class="home_contact_top_title">Featured Musicians <a href="<?php echo base_url().'users/search' ?>">(See All)</a></p>
                     <?php foreach($featured_musicians as $musician){ ?>
                     <div class="featured_musicians">
-                    	<img src="<?php echo $musician['profile_img_path']; ?>"/>
-                    	<a href="<?php echo base_url().'users/profile/'.$musician['id']; ?>"></a>
+
+                    	<a href="<?php echo base_url().'users/profile/'.$musician['id']; ?>">
+
+                    	</a>
+                        <img src="<?php echo $musician['profile_img_path']; ?>"/>
                     </div>
 					<?php } ?>
                 </div>
-                <div class="span6">
+                <div id="featured-projects" class="span6">
                     <p class="home_contact_top_title">Featured Projects <a href="<?php echo base_url().'projects/search' ?>">(See All)</a></p>
                         
-                        <ul id="pop-projects-list">
+                        <ul id="pop-projects-list" class="carousel">
 							<?php foreach($featured_projects as $project) { ?>
-							<li class="pop-project-list-item span3">						
+							<li class="pop-project-list-item span3" id="card">
 								<img class="projimg span3" src="<?php echo $project['imgpath']; ?>"/>
 								<a class="projlink" href="<?php echo base_url().'projects/profile/'.$project['id']; ?>"></a>
 								<div class="projinfo">
@@ -146,12 +149,14 @@
         <div class="home_contact_middle_bg">
             <div class="home_contact_middle">
             	<div id="home_contact_container">
+                    <p class="visible-phone"><img  src="<?php echo base_url().'img/home_page/footer2.png' ?>" width="100%" height="auto"/></p>
 	                <div class="home_contact_middle_left">
 	                    <p class="title">Music is better with friends.</p>
-	                    <p>Get social on FindMySong. Help your friends keep updated on your new music by connecting with Facebook, and follow along with your favorite artists as they work on new projects.</p>
-	                    <button data-gated="1" class="btn btn-small btn-block sign-in-fb">Connect with Facebook</button></p>
+	                    <p class="hidden-phone">Get social on FindMySong. Help your friends keep updated on your new music by connecting with Facebook, and follow along with your favorite artists as they work on new projects.</p>
+                        <p class="visible-phone">Help your friends keep updated on your new music by connecting with Facebook.</p>
+                        <button id="fb_btn" data-gated="1" class="btn btn-small btn-block sign-in-fb">Connect with Facebook</button>
 	                </div>
-	                <div class="home_contact_middle_right">
+	                <div class="home_contact_middle_right hidden-phone">
 	                    <p><span>Bring</span><br />your music to life</p>
 	                    <p>Every project on FindMySong is an independent musical creation by someone like you. </p>
 	                    <p><a href="<?= base_url('login') ?>" data-gated="1" >Ready to get started?</a></p>
