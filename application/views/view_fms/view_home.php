@@ -61,7 +61,7 @@
     <!-- CS 351 CODE -->
     <div id="video_container" class="container visible-phone">
         <div  id="loginBar">
-            <span id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="img/home_page/search.jpg"></span>
+            <span id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="<?php echo base_url('img/home_page/search.jpg'); ?>"></span>
             <span id="loginText">LOG IN</span>
             <button class="btn btn-success btn-large
             " type="button" id="signUpButton">Sign up</button>
@@ -100,7 +100,7 @@
                 Play the video!
             </span>
             <div class="playIconDiv"><a href="#play_video_modal" role="button" data-toggle="modal">
-                    <img id="playIcon" src="img/home_page/play_vid_icon.png"/></div>
+                    <img id="playIcon" src="<?php echo base_url('img/home_page/play_vid_icon.png'); ?>"/></div>
             </a>
 
 
