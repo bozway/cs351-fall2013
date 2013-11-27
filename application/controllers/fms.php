@@ -121,6 +121,7 @@ class Fms extends Authenticated_service {
 		$data['title'] = "About Us";
 		$data['css_ref'] = array(
 				"css/about.css",
+                "css/bootstrap-responsive.min.css",
 		);
 		/*$data ['extrascripts'] = array (
 		 "js/user_profile/fms_user_profile.js"

@@ -43,8 +43,8 @@
 	<div class="fms-header">
 <?php } ?>	
 	<header>
-		<div class="colorbg grey header"></div>
-		<div class="container">		
+		<div class="colorbg grey header hidden-phone"></div>
+		<div class="container hidden-phone">
 			<div class="fms-home">
 				<a id="header-logo"	href="<?php 
 				if($authenticated){
@@ -55,8 +55,8 @@
 					<?php echo img('img/logo/fms_HeaderLogo_beta.png')?>
 				</a>
 			</div>
-			<div class="seperator"></div>
-			<div class="fms-explore <?php if(!$authenticated){ echo "guest"; }?>">
+			<div class="seperator hidden-phone"></div>
+			<div class="fms-explore hidden-phone <?php if(!$authenticated){ echo "guest"; }?>">
 				<?php if($authenticated) {?>
 					<div class="member">
 						<a href="<?php echo base_url('dashboard/profile')?>">
@@ -81,7 +81,7 @@
 				<?php } ?>
 			</div>
 			
-			<div class="fms-member">
+			<div class="fms-member hidden-phone">
 				<div class="seperator last"></div>
 				<div class="fms-user-portal<?php if($authenticated) {echo " member";}else {echo " guest";}?>">
 					<?php if($authenticated) {?>
@@ -111,7 +111,7 @@
 				</div>	
 			</div>
 			
-			<div class="show-fms-search-header <?php if($authenticated) { echo " member";}?>">
+			<div class="show-fms-search-header hidden-phone <?php if($authenticated) { echo " member";}?>">
 				<label class="fms-search<?php if($authenticated) { echo " member";}?>"></label>
 				<div id="init-search" class="tooltip fade bottom in tooltip-light">
 					<div class="tooltip-arrow"></div>
@@ -123,4 +123,32 @@
 			</div>
 			
 		</div>
+
+        <!-- CSCI 351 -->
+        <div class="navbar navbar-inverse navbar-fixed-top visible-phone">
+            <div class="navbar-inner visible-phone">
+                <div class="container visible-phone">
+
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    </button>
+                    <a class="brand" href="#">
+                        <img src="<?php echo base_url('img/mobile_fms_icon.png'); ?>">
+                        <span class="icon-bar"></span>
+                        <strong>FindmySong</strong>
+
+                    </a>
+                    <div class="nav-collapse collapse visible-phone">
+                        <ul class="nav">
+                            <li class="active"><a href="<?php echo base_url(''); ?>">Home</a></li>
+                            <li><a href="<?php echo base_url('about'); ?>">About Us</a></li>
+                            <li><a href="<?php echo base_url('users/search'); ?>">Search Musicians</a></li>
+                            <li><a href="<?php echo base_url('projects/search'); ?>">Search Projects</a></li>
+                            <li><a href="http://www.facebook.com/FindMySong">Connect with FB</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <!-- END OF 351 -->
 	</header>
