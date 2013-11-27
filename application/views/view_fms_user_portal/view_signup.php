@@ -1,5 +1,5 @@
 
-<div id="signupModal" class="login modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="loginlabel" aria-hidden="true">
+<div id="signupModal" class="login modal hide fade in hidden-phone" tabindex="-1" role="dialog" aria-labelledby="loginlabel" aria-hidden="true">
 	<!-- Signup modal body -->
 	<div id="signup_modal_body" class="modal-body">
 		<form id='fms_signup_form'>
@@ -65,7 +65,7 @@
 	
 <!-- THE SIGN IN MODAL BODY -->	
 	
-	<div id="signin_modal_body" class="modal-body">
+	<div id="signin_modal_body" class="modal-body hidden-phone">
 	<form id='fms_signin_form'>
 		<div class="modal-body-title login">
 			<span class="modal-title font-light">WELCOME BACK!</span>
