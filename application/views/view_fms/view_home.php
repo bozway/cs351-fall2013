@@ -1,5 +1,5 @@
 <div id="home_page">
-	<div class="home_header">
+	<div class="home_header hidden-phone">
     	<div id="home_header_top">
         	<div class="home_bg_images_bg">
                 <div id="home-bg-images">
@@ -57,6 +57,59 @@
             <i class="fui-triangle-down-small"></i>
         </div>
     </div>
+
+    <!-- CS 351 CODE -->
+    <div id="video_container" class="container visible-phone">
+        <div  id="loginBar">
+            <span id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="img/home_page/search.jpg"></span>
+            <span id="loginText">LOG IN</span>
+            <button class="btn btn-success btn-large
+            " type="button" id="signUpButton">Sign up</button>
+        </div>
+
+        <div id="search-collapse-div" >
+            <form id="search-collapse-form" class="collapse">
+                <input id="search-collapse-text" type="text" placeholder="Search FindMySong"/>
+            </form>
+        </div>
+
+        <!-- Play Video Modal -->
+        <div id="play_video_modal" class="modal hide fade" tabindex="-1" role="dialog">
+            <button type="button" class="close" data-dismiss="modal">X</button>
+            <div class="modal-body">
+                <object width="100%" height="350">
+                    <param name="movie" value="//www.youtube.com/v/dQw4w9WgXcQ?version=3&amp;hl=en_US&amp;rel=0"></param>
+                    <param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+                    <embed src="//www.youtube.com/v/dQw4w9WgXcQ?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="100%" height="350" allowscriptaccess="always" allowfullscreen="true">
+                    </embed>
+                </object>
+            </div>
+        </div>
+
+        <p id="vidText" class="lead">
+            FMS<br>
+            HELPS<br>
+            CREATORS<br>
+            MAKE MUSIC<br>
+            FROM<br>
+            <span id="anywhere">ANYWHERE.</span>
+        </p>
+
+        <div id="playVidBar" class="row-fluid">
+            <span>
+                Play the video!
+            </span>
+            <div class="playIconDiv"><a href="#play_video_modal" role="button" data-toggle="modal">
+                    <img id="playIcon" src="img/home_page/play_vid_icon.png"/></div>
+            </a>
+
+
+
+
+        </div>
+
+    </div>
+    <!-- END OF CS 351 CODE -->
     
     <div class="home_contact">
     	<div class="home_contact_top">
