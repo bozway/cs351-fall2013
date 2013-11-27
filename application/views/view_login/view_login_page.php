@@ -26,7 +26,7 @@
         <div id="remember">
             <label class="checkbox">
                 <input type="checkbox" id="rememberme" value="rem">
-                <p> Remember <a href="">Forgot?</a></p>
+                <p> Remember <a href="http://www.cs351.gurtem.com/forgot_password">Forgot?</a></p>
             </label>
 
             <div id="login_button">
@@ -37,7 +37,7 @@
 
     <div id="bottom" class="row-fluid">
         <div class="span12">
-            <p>Don't have an account yet? <a href="">Click here</a></p>
+            <p>Don't have an account yet? <a id="anchor_signup" href="#">Click here</a></p>
         </div>
     </div>
 
@@ -53,3 +53,5 @@
     </div>
 
 </div>
+
+<!-- End of CSCI 351 code -->
