@@ -929,6 +929,9 @@ class Authenticated_service extends MY_Controller {
 		$data['title'] = "Login";
 		$data['css_ref'] = array(
 				'css/fms_login.css',
+                'css/bootstrap-responsive.min.css',
+                'css/mobile_login.css',
+
 		);
 		$data['extrascripts'] = array();
 		

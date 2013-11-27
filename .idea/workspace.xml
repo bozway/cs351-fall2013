@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a78a3dc1-78fc-4d08-af2d-4a1d5733a459" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/fms.php" afterPath="$PROJECT_DIR$/application/controllers/fms.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mobile_about.css" afterPath="$PROJECT_DIR$/css/mobile_about.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/view_about/view_about.php" afterPath="$PROJECT_DIR$/application/views/view_about/view_about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/home_page/Thumbs.db" afterPath="$PROJECT_DIR$/img/home_page/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/Authenticated_service.php" afterPath="$PROJECT_DIR$/application/core/Authenticated_service.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/view_header.php" afterPath="$PROJECT_DIR$/application/views/view_header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/view_login/view_login_page.php" afterPath="$PROJECT_DIR$/application/views/view_login/view_login_page.php" />
     </list>
     <ignored path="cs351-fall2013.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view_home.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/view_fms/view_home.php">
+      <file leaf-file-name="view_login_page.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/view_login/view_login_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="153" selection-start="3592" selection-end="3643" vertical-scroll-proportion="-3.254902" vertical-offset="905" max-vertical-offset="2941">
+            <state line="10" column="32" selection-start="434" selection-end="434" vertical-scroll-proportion="-0.57992566" vertical-offset="482" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_footer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/view_footer.php">
+      <file leaf-file-name="view_signup.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/view_fms_user_portal/view_signup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="42" selection-start="7119" selection-end="7121" vertical-scroll-proportion="0.0" vertical-offset="2509" max-vertical-offset="4063">
+            <state line="1" column="9" selection-start="10" selection-end="10" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1904">
               <folding />
             </state>
           </provider>
@@ -49,27 +49,36 @@
       <file leaf-file-name="view_header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/view_header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="68" selection-start="5831" selection-end="5833" vertical-scroll-proportion="0.0" vertical-offset="2125" max-vertical-offset="2703">
+            <state line="109" column="30" selection-start="4742" selection-end="4742" vertical-scroll-proportion="-3.5882354" vertical-offset="1670" max-vertical-offset="2703">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fms.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="fms.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/fms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="10" selection-start="3920" selection-end="3920" vertical-scroll-proportion="0.78752434" vertical-offset="1993" max-vertical-offset="6256">
+            <state line="123" column="49" selection-start="3450" selection-end="3482" vertical-scroll-proportion="-3.7692308" vertical-offset="1993" max-vertical-offset="6256">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_about.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/view_about/view_about.php">
+      <file leaf-file-name="fms_user_signup_portal.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/fms_user_portal/fms_user_signup_portal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="33" selection-start="4101" selection-end="4101" vertical-scroll-proportion="-4.1372547" vertical-offset="707" max-vertical-offset="3451">
+            <state line="65" column="25" selection-start="2268" selection-end="2274" vertical-scroll-proportion="7.28" vertical-offset="1287" max-vertical-offset="7242">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Authenticated_service.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/core/Authenticated_service.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="938" column="27" selection-start="32403" selection-end="32403" vertical-scroll-proportion="-3.5882354" vertical-offset="15763" max-vertical-offset="20230">
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#!!top" expanded="true" />
+                <marker date="1385589858469" expanded="true" signature="22370:22438" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -96,11 +105,13 @@
         <option value="$PROJECT_DIR$/public_html/lib/css/mobile_home.css" />
         <option value="$USER_HOME$/Desktop/FALL13/CSCI351/lab5/HOANG_ASSIGN5/assign5" />
         <option value="$PROJECT_DIR$/public_html/homepage.html" />
-        <option value="$PROJECT_DIR$/application/views/view_header.php" />
         <option value="$PROJECT_DIR$/application/views/view_footer.php" />
         <option value="$PROJECT_DIR$/application/views/view_fms/view_home.php" />
         <option value="$PROJECT_DIR$/application/controllers/fms.php" />
         <option value="$PROJECT_DIR$/application/views/view_about/view_about.php" />
+        <option value="$PROJECT_DIR$/application/views/view_header.php" />
+        <option value="$PROJECT_DIR$/application/core/Authenticated_service.php" />
+        <option value="$PROJECT_DIR$/application/views/view_login/view_login_page.php" />
       </list>
     </option>
   </component>
@@ -137,7 +148,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,15 +216,97 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="view_about" />
+              <option name="myItemId" value="view_login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view_fms_user_portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
@@ -245,15 +337,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19621213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19621213" sideWeight="0.67118645" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -262,12 +355,32 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19621213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -281,53 +394,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/fms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="39" selection-start="3470" selection-end="3472" vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="6239">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/view_fms/view_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="39" selection-start="7071" selection-end="7077" vertical-scroll-proportion="0.0" vertical-offset="2292" max-vertical-offset="2856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/view_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="107" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="2227">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/fms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="10" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="6222">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/view_fms/view_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="14" selection-start="8079" selection-end="8079" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="2856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/fms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="10" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="6222">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/view_about/view_about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="371" max-vertical-offset="901" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile_home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="556" />
@@ -354,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/view_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="68" selection-start="5831" selection-end="5833" vertical-scroll-proportion="0.0" vertical-offset="2125" max-vertical-offset="2703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/view_footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="157" column="42" selection-start="7119" selection-end="7121" vertical-scroll-proportion="0.0" vertical-offset="2509" max-vertical-offset="4063">
@@ -370,23 +429,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/view_fms/view_home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="153" selection-start="3592" selection-end="3643" vertical-scroll-proportion="-3.254902" vertical-offset="905" max-vertical-offset="2941">
+        <state line="63" column="153" selection-start="3592" selection-end="3643" vertical-scroll-proportion="0.0" vertical-offset="905" max-vertical-offset="2941">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/view_about/view_about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="33" selection-start="4101" selection-end="4101" vertical-scroll-proportion="-4.1372547" vertical-offset="707" max-vertical-offset="3451">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#3;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state line="54" column="33" selection-start="4101" selection-end="4101" vertical-scroll-proportion="0.40190476" vertical-offset="707" max-vertical-offset="3451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/users/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="36" selection-start="1094" selection-end="1094" vertical-scroll-proportion="0.6152381" vertical-offset="323" max-vertical-offset="6902">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/test/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/ajax/account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="45" selection-start="636" selection-end="636" vertical-scroll-proportion="0.6003717" vertical-offset="0" max-vertical-offset="3009">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/view_fms_user_portal/view_signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="9" selection-start="10" selection-end="10" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/view_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="30" selection-start="4742" selection-end="4742" vertical-scroll-proportion="-3.5882354" vertical-offset="1670" max-vertical-offset="2703">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/fms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="10" selection-start="3920" selection-end="3920" vertical-scroll-proportion="0.78752434" vertical-offset="1993" max-vertical-offset="6256">
+        <state line="123" column="49" selection-start="3450" selection-end="3482" vertical-scroll-proportion="-3.7692308" vertical-offset="1993" max-vertical-offset="6256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/fms_user_portal/fms_user_signup_portal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="25" selection-start="2268" selection-end="2274" vertical-scroll-proportion="7.28" vertical-offset="1287" max-vertical-offset="7242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/core/Authenticated_service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="938" column="27" selection-start="32403" selection-end="32403" vertical-scroll-proportion="-3.5882354" vertical-offset="15763" max-vertical-offset="20230">
+          <folding>
+            <marker date="1385589858469" expanded="true" signature="22370:22438" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/view_login/view_login_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="32" selection-start="434" selection-end="434" vertical-scroll-proportion="-0.57992566" vertical-offset="482" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
