@@ -393,7 +393,8 @@ class Authenticated_service extends MY_Controller {
 						$responseObj["signup_success"] = 1;
 						$this->session->set_userdata( 'loggedin', 1 );
 						$this->session->set_userdata( 'userid', $user->getId() );
-						
+                        $user->setStatus(3);
+                        $this->doctrine->em->flush();
 						// Send email to user, once he/ she has successfully signed up to FMS
 						// Pankaj K., Sept 13 2013
 						$welcomeEmail = 'welcome@findmysong.com';
@@ -1120,7 +1121,7 @@ class Authenticated_service extends MY_Controller {
 		$signup_stage_completed = $user->getStatus();
 		if ($this->userId > 0 && $signup_stage_completed >= 2) {
 			$user->setStatus(3);
-			$this->doctrine->em->flush();
+            $this->doctrine->em->flush();
 		} else {
 			$this->output->set_content_type( 'application/json' )->set_output( json_encode( [
 					"userid" => $this->userId,

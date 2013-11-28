@@ -133,27 +133,27 @@
     </div>
 
     <div id="form">
-
+        <form id='fms_signup_form'>
         <div id="name">
 
             <div class="text-center">
-                <input class="user" type="text" placeholder="First Name">
-                <input class="user" type="text" placeholder="Last Name">
+                <input class="user" name="user_namefirst" id="user_namefirst" title="First Name" type="text" placeholder="First Name">
+                <input class="user" name="user_namelast" id="user_namelast" type="text" title="Last Name" placeholder="Last Name">
             </div>
 
         </div>
 
         <div id="email">
             <div class="text-center">
-                <input class="user" type="text" placeholder="Email">
-                <input class="user" type="text" placeholder="Confirm Email">
+                <input class="user" type="email" name="user_email" value="" id="user_email" placeholder="Email">
+                <input class="user" type="email" name="user_email_repeat" value="" id="user_email_repeat" title="Confirm Email" placeholder="Confirm Email">
             </div>
         </div>
 
         <div id="password">
             <div class="text-center">
-                <input class="user" type="password" placeholder="Password">
-                <input class="user" type="password" placeholder="Confirm Password">
+                <input class="user" type="password" value="" id="user_password" title="Password" placeholder="Password">
+                <input class="user" type="password" id="user_password_repeat" name="user_password_repeat" placeholder="Confirm Password">
             </div>
         </div>
 
@@ -168,11 +168,12 @@
             </label>
 
             <div id="signup_button">
-                <button class="btn btn-primary btn-large btn-block active" type="submit">Let's Rock!</button>
+                <button id="fms_join" class="btn btn-primary btn-large btn-block active" type="submit">Let's Rock!</button>
             </div>
         </div>
 
     </div>
+    </form>
 </div>
 
 <!-- End of CSCI 351 code -->
