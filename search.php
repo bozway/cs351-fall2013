@@ -34,14 +34,16 @@ class Search extends Authenticated_service {
             "css/textext.css",
 			"css/search/fms_search_musician_result.css",
 			"css/bootstrap-responsive.min.css",
-			"css/mobile_search.css"
+
+			
         );
         $data['extrascripts'] = array(
             "js/search/fms_search_filters.js",
             "js/search/fms_search_musicians.js",
             "js/textext.js",
             "js/jquery.slimscroll.min.js",
-            "js/jquery.tinysort.min.js" 
+            "js/jquery.tinysort.min.js",
+			
         );
 
         $navigation_data = $this->getMainNavData();
