@@ -954,8 +954,43 @@ class Authenticated_service extends MY_Controller {
 		$this->load->view( 'view_login/view_login_page', $data );
 		$this->load->view( 'view_footer', $data );
 	}
-	
-	/**
+
+    /**
+     *  This is a signup page for mobile
+     */
+    public function mobile_signup() {
+        $data['title'] = "Signup";
+        $data['css_ref'] = array(
+            'css/bootstrap-responsive.min.css',
+            'css/fms_signup_elements.css',
+            'css/signup_modal.css',
+            'css/mobile_signup.css',
+        );
+        $data['extrascripts'] = array(
+            'js/jquery.validate.min.js',
+            'js/fms_user_portal/fms_user_signup_portal.js',
+        );
+
+        // SEO
+        $meta_data = array(
+            array(
+                'name' => 'description',
+                'content' => "At Find My Song you can create superfantasticwonderful music together!"
+            ),
+            array(
+                'name' => 'keywords',
+                'content' => 'Music,Songs,Editing,Collaboration,Learn, Discovery, Song Writer, Guitar, Singer, Producer, Music Producer, Piano, Classical Music'
+            )
+        );
+        $data['metadata'] = $meta_data;
+        $this->load->view( 'view_header', $data );
+        $this->load->view( 'view_fms_user_portal/view_signup', $data );
+        $this->load->view( 'view_footer', $data );
+
+    }
+
+
+    /**
 	 * This is the function that should be called by the client to log the user
 	 * out.
 	 */

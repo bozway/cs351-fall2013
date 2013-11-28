@@ -63,8 +63,7 @@
         <div  id="loginBar">
             <span id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="<?php echo base_url('img/home_page/search.jpg'); ?>"></span>
             <a href="<?php echo base_url('/login'); ?>"><span id="loginText">LOG IN</span></a>
-            <button class="btn btn-success btn-large
-            " type="button" id="signUpButton">Sign up</button>
+            <a href="<?php echo base_url('/mobile_signup'); ?>"><button class="btn btn-success btn-large" type="button" id="signUpButton">Sign up</button></a>
         </div>
 
         <div id="search-collapse-div" >

@@ -104,3 +104,75 @@
 	</div>
 </div>
 
+<!-- CSCI 351 code -->
+<div id="signup_page" class="visible-phone">
+
+
+    <div id="top" class="row-fluid">
+        <div class="span6 text-left">
+            <a href="">Signup</a>
+        </div>
+
+        <div class="span6 text-right">
+            <a href="">Cancel</a>
+        </div>
+
+    </div>
+
+
+    <div id="method" class="row-fluid">
+        <div id="facebook">
+            <button type="button" class="btn btn-primary active">Signup with Facebook
+            </button>
+        </div>
+        <div id="twitter">
+            <button type="button" class="btn btn-info active">Signup with Twitter
+            </button>
+        </div>
+
+    </div>
+
+    <div id="form">
+
+        <div id="name">
+
+            <div class="text-center">
+                <input class="user" type="text" placeholder="First Name">
+                <input class="user" type="text" placeholder="Last Name">
+            </div>
+
+        </div>
+
+        <div id="email">
+            <div class="text-center">
+                <input class="user" type="text" placeholder="Email">
+                <input class="user" type="text" placeholder="Confirm Email">
+            </div>
+        </div>
+
+        <div id="password">
+            <div class="text-center">
+                <input class="user" type="password" placeholder="Password">
+                <input class="user" type="password" placeholder="Confirm Password">
+            </div>
+        </div>
+
+        <div id="policy">
+
+            <label class="checkbox">
+
+                <input type="checkbox">
+                <p>By Checking the box and clicking "Join", I understand that I am joining FindmySong, and I have read and accept the new and consent to the new <a href="">Privacy Policy</a></p>
+
+
+            </label>
+
+            <div id="signup_button">
+                <button class="btn btn-primary btn-large btn-block active" type="submit">Let's Rock!</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- End of CSCI 351 code -->
