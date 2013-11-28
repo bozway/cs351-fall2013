@@ -17,10 +17,12 @@
     </div>
 
     <div id="form">
+        <form id="fms_signin_form">
         <div id="userpass">
             <div class="text-center">
-                <input id="user_email_login" class="user" type="text" placeholder="Username">
-                <input id="user_password_login" class="user" type="password" placeholder="Password">
+                <input id="user_email_login" class="user" type="email" name="user_email_login" title="Email"
+                       placeholder="Username">
+                <input id="user_password_login" class="user" type="password" name="user_password_login" title="Password" placeholder="Password">
             </div>
         </div>
         <div id="remember">
@@ -30,9 +32,11 @@
             </label>
 
             <div id="login_button">
-                <button class="btn btn-primary btn-large btn-block active" type="submit">Let's Rock!</button>
+                <button id="fms_login" class="btn btn-primary btn-large btn-block active" type="submit" name="submit">Let's Rock!</button>
             </div>
         </div>
+
+        </form>
     </div>
 
     <div id="bottom" class="row-fluid">

@@ -933,7 +933,10 @@ class Authenticated_service extends MY_Controller {
                 'css/mobile_login.css',
 
 		);
-		$data['extrascripts'] = array();
+		$data['extrascripts'] = array(
+                'js/jquery.validate.min.js',
+                'js/fms_user_portal/fms_user_signup_portal.js',
+        );
 		
 		// SEO
 		$meta_data = array(
