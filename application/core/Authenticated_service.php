@@ -393,7 +393,7 @@ class Authenticated_service extends MY_Controller {
 						$responseObj["signup_success"] = 1;
 						$this->session->set_userdata( 'loggedin', 1 );
 						$this->session->set_userdata( 'userid', $user->getId() );
-                        $user->setStatus(3);
+                        $user->setStatus(3);;
                         $this->doctrine->em->flush();
 						// Send email to user, once he/ she has successfully signed up to FMS
 						// Pankaj K., Sept 13 2013
@@ -985,7 +985,7 @@ class Authenticated_service extends MY_Controller {
         );
         $data['metadata'] = $meta_data;
         $this->load->view( 'view_header', $data );
-        $this->load->view( 'view_fms_user_portal/view_signup', $data );
+        $this->load->view( 'view_fms_user_portal/view_mobile_signup', $data );
         $this->load->view( 'view_footer', $data );
 
     }
