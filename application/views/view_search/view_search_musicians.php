@@ -28,9 +28,10 @@
 				Filter <span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu pull-right" role="menu">
-				<li><a href="#">Option</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
+	            <li data-search-id="1">Skills</li>
+                <li data-search-id="2">Name</li>
+	            <li data-search-id="3">Influences</li>
+	            <li data-search-id="4">Genres</li>
 				<li class="divider"></li>
 				<li><a href="#">Separated link</a></li>
 			</ul>
