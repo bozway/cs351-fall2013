@@ -182,10 +182,10 @@
 
 <div id="mobile_name" class="visible-phone">
     <div id="mobile_name_text">
-        Zune Nguyen <br>
+        <?php echo $namefirst?> <?php echo $namelast?> <br>
         Los Angeles, CA
     </div>
-    <img id="mobile_profile_pic" src="http://www.findmysong.com/user_files/43/image/170.png" />
+    <img id="mobile_profile_pic" src="<?php echo $profile_img_path?>" />
 </div>
 
 
@@ -294,10 +294,10 @@
     </div>
 
     <div id="skills_bar">
-        <img class="skills_btn" src="img/musician_profile/guitar.png" />
-        <img class="skills_btn" src="img/musician_profile/keyboard.png" />
-        <img class="skills_btn" src="img/musician_profile/microphone.png" />
-        <img class="skills_btn" src="img/musician_profile/sax.png" />
+        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/guitar.png'); ?>" />
+        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/keyboard.png'); ?>" />
+        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/microphone.png'); ?>" />
+        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/sax.png'); ?>" />
     </div>
 </div>
 
@@ -311,10 +311,18 @@
     </div>
 
     <div id="working_with_bar">
-        <img class="working_with_btn" src="img/musician_profile/actual_honeyman.png" />
-        <img class="working_with_btn" src="http://placehold.it/120x120" />
-        <img class="working_with_btn" src="http://placehold.it/120x120" />
-        <img class="working_with_btn" src="http://placehold.it/120x120" />
+        <a href="<?php echo base_url().'users/profile/16'; ?>">
+            <img class="working_with_btn" src="http://www.cs351.gurtem.com/img/default_avatar_photo.jpg" />
+        </a>
+        <a href="<?php echo base_url().'users/profile/18'; ?>">
+            <img class="working_with_btn" src="http://www.cs351.gurtem.com/img/default_avatar_photo.jpg" />
+        </a>
+        <a href="<?php echo base_url().'users/profile/24'; ?>">
+            <img class="working_with_btn" src="http://www.cs351.gurtem.com/img/default_avatar_photo.jpg" />
+        </a>
+        <a href="<?php echo base_url().'users/profile/26'; ?>">
+            <img class="working_with_btn" src="http://www.cs351.gurtem.com/img/default_avatar_photo.jpg" />
+        </a>
     </div>
 
     <div id="back_to_top_bar">
