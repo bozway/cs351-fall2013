@@ -27,7 +27,9 @@ class Profile extends Authenticated_service {
 		$data['title'] = "Musician Profile";
 		$data['css_ref'] = array(
 			"css/user_profile/fms_user_profile.css",
-			"css/fms_signup_elements.css"
+			"css/fms_signup_elements.css",
+            "css/bootstrap-responsive.min.css",
+            "css/mobile_musician_profile.css",
 		);
 		$data['extrascripts'] = array("js/user_profile/fms_user_profile.js");
 		

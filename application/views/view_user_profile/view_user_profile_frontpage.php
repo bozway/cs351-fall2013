@@ -1,4 +1,4 @@
-<div id="user_profile_frontpage">
+<div id="user_profile_frontpage" class="hidden-phone">
 	<div class="fms-user-coverphoto">
 		<img src="<?php echo $cover_photo_path?>"></img>
 	</div>
@@ -167,3 +167,162 @@
         </div>
     </div>
 </div>
+
+<!-- CSCI code -->
+
+<!-- CS 351 CODE -->
+<div class="visible-phone" id="loginBar">
+    <span id="backImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="<?php echo base_url('img/musician_profile/arrow.png'); ?>"></span>
+    <span id="backToResultsText">Back to results</span>
+    <button class="btn btn-success btn-large
+            " type="button" id="contactButton">Contact</button>
+</div>
+
+
+
+<div id="mobile_name" class="visible-phone">
+    <div id="mobile_name_text">
+        Zune Nguyen <br>
+        Los Angeles, CA
+    </div>
+    <img id="mobile_profile_pic" src="http://www.findmysong.com/user_files/43/image/170.png" />
+</div>
+
+
+
+<div id="mobile_user_social" class="visible-phone">
+    <a id="fb_btn" href="http://www.facebook.com">
+        <img src="<?php echo base_url('img/musician_profile/fb_button.png'); ?>" />
+    </a>
+
+
+
+    <a id="twt_btn" href="http://www.twitter.com">
+        <img src="<?php echo base_url('img/musician_profile/twitter_button.png'); ?>" />
+    </a>
+
+
+    <a id="yt_btn" href="http://www.youtube.com">
+        <img src="<?php echo base_url('img/musician_profile/youtube_button.png'); ?>" />
+    </a>
+
+
+</div>
+
+
+<div id="spotlight_container" class="container visible-phone">
+    <div class="mp_bar visible-phone">
+        <div class="mp_text_div">
+                <span class="mp_text">
+                    Spotlight
+                </span>
+        </div>
+    </div>
+
+    <div class="spotlight_showcase visible-phone">
+        <img src="<?php echo base_url('img/musician_profile/play_spotlight.png'); ?>" />
+        <span class="showcase_name">Paper Walls</span>
+    </div>
+
+    <div class="spotlight_break visible-phone"></div>
+
+    <div class="spotlight_showcase visible-phone">
+        <img src="<?php echo base_url('img/musician_profile/play_spotlight.png'); ?>" />
+        <span class="showcase_name">Paper Walls</span>
+    </div>
+
+    <div class="spotlight_break visible-phone"></div>
+
+    <div class="spotlight_showcase visible-phone">
+        <img src="<?php echo base_url('img/musician_profile/play_spotlight.png'); ?>" />
+        <span class="showcase_name">Paper Walls</span>
+    </div>
+
+    <div class="spotlight_break visible-phone"></div>
+
+    <div id="profile_info" class="visible-phone">
+        <div id="mobile_bio">
+                <span class="mobile_bio_header">
+                   </br> BIOGRAPHY </br>
+                </span>
+                <span class="mobile_bio_body">
+                    </br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur a cursus lorem, nec adipiscing est. Suspendisse adipiscing ac
+                    urna non facilisis. Sed ligula sapien, viverra gravida aliquet et,
+                    vehicula et diam. Nullam placerat condimentum volutpat. Maecenas
+                    fermentum commodo imperdiet. Pellentesque habitant morbi tristique senectus
+                    et netus et malesuada fames ac turpis...
+                    </br>
+                </span>
+                <span class="mobile_bio_header">
+                    </br>
+                    INFLUENCES </br>
+                </span>
+                <span class="mobile_bio_body">
+                    </br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur a cursus lorem, nec adipsicing est. </br>
+                    </br>
+                    <a href="">Show more...</a>
+                </span>
+        </div>
+
+
+    </div>
+
+    <div id="show_portfolio" class="visible-phone">
+        <div id="show_portfolio_div">
+            <a id="show_portfolio_text" href="www.findmysong.com"> Show Portfolio </a>
+        </div>
+    </div>
+    <div class="span6 visible-phone">
+        <img class="show_portfolio_img" src="http://placehold.it/280x280" />
+        <img class="show_portfolio_img" src="http://placehold.it/280x280" />
+        <img class="show_portfolio_img" src="http://placehold.it/280x280" />
+        <img class="show_portfolio_img" src="http://placehold.it/280x280" />
+    </div>
+</div>
+
+<div id="skills_container" class="visible-phone">
+    <div class="mp_bar">
+        <div class="mp_text_div">
+                <span class="mp_text">
+                    Skills
+                </span>
+        </div>
+    </div>
+
+    <div id="skills_bar">
+        <img class="skills_btn" src="img/musician_profile/guitar.png" />
+        <img class="skills_btn" src="img/musician_profile/keyboard.png" />
+        <img class="skills_btn" src="img/musician_profile/microphone.png" />
+        <img class="skills_btn" src="img/musician_profile/sax.png" />
+    </div>
+</div>
+
+<div id="working_with_container" class="visible-phone">
+    <div class="mp_bar">
+        <div class="mp_text_div">
+                <span class="mp_text">
+                    Working with
+                </span>
+        </div>
+    </div>
+
+    <div id="working_with_bar">
+        <img class="working_with_btn" src="img/musician_profile/actual_honeyman.png" />
+        <img class="working_with_btn" src="http://placehold.it/120x120" />
+        <img class="working_with_btn" src="http://placehold.it/120x120" />
+        <img class="working_with_btn" src="http://placehold.it/120x120" />
+    </div>
+
+    <div id="back_to_top_bar">
+        <div id="back_to_top_div">
+            <span id="back_to_top_text">Back to top</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- End of CSCI 351 code -->
