@@ -16,7 +16,11 @@ class Hot extends Authenticated_service {
 
 	public function index() {
 		$data['title'] = "What's Hot";
-		$data['css_ref'] = array("css/hot.css");
+		$data['css_ref'] = array(
+            "css/hot.css",
+            "css/bootstrap-responsive.min.css",
+            "css/mobile_whatshot.css",
+        );
 		$data['extrascripts'] = array("js/fms_hot.js", );
 		// SEO
 		$meta_data = array( array('name' => 'description', 'content' => "Keep updated on the latest in the FindMySong community!"), array('name' => 'keywords', 'content' => 'Music,Songs,Editing,Collaboration,Learn, Discovery, Song Writer, Guitar, Singer, Producer, Music Producer, Piano, Classical Music', ));
