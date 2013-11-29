@@ -211,7 +211,7 @@ class Search extends Authenticated_service {
         $searchBy = $this->cleanPost['searchBy'];
         $keyWords = $this->cleanPost['keywords'];
         if (strlen($keyWords) < 2) {
-            echo "flase";
+            echo "false";
             return;
         }
 
