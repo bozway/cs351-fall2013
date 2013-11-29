@@ -139,13 +139,40 @@
                     </a>
                     <div class="nav-collapse collapse visible-phone">
                         <ul class="nav">
-                            <li class="active"><a href="<?php echo base_url(''); ?>">Home</a></li>
+                            <li><a href="<?php
+                                if($authenticated){
+                                    echo base_url().'hot';
+                                }else{
+                                    echo base_url();
+                                }?>">Home</a></li>
                             <li><a href="<?php echo base_url('about'); ?>">About Us</a></li>
                             <li><a href="<?php echo base_url('users/search'); ?>">Search Musicians</a></li>
                             <li><a href="<?php echo base_url('projects/search'); ?>">Search Projects</a></li>
-                            <li><a href="http://www.facebook.com/FindMySong">Connect with FB</a></li>
+                            <li><a href="<?php
+                                if($authenticated){
+                                    echo base_url().'logout';
+                                }else{
+                                    echo base_url().'login';
+                                }?>">
+                                <?php
+                                    if($authenticated){
+                                        echo 'Sign out';
+                                    }else{
+                                        echo 'Sign in';
+                                    }?>
+                            </a>
+                            </li>
                         </ul>
                     </div><!--/.nav-collapse -->
+                    <?php
+                    if($authenticated){
+                        ?>
+                        <a href="<?= base_url('users/profile/' . $userId)?>">
+                            <img class="member-profile-img" src="<?php if (isset($profile_img_path)) { echo base_url($profile_img_path);} ?>"></img>
+                        </a>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>
