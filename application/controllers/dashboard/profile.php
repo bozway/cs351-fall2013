@@ -41,7 +41,8 @@ class Profile extends Authenticated_service {
 			'css/dashboard/navigation.css',
 			"css/jquery-ui.css",
 			'css/utility.css',
-			'css/test/jquery.Jcrop.css'
+			'css/test/jquery.Jcrop.css',
+            'css/bootstrap-responsive.min.css',
 		);
 		$data['extrascripts'] = array(
 			'js/jquery.slimscroll.min.js',
