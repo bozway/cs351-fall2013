@@ -23,7 +23,9 @@ class Profile extends Authenticated_service {
 		
 		$data['css_ref'] = array(
 			//"dnn506yrbagrg.cloudfront.net/pages/scripts/0016/9661.js?382376",
-			"css/projects/profile.css"
+			"css/projects/profile.css",
+            "css/bootstrap-responsive.min.css",
+            "css/mobile_project_page.css",
 		);
 		$data['extrascripts'] = array("js/projects/profile.js");
 		if ($id == 0) {
