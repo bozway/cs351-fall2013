@@ -489,7 +489,7 @@ function displayResult(responseObj) {
 		result += '<div class="save_message">';
 		result += '<p>Last Active ';
 		result += lastLoginDate;
-		result += '</p><p>Worked on ';
+		result += '</p><p>Worked on Here';
 		result += responseObj[i].numOfProjects;
 		result += ' Projects</p></div></div></div>';
 		if (showMatchFlag) {
@@ -503,7 +503,50 @@ function displayResult(responseObj) {
 
 		$('#musician_search_result').append(result);
 	}
+	// mobile part of result--------------------------------------------------------------------------------------
+	$('#musician_search_result_mobile').children().remove();
+	for (var i = 0; i < responseObj.length; i++) {
+		var lastLoginTime = new Date(parseInt(responseObj[i].lastActive) * 1000);
+		var lastLoginDate = (lastLoginTime.getUTCMonth() + 1) + '/' + lastLoginTime.getUTCDate() + '/' + lastLoginTime.getUTCFullYear();
+		var location = [];
+		if (responseObj[i].city) {
+			location[location.length] = responseObj[i].city;
+		}
+		if (responseObj[i].country) {
+			location[location.length] = responseObj[i].country;
+		}
+		var result = '';
+		result += '<li ' + 'data-name="' + responseObj[i].firstName + responseObj[i].lastName + '" ' + 'data-experience="' + responseObj[i].numOfProjects + '" ' + 'data-match="' + responseObj[i].match + '" ' + 'data-lastactive="' + responseObj[i].lastActiveSort + '" ' + 'data-gender="' + responseObj[i].gender + '" ' + 'data-language="' + responseObj[i].language + '" ' + 'data-city="' + responseObj[i].city + '" ' + 'data-state="' + responseObj[i].state + '" ' + ' >';
+		result += '<div class="musician_div"><img class="img-rounded" src="';
+		result += responseObj[i].profilePic;
+		result += '" height="100" width="100" />';
+		
+		result += '<p id="musicname">';
+		result += responseObj[i].name;
+		result += '</p> <p id="place">';
 
+		result += responseObj[i].country;
+		result += '</p>';
+		
+		result += '<p id="members">';
+		result += responseObj[i].numOfProjects;
+		result += ' Projects / Last Active ';
+		result += lastLoginDate;
+		result += '</p></div>';
+		
+		
+		if (showMatchFlag) {
+			result += '<div class="project_details"><div class="match_rating">match';
+			result += '<div class="rating_value">';
+			result += responseObj[i].match;
+			result += '<span>%</span></div></div>';
+		}
+		//result += responseObj[i].profileUrl;
+		result += '</div></div><hr/></li>';
+
+		$('#musician_search_result_mobile').append(result);
+	}
+	//-----------------------------------------------------------------------------------------------------------------------
 	$('[data-btn="msg"]').click(msgPopup);
 	$('.project_photo_hover').each(function() {
 		var audio_src = $(this).parent().find('source').data("src");

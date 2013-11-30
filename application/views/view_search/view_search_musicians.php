@@ -28,10 +28,9 @@
 				Filter <span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu pull-right" role="menu">
-	            <li data-search-id="1">Skills</li>
-                <li data-search-id="2">Name</li>
-	            <li data-search-id="3">Influences</li>
-	            <li data-search-id="4">Genres</li>
+				<li><a href="#">Option</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
 				<li class="divider"></li>
 				<li><a href="#">Separated link</a></li>
 			</ul>
@@ -70,6 +69,7 @@
 			<!--Project tab content-->
 			<div class="tab-pane" id="project">
 			<div id="slideProj">&nbsp<br>&nbsp&nbspSlide project to audition</div>
+			  
 			<div class="project_div">
 				<table class="projectTable">
 					<tr>
@@ -131,97 +131,26 @@
 				</table>
 			</div>
 			</div>
-			<!--Musicians tab content-->
+			<!--Musicians tab content------------------------------------------------------------------------>
 			<div class="tab-pane active" id="musicians">
 			<div id="slideMusic">&nbsp<br>&nbsp&nbspSlide musician to contact</div>
-				<div class="musician_div">
-				<table class="musicianTable">
-					<tr>
-						<td>
-						<p id="musicname">Thomas Honeyman</p>
-						<p id="place">Los Angeles, CA</p>
-						<p id="members">4 projects/ Last active 10/01/2013</p>
-						</td>
-						<td class="mTRight">
-						
-						<a href="#"><img src="lib/img/m1.png" class="img-rounded"></img></a>
-						</td>
-					</tr>
-			
-				</table>
-			</div>
-			<div class="musician_div">
-				<table class="musicianTable">
-					<tr>
-						<td>
-						<p id="musicname">Thomas Honeyman</p>
-						<p id="place">Los Angeles, CA</p>
-						<p id="members">4 projects/ Last active 10/01/2013</p>
-						</td>
-						<td class="mTRight">
-						
-						<a href="#"><img src="lib/img/m1.png" class="img-rounded"></img></a>
-						</td>
-					</tr>
-			
-				</table>
-			</div>
-			<div class="musician_div">
-				<table class="musicianTable">
-					<tr>
-						<td>
-						<p id="musicname">Thomas Honeyman</p>
-						<p id="place">Los Angeles, CA</p>
-						<p id="members">4 projects/ Last active 10/01/2013</p>
-						</td>
-						<td class="mTRight">
-						
-						<a href="#"><img src="lib/img/m1.png" class="img-rounded"></img></a>
-						</td>
-					</tr>
-			
-				</table>
-			</div>
-			<div class="musician_div">
-				<table class="musicianTable">
-					<tr>
-						<td>
-						<p id="musicname">Thomas Honeyman</p>
-						<p id="place">Los Angeles, CA</p>
-						<p id="members">4 projects/ Last active 10/01/2013</p>
-						</td>
-						<td  class="mTRight">
-						
-						<a href="#"><img src="lib/img/m1.png" class="img-rounded"></img></a>
-						</td>
-					</tr>
-			
-				</table>
-			</div>
-			<div class="musician_div">
-				<table class="musicianTable">
-					<tr>
-						<td>
-						<p id="musicname">Thomas Honeyman</p>
-						<p id="place">Los Angeles, CA</p>
-						<p id="members">4 projects/ Last active 10/01/2013</p>
-						</td>
-						<td class="mTRight">
-						
-						<a href="#"><img src="lib/img/m1.png" class="img-rounded"></img></a>
-						</td>
-					</tr>
-			
-				</table>
-			</div>
+				<div id="musician_search_result_mobile" >
+		      		
+		      	</div>
+				
 			</div>
 			</div>
 		</div>
 				<!--mobile version of body ends here-->
-		      	<div id="musician_search_result">
+		      	 <div id="musician_search_result" class="hidden-phone">
 		      		
-		      	</div>   
+		      	</div> 
+				
 		      	<a href="#top"><button class="back_to_top">BACK TO TOP</button></a>	
+				<div class="footer-wrapper visible-phone">
+					<a href="#top">&nbsp<br>&nbsp&nbspBack to top</a>
+					<div class="arrow"><a href="#top"><img src="lib/img/arrow.png"></img></a></div>
+		    </div>
 		      </div>
 		</div>
     </div>
