@@ -1,4 +1,4 @@
-<div id="whatshot">
+<div id="whatshot" class="hidden-phone">
 	<div class="default-header" id="whatshot-header">
 		<div class="container">Welcome back, <?php echo $userfirstname; ?>!</div>
 	</div>
@@ -114,3 +114,117 @@
 	</div>
 
 </div>
+
+<!-- CSCI 351 code -->
+<div  id="welcomeBar" class="container visible-phone">
+    <span id="welcomeText">Welcome back.</span>
+    <span id="magGlass" data-toggle="collapse" data-target="#search-collapse-form"><img src="<?php echo base_url('img/whatshot/searchicon.png');?>></span>
+</div>
+
+<div id="search-collapse-div" class="visible-phone" >
+    <form id="search-collapse-form" class="collapse">
+        <input id="search-collapse-text" type="text" placeholder="Search FindMySong"/>
+    </form>
+</div>
+
+<div id="popMusicians" class="visible-phone">
+    <div id="musicianContent">
+        <p class="home_contact_top_title">Popular Musicians <a href="http://www.gurtem.com/fms_351/projects/search">(See All)</a></p>
+        <ul id="pop-musicians-list" class="carousel">
+
+            <li class="pop-project-list-item" id="card1" >
+                <img class="musimg img-rounded" src="lib/img/c1.png"/>
+
+            </li>
+            <li class="pop-project-list-item" id="card1" >
+                <img class="musimg img-rounded" src="lib/img/c2.png"/>
+
+            </li>
+            <li class="pop-project-list-item" id="card1" >
+                <img class="musimg img-rounded" src="lib/img/c3.png"/>
+
+            </li>
+            <li class="pop-project-list-item" id="card1" >
+                <img class="musimg img-rounded" src="lib/img/c4.png"/>
+
+            </li>
+            <li class="pop-project-list-item" id="card1" >
+                <img class="musimg img-rounded" src="lib/img/c1.png"/>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="featured-projects" class="span6 visible-phone" >
+    <div id="background">
+        <div id="projectContent">
+            <p class="home_contact_top_title">Most liked Projects <a href="http://www.gurtem.com/fms_351/projects/search">(See All)</a></p>
+
+            <ul id="pop-projects-list" class="carousel">
+
+                <li class="pop-project-list-item span3" id="card" >
+                    <img class="projimg span3" src="lib/img/project1.png"/>
+                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/109"></a>
+                    <div class="projinfo">
+                        <span class="projowner">Vince Fong</span>
+                        <span class="projtitle">What Does The Dog ...</span>
+                        <p class="projdesc">Everyone love what does the fox say, so I want to make a song what does the dog ...</p>
+                    </div>
+
+                </li>
+                <li class="pop-project-list-item span3" id="card">
+                    <img class="projimg span3" src="lib/img/project1.png"/>
+                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/110"></a>
+                    <div class="projinfo">
+                        <span class="projowner">Thomas Honeyman</span>
+                        <span class="projtitle">The City feat. Dyl...</span>
+                        <p class="projdesc">The City feat. Dylan ByrdThe City is a song t...</p>
+                    </div>
+
+                </li>
+                <li class="pop-project-list-item span3" id="card">
+                    <img class="projimg span3" src="lib/img/project1.png"/>
+                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/118"></a>
+                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/118"></a>
+                    <div class="projinfo">
+                        <span class="projowner">Thomas Honeyman</span>
+                        <span class="projtitle">Open by Rhye</span>
+                        <p class="projdesc">Rhye - Open             I've been working on ...</p>
+                    </div>
+
+                </li>
+                <li class="pop-project-list-item span3" id="card">
+                    <img class="projimg span3" src="lib/img/project1.png"/>
+                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/121"></a>
+                    <div class="projinfo">
+                        <span class="projowner">Thomas Honeyman</span>
+                        <span class="projtitle">Sunday Morning</span>
+                        <p class="projdesc">Sunday Morning - Maroon 5Maroon 5's Songs Abo...</p>
+                    </div>
+
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="influences" class="visible-phone">
+    <div id="infContent">
+        <p class="home_contact_top_title">Influences</p>
+        <div class="infDiv1">&nbsp;</div><div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+        <div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div><div class="infDiv1">&nbsp;</div>
+        <div class="infDiv2">&nbsp;</div><div class="infDiv1">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+    </div>
+</div>
+<div id="genres" class="visible-phone">
+    <div id="genContent">
+        <p class="home_contact_top_title">Genres</p>
+        <div class="infDiv1">&nbsp;</div><div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+        <div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div><div class="infDiv1">&nbsp;</div>
+        <div class="infDiv2">&nbsp;</div><div class="infDiv1">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+    </div>
+</div>
+<!-- END OF 351 -->
