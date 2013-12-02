@@ -203,7 +203,7 @@
 <div id="mobile_name" class="visible-phone">
     <div id="mobile_name_text">
         <?php echo $namefirst?> <?php echo $namelast?> <br>
-        Los Angeles, CA
+        <?php echo ($city) ? $city . ', ' : ""; ?><?php echo ($country) ? $country : "United States"; ?>
     </div>
     <img id="mobile_profile_pic" src="<?php echo $profile_img_path?>" />
 </div>
