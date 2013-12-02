@@ -161,6 +161,26 @@
 			<div id="detail_container">
 				<?php echo $view_project_listing;?>				
 			</div>
+
+
+            Vince Fong
+
+
+            What Does The Dog ...
+
+
+            Everyone love what does the fox say, so I want to make a song what does the dog ...
+
+
+
+
+            Thomas Honeyman
+
+
+            The City feat. Dyl...
+
+
+            The City feat. Dylan ByrdThe City is a song t...
 		</div>
 
 	</div>
@@ -219,26 +239,14 @@
         </div>
     </div>
 
-    <div class="spotlight_showcase visible-phone">
-        <img src="<?php echo base_url('img/musician_profile/play_spotlight.png'); ?>" />
-        <span class="showcase_name">Paper Walls</span>
-    </div>
+    <?php foreach($spotlight as $row) {?>
+        <div class="spotlight_showcase visible-phone">
+            <img src="<?php echo base_url('img/musician_profile/play_spotlight.png'); ?>" data-url="<?php echo $row['link'] ?>" />
+            <span class="showcase_name"><?php echo $row['title']?></span>
+        </div>
 
-    <div class="spotlight_break visible-phone"></div>
-
-    <div class="spotlight_showcase visible-phone">
-        <img src="<?php echo base_url('img/musician_profile/play_spotlight.png'); ?>" />
-        <span class="showcase_name">Paper Walls</span>
-    </div>
-
-    <div class="spotlight_break visible-phone"></div>
-
-    <div class="spotlight_showcase visible-phone">
-        <img src="<?php echo base_url('img/musician_profile/play_spotlight.png'); ?>" />
-        <span class="showcase_name">Paper Walls</span>
-    </div>
-
-    <div class="spotlight_break visible-phone"></div>
+        <div class="spotlight_break visible-phone"></div>
+    <?php }?>
 
     <div id="profile_info" class="visible-phone">
         <div id="mobile_bio">
