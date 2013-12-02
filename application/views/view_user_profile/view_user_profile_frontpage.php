@@ -285,10 +285,25 @@
         </div>
     </div>
     <div class="span6 visible-phone">
-        <img class="show_portfolio_img" src="http://placehold.it/280x280" />
-        <img class="show_portfolio_img" src="http://placehold.it/280x280" />
-        <img class="show_portfolio_img" src="http://placehold.it/280x280" />
-        <img class="show_portfolio_img" src="http://placehold.it/280x280" />
+        <?php if (count($projects)>0) {  ?>
+            <?php foreach($projects as $row) {
+                if($row['project_id'] !== "") {
+                    ?>
+                        <a href="<?php echo base_url().'projects/profile/'.$row['project_id'] ?>" >
+                            <img class="show_portfolio_img" src="<?php echo base_url('img/default_avatar_photo.jpg')?>" data-id="<?php echo $row['rank']?>" />
+                        </a>
+                <?php } } } else {
+            if($userid != $loggedinUser){ ?>
+                <div class="nodata">
+                    <p>This user has no projects yet!<br>
+                        You can <a class="invite_project" >invite them</a> to one of your projects.</p>
+                </div>
+            <?php	} else { 	?>
+                <div class="nodata">
+                    <p>You have no projects yet!<br>Why not <a href="<?php echo base_url('dashboard/project/create_basic')?>">create one</a>?</p>
+                </div>
+
+            <?php	}  }?>
     </div>
 </div>
 

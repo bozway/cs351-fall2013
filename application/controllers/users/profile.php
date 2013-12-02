@@ -69,6 +69,7 @@ class Profile extends Authenticated_service {
 		// Load views for each tab
 		$data['view_project_listing'] = $this -> load -> view("view_user_profile/view_user_project_listing", $proj_data, true);
 
+
 		$this -> load -> view('view_header', $data);
 		$this -> load -> view('view_user_profile/view_user_profile_frontpage.php', $user_info);
 		$this -> load -> view('view_footer', $data);
