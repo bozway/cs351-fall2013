@@ -241,7 +241,7 @@
 
     <?php foreach($spotlight as $row) {?>
         <div class="spotlight_showcase visible-phone">
-            <img src="<?php echo base_url('img/musician_profile/play_spotlight.png'); ?>" data-url="<?php echo $row['link'] ?>" />
+            <img class="spotlight-play" src="<?php echo base_url('img/musician_profile/play_spotlight.png'); ?>" data-url="<?php echo $row['link'] ?>" />
             <span class="showcase_name"><?php echo $row['title']?></span>
         </div>
 

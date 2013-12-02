@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a78a3dc1-78fc-4d08-af2d-4a1d5733a459" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php" afterPath="$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs351-fall2013.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,25 +46,25 @@
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/users/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="45" selection-start="1535" selection-end="1535" vertical-scroll-proportion="5.470588" vertical-offset="1078" max-vertical-offset="6936">
+            <state line="47" column="45" selection-start="1535" selection-end="1535" vertical-scroll-proportion="1.137255" vertical-offset="857" max-vertical-offset="6936">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fms_user_profile.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="fms_user_profile.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/user_profile/fms_user_profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="9" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="3349">
+            <state line="24" column="48" selection-start="677" selection-end="677" vertical-scroll-proportion="-4.365559" vertical-offset="1853" max-vertical-offset="3349">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_user_profile_frontpage.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="view_user_profile_frontpage.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="241" column="41" selection-start="9161" selection-end="9161" vertical-scroll-proportion="0.05821918" vertical-offset="4080" max-vertical-offset="5933">
+            <state line="243" column="40" selection-start="9257" selection-end="9257" vertical-scroll-proportion="-2.745098" vertical-offset="3991" max-vertical-offset="5933">
               <folding />
             </state>
           </provider>
@@ -449,21 +448,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/users/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="45" selection-start="1535" selection-end="1535" vertical-scroll-proportion="5.470588" vertical-offset="1078" max-vertical-offset="6936">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/user_profile/fms_user_profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="3349">
+        <state line="47" column="45" selection-start="1535" selection-end="1535" vertical-scroll-proportion="1.137255" vertical-offset="857" max-vertical-offset="6936">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="41" selection-start="9161" selection-end="9161" vertical-scroll-proportion="0.05821918" vertical-offset="4080" max-vertical-offset="5933">
+        <state line="243" column="40" selection-start="9257" selection-end="9257" vertical-scroll-proportion="-2.745098" vertical-offset="3991" max-vertical-offset="5933">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/user_profile/fms_user_profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="48" selection-start="677" selection-end="677" vertical-scroll-proportion="-4.365559" vertical-offset="1853" max-vertical-offset="3349">
           <folding />
         </state>
       </provider>
