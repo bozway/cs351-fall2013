@@ -118,7 +118,7 @@
 <!-- CSCI 351 code -->
 <div  id="welcomeBar" class="container visible-phone">
     <span id="welcomeText">Welcome back.</span>
-    <span id="magGlass" data-toggle="collapse" data-target="#search-collapse-form"><img src="<?php echo base_url('img/whatshot/searchicon.png');?>></span>
+    <span id="magGlass" data-toggle="collapse" data-target="#search-collapse-form"><img src="<?php echo base_url('img/whatshot/searchicon.png');?>"/></span>
 </div>
 
 <div id="search-collapse-div" class="visible-phone" >
