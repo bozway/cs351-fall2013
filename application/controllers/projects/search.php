@@ -33,7 +33,8 @@ class Search extends Authenticated_service {
             "css/search/search_projects.css",
             "css/fms_signup_elements.css",
             "css/textext.css",
-			"css/search/fms_search_project_result.css"
+			"css/search/fms_search_project_result.css",
+            "css/bootstrap-responsive.min.css",
                 )
         ;
         $data['extrascripts'] = array(

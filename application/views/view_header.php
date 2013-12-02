@@ -137,6 +137,15 @@
                         <strong>FindmySong</strong>
 
                     </a>
+                    <?php
+                    if($authenticated){
+                        ?>
+                        <a href="<?= base_url('users/profile/' . $userId)?>">
+                            <img class="mobile-member-profile-img" src="<?php if (isset($profile_img_path)) { echo base_url($profile_img_path);} ?>"></img>
+                        </a>
+                    <?php
+                    }
+                    ?>
                     <div class="nav-collapse collapse visible-phone">
                         <ul class="nav">
                             <li><a href="<?php
@@ -164,15 +173,7 @@
                             </li>
                         </ul>
                     </div><!--/.nav-collapse -->
-                    <?php
-                    if($authenticated){
-                        ?>
-                        <a href="<?= base_url('users/profile/' . $userId)?>">
-                            <img class="member-profile-img" src="<?php if (isset($profile_img_path)) { echo base_url($profile_img_path);} ?>"></img>
-                        </a>
-                    <?php
-                    }
-                    ?>
+
                 </div>
             </div>
         </div>
