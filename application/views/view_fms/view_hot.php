@@ -133,23 +133,23 @@
         <ul id="pop-musicians-list" class="carousel">
 
             <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="lib/img/c1.png"/>
+                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c1.png');?>"/>
 
             </li>
             <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="lib/img/c2.png"/>
+                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c2.png');?>"/>
 
             </li>
             <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="lib/img/c3.png"/>
+                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c3.png');?>"/>
 
             </li>
             <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="lib/img/c4.png"/>
+                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c4.png');?>"/>
 
             </li>
             <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="lib/img/c1.png"/>
+                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c1.png');?>"/>
 
             </li>
         </ul>
@@ -164,7 +164,7 @@
             <ul id="pop-projects-list" class="carousel">
 
                 <li class="pop-project-list-item span3" id="card" >
-                    <img class="projimg span3" src="lib/img/project1.png"/>
+                    <img class="projimg span3" src="<?php echo base_url('img/whatshot/project1.png');?>"/>
                     <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/109"></a>
                     <div class="projinfo">
                         <span class="projowner">Vince Fong</span>
@@ -174,7 +174,7 @@
 
                 </li>
                 <li class="pop-project-list-item span3" id="card">
-                    <img class="projimg span3" src="lib/img/project1.png"/>
+                    <img class="projimg span3" src="<?php echo base_url('img/whatshot/project1.png');?>"/>
                     <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/110"></a>
                     <div class="projinfo">
                         <span class="projowner">Thomas Honeyman</span>
@@ -184,7 +184,7 @@
 
                 </li>
                 <li class="pop-project-list-item span3" id="card">
-                    <img class="projimg span3" src="lib/img/project1.png"/>
+                    <img class="projimg span3" src="<?php echo base_url('img/whatshot/project1.png');?>"/>
                     <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/118"></a>
                     <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/118"></a>
                     <div class="projinfo">
@@ -195,7 +195,7 @@
 
                 </li>
                 <li class="pop-project-list-item span3" id="card">
-                    <img class="projimg span3" src="lib/img/project1.png"/>
+                    <img class="projimg span3" src="<?php echo base_url('img/whatshot/project1.png');?>"/>
                     <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/121"></a>
                     <div class="projinfo">
                         <span class="projowner">Thomas Honeyman</span>
