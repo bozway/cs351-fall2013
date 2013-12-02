@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a78a3dc1-78fc-4d08-af2d-4a1d5733a459" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/projects/profile.php" afterPath="$PROJECT_DIR$/application/controllers/projects/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/view_project_profile/view_project.php" afterPath="$PROJECT_DIR$/application/views/view_project_profile/view_project.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs351-fall2013.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="profile.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/projects/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="42" selection-start="794" selection-end="794" vertical-scroll-proportion="-4.9082217" vertical-offset="3026" max-vertical-offset="3689">
+            <state line="27" column="42" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="3026" max-vertical-offset="3689">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_project.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/view_project_profile/view_project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="8" selection-start="5372" selection-end="5372" vertical-scroll-proportion="-0.45714286" vertical-offset="2348" max-vertical-offset="2873">
               <folding />
             </state>
           </provider>
@@ -56,6 +66,7 @@
         <option value="$USER_HOME$/Desktop/FALL13/CSCI351/lab5/HOANG_ASSIGN5/assign5" />
         <option value="$PROJECT_DIR$/public_html/homepage.html" />
         <option value="$PROJECT_DIR$/application/controllers/projects/profile.php" />
+        <option value="$PROJECT_DIR$/application/views/view_project_profile/view_project.php" />
       </list>
     </option>
   </component>
@@ -236,9 +247,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27051672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.275076" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -268,7 +279,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/controllers/projects/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="42" selection-start="794" selection-end="794" vertical-scroll-proportion="-4.9082217" vertical-offset="3026" max-vertical-offset="3689">
+        <state line="27" column="42" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/view_project_profile/view_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="82" selection-start="5781" selection-end="5781" vertical-scroll-proportion="0.0" vertical-offset="1891" max-vertical-offset="2873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/projects/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="42" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="3026" max-vertical-offset="3689">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/view_project_profile/view_project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="8" selection-start="5372" selection-end="5372" vertical-scroll-proportion="-0.45714286" vertical-offset="2348" max-vertical-offset="2873">
           <folding />
         </state>
       </provider>

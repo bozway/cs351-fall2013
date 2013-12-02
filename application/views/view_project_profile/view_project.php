@@ -1,4 +1,4 @@
-<div class="profile-container">
+<div class="profile-container hidden-phone">
 	
   <div class="profile-header">
  	<div class="row">
