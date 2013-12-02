@@ -54,11 +54,14 @@
         //padding:10px;
         overflow-x:hidden;
         //overflow-y:hidden;
-        width: 100%;   
+        //width: 100%;   
         -webkit-box-sizing: none;
         box-sizing: none;
         -moz-box-sizing: none;
-        margin-top:-50px;
+        margin-top: -20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        height: 190px;
         //border:solid;
     }
     #pop-musicians-list{
@@ -103,29 +106,49 @@
          background:#EEEBEB;
         padding:10px;
         overflow-x:hidden;
-        width: 100%;   
+        width: auto;   
         -webkit-box-sizing: none;
         box-sizing: none;
         -moz-box-sizing: none;
+        margin-left: -20px;
+        margin-right: -20px;
     }
     #projectContent > p{
         font-size:20px;
         font-weight:400;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin:0;
+        line-height:80%;
     }
+    .gap{
+        line-height:0%;
+    }
+    
     #background {
-        //position: fixed;
-        position:;
         top: 0px;
         left: 0px;
         //width: 100%;
-        height: 188px;
+        height: 180px;
         background-color: white; 
         margin-left:-10px;
         margin-top:-10px;
         margin-right:-10px;
         
     }
-    
+    .projowner{
+        font-size:23px;
+        font-weight:400;
+    }
+    .projinfo{
+        margin-top: 0px;
+        background-color: white;
+        height:200px;
+    }
+    .projtitle{
+        font-size:22px;
+        font-weight:300;
+    }
     .span3{
         width: 220px;
     }
@@ -149,7 +172,7 @@
 				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
 				-webkit-transform: translate3d(0px,0px,0px); 
 				//margin-left:10px;
-				margin-top:-15px;
+				margin-top: 10px;
             
     }
     .carousel{
@@ -173,6 +196,7 @@
                     /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
     			    -webkit-transform: translate3d(0px,0px,0px); 
                     margin-right:20px;
+                    float:left;
                 }
     }
     #pop-musicians-list{
@@ -181,6 +205,7 @@
                     /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
     			    -webkit-transform: translate3d(0px,0px,0px); 
                     margin-right:20px;
+                    float: left;
                 }
     }
     #influences{
