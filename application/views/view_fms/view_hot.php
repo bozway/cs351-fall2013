@@ -131,27 +131,12 @@
     <div id="musicianContent">
         <p class="home_contact_top_title">Popular Musicians <a href="http://www.gurtem.com/fms_351/projects/search">(See All)</a></p>
         <ul id="pop-musicians-list" class="carousel">
-
-            <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c1.png');?>"/>
-
-            </li>
-            <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c2.png');?>"/>
-
-            </li>
-            <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c3.png');?>"/>
-
-            </li>
-            <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c4.png');?>"/>
-
-            </li>
-            <li class="pop-project-list-item" id="card1" >
-                <img class="musimg img-rounded" src="<?php echo base_url('img/whatshot/c1.png');?>"/>
-
-            </li>
+			<?php foreach($musicians as $musician) { ?>
+				<li class="pop-project-list-item" id="card1">
+					<img class="musimg img-rounded" src="<?php echo $musician['imgpath']; ?>"/>
+					<a href="<?php echo base_url().'users/profile/'.$musician['id']; ?>"></a>
+				</li>
+			<?php } ?>
         </ul>
     </div>
 </div>
@@ -163,59 +148,22 @@
 
             <ul id="pop-projects-list" class="carousel">
 
-                <li class="pop-project-list-item span3" id="card" >
-                    <img class="projimg span3" src="<?php echo base_url('img/whatshot/project1.png');?>"/>
-                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/109"></a>
-                    <div class="projinfo">
-						<p class="gap">&nbsp;<br></p>
-                        <span class="projowner">Vince Fong</span>
-						<p class="gap">&nbsp;<br></p>
-                        <span class="projtitle">What Does The Dog ...</span>
-						<p class="gap">&nbsp;<br></p>
-                        <p class="projdesc">Everyone love what does the fox say, so I want to make a song what does the dog ...</p>
-                    </div>
-
-                </li>
-                <li class="pop-project-list-item span3" id="card">
-                    <img class="projimg span3" src="<?php echo base_url('img/whatshot/project1.png');?>"/>
-                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/110"></a>
-                    <div class="projinfo">
-						<p class="gap">&nbsp;<br></p>
-                        <span class="projowner">Thomas Honeyman</span>
-						<p class="gap">&nbsp;<br></p>
-                        <span class="projtitle">The City feat. Dyl...</span>
-						<p class="gap">&nbsp;<br></p>
-                        <p class="projdesc">The City feat. Dylan ByrdThe City is a song t...</p>
-                    </div>
-
-                </li>
-                <li class="pop-project-list-item span3" id="card">
-                    <img class="projimg span3" src="<?php echo base_url('img/whatshot/project1.png');?>"/>
-                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/118"></a>
-                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/118"></a>
-                    <div class="projinfo">
-						<p class="gap">&nbsp;<br></p>
-                        <span class="projowner">Thomas Honeyman</span>
-						<p class="gap">&nbsp;<br></p>
-                        <span class="projtitle">Open by Rhye</span>
-						<p class="gap">&nbsp;<br></p>
-                        <p class="projdesc">Rhye - Open             I've been working on ...</p>
-                    </div>
-
-                </li>
-                <li class="pop-project-list-item span3" id="card">
-                    <img class="projimg span3" src="<?php echo base_url('img/whatshot/project1.png');?>"/>
-                    <a class="projlink" href="http://www.gurtem.com/fms_351/projects/profile/121"></a>
-                    <div class="projinfo">
-						<p class="gap">&nbsp;<br></p>
-                        <span class="projowner">Thomas Honeyman</span>
-						<p class="gap">&nbsp;<br></p>
-                        <span class="projtitle">Sunday Morning</span>
-						<p class="gap">&nbsp;<br></p>
-                        <p class="projdesc">Sunday Morning - Maroon 5Maroon 5's Songs Abo...</p>
-                    </div>
-
-                </li>
+                <?php foreach($projects as $project) { ?>
+							<li class="pop-project-list-item span3">
+								<img class="projimg span3" src="<?php echo $project['imgpath']; ?>"/>
+								<a class="projlink" href="<?php echo base_url().'projects/profile/'.$project['id']; ?>"></a>
+								
+								<div class="projinfo">
+									<p class="gap">&nbsp;<br></p>
+									<span class="projowner"><?php echo $project['projowner']; ?></span>
+									<p class="gap">&nbsp;<br></p>
+									<span class="projtitle"><?php echo $project['projtitle']; ?></span>
+									<p class="gap">&nbsp;<br></p>
+									<p class="projdesc"><?php echo $project['projdesc']; ?></p>
+								</div>					
+							
+							</li>
+				<?php } ?>
 
 
             </ul>
@@ -226,17 +174,17 @@
 <div id="influences" class="visible-phone">
     <div id="infContent">
         <p class="home_contact_top_title">Influences</p>
-        <div class="infDiv1">&nbsp;</div><div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div>
-        <div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div><div class="infDiv1">&nbsp;</div>
-        <div class="infDiv2">&nbsp;</div><div class="infDiv1">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+			<?php foreach($influences as $influence) { ?>
+				<div class="infDiv1"><?php echo $influence; ?></div>
+			<?php } ?>	
     </div>
 </div>
 <div id="genres" class="visible-phone">
     <div id="genContent">
         <p class="home_contact_top_title">Genres</p>
-        <div class="infDiv1">&nbsp;</div><div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div>
-        <div class="infDiv2">&nbsp;</div><div class="infDiv3">&nbsp;</div><div class="infDiv1">&nbsp;</div>
-        <div class="infDiv2">&nbsp;</div><div class="infDiv1">&nbsp;</div><div class="infDiv3">&nbsp;</div>
+        <?php foreach($genres as $genre) { ?>
+				<div class="infDiv1"><?php echo $genre; ?></div>
+		<?php } ?>
     </div>
 </div>
 <!-- END OF 351 -->
