@@ -123,6 +123,14 @@ $(document).ready(function() {
 		}
 	});
 
+    if ($('#biography_container').length <= 0) {
+        $.get('../../ajax/profile/getuserbiography', {
+            id : $('#id').val()
+        }, function(data) {
+            $('#mobile_bio_container').append(data);
+        });
+    } 
+
 	$('#workedwith').click(function() {
 		if ($('#workedwith_container').length <= 0) {
 			$.get('../../ajax/profile/getworked_with', {

@@ -253,15 +253,8 @@
                 <span class="mobile_bio_header">
                    </br> BIOGRAPHY </br>
                 </span>
-                <span class="mobile_bio_body">
-                    </br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Curabitur a cursus lorem, nec adipiscing est. Suspendisse adipiscing ac
-                    urna non facilisis. Sed ligula sapien, viverra gravida aliquet et,
-                    vehicula et diam. Nullam placerat condimentum volutpat. Maecenas
-                    fermentum commodo imperdiet. Pellentesque habitant morbi tristique senectus
-                    et netus et malesuada fames ac turpis...
-                    </br>
+                <span id="mobile_bio_container" class="mobile_bio_body">
+
                 </span>
                 <span class="mobile_bio_header">
                     </br>
