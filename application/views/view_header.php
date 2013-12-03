@@ -145,7 +145,7 @@
                     </div>
 
 
-                    <a class="brand" href="#">
+                    <a class="brand" href="<?php echo base_url(); ?>">
                         <img src="<?php echo base_url('img/mobile_fms_icon.png'); ?>">
                         <span class="icon-bar"></span>
                         <strong>FindmySong</strong>
