@@ -41,17 +41,17 @@
 
     <div id="bottom" class="row-fluid">
         <div class="span12">
-            <p>Don't have an account yet? <a id="anchor_signup" href="#">Click here</a></p>
+            <p>Don't have an account yet? <a id="anchor_signup" href="http://www.cs351.gurtem.com/mobile_signup">Click here</a></p>
         </div>
     </div>
 
     <div id="method" class="row-fluid">
         <div id="facebook">
-            <button type="button" class="btn btn-primary active">Login with Facebook
+            <button type="button" class="btn btn-primary active" id="signup_facebook" href class="login">Login with Facebook
             </button>
         </div>
         <div id="twitter">
-            <button type="button" class="btn btn-info active">Login using Twitter
+            <button type="button" class="btn btn-info active" id="signup_twitter" href class="login">Login using Twitter
             </button>
         </div>
     </div>
