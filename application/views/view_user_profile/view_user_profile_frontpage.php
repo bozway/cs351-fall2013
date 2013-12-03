@@ -310,6 +310,10 @@
     </div>
 
     <div id="skills_bar">
+        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/guitar.png'); ?>" />
+        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/keyboard.png'); ?>" />
+        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/microphone.png'); ?>" />
+        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/sax.png'); ?>" />
 
     </div>
 </div>
