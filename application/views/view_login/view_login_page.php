@@ -20,9 +20,9 @@
         <form id="fms_signin_form">
         <div id="userpass">
             <div class="text-center">
-                <input id="user_email_login" class="user" type="email" name="user_email_login" title="Email"
-                       placeholder="Username">
-                <input id="user_password_login" class="user" type="password" name="user_password_login" title="Password" placeholder="Password">
+                <input id="user_email_login" class="login" type="email" name="user_email_login" title="Email"
+                       placeholder="Email">
+                <input id="user_password_login" class="login" type="password" name="user_password_login" title="Password" placeholder="Password">
             </div>
         </div>
         <div id="remember">
@@ -47,7 +47,7 @@
 
     <div id="method" class="row-fluid">
         <div id="facebook">
-            <button type="button" class="btn btn-primary active" id="signup_facebook" href class="login">Login with Facebook
+            <button type="button" class="btn btn-primary active" id="login_facebook" href class="login">Login with Facebook
             </button>
         </div>
         <div id="twitter">
