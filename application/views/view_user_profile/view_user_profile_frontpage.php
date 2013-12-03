@@ -193,7 +193,7 @@
 <!-- CS 351 CODE -->
 <div class="visible-phone" id="loginBar">
     <span id="backImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="<?php echo base_url('img/musician_profile/arrow.png'); ?>"></span>
-    <span id="backToResultsText">Back to results</span>
+    <a href="<?php echo base_url('users/search'); ?>" ><span id="backToResultsText">Back to results</span> </a>
     <button class="btn btn-success btn-large
             " type="button" id="contactButton">Contact</button>
 </div>
@@ -350,7 +350,7 @@
 
     <div id="back_to_top_bar">
         <div id="back_to_top_div">
-            <span id="back_to_top_text">Back to top</span>
+            <a href="#backToResultsText" ><span id="back_to_top_text">Back to top</span></a>
         </div>
     </div>
 
