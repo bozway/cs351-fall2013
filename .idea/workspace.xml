@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a78a3dc1-78fc-4d08-af2d-4a1d5733a459" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mobile_musician_profile.css" afterPath="$PROJECT_DIR$/css/mobile_musician_profile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mobile_musician_profile.less" afterPath="$PROJECT_DIR$/css/mobile_musician_profile.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php" afterPath="$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/view_about/view_about.php" afterPath="$PROJECT_DIR$/application/views/view_about/view_about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/view_fms/view_home.php" afterPath="$PROJECT_DIR$/application/views/view_fms/view_home.php" />
     </list>
     <ignored path="cs351-fall2013.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,64 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view_user_biography.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/view_user_profile/view_user_biography.php">
+      <file leaf-file-name="view_about.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/view_about/view_about.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="32" selection-start="119" selection-end="133" vertical-scroll-proportion="-0.0" vertical-offset="34" max-vertical-offset="442">
+            <state line="72" column="58" selection-start="5307" selection-end="5307" vertical-scroll-proportion="-11.115385" vertical-offset="935" max-vertical-offset="3485">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/ajax/profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="484" column="7" selection-start="14541" selection-end="14541" vertical-scroll-proportion="-9.153846" vertical-offset="7990" max-vertical-offset="18615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/users/profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="12" selection-start="1813" selection-end="1813" vertical-scroll-proportion="0.0" vertical-offset="911" max-vertical-offset="6953">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_user_project_listing.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/view_user_profile/view_user_project_listing.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="55" selection-start="239" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_user_profile_frontpage.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="195" column="46" selection-start="7971" selection-end="7971" vertical-scroll-proportion="0.19547325" vertical-offset="3220" max-vertical-offset="6188">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_home.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="view_home.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/view_fms/view_home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="0" selection-start="6129" selection-end="6129" vertical-scroll-proportion="-7.8461537" vertical-offset="1853" max-vertical-offset="2924">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/view_header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="26" selection-start="6059" selection-end="6059" vertical-scroll-proportion="-8.884615" vertical-offset="2149" max-vertical-offset="3383">
+            <state line="154" column="130" selection-start="8044" selection-end="8044" vertical-scroll-proportion="0.42998028" vertical-offset="2400" max-vertical-offset="2924">
               <folding />
             </state>
           </provider>
@@ -109,10 +63,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/application/controllers/fms.php" />
-        <option value="$PROJECT_DIR$/application/views/view_about/view_about.php" />
         <option value="$PROJECT_DIR$/application/views/view_footer.php" />
         <option value="$PROJECT_DIR$/application/views/view_login/view_login_page.php" />
-        <option value="$PROJECT_DIR$/application/views/view_fms/view_home.php" />
         <option value="$PROJECT_DIR$/application/views/view_fms_user_portal/view_signup.php" />
         <option value="$PROJECT_DIR$/application/core/Authenticated_service.php" />
         <option value="$PROJECT_DIR$/application/views/view_fms_user_portal/view_mobile_signup.php" />
@@ -124,6 +76,8 @@
         <option value="$PROJECT_DIR$/application/controllers/users/profile.php" />
         <option value="$PROJECT_DIR$/application/views/view_header.php" />
         <option value="$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php" />
+        <option value="$PROJECT_DIR$/application/views/view_about/view_about.php" />
+        <option value="$PROJECT_DIR$/application/views/view_fms/view_home.php" />
       </list>
     </option>
   </component>
@@ -261,7 +215,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view_login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view_fms_user_portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view_fms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs351-fall2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view_about" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -398,11 +422,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/controllers/projects/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="7" selection-start="2218" selection-end="2218" vertical-scroll-proportion="-9.961538" vertical-offset="846" max-vertical-offset="8619" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/view_fms/view_hot.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="40" selection-start="775" selection-end="775" vertical-scroll-proportion="-9.153846" vertical-offset="51" max-vertical-offset="2057" />
@@ -473,23 +492,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/view_fms/view_home.php">
+    <entry file="file://$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="0" selection-start="6129" selection-end="6129" vertical-scroll-proportion="-7.8461537" vertical-offset="1853" max-vertical-offset="2924">
+        <state line="195" column="46" selection-start="7971" selection-end="7971" vertical-scroll-proportion="0.18737672" vertical-offset="3220" max-vertical-offset="6188">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/view_header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="26" selection-start="6059" selection-end="6059" vertical-scroll-proportion="-8.884615" vertical-offset="2149" max-vertical-offset="3383">
+        <state line="140" column="26" selection-start="6059" selection-end="6059" vertical-scroll-proportion="0.4556213" vertical-offset="2149" max-vertical-offset="3383">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/view_user_profile/view_user_profile_frontpage.php">
+    <entry file="file://$PROJECT_DIR$/application/views/view_about/view_about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="46" selection-start="7971" selection-end="7971" vertical-scroll-proportion="0.19547325" vertical-offset="3220" max-vertical-offset="6188">
+        <state line="72" column="58" selection-start="5307" selection-end="5307" vertical-scroll-proportion="-11.115385" vertical-offset="935" max-vertical-offset="3485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/view_fms/view_home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="130" selection-start="8044" selection-end="8044" vertical-scroll-proportion="0.42998028" vertical-offset="2400" max-vertical-offset="2924">
           <folding />
         </state>
       </provider>

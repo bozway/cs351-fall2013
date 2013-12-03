@@ -69,9 +69,11 @@
     <!-- Carousel nav -->
     <div  id="loginBar" class="visible-phone">
         <div id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="<?php echo base_url('img/about/search.png'); ?>"/></div>
-        <span id="loginText">LOG IN</span>
+        <a href="<?php echo base_url('/login'); ?>"><span id="loginText">LOG IN</span></a>
+        <a href="<?php echo base_url('/mobile_signup'); ?>">
         <button class="btn btn-success btn-large
             " type="button" id="signUpButton">Sign up</button>
+            </a>
     </div>
 
     <div id="search-collapse-div" class="visible-phone">
