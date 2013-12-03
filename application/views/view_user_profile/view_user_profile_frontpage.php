@@ -211,20 +211,24 @@
 
 
 <div id="mobile_user_social" class="visible-phone">
-    <a id="fb_btn" href="http://www.facebook.com">
+
+    <?php if(isset($facebook) && !empty($facebook['link'])){?>
+    <a id="fb_btn" href="<?php echo $facebook['link']?>">
         <img src="<?php echo base_url('img/musician_profile/fb_button.png'); ?>" />
     </a>
+    <?php }?>
 
-
-
-    <a id="twt_btn" href="http://www.twitter.com">
+    <?php if(isset($twitter) && !empty($twitter['link'])) {?>
+    <a id="twt_btn" href="<?php echo $twitter['link']?>">
         <img src="<?php echo base_url('img/musician_profile/twitter_button.png'); ?>" />
     </a>
+    <?php }?>
 
-
-    <a id="yt_btn" href="http://www.youtube.com">
-        <img src="<?php echo base_url('img/musician_profile/youtube_button.png'); ?>" />
+    <?php if(isset($soundcloud) && !empty($soundcloud['link'])){?>
+    <a id="yt_btn" href="<?php echo $soundcloud['link']?>">
+        <img src="/img/sound-cloud.png" height="72px" width="62px" style="border-radius: 10px;"/>
     </a>
+    <?php } ?>
 
 
 </div>
