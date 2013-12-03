@@ -123,13 +123,14 @@ $(document).ready(function() {
 		}
 	});
 
+    // adding mobile bio
     if ($('#biography_container').length <= 0) {
         $.get('../../ajax/profile/getuserbiography', {
             id : $('#id').val()
         }, function(data) {
             $('#mobile_bio_container').append(data);
         });
-    } 
+    }
 
 	$('#workedwith').click(function() {
 		if ($('#workedwith_container').length <= 0) {
@@ -146,6 +147,16 @@ $(document).ready(function() {
 		}
 	});
 
+    //working with mobile
+
+    if ($('#workedwith_container').length <= 0) {
+        $.get('../../ajax/profile/getworked_with', {
+            id : $('#id').val(),
+        }, function(data) {
+            $('#mobile_working_with_container').append(data);
+        });
+    }
+
 	$('#skills').click(function() {
 		if ($('#skills_container').length <= 0) {
 			$.get('../../ajax/profile/getskill', {
@@ -156,6 +167,8 @@ $(document).ready(function() {
 			});
 		}
 	});
+
+    //skills mobile
 
 	$('#navigation li').click(function() {
 		var tabs = $('#navigation li');

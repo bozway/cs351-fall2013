@@ -310,10 +310,7 @@
     </div>
 
     <div id="skills_bar">
-        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/guitar.png'); ?>" />
-        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/keyboard.png'); ?>" />
-        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/microphone.png'); ?>" />
-        <img class="skills_btn" src="<?php echo base_url('img/musician_profile/sax.png'); ?>" />
+
     </div>
 </div>
 
@@ -327,18 +324,9 @@
     </div>
 
     <div id="working_with_bar">
-        <a href="<?php echo base_url().'users/profile/16'; ?>">
-            <img class="working_with_btn" src="http://www.cs351.gurtem.com/img/default_avatar_photo.jpg" />
-        </a>
-        <a href="<?php echo base_url().'users/profile/18'; ?>">
-            <img class="working_with_btn" src="http://www.cs351.gurtem.com/img/default_avatar_photo.jpg" />
-        </a>
-        <a href="<?php echo base_url().'users/profile/24'; ?>">
-            <img class="working_with_btn" src="http://www.cs351.gurtem.com/img/default_avatar_photo.jpg" />
-        </a>
-        <a href="<?php echo base_url().'users/profile/26'; ?>">
-            <img class="working_with_btn" src="http://www.cs351.gurtem.com/img/default_avatar_photo.jpg" />
-        </a>
+        <div id="mobile_working_with_container">
+
+        </div>
     </div>
 
     <div id="back_to_top_bar">
