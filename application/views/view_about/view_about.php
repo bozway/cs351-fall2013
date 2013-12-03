@@ -69,8 +69,8 @@
     <!-- Carousel nav -->
     <div  id="loginBar" class="visible-phone">
         <div id="searchImg" data-toggle="collapse" data-target="#search-collapse-form"><img src="<?php echo base_url('img/about/search.png'); ?>"/></div>
-        <a href="<?php echo base_url('/login'); ?>"><span id="loginText">LOG IN</span></a>
-        <a href="<?php echo base_url('/mobile_signup'); ?>">
+        <a href="<?php echo base_url('/login'); ?>" class="<?php if($authenticated){ echo "hidden"; }?>"><span id="loginText">LOG IN</span></a>
+        <a href="<?php echo base_url('/mobile_signup'); ?>" class="<?php if($authenticated){ echo "hidden"; }?>">
         <button class="btn btn-success btn-large
             " type="button" id="signUpButton">Sign up</button>
             </a>
@@ -137,7 +137,7 @@
         <table>
             <tr>
                 <td>
-                    <a href="<?php echo base_url('/mobile_signup'); ?>">
+                    <a href="<?php echo base_url('/mobile_signup'); ?>" class="<?php if($authenticated){ echo "hidden"; }?>">
                     <button class="btn btn-success" type="button">Sign up</button>
                     </a>
                     <br>
@@ -180,7 +180,7 @@
     <div id="footer1" class="visible-phone">
         &nbsp;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Sign up &nbsp;</em>Don't have an account yet? Sign up to get started!
-        <a href="<?php echo base_url('/mobile_signup'); ?>">
+        <a href="<?php echo base_url('/mobile_signup'); ?>" class="<?php if($authenticated){ echo "hidden"; }?>">
         <button class="btn signInFt" type="button">Sign up!</button>
         </a>
     </div>
