@@ -137,20 +137,28 @@
         <table>
             <tr>
                 <td>
+                    <a href="<?php echo base_url('/mobile_signup'); ?>">
                     <button class="btn btn-success" type="button">Sign up</button>
+                    </a>
                     <br>
                     <br>
+                    <a href="<?php echo base_url('/contact'); ?>">
                     <button class="btn btn-inverse" type="button">Get in touch</button>
+                    </a>
                     <br>
                     <br>
                     <br>
                     <em class="followUs">Follow us:</em>
                     <br>
                     <br>
+                    <a href="http://www.facebook.com/findmysong">
                     <button class="btn btn-primary ftbutton" type="button"><img class="bImg" src="<?php echo base_url('img/about/fbwhite.png'); ?>"/>Like us on Facebook</button>
+                    </a>
                     <br>
                     <br>
+                    <a href="http://www.twitter.com/findmysong">
                     <button class="btn btn-info ftbutton" type="button"><img class="bImg" src="<?php echo base_url('img/about/twwhite.png'); ?>"/>Follow us on Twitter</button>
+                    </a>
                 </td>
                 <td id='benefit_desc'>
                     <h4>FMS - its benefits</h4>
@@ -172,7 +180,9 @@
     <div id="footer1" class="visible-phone">
         &nbsp;<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Sign up &nbsp;</em>Don't have an account yet? Sign up to get started!
+        <a href="<?php echo base_url('/mobile_signup'); ?>">
         <button class="btn signInFt" type="button">Sign up!</button>
+        </a>
     </div>
     <div id="footer2" class="visible-phone">
         <table class="footerTable">
@@ -184,9 +194,19 @@
             </tr>
             <tr>
                 <td> Copyright &copy 2013</td>
-                <td> About<br> Contact<br> Help Center</td>
-                <td> Terms<br> Privacy</td>
-                <td> <img class="fb2" src="<?php echo base_url('img/about/fbIcon.png'); ?>"/><img class="tw2" src="<?php echo base_url('img/about/twIcon.png'); ?>"/></td>
+                <td> <a href="<?php echo base_url('/about'); ?>">About</a><br>
+                    <a href="<?php echo base_url('/contact'); ?>">Contact</a><br>
+                    <a href="<?php echo base_url('/help'); ?>">Help Center</a></td>
+                <td> <a href="<?php echo base_url('/terms'); ?>">Terms</a><br>
+                    <a href="<?php echo base_url('/privacy'); ?>">Privacy</a></td>
+                <td>
+                    <a href="http://www.facebook.com/findmysong">
+                    <img class="fb2" src="<?php echo base_url('img/about/fbIcon.png'); ?>"/>
+                    </a>
+                    <a href="http://www.twitter.com/findmysong">
+                    <img class="tw2" src="<?php echo base_url('img/about/twIcon.png'); ?>"/>
+                    </a>
+                </td>
             </tr>
         </table>
     </div>
