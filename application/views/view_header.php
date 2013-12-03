@@ -130,8 +130,6 @@
                 <div class="container visible-phone">
 
                     <div>
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    </button>
                         <?php
                         if($authenticated){
                             ?>
@@ -141,6 +139,9 @@
                         <?php
                         }
                         ?>
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    </button>
+
                     </div>
 
 

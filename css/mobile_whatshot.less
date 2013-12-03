@@ -9,7 +9,6 @@
         float:right;
     }
     
-    
     .mobile-member-profile-img {
         width: 50px;
         height: 50px;
@@ -17,22 +16,22 @@
         background-image: url("http://www.cs351.gurtem.com/img/default_avatar_photo.jpg");
         background-size: 100% 100%;
           -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
     }
     
     .navbar .btn-navbar {
-        float:none;
-        position: absolute;
-        right: 12%;
+        float: right;
     }
     
     #welcomeBar {
             position: relative;
-            width: 100%;
+            //width: 100%;
             background-image:url('http://www.cs351.gurtem.com/img/whatshot/bluebk.png');
             height:3.85%;
-            margin-top:-3px;
+            margin-top:-20px;
+            margin-left: -20px;
+            margin-right: -20px;
     }
     
     span#welcomeText {
@@ -56,11 +55,14 @@
         //padding:10px;
         overflow-x:hidden;
         //overflow-y:hidden;
-        width: 100%;   
+        //width: 100%;   
         -webkit-box-sizing: none;
         box-sizing: none;
         -moz-box-sizing: none;
-        margin-top:-50px;
+        margin-top: -20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        height: 190px;
         //border:solid;
     }
     #pop-musicians-list{
@@ -105,29 +107,53 @@
          background:#EEEBEB;
         padding:10px;
         overflow-x:hidden;
-        width: 100%;   
+        width: auto;   
         -webkit-box-sizing: none;
         box-sizing: none;
         -moz-box-sizing: none;
+        margin-left: -20px;
+        margin-right: -20px;
     }
     #projectContent > p{
         font-size:20px;
         font-weight:400;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin:0;
+        line-height:80%;
     }
+    .gap{
+        line-height:0%;
+    }
+    
     #background {
-        //position: fixed;
-        position:;
         top: 0px;
         left: 0px;
         //width: 100%;
-        height: 188px;
+        height: 180px;
         background-color: white; 
         margin-left:-10px;
         margin-top:-10px;
         margin-right:-10px;
+        width:1000px;
         
     }
-    
+    .projimg{
+        height:134px;
+    }
+    .projowner{
+        font-size:23px;
+        font-weight:400;
+    }
+    .projinfo{
+        margin-top: 0px;
+        background-color: white;
+        height:200px;
+    }
+    .projtitle{
+        font-size:22px;
+        font-weight:300;
+    }
     .span3{
         width: 220px;
     }
@@ -139,33 +165,27 @@
         
     }
     #pop-projects-list{
-    
-            float:left;
-        		display:inline;
-				-webkit-transition-property: -webkit-transform;
-				-webkit-transition-duration: 0.5s;
-				-webkit-transition-timing-function: ease-out;
-
-				width: 1000px;
-				overflow-x: hidden;
-				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
-				-webkit-transform: translate3d(0px,0px,0px); 
-				//margin-left:10px;
-				margin-top:-15px;
-            
+        float:left;
+        display:inline;
+		-webkit-transition-property: -webkit-transform;
+		-webkit-transition-duration: 0.5s;
+		-webkit-transition-timing-function: ease-out;
+		width: 1000px;
+		overflow-x: hidden;
+		/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+		-webkit-transform: translate3d(0px,0px,0px); 
+		margin-top: 10px;
     }
     .carousel{
-          float:left;
-        		display:inline;
-				
-				-webkit-transition-property: -webkit-transform;
-				-webkit-transition-duration: 0.5s;
-				-webkit-transition-timing-function: ease-out;
-
-				width:3000px;
-				overflow-x: hidden;
-				/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
-				-webkit-transform: translate3d(0px,0px,0px); 
+        float:left;
+        display:inline;
+		-webkit-transition-property: -webkit-transform;
+		-webkit-transition-duration: 0.5s;
+		-webkit-transition-timing-function: ease-out;
+		width:3000px;
+		overflow-x: hidden;
+		/*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
+		-webkit-transform: translate3d(0px,0px,0px); 
         width: 100%;
         margin-bottom:0;
     }
@@ -175,6 +195,7 @@
                     /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
     			    -webkit-transform: translate3d(0px,0px,0px); 
                     margin-right:20px;
+                    float:left;
                 }
     }
     #pop-musicians-list{
@@ -183,6 +204,7 @@
                     /*apply a transfor to kick in the hardware acceleration.  Without this, the first time we add the transform you get odd rendering of the divs (half missing) */
     			    -webkit-transform: translate3d(0px,0px,0px); 
                     margin-right:20px;
+                    float: left;
                 }
     }
     #influences{
@@ -202,7 +224,9 @@
         float:left;
         background-color:white;
         height:30px;
-        width:90px;
+        width:60px;
+        text-align: center;
+        color: cadetblue;
         //margin-left:10px;
         margin-right:5px;
         margin-bottom:10px;
@@ -235,6 +259,7 @@
         margin-top:20px;
         position:relative;
         float:left;
+        padding-bottom: 30px;
     }
     #genContent{
         margin-left:10px;
