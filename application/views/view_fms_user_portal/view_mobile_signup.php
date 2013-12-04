@@ -9,7 +9,7 @@
         </div>
 
         <div class="span6 text-right">
-            <a href="">Cancel</a>
+            <a href="<?php echo base_url(); ?>">Cancel</a>
         </div>
 
     </div>
