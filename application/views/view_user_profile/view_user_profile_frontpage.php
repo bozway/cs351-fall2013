@@ -266,8 +266,7 @@
                 </span>
                 <span class="mobile_bio_body">
                     </br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Curabitur a cursus lorem, nec adipsicing est. </br>
+                    Michael Jackson, Creed, Backstreet Boys, Tupac, Dr. Dre </br>
                     </br>
                     <a href="">Show more...</a>
                 </span>

@@ -63,7 +63,8 @@ class Fms extends Authenticated_service {
 		);**/
 		/** Production data**/
 		$data['featured_musicians'] =$this->getFeaturedMusician(
-        	array(50, 18, 17, 16, 24, 28)// array(36, 39, 30, 32, 34, 33)
+        	//array(50, 18, 17, 16, 24, 28)// array(36, 39, 30, 32, 34, 33)
+            array(78,79,80,81,5,18)
 		);
 		
 		$data['featured_projects'] =$this->getFeaturedProjects(
