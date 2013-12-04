@@ -15,14 +15,15 @@
             <a href="<?php echo base_url(); ?>">Cancel</a>
         </div>
     </div>
-
+                	<label id="help_login_wrap"><a id="help_login" rel="popover"></a></label> 
     <div id="form">
         <form id="fms_signin_form">
         <div id="userpass">
             <div class="text-center">
-                <input id="user_email_login" class="login" type="email" name="user_email_login" title="Email"
+
+                <input id="user_email_login" class="login valid" type="email" name="user_email_login" title="Email"
                        placeholder="Email">
-                <input id="user_password_login" class="login" type="password" name="user_password_login" title="Password" placeholder="Password">
+                <input id="user_password_login" class="login valid" type="password" name="user_password_login" title="Password" placeholder="Password">
             </div>
         </div>
         <div id="remember">
