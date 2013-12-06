@@ -153,7 +153,11 @@
 	                    <p class="title">Music is better with friends.</p>
 	                    <p class="hidden-phone">Get social on FindMySong. Help your friends keep updated on your new music by connecting with Facebook, and follow along with your favorite artists as they work on new projects.</p>
                         <p class="visible-phone">Help your friends keep updated on your new music by connecting with Facebook.</p>
-                        <button id="fb_btn" data-gated="1" class="btn btn-small btn-block sign-in-fb">Connect with Facebook</button>
+                        <button id="fb_btn" data-gated="1" class="btn btn-small btn-block sign-in-fb hidden-phone">Connect with Facebook</button>
+
+                        <a href="http://www.facebook.com/findmysong">
+                        <button id="fb_btn" class="btn btn-small btn-block sign-in-fb visible-phone">Connect with Facebook</button>
+                        </a>
 	                </div>
 	                <div class="home_contact_middle_right hidden-phone">
 	                    <p><span>Bring</span><br />your music to life</p>

@@ -226,7 +226,7 @@
 
     <?php if(isset($soundcloud) && !empty($soundcloud['link'])){?>
     <a id="yt_btn" href="<?php echo $soundcloud['link']?>">
-        <img src="/img/sound-cloud.png" height="72px" width="62px" style="border-radius: 10px;"/>
+        <img src="/img/sound-cloud.png" />
     </a>
     <?php } ?>
 
